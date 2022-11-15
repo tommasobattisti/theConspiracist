@@ -1,3 +1,12 @@
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar-toggler:hover{
+    box-shadow: 0 0 0 0.1rem !important;
+}
+
+
 #buttonsContainer {
     height: 100px;
     position: fixed;
