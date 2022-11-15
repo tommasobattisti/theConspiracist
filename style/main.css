@@ -1,19 +1,51 @@
-#styleSelector {
+#buttonsContainer {
+    height: 100px;
+    position: fixed;
+    bottom: 5vmin;
+    right: 5vmin;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    background-color: rgba(116, 66, 66, 0.5);
+    justify-content: space-around;
+    
 }
 
-#styleSelector div {
-    width: 25%;
-    border: solid 0.5px;
-    text-align: center;
+#toTopBtn {
+    visibility: hidden;
+    background-color: blue;
+    border-radius: 50%;
+    border: none;
+    color: white;
+      width: 40px;
+    height: 40px;
 }
 
-#styleSelector div p {
-    margin: 0.5em 0;
+
+.btn-group-fab .btn {
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-group-fab .btn-main {
+  z-index: 9;
+}
+.btn-group-fab .btn-sub {
+    z-index: 8;
+    -webkit-transition: all 2s;
+    transition: all 0.5s;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(2) {
+  bottom: 60px;
+}
+.btn-group-fab.active .btn-sub:nth-child(3) {
+  bottom: 110px;
+}
+.btn-group-fab.active .btn-sub:nth-child(4) {
+  bottom: 160px;
+}
+.btn-group-fab .btn-sub:nth-child(5) {
+  bottom: 210px;
 }
