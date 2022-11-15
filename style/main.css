@@ -1,11 +1,10 @@
 .navbar-toggler:focus{
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler:hover{
-    box-shadow: 0 0 0 0.1rem !important;
+  box-shadow: 0 0 0 0.1rem !important;
 }
-
 
 #buttonsContainer {
     display:flex;
