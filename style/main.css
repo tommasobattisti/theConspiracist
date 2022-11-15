@@ -1,0 +1,19 @@
+#styleSelector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(116, 66, 66, 0.5);
+}
+
+#styleSelector div {
+    width: 25%;
+    border: solid 0.5px;
+    text-align: center;
+}
+
+#styleSelector div p {
+    margin: 0.5em 0;
+}
