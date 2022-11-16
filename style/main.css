@@ -6,6 +6,7 @@
   box-shadow: 0 0 0 0.1rem !important;
 }
 
+
 #buttonsContainer {
     display:flex;
     flex-direction: column;
