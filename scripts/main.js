@@ -13,9 +13,14 @@ window.onscroll = () => {
     }
     }
 
-$(function() {
-    $('.btn-group-fab').on('click', '.btn', function() {
-      $('.btn-group-fab').toggleClass('active');
-    });
-  });
-
+function changeBtnsVisibility() {
+    if (document.getElementsByClassName('btn-sub')[0].style.visibility == "hidden"){
+        for (let el of document.querySelectorAll('.btn-sub')){
+            el.style.visibility = 'visible';
+            };
+    }else{
+        for (let el of document.querySelectorAll('.btn-sub')){
+            el.style.visibility = 'hidden';
+            };
+    };
+}
