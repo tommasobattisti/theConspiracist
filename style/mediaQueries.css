@@ -9,7 +9,7 @@
 @media only screen and (max-height: 700px){
 
     #buttonsContainer{
-        height: 45vmax;
+        height: 55vmin;
     }
 
 }
@@ -17,7 +17,7 @@
 @media only screen and (max-height: 600px){
 
     #buttonsContainer{
-        height: 50vmax;
+        height: 65vmin;
     }
 
 }
