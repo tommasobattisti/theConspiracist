@@ -54,18 +54,25 @@
     </nav>
 
     <div id="buttonsContainer">
-        <button type="button" class="btn btn-sub btn-info"> <i class="fa fa-arrows-alt"></i> </button>
+        <button type="button" class="btn btn-sub btn-info"> Style 1 </button>
         <button type="button" class="btn btn-sub btn-info"> <i class="fa fa-arrows-alt"></i> </button>
         <button type="button" class="btn btn-sub btn-danger"> <i class="fa fa-floppy-o"></i> </button>
         <button type="button" class="btn btn-sub btn-warning"> <i class="fa fa-download"></i> </button>
         <!--Interactive button div-->
-        <div onclick="changeBtnsVisibility()">
-            <button type="button" class="btn btn-main btn-primary"> <i class="fa-solid fa-palette"></i></button>
+        <div id="btnsGeneralFlexContainer">
+            <div id="emptyLeftContainer">   
+            </div>
+            <div id="mainBtnsRightContainer">
+                <div onclick="changeBtnsVisibility()">
+                    <button type="button" class="btn btn-main btn-primary"> <i class="fa-solid fa-palette"></i></button>
+                </div>
+                <!--To the top Button-->
+                <div id="toTopContainer" onclick="scrollToTop()">
+                    <button id="toTopBtn" class="btn-main"> <i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+            </div>
         </div>
-        <!--To the top Button-->
-        <div id="toTopContainer" onclick="scrollToTop()">
-            <button id="toTopBtn" class="btn-main"> <i class="fa-solid fa-arrow-up"></i></button>
-        </div>
+
     </div>
 
 

@@ -5,3 +5,19 @@
     }
 
 }
+
+@media only screen and (max-height: 700px){
+
+    #buttonsContainer{
+        height: 45vmax;
+    }
+
+}
+
+@media only screen and (max-height: 600px){
+
+    #buttonsContainer{
+        height: 50vmax;
+    }
+
+}
