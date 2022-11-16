@@ -16,7 +16,7 @@
     right: 2.5vmin;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
     
 }
@@ -34,17 +34,18 @@
 }
 
 
-
-.btn {
+.btn-main {
   aspect-ratio : 1 / 1;
-  width: 100%;
   border-radius: 50% !important;
   border: none;
+  width: 100%;
 }
 
 
 
+
 .btn-sub {
+  width: 300%;
   visibility: hidden;
   -webkit-transition: all 2s;
   transition: all 0.5s;
