@@ -94,3 +94,39 @@
   -moz-transition: 0.5s;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
 }
+
+
+/*MAIN*/
+#magazinePresentation{
+  background-color: rgb(100, 188, 172);
+  height: 60vh;
+  width: 100%;
+}
+
+#titleContainer {
+
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#magPill {
+  width: 50%;
+}
+
+.home-body {
+  background-color: bisque;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: auto;
+  padding-top: 10%;
+}
+
+#functionalitiesDesc {
+  width: 50%;
+}
