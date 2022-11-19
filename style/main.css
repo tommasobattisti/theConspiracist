@@ -124,6 +124,10 @@ footer {
 
 
 /*MAIN*/
+.last-container {
+  padding-bottom: 10%;
+}
+
 .page-presentation{
   background-color: rgb(100, 188, 172);
   height: 60vh;
@@ -131,6 +135,7 @@ footer {
 }
 
 .title-container {
+  background-color: rgba(84, 88, 128, 0.5);
   width: 80%;
   height: 100%;
   margin-left: 10%;
@@ -202,6 +207,20 @@ footer {
 }
 
 
+.horizontal-double-container {
+  padding-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.vertical-sub-container {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
 
 /*DISCLAIMER*/
 #disclaimerBody {
@@ -209,4 +228,26 @@ footer {
   margin-left: 15%;
   margin-right: auto;
   margin-top: 10%;
+}
+
+
+
+
+/*ISSUES*/
+
+.meta-text-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.metadata-section {
+  width: 25%;
+}
+
+.article-section {
+  width: 75%
 }
