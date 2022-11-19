@@ -104,7 +104,6 @@
 }
 
 #titleContainer {
-
   width: 80%;
   height: 100%;
   margin-left: 10%;
@@ -127,6 +126,31 @@
   padding-top: 10%;
 }
 
+
+
+#visualisationDesc {
+  width: 50%;
+}
+
+#functionalitiesContainer{
+  display:flex;
+  flex-direction: row;
+}
+
+#emptyFunctionalities{
+  width: 50%;
+}
+
+
 #functionalitiesDesc {
   width: 50%;
 }
+
+#functionalitiesDesc h3 {
+  text-align: end;
+}
+
+#functionalitiesDesc p {
+  text-align: end;
+}
+
