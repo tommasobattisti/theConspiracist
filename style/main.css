@@ -87,6 +87,7 @@
   width: 150%;
   height: 20%;
   border: none;
+  visibility: hidden;
   -webkit-transition: all 2s;
   transition: all 0.5s;
   -moz-transition: 0.5s;
