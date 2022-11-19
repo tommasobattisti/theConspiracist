@@ -6,6 +6,30 @@
   box-shadow: 0 0 0 0.1rem !important;
 }
 
+.dark-background {
+  background-color: rgb(24, 31, 31);
+}
+
+.white-text {
+  color: whitesmoke;
+}
+
+/*FOOTER*/
+footer {
+  height: 30vh;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: auto;
+}
 
 /*BUTTONS SUB-SECTION */
 #buttonsContainer {
@@ -96,14 +120,17 @@
 }
 
 
+
+
+
 /*MAIN*/
-#magazinePresentation{
+.page-presentation{
   background-color: rgb(100, 188, 172);
   height: 60vh;
   width: 100%;
 }
 
-#titleContainer {
+.title-container {
   width: 80%;
   height: 100%;
   margin-left: 10%;
@@ -114,7 +141,7 @@
   justify-content: center;
 }
 
-#magPill {
+.text-pill {
   width: 50%;
 }
 
@@ -127,30 +154,59 @@
 }
 
 
+#magazineDescription {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: auto;
+}
 
-#visualisationDesc {
+
+.text-left-container{
+  padding-top: 10%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.text-block-left {
   width: 50%;
 }
 
-#functionalitiesContainer{
+.content-block-right {
+  width: 50%;
+}
+
+
+.text-right-container {
+  padding-top: 10%;
   display:flex;
   flex-direction: row;
 }
 
-#emptyFunctionalities{
+.text-block-right {
   width: 50%;
 }
 
 
-#functionalitiesDesc {
+.content-block-left {
   width: 50%;
 }
 
-#functionalitiesDesc h3 {
+
+.text-block-right h3 {
   text-align: end;
 }
 
-#functionalitiesDesc p {
+.text-block-right p {
   text-align: end;
 }
 
+
+
+/*DISCLAIMER*/
+#disclaimerBody {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: auto;
+  margin-top: 10%;
+}
