@@ -54,21 +54,24 @@
     </nav>
 
     <div id="buttonsContainer">
-        <button type="button" class="btn btn-sub btn-info">Style 1</button>
-        <button type="button" class="btn btn-sub btn-info">Style 2</button>
-        <button type="button" class="btn btn-sub btn-danger">Style 3</button>
-        <button type="button" class="btn btn-sub btn-warning">Style 4</button>
+        <div id="secondaryBtnsContainer">
+            <button class="subBtn" type="button">Style 1</button>
+            <button class="subBtn" type="button">Style 2</button>
+            <button class="subBtn" type="button">Style 3</button>
+            <button class="subBtn" type="button">Style 4</button>
+        </div>
+        
         <!--Interactive button div-->
-        <div id="btnsGeneralFlexContainer">
-            <div id="emptyLeftContainer">   
+        <div id="mainBtnsContainer">
+            <div id="mainBtnsEmptyLeftContainer">   
             </div>
             <div id="mainBtnsRightContainer">
-                <div onclick="changeBtnsVisibility()">
-                    <button type="button" class="btn btn-main btn-primary"> <i class="fa-solid fa-palette"></i></button>
+                <div id="stylesBtnContainer" onclick="changeBtnsVisibility()">
+                    <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette"></i></button>
                 </div>
                 <!--To the top Button-->
                 <div id="toTopContainer" onclick="scrollToTop()">
-                    <button id="toTopBtn" class="btn-main"> <i class="fa-solid fa-arrow-up"></i></button>
+                    <button id="toTopBtn"> <i class="fa-solid fa-arrow-up"></i></button>
                 </div>
             </div>
         </div>
