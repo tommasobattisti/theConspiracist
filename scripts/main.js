@@ -14,13 +14,12 @@ window.onscroll = () => {
     }
 
 function changeBtnsVisibility() {
-    if (document.getElementsByClassName('subBtn')[0].style.visibility == "hidden"){
-        for (let el of document.querySelectorAll('.subBtn')){
-            el.style.visibility = 'visible';
-            };
-    }else{
-        for (let el of document.querySelectorAll('.subBtn')){
-            el.style.visibility = 'hidden';
-            };
-    };
+    if ($('.subBtn').css("visibility") ==  "hidden")
+        {
+            $('.subBtn').css("visibility","visible")
+        }
+    else
+        {
+            $('.subBtn').css("visibility","hidden")
+        }
 }
