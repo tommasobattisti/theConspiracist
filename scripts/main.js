@@ -1,19 +1,29 @@
-window.onscroll = () => {
+// It calls the object of the function when the event
+window.onscroll = () =>
+{
     toggleTopButton();
-    }
-    function scrollToTop(){
+}
+
+function scrollToTop()
+{
     window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    function toggleTopButton() {
-    if (document.body.scrollTop > 500 ||
-        document.documentElement.scrollTop > 500) {
-        document.getElementById('toTopBtn').style.visibility = "visible";
-    } else {
-        document.getElementById('toTopBtn').style.visibility = "hidden";
-    }
+}
+
+function toggleTopButton() 
+{
+    // Da aggiungere dentro l'IF se poi non dovesse funzionare in altre fasi: "document.body.scrollTop > 500 ||"
+    if ( document.documentElement.scrollTop > 500) 
+        {
+            $('#toTopBtn').css("visibility","visible")
+        } 
+        else 
+        {
+            $('#toTopBtn').css("visibility","hidden")    
+        }
     }
 
-function changeBtnsVisibility() {
+function changeBtnsVisibility() 
+{
     if ($('.subBtn').css("visibility") ==  "hidden")
         {
             $('.subBtn').css("visibility","visible")
