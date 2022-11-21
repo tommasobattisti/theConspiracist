@@ -173,6 +173,17 @@ footer {
   flex-wrap: nowrap;
 }
 
+.content-block-left {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linkToIssues {
+  height: 20%;
+  width: 40%;
+}
+
 .text-block-left {
   width: 50%;
 }
