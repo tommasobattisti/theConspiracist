@@ -6,7 +6,7 @@ var listItemTpl = `<li><a href='#' onclick='loadDocument($url)'>$label</a></li>`
 function loadDocumentsList(){
     $.ajax({
         method: GET,
-        url: "https://github.com/tommasobattisti/thePPPPconspiracy/blob/main/scripts/fileList.json",
+        url: "https://github.com/tommasobattisti/streamlit-example/blob/master/ex.json",
         success: function(d){
             alert("WE");
             for (var i = 0; i<d.length; i++){
