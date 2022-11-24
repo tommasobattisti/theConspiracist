@@ -9,10 +9,9 @@ function loadDocumentsList(){
         success: function(listObj){
             let parsedJson = JSON.parse(listObj)
             console.log(parsedJson)
-            //parsedJson.forEach(obj => {
-                //console.log(obj)
-                //$("#docs-list").append('<li><a href="#" onclick="loadDoc('+obj.url+')">'+obj.label+'</a></li>)';
-            //})
+            parsedJson.forEach(obj => {
+                $("#docs-list").append('<li><a href="#" onclick="loadDoc('+obj.url+')">'+obj.label+'</a></li>');
+            });
         },
         error: function(){
             alert("No document to show")
