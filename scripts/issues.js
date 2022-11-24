@@ -6,10 +6,11 @@ var listItemTpl = `<li><a href='#' onclick='loadDocument($url)'>$label</a></li>`
 function loadDocumentsList(){
     $.ajax({
         method: GET,
-        url: "fileList.json",
+        url: "https://github.com/tommasobattisti/thePPPPconspiracy/blob/main/scripts/fileList.json",
         success: function(d){
+            alert("WE");
             for (var i = 0; i<d.length; i++){
-                $("#docs-list").append(listItemTpl.tpl({url:d[i].url, label:d[i].label}))
+                $("#docs-list").append("<li>Bella li</li>");
             }
         },
         error: function(){
