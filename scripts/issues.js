@@ -14,7 +14,7 @@ function loadDocumentsList(){
             } else {
                 console.log(parsedJson)
                 parsedJson.forEach(obj => {
-                    $("#docs-list").append('<li><a href="#" onclick="loadDoc('+obj.url+')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>' 
+                    $("#docs-list").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>' 
                 });
             }
         },
@@ -24,7 +24,7 @@ function loadDocumentsList(){
     });
 }
 
-function loadDoc(file) {
+function loadDoc(file) { //RIVEDERE!!!!!!!
     $.ajax({
         method: 'GET',
         url: file,
