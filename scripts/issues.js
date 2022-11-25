@@ -14,7 +14,7 @@ function loadDocumentsList(){
             } else {
                 console.log(parsedJson)
                 parsedJson.forEach(obj => {
-                    $("#docs-list").append('<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>'); // or: '<li><a href="#" onclick="loadDoc('+obj.url+')">'+obj.label+'</a></li>'
+                    $("#docs-list").append('<li><a href="#" onclick="loadDoc('+obj.url+')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>' 
                 });
             }
         },
