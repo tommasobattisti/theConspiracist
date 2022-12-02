@@ -89,58 +89,128 @@
             <div class="meta-text-container">
                 <div class="docs-list-container">
                     <div class="sticky-container">
-                        <h3>Documents</h3>
-                        <ul id="docs-list">
-                            
-                        </ul>
-                        <form class="entity-selector">
-                            <div class="checkbox-div">
-                                <label>
-                                    <input class="highlight" type="checkbox">
-                                    Show 
-                                </label>
+
+
+                        
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Select documents
+                              </button>
+                            </h2>
+                          </div>
+                        
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul id="docs-list"> 
+                                </ul>
                             </div>
-                            <div class="checkbox-div">
-                                <label>
-                                    <input class="highlight" type="checkbox">
-                                    Show 
-                                </label>
-                            </div>
-                            <div class="checkbox-div">
-                                <label>
-                                    <input class="highlight" type="checkbox">
-                                    Show 
-                                </label>
-                            </div>
-                            <div class="checkbox-div">
-                                <label>
-                                    <input class="highlight" type="checkbox">
-                                    Show 
-                                </label>
-                            </div>
-                        </form>
-                        <div class="entity-creation-div">
-                            <label> Create entity:
-                                <select>
-                                    <option value="">--select one--</option>
-                                    <option value="entity type">entity type</option>
-                                    <option value="entity type">entity type</option>
-                                    <option value="entity type">entity type</option>
-                                </select>
-                            </label>
-                            <input type="text">
-                            <button>Create</button>
+                          </div>
                         </div>
-                        <div class="entities-content-table">
-                            <div class="nav-items-div">
-                                <button class="nav-i active-nav-i">Info</button>
-                                <button class="nav-i">Mah</button>
-                                <button class="nav-i">Mih</button>
-                                <button class="nav-i">Meh</button>  
+
+
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Show entities
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <form class="entity-selector">
+                                    <div class="checkbox-div">
+                                        <label>
+                                            <input class="highlight" type="checkbox">
+                                            Show 
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-div">
+                                        <label>
+                                            <input class="highlight" type="checkbox">
+                                            Show 
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-div">
+                                        <label>
+                                            <input class="highlight" type="checkbox">
+                                            Show 
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-div">
+                                        <label>
+                                            <input class="highlight" type="checkbox">
+                                            Show 
+                                        </label>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="tab-content">
-                            </div>
+                          </div>
                         </div>
+
+
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Create entity
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="entity-creation-div">
+                                    <label> Create entity:
+                                        <select>
+                                            <option value="">--select one--</option>
+                                            <option value="entity type">entity type</option>
+                                            <option value="entity type">entity type</option>
+                                            <option value="entity type">entity type</option>
+                                        </select>
+                                    </label>
+                                    <input type="text">
+                                    <button>Create</button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Article's info and metadata
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <div class="entities-content-table">
+                                    <div class="nav-items-div">
+                                        <button class="nav-i active-nav-i">Info</button>
+                                        <button class="nav-i">Mah</button>
+                                        <button class="nav-i">Mih</button>
+                                        <button class="nav-i">Meh</button>  
+                                    </div>
+                                    <div class="tab-content">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+
+
+
+
+
+                    
+                        
+                        
+                        
+                        
                         
                     </div>
                 </div>
@@ -167,7 +237,10 @@
 
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     
 </body>
 </html>
