@@ -26,8 +26,8 @@ function loadDoc(file) { //RIVEDERE!!!!!!!
         method: 'GET',
         url: file,
         success: function(d) {
-            $('#file').html(d)
-            $('#title').html($('#file h1'))
+            $('#file').html(d)  // this is the div where you want to show the content of the file 
+            $('#title').html($('#file h1')) // this is the div where you want to show the title of the file 
         },
         error: function() {
             alert('Could not load file '+ file)
