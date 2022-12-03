@@ -1,9 +1,4 @@
 $(document).ready(loadDocumentsList);
-
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
-
 function loadDocumentsList(){
     $.ajax({
         cache: false,
