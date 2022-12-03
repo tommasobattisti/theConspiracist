@@ -1,3 +1,9 @@
+nav {
+  width: 100% !important;
+  position: fixed !important;
+
+}
+
 .navbar-toggler:focus{
   box-shadow: none !important;
 }
@@ -13,6 +19,9 @@
 .white-text {
   color: whitesmoke;
 }
+
+
+
 
 /*FOOTER*/
 footer {
@@ -32,11 +41,15 @@ footer {
 }
 
 /*BUTTONS SUB-SECTION */
+
+.btn-icon {
+  font-size: 1.4vmax;
+}
+
 #buttonsContainer {
+    /*whidth and height are defined in media queries */
     display:flex;
     flex-direction: column;
-    height: 40vmin;
-    width: auto;
     position: fixed;
     bottom: 2.5vmin;
     right: 2.5vmin;
@@ -48,7 +61,8 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 60%;
+  height: 62%;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -59,15 +73,15 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  height: 38%;
+  height: 36%;
 }
 
 #mainBtnsEmptyLeftContainer{
-  width: 35%;
+  width: 66%;
 }
 
 #mainBtnsRightContainer{
-  width: 65%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -87,6 +101,10 @@ footer {
 
 
 #toTopBtn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: 100%;
   aspect-ratio: 1/1;
   align-self: right;
@@ -99,6 +117,10 @@ footer {
 }
 
 #stylesBtn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: 100%;
   aspect-ratio: 1/1;
   align-self: right;
@@ -109,7 +131,7 @@ footer {
 }
 
 .subBtn {
-  width: 150%;
+  width: 100%;
   height: 20%;
   border: none;
   visibility: hidden;
@@ -246,9 +268,29 @@ footer {
 
 
 /*ISSUES*/
+.modal-btn-container {
+  visibility: hidden;
+  width: 0;
+}
+
+
+
 
 .width-100 {
   width: 100% !important;
+}
+
+.card {
+  background-color: none !important;
+}
+
+.card-header {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.meta-menu-card{
+  background-color: white !important;
 }
 
 .meta-text-container {
@@ -256,12 +298,12 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 90%;
-  margin-left: 5%;
-  margin-right: auto;
+  margin: 5%;
+  justify-content: space-between;
 }
 
-.docs-list-container {
-  width: 25%;
+.metadata-container {
+  width: 28%;
   display: flex;
   flex-direction: column;
 }
@@ -273,13 +315,13 @@ footer {
   top: 10%;
 }
 
-.docs-list-container > div {  /*Select only first level div children*/
+.metadata-container > div {  /*Select only first level div children*/
   margin: 5% 0;
 }
 
 
 .article-section {
-  width: 75%;
+  width: 70%;
 }
 
 
