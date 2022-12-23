@@ -1,4 +1,45 @@
-$(document).ready(loadDocumentsList);
+$(document).ready(function(){
+    loadDocumentsList();
+
+
+    //Show entities in the text
+    $('.show-people').click(function() {
+        if ($("input.show-people").is(':checked')) {
+            $('.person').addClass("person-bkg");
+        }else {
+            $('.person').removeClass("person-bkg");
+        }
+    });
+
+    $('.show-places').click(function() {
+        if ($("input.show-places").is(':checked')) {
+            $('.place').addClass("places-bkg");
+        }else {
+            $('.place').removeClass("places-bkg");
+        }
+    });
+
+    $('.show-organizations').click(function() {
+        if ($("input.show-organizations").is(':checked')) {
+            $('.organization').addClass("organizations-bkg");
+        }else {
+            $('.organization').removeClass("organizations-bkg");
+        }
+    });
+
+    $('.show-events').click(function() {
+        if ($("input.show-events").is(':checked')) {
+            $('.event').addClass("events-bkg");
+        }else {
+            $('.event').removeClass("events-bkg");
+        }
+    });
+
+
+
+
+});
+
 function loadDocumentsList(){
     $.ajax({
         cache: false,
@@ -21,6 +62,8 @@ function loadDocumentsList(){
         }
     });
 }
+
+
 
 function loadDoc(file, div) { //RIVEDERE!!!!!!!
     if(div == "a"){
@@ -115,13 +158,5 @@ function changeToComparisonMode() {
 
 
 
-//Show entities in the text
 
-function showPeople() {
-    if ($("input.show-people").is(':checked')) {
-        $('.person').addClass("person-bkg");
-    }else {
-        $('.person').removeClass("person-bkg");
-    }
-}
 
