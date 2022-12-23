@@ -74,6 +74,9 @@ function changeMode(mode) {
 }
 
 
+
+
+
 let myMediaQuery = window.matchMedia('(max-width: 1080px)'); //media query to check whether the window is smaller than 1080px
 
 //initial check to see whether the media query is satisfied when the page is loaded but no resizing has occurred

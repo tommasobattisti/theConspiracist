@@ -48,9 +48,21 @@
         height: 80vmin;
         width: 10vmax;
     }
-    .metadata-container {
+
+    .meta-text-container {
+        flex-direction: column !important;
+    }
+
+    .sm-d-hide {
         visibility: hidden;
         width: 0;
+        height: 0;
+    }
+
+    .sm-d-show {
+        visibility: visible;
+        width: 100%;
+        height: auto;
     }
 
     .article-section {
