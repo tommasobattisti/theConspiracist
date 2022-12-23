@@ -114,3 +114,14 @@ function changeToComparisonMode() {
 }
 
 
+
+//Show entities in the text
+
+function showPeople() {
+    if ($("input.show-people").is(':checked')) {
+        $('.person').addClass("person-bkg");
+    }else {
+        $('.person').removeClass("person-bkg");
+    }
+}
+

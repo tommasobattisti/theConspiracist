@@ -197,27 +197,27 @@
                             <div class="card-body">
                                 <form class="entity-selector">
                                     <div class="checkbox-div">
-                                        <label>
-                                            <input class="highlight" type="checkbox">
-                                            Show 
+                                        <label onclick="showPeople()">
+                                            <input class="highlight show-people" type="checkbox">
+                                            Show people
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                         <label>
                                             <input class="highlight" type="checkbox">
-                                            Show 
+                                            Show places
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                         <label>
                                             <input class="highlight" type="checkbox">
-                                            Show 
+                                            Show organizations
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                         <label>
                                             <input class="highlight" type="checkbox">
-                                            Show 
+                                            Show events
                                         </label>
                                     </div>
                                 </form>
@@ -239,9 +239,11 @@
                                     <label> Create entity:
                                         <select>
                                             <option value="">--select one--</option>
-                                            <option value="entity type">entity type</option>
-                                            <option value="entity type">entity type</option>
-                                            <option value="entity type">entity type</option>
+                                            <option value="entity type">Person</option>
+                                            <option value="entity type">Place</option>
+                                            <option value="entity type">Organization</option>
+                                            <option value="entity type">Event</option>
+                                            <option value="entity type">Keyword</option>
                                         </select>
                                     </label>
                                     <input type="text">
@@ -264,9 +266,10 @@
                                     <div class="entities-content-table">
                                         <div class="nav-items-div">
                                             <button class="nav-i active-nav-i">Info</button>
-                                            <button class="nav-i">Mah</button>
-                                            <button class="nav-i">Mih</button>
-                                            <button class="nav-i">Meh</button>  
+                                            <button class="nav-i">People</button>
+                                            <button class="nav-i">Places</button>
+                                            <button class="nav-i">Organizations</button>
+                                            <button class="nav-i">Events</button>   
                                         </div>
                                         <div class="tab-content">
                                         </div>

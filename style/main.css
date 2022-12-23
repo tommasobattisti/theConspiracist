@@ -21,6 +21,9 @@ nav {
 }
 
 
+.person-bkg {
+  background-color: blue;
+}
 
 
 /*FOOTER*/
@@ -55,6 +58,7 @@ footer {
     right: 2.5vmin;
     align-items: flex-end;
     justify-content: space-between;
+    z-index: 9999;
 }
 
 #secondaryBtnsContainer {
