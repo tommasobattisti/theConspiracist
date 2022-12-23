@@ -306,10 +306,20 @@ footer {
   align-content: center;
 }
 
+.flex-space-btw {
+  justify-content: space-between !important;
+}
+
 .h-flex-no-wrap button {
   height: 100%;
   width: 20%;
 }
+
+.double-doc-selector {
+  visibility: hidden;
+  height: 0;
+}
+
 
 
 .width-100 {

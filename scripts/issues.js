@@ -11,7 +11,7 @@ function loadDocumentsList(){
             } else {
                 console.log(parsedJson)
                 parsedJson.forEach(obj => {
-                    $("#docs-list").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>' 
+                    $(".docs-list").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>' 
                 });
             }
         },
@@ -71,6 +71,7 @@ function changeToSingleMode() {
     $(".article-comparison-section").css({"visibility": "hidden", "width": "0"});
     $(".article-section").css("width", "70%");
     $(".modal-btn-container").css({"visibility": "hidden", "width": "0"});
+    $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
 }
 
 
@@ -81,6 +82,7 @@ function changeToComparisonMode() {
     $(".article-comparison-section").css({"visibility": "visible", "width": "50%"});
     $(".article-section").css("width", "50%");
     $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
+    $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
 }
 
 
