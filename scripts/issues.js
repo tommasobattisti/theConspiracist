@@ -11,7 +11,8 @@ function loadDocumentsList(){
             } else {
                 console.log(parsedJson)
                 parsedJson.forEach(obj => {
-                    $(".docs-list").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>' 
+                    $(".docs-list-a").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \'a\')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>'
+                    $(".docs-list-b").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \'b\')">'+obj.label+'</a></li>') 
                 });
             }
         },
@@ -21,18 +22,42 @@ function loadDocumentsList(){
     });
 }
 
-function loadDoc(file) { //RIVEDERE!!!!!!!
-    $.ajax({
-        method: 'GET',
-        url: file,
-        success: function(d) {
-            $('#file').html(d)  // this is the div where you want to show the content of the file 
-            $('#title').html($('#file h1')) // this is the div where you want to show the title of the file 
-        },
-        error: function() {
-            alert('Could not load file '+ file)
-        }
-    });
+function loadDoc(file, div) { //RIVEDERE!!!!!!!
+    if(div == "a"){
+        loadInA(file)
+    }else{
+        loadInB(file)
+    }
+}
+
+
+function loadInA(file){
+        $.ajax({
+            method: 'GET',
+            url: file,
+            success: function(d) {
+                $('#file').html(d)  // this is the div where you want to show the content of the file 
+                $('#title').html($('#file h1')) // this is the div where you want to show the title of the file 
+            },
+            error: function() {
+                alert('Could not load file '+ file)
+            }
+        });
+}
+
+function loadInB(file){
+        $.ajax({
+            method: 'GET',
+            url: file,
+            success: function(d) {
+                
+                $('#comparison-file').html(d)  // this is the div where you want to show the content of the file 
+                $('#comparison-title').html($('#comparison-file h1')) // this is the div where you want to show the title of the file 
+            },
+            error: function() {
+                alert('Could not load file '+ file)
+            }
+        });
 }
 
 
