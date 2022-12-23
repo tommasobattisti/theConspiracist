@@ -273,7 +273,29 @@ footer {
   width: 0;
 }
 
+.mode-selector {
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
 
+.h-flex-no-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.h-flex-no-wrap button {
+  height: 100%;
+  width: 20%;
+}
 
 
 .width-100 {
@@ -322,6 +344,10 @@ footer {
 
 .article-section {
   width: 70%;
+}
+
+.comparison-article-section {
+  width: 0;
 }
 
 

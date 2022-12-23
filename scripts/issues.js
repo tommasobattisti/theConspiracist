@@ -34,3 +34,26 @@ function loadDoc(file) { //RIVEDERE!!!!!!!
         }
     });
 }
+
+
+function changeMode(mode) {
+    if (mode == 'single' && $(".active-mode").hasClass('comparison-mode-btn')) {
+        changeToSingleMode()
+    } else if (mode == 'comparison' && $(".active-mode").hasClass('single-mode-btn')) {
+        changeToComparisonMode()
+    } else {
+        console.log("Mode already active")
+    }
+}
+
+function changeToSingleMode() {
+    $('.comparison-mode-btn').removeClass('active-mode');
+    $(".single-mode-btn").addClass('active-mode');
+}
+
+function changeToComparisonMode() {
+    $('.single-mode-btn').removeClass('active-mode');
+    $(".comparison-mode-btn").addClass('active-mode');
+}
+
+

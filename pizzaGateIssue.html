@@ -118,10 +118,22 @@
                 <p class="text-pill">Where conspiracies meet pizza.</p>
             </div>
         </section>
+
+        <section class="mode-selector">
+          <div class="h-flex-no-wrap">
+            <button onclick="changeMode('single')" class="single-mode-btn active-mode">
+              Single text
+            </button>
+            <button onclick="changeMode('comparison')" class="comparison-mode-btn">
+              Comparison
+            </button>
+          </div>
+        </section>
+
         <section class="issue-body">
-            <div class="meta-text-container">
-                <div class="metadata-container">
-                    <div class="sticky-container">
+          <div class="meta-text-container">
+              <div class="metadata-container">
+                  <div class="sticky-container">
 
                         
                         <div class="card">
@@ -232,18 +244,8 @@
                               </div>
                             </div>
                           </div>
+                         
                           
-
-
-
-
-
-                    
-                        
-                        
-                        
-                        
-                        
                     </div>
                 </div>
                 <div class="article-section">
@@ -252,6 +254,13 @@
                     </div>
                     <div id="file">
                     </div>
+                </div>
+                <div class="article-comparison-section">
+                  <div id="comparison-article-title">
+                    <h2 id="comparison-title"></h2>
+                  </div>
+                  <div id="comparison-file">
+                  </div>
                 </div>
             </div>
         </section>
