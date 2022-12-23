@@ -54,6 +54,11 @@ function changeToSingleMode() {
 function changeToComparisonMode() {
     $('.single-mode-btn').removeClass('active-mode');
     $(".comparison-mode-btn").addClass('active-mode');
+    $(".metadata-container").css({"visibility": "hidden", "width": "0"});
+    $(".article-comparison-section").css("width", "50%");
+    $(".article-section").css("width", "50%");
+    $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
+    $(".modal-btn").css({"width": "100%", "aspect-ratio": "1/1", "display": "flex", "justify-content": "center", "align-content": "center", "align-items": "center", "align-self": "right", "border-radius": "50%", "border": "none", "color": "black", "box-shadow": "0px 8px 15px rgba(0, 0, 0, 0.4)"});
 }
 
 
