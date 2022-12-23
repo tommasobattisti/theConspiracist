@@ -75,8 +75,8 @@
     }
 
     .modal-btn-container {
-        visibility: visible;
-        width: 100%;
+        visibility: visible !important;
+        width: 100% !important;
     }
 }
 
