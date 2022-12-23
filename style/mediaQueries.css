@@ -62,15 +62,15 @@
 
     .sm-d-show {
         visibility: visible;
-        width: 100%;
+        width: 100% Impor !important;
         height: auto;
     }
 
     .metadata-container {
-        width: 100%;
+        width: 100% !important;
     }
     .article-section {
-        width: 100%;
+        width: 100% !important;
 
     }
 

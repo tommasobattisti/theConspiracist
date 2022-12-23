@@ -130,6 +130,7 @@ function widthChangeCallback(myMediaQuery) { //callback function to execute when
     changeMode("single");
    }
 }
+
 myMediaQuery.addEventListener('change', widthChangeCallback); //add listener to media query to execute callback function when media query is triggered
 
 

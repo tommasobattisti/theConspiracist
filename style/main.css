@@ -21,21 +21,6 @@ nav {
 }
 
 
-.person-bkg {
-  background-color: rgba(0, 217, 255, 0.5);
-}
-
-.places-bkg {
-  background-color: rgba(182, 143, 87, 0.628);
-}
-
-.organizations-bkg {
-  background-color: rgba(102, 75, 121, 0.483);
-}
-
-.events-bkg {
-  background-color: rgba(165, 42, 42, 0.569);
-}
 
 
 /*FOOTER*/
@@ -439,4 +424,24 @@ footer {
   border: 1px solid;
   border-radius: 2%;
   min-height: 200px;
+}
+
+
+
+/*Span backgrounds*/
+
+.person-bkg {
+  background-color: rgba(0, 217, 255, 0.5);
+}
+
+.places-bkg {
+  background-color: rgba(182, 143, 87, 0.628);
+}
+
+.organizations-bkg {
+  background-color: rgba(102, 75, 121, 0.483);
+}
+
+.events-bkg {
+  background-color: rgba(165, 42, 42, 0.569);
 }
