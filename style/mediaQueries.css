@@ -59,12 +59,16 @@
         height: 0;
     }
 
+
     .sm-d-show {
         visibility: visible;
         width: 100%;
         height: auto;
     }
 
+    .metadata-container {
+        width: 100%;
+    }
     .article-section {
         width: 100%;
 
