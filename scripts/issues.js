@@ -142,11 +142,15 @@ function loadInA(file){
             success: function(d) {
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
+
+                addInfo();
             },
             error: function() {
                 alert('Could not load file '+ file)
             }
         });
+    
+
 }
 
 function loadInB(file){
@@ -154,8 +158,8 @@ function loadInB(file){
             method: 'GET',
             url: file,
             success: function(d) {
-                let article = $('.article-container').html(d)
-                $('.article-container').replaceWith(article)
+                let article = $('.article-comparison-container').html(d)
+                $('.article-comparison-container').replaceWith(article)
             },
             error: function() {
                 alert('Could not load file '+ file)
@@ -227,72 +231,16 @@ function changeToComparisonMode() {
 //Add info and metadata to the metadata container
 
 function addInfo() {
-	let article = $(".article-container");
-	let metaInfo = (".info-tc");
-	let title = $(".article-title");
-	for (var i=0; i < title.length; i++) {
-		var titleLi = document.createElement("li");
-		titleLi.setAttribute("id", "title");
-		titleLi.innerText = title[i].innerHTML;
-		ul.appendChild(titleLi);
-		article.removeChild(title[i]);
-	}
+    let infoDl = $(".info-dl");
+    infoDl.empty();   //empty the dl element before adding new info
+    
+    infoDl.append("<dt>Title</dt><dd class='title-dd'>"+$('.article-title').text()+"</dd>"); //add title to the dl element
 
-	var author = article.getElementsByClassName("author");
-	for (var i=0; i < author.length; i++) {
-		var authorLi = document.createElement("li");
-		authorLi.innerHTML = author[i].innerHTML;
-		ul.appendChild(authorLi);
-	}
-	var citeAs = article.getElementsByClassName("citeAs");
-	for (var i=0; i < citeAs.length; i++) {
-		var citeAsLi = document.createElement("li");
-		citeAsLi.innerHTML = citeAs[i].innerHTML;
-		ul.appendChild(citeAsLi);
-	}
-	var date = article.getElementsByClassName("date");
-	for (var i=0; i < date.length; i++) {
-		var dateLi = document.createElement("li");
-		dateLi.innerHTML = date[i].innerHTML;
-		ul.appendChild(dateLi);
-	}
+    infoDl.append("<dt>Author</dt>"); //add author to the dl element
+    for (let i = 0; i < $('.author-info').length; i++) {
+        infoDl.append("<dd class='author-dd'>"+$('.author-info')[i].innerText+"</dd>");
+    };
 
-	var source = article.getElementsByClassName("originalSource");
-	for (var i=0; i < source.length; i++) {
-		var sourceLi = document.createElement("li");
-		sourceLi.innerHTML = source[i].innerHTML;
-		ul.appendChild(sourceLi);
-	}
+    infoDl.append("<dt>Publication date</dt><dd class='pub-date-dd'>"+$('.publication-date').text()+"</dd>"); //add publication date to the dl element
+
 }
-
-function addMetadata() {
-	metadataLists("people", "person");
-	metadataLists("organizations", "organization");
-	metadataLists("places", "place");
-	metadataLists("references", "reference");
-	metadataLists("events", "event");
-}
-
-function metadataLists(type, occurrence) {
-	var div = document.getElementById(type);
-	var ul = div.getElementsByTagName("ul")[0];
-	ul.innerHTML = "";
-	var allOccurrences = document.getElementsByClassName(occurrence);
-
-	for (var i = 0; i < allOccurrences.length; i++) {
-		var li = document.createElement("li");
-		var link = document.createElement("a");
-		link.setAttribute("href", "#"+type+"-"+i.toString());
-		link.innerHTML = allOccurrences[i].innerHTML;
-		li.appendChild(link);
-		allOccurrences[i].setAttribute("id", type+"-"+i.toString());
-		ul.appendChild(li);
-	}
-}
-
-
-
-
-
-
-
