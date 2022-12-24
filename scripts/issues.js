@@ -132,8 +132,9 @@ function loadDocumentsList(){
             } else {
                 console.log(parsedJson)
                 parsedJson.forEach(obj => {
-                    $(".docs-list-a").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \'a\')">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>'
-                    $(".docs-list-b").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \'b\')">'+obj.label+'</a></li>') 
+                    $(".docs-list-a").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \'a\'); return false">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>'
+                    $(".docs-list-b").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \'b\'); return false">'+obj.label+'</a></li>')
+                    // The 'return false' is needed to prevent the default action of the link (which is to go to the url) and to prevent the page from reloading when the link is clicked (which is the default action of the link)
                 });
             }
         },
