@@ -140,8 +140,8 @@ function loadInA(file){
             method: 'GET',
             url: file,
             success: function(d) {
-                $('#file').html(d)  // this is the div where you want to show the content of the file 
-                $('#title').html($('#file h1')) // this is the div where you want to show the title of the file 
+                let article = $('.article-container').html(d)  // this is the div where you want to show the content of the file 
+                $('.article-container').replaceWith(article) // this is the div where you want to show the title of the file 
             },
             error: function() {
                 alert('Could not load file '+ file)
@@ -202,8 +202,8 @@ function changeToSingleMode() {
     $('.comparison-mode-btn').removeClass('active-mode');
     $(".single-mode-btn").addClass('active-mode');
     $(".metadata-container").css({"visibility": "visible", "width": "28%"});
-    $(".article-comparison-section").css({"visibility": "hidden", "width": "0"});
-    $(".article-section").css("width", "70%");
+    $(".article-comparison-container").css({"visibility": "hidden", "width": "0"});
+    $(".article-container").css("width", "70%");
     $(".modal-btn-container").css({"visibility": "hidden", "width": "0"});
     $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
 }
@@ -213,8 +213,8 @@ function changeToComparisonMode() {
     $('.single-mode-btn').removeClass('active-mode');
     $(".comparison-mode-btn").addClass('active-mode');
     $(".metadata-container").css({"visibility": "hidden", "width": "0"});
-    $(".article-comparison-section").css({"visibility": "visible", "width": "50%"});
-    $(".article-section").css("width", "50%");
+    $(".article-comparison-container").css({"visibility": "visible", "width": "50%"});
+    $(".article-container").css("width", "50%");
     $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
     $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
 }
@@ -225,9 +225,10 @@ function changeToComparisonMode() {
 
 
 
-//Add info and metadata to the metadata section
+//Add info and metadata to the metadata container
+
 function addInfo() {
-	let article = $(".article-section");
+	let article = $(".article-container");
 	let metaInfo = (".info-tc");
 	let title = $(".article-title");
 	for (var i=0; i < title.length; i++) {
