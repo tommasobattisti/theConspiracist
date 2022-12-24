@@ -140,8 +140,8 @@ function loadInA(file){
             method: 'GET',
             url: file,
             success: function(d) {
-                let article = $('.article-container').html(d)  // this is the div where you want to show the content of the file 
-                $('.article-container').replaceWith(article) // this is the div where you want to show the title of the file 
+                let article = $('.article-container').html(d)
+                $('.article-container').replaceWith(article)
             },
             error: function() {
                 alert('Could not load file '+ file)
@@ -154,9 +154,8 @@ function loadInB(file){
             method: 'GET',
             url: file,
             success: function(d) {
-                
-                $('#comparison-file').html(d)  // this is the div where you want to show the content of the file 
-                $('#comparison-title').html($('#comparison-file h1')) // this is the div where you want to show the title of the file 
+                let article = $('.article-container').html(d)
+                $('.article-container').replaceWith(article)
             },
             error: function() {
                 alert('Could not load file '+ file)
