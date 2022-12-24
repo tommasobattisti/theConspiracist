@@ -35,6 +35,14 @@ $(document).ready(function(){
         }
     });
 
+    $('.show-keywords').click(function() {
+        if ($("input.show-keyword").is(':checked')) {
+            $('.keyword').addClass("keyword-bkg");
+        }else {
+            $('.keyword').removeClass("keyword-bkg");
+        }
+    });
+
 
 
     //Show metadata in tab divs
@@ -91,6 +99,17 @@ $(document).ready(function(){
             $(".events-tc").addClass("active-tc");
             $(".nav-i").removeClass("active-nav-i");
             $(".events-nav-i").addClass("active-nav-i");
+        }
+    });
+
+    $(".keywords-nav-i").click(function(){
+        if ($(".keywords-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".keywords-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".keywords-nav-i").addClass("active-nav-i");
         }
     });
 
