@@ -225,6 +225,74 @@ function changeToComparisonMode() {
 
 
 
+//Add info and metadata to the metadata section
+function addInfo() {
+	let article = $(".article-section");
+	let metaInfo = (".info-tc");
+	let title = $(".article-title");
+	for (var i=0; i < title.length; i++) {
+		var titleLi = document.createElement("li");
+		titleLi.setAttribute("id", "title");
+		titleLi.innerText = title[i].innerHTML;
+		ul.appendChild(titleLi);
+		article.removeChild(title[i]);
+	}
+
+	var author = article.getElementsByClassName("author");
+	for (var i=0; i < author.length; i++) {
+		var authorLi = document.createElement("li");
+		authorLi.innerHTML = author[i].innerHTML;
+		ul.appendChild(authorLi);
+	}
+	var citeAs = article.getElementsByClassName("citeAs");
+	for (var i=0; i < citeAs.length; i++) {
+		var citeAsLi = document.createElement("li");
+		citeAsLi.innerHTML = citeAs[i].innerHTML;
+		ul.appendChild(citeAsLi);
+	}
+	var date = article.getElementsByClassName("date");
+	for (var i=0; i < date.length; i++) {
+		var dateLi = document.createElement("li");
+		dateLi.innerHTML = date[i].innerHTML;
+		ul.appendChild(dateLi);
+	}
+
+	var source = article.getElementsByClassName("originalSource");
+	for (var i=0; i < source.length; i++) {
+		var sourceLi = document.createElement("li");
+		sourceLi.innerHTML = source[i].innerHTML;
+		ul.appendChild(sourceLi);
+	}
+}
+
+function addMetadata() {
+	metadataLists("people", "person");
+	metadataLists("organizations", "organization");
+	metadataLists("places", "place");
+	metadataLists("references", "reference");
+	metadataLists("events", "event");
+}
+
+function metadataLists(type, occurrence) {
+	var div = document.getElementById(type);
+	var ul = div.getElementsByTagName("ul")[0];
+	ul.innerHTML = "";
+	var allOccurrences = document.getElementsByClassName(occurrence);
+
+	for (var i = 0; i < allOccurrences.length; i++) {
+		var li = document.createElement("li");
+		var link = document.createElement("a");
+		link.setAttribute("href", "#"+type+"-"+i.toString());
+		link.innerHTML = allOccurrences[i].innerHTML;
+		li.appendChild(link);
+		allOccurrences[i].setAttribute("id", type+"-"+i.toString());
+		ul.appendChild(li);
+	}
+}
+
+
+
+
 
 
 
