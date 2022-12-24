@@ -205,7 +205,7 @@ function changeToSingleMode() {
     $('.comparison-mode-btn').removeClass('active-mode');
     $(".single-mode-btn").addClass('active-mode');
     $(".metadata-container").css({"visibility": "visible", "width": "28%"});
-    $(".article-comparison-container").css({"visibility": "hidden", "width": "0"});
+    $(".article-comparison-container").css({"display": "none"});
     $(".article-container").css("width", "70%");
     $(".modal-btn-container").css({"visibility": "hidden", "width": "0"});
     $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
@@ -216,7 +216,7 @@ function changeToComparisonMode() {
     $('.single-mode-btn').removeClass('active-mode');
     $(".comparison-mode-btn").addClass('active-mode');
     $(".metadata-container").css({"visibility": "hidden", "width": "0"});
-    $(".article-comparison-container").css({"visibility": "visible", "width": "50%"});
+    $(".article-comparison-container").css({"display": "block", "width": "50%"});
     $(".article-container").css("width", "50%");
     $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
     $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
