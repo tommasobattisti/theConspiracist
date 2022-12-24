@@ -37,8 +37,69 @@ $(document).ready(function(){
 
 
 
+    //Show metadata in tab divs
+
+    $(".info-nav-i").click(function(){
+        if ($(".info-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".info-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".info-nav-i").addClass("active-nav-i");
+        }
+    });
+
+    $(".people-nav-i").click(function(){
+        if ($(".people-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".people-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".people-nav-i").addClass("active-nav-i");
+        }
+    });
+
+    $(".places-nav-i").click(function(){
+        if ($(".places-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".places-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".places-nav-i").addClass("active-nav-i");
+        }
+    });
+
+    $(".orgs-nav-i").click(function(){
+        if ($(".orgs-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".orgs-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".orgs-nav-i").addClass("active-nav-i");
+        }
+    });
+
+    $(".events-nav-i").click(function(){
+        if ($(".events-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".events-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".events-nav-i").addClass("active-nav-i");
+        }
+    });
+
+
 
 });
+
+
+
 
 function loadDocumentsList(){
     $.ajax({
@@ -106,6 +167,8 @@ function loadInB(file){
 
 
 
+//Modality change
+
 function changeMode(mode) {
     if (mode == 'single' && $(".active-mode").hasClass('comparison-mode-btn')) {
         changeToSingleMode()
@@ -115,7 +178,6 @@ function changeMode(mode) {
         console.log("Mode already active")
     }
 }
-
 
 
 
@@ -156,6 +218,11 @@ function changeToComparisonMode() {
     $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
     $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
 }
+
+
+
+
+
 
 
 
