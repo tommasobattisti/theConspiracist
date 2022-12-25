@@ -175,10 +175,7 @@ function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
 
 
 function loadInA(file, label){
-    console.log(label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase())
-    console.log(label.toLowerCase())
-    console.log(String($(".article-title").attr("data-label")).toLowerCase())
-    if (label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase()) {
+    if (label.toLowerCase() == String($(".article-container .article-title").attr("data-label")).toLowerCase()) {
         console.log("Already loaded")
     } else {
         $.ajax({
@@ -202,7 +199,7 @@ function loadInA(file, label){
 }
 
 function loadInB(file, label){
-    if (label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase()) {
+    if (label.toLowerCase() == String($(".article-comparison-container .article-title").attr("data-label")).toLowerCase()) {
         console.log("Already loaded")
     } else {
         $.ajax({
