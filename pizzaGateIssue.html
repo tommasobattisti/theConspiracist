@@ -198,31 +198,37 @@
                                 <form class="entity-selector">
                                     <div class="checkbox-div">
                                         <label>
-                                            <input class="highlight show-people" type="checkbox">
+                                            <input class="show show-people" type="checkbox">
                                             Show people
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                         <label>
-                                            <input class="highlight show-places" type="checkbox">
+                                            <input class="show show-places" type="checkbox">
                                             Show places
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                         <label>
-                                            <input class="highlight show-organizations" type="checkbox">
+                                            <input class="show show-organizations" type="checkbox">
                                             Show organizations
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                         <label>
-                                            <input class="highlight show-events" type="checkbox">
+                                            <input class="show show-events" type="checkbox">
                                             Show events
                                         </label>
                                     </div>
                                     <div class="checkbox-div">
                                       <label>
-                                          <input class="highlight show-keywords" type="checkbox">
+                                          <input class="show show-concepts" type="checkbox">
+                                          Show concepts
+                                      </label>
+                                  </div>
+                                    <div class="checkbox-div">
+                                      <label>
+                                          <input class="show show-keywords" type="checkbox">
                                           Show keywords
                                       </label>
                                   </div>
@@ -249,6 +255,7 @@
                                             <option value="entity type">Place</option>
                                             <option value="entity type">Organization</option>
                                             <option value="entity type">Event</option>
+                                            <option value="entity type">Concept</option>
                                             <option value="entity type">Keyword</option>
                                         </select>
                                     </label>
@@ -276,6 +283,7 @@
                                             <button class="nav-i places-nav-i">Places</button>
                                             <button class="nav-i orgs-nav-i">Organizations</button>
                                             <button class="nav-i events-nav-i">Events</button>
+                                            <button class="nav-i concepts-nav-i">Concepts</button>
                                             <button class="nav-i keywords-nav-i">Keywords</button>    
                                         </div>
                                         <div class="tab-content active-tc info-tc">
@@ -298,10 +306,15 @@
                                           <ul class="events-ul">
                                           </ul>
                                         </div>
+                                        <div class="tab-content concepts-tc">
+                                          <ul class="concepts-ul">
+                                          </ul>
+                                        </div>
                                         <div class="tab-content keywords-tc">
                                           <ul class="keywords-ul">
                                           </ul>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
