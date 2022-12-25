@@ -175,6 +175,9 @@ function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
 
 
 function loadInA(file, label){
+    console.log(label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase())
+    console.log(label.toLowerCase())
+    console.log(String($(".article-title").attr("data-label")).toLowerCase())
     if (label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase()) {
         console.log("Already loaded")
     } else {
