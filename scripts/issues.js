@@ -134,6 +134,62 @@ $(document).ready(function(){
 
 
 
+
+
+
+    //Entity creation with local storage
+    $(".entity-creation-btn").click(function(){
+        if ($(".entity-string").val() == ""){
+            alert("Please insert a name for the entity")
+        } else if ($(".entity-type-selection option:selected").val() == "") {
+            alert("Please select a type for the entity")
+        } else if ($(".article-container p:contains('"+$(".entity-string").val()+"')").length == 0) {
+            alert("The entity name you inserted is not present in the article")
+        } else {
+
+
+            let key = String($(".article-section .article-title").attr("data-label").toLowerCase())
+            if (localStorage.getItem(key) === null) {
+                let entitiesArr = []
+                localStorage.setItem(key, JSON.stringify(entitiesArr));
+            }
+            let entitiesArr = JSON.parse(localStorage.getItem(key));
+            let entityName = $(".entity-string").val();
+            let entityType = $(".entity-type").attr("value");
+            let entityObj = {
+                "name": entityName,
+                "type": entityType
+        }
+
+
+        
+
+
+    }
+    })
+
+    function addNewKeyToLocalStorage(text, partialCount) {
+        var title = document.getElementById("title");
+    
+        if (localStorage.getItem(JSON.stringify(title.innerHTML)) === null) {
+            var emptyObject = new Object();
+            emptyObject[text] = {count: partialCount};
+            emptyObject["totalCount"] = partialCount;
+            localStorage.setItem(JSON.stringify(title.innerHTML), JSON.stringify(emptyObject));
+        }
+        
+        else {
+            var titleContent = JSON.parse(localStorage.getItem(JSON.stringify(title.innerHTML)));
+            if (titleContent[text] == null || titleContent[text] == undefined) {
+                titleContent[text] = {count: partialCount};
+                titleContent["totalCount"] += partialCount;
+                localStorage.setItem(JSON.stringify(title.innerHTML), JSON.stringify(titleContent));
+            }
+        }
+    }
+    
+
+
 });
 
 
@@ -350,4 +406,11 @@ function animateBkg(id) {
                         counter++;
                         }, 900);
 }
+
+
+
+
+
+
+
 
