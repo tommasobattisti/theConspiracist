@@ -175,9 +175,6 @@ function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
 
 
 function loadInA(file, label){
-    console.log(String(label.toLowerCase()))
-    console.log(String($(".article-title").attr("data-label")).toLowerCase())
-    console.log(String(label.toLowerCase()) == String($(".article-title").attr("data-label")).toLowerCase())
     if (label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase()) {
         console.log("Already loaded")
     } else {
@@ -195,14 +192,16 @@ function loadInA(file, label){
                 alert('Could not load file '+ file)
             }
         });
-        $(".show").prop( "checked", false );
-        
+        $(".show").prop( "checked", false ); 
     }
     
 
 }
 
 function loadInB(file, label){
+    if (label.toLowerCase() == String($(".article-title").attr("data-label")).toLowerCase()) {
+        console.log("Already loaded")
+    } else {
         $.ajax({
             method: 'GET',
             url: file,
@@ -214,6 +213,7 @@ function loadInB(file, label){
                 alert('Could not load file '+ file)
             }
         });
+    }
 }
 
 
