@@ -35,6 +35,14 @@ $(document).ready(function(){
         }
     });
 
+    $('.show-concepts').click(function() {
+        if ($("input.show-concepts").is(':checked')) {
+            $('.concept').addClass("concepts-bkg");
+        }else {
+            $('.concept').removeClass("concepts-bkg");
+        }
+    });
+
     $('.show-keywords').click(function() {
         if ($("input.show-keyword").is(':checked')) {
             $('.keyword').addClass("keyword-bkg");
@@ -102,6 +110,17 @@ $(document).ready(function(){
         }
     });
 
+    $(".concepts-nav-i").click(function(){
+        if ($(".concepts-nav-i").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content").removeClass("active-tc");
+            $(".concepts-tc").addClass("active-tc");
+            $(".nav-i").removeClass("active-nav-i");
+            $(".concepts-nav-i").addClass("active-nav-i");
+        }
+    });
+
     $(".keywords-nav-i").click(function(){
         if ($(".keywords-nav-i").hasClass("active-nav-i")) {
             console.log("already active")
@@ -156,20 +175,25 @@ function loadDoc(file, div) { //RIVEDERE!!!!!!!
 
 
 function loadInA(file){
-        $.ajax({
-            method: 'GET',
-            url: file,
-            success: function(d) {
-                let article = $('.article-container').html(d)
-                $('.article-container').replaceWith(article)
+    if (file != $(".article-title").attr("data-label")) {
+            $.ajax({
+                method: 'GET',
+                url: file,
+                success: function(d) {
+                    let article = $('.article-container').html(d)
+                    $('.article-container').replaceWith(article)
 
-                addInfo();
-                addMetadata();
-            },
-            error: function() {
-                alert('Could not load file '+ file)
-            }
-        });
+                    addInfo();
+                    addMetadata();
+                },
+                error: function() {
+                    alert('Could not load file '+ file)
+                }
+            });
+            $(".show").prop( "checked", false );
+    } else {
+        console.log("Already loaded")
+    }
     
 
 }
@@ -269,5 +293,57 @@ function addInfo() {
 
 function addMetadata() {
     let peopleUl = $(".people-ul")
+    peopleUl.empty()
 
+    let placesUl = $(".places-ul")
+    placesUl.empty()
+
+    let orgsUl = $(".orgs-ul")
+    orgsUl.empty()
+
+    let eventsUl = $(".events-ul")
+    eventsUl.empty()
+
+    let conceptsUl = $(".concepts-ul")
+    conceptsUl.empty()
+
+    let keywordsUl = $(".keywords-ul")
+    keywordsUl.empty()
+
+    for (const mention of $(".mention")){
+        let entityLink = "<li><a class='entity-link' href='#"+mention.id+"' onclick='animateBkg(\"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
+        if (mention.classList.contains("person")) {
+            peopleUl.append(entityLink)
+        } else if (mention.classList.contains("place")) {
+            placesUl.append(entityLink)
+        } else if (mention.classList.contains("organization")) {
+            orgsUl.append(entityLink)
+        } else if (mention.classList.contains("event")) {
+            eventsUl.append(entityLink)
+        } else if (mention.classList.contains("concept")) {
+            conceptsUl.append(entityLink)
+        } else if (mention.classList.contains("keyword")) {
+            keywordsUl.append(entityLink)
+        }
+        }
+    
 }
+
+
+//Animate background of entity link when clicked
+function animateBkg(id) {
+    let counter = 0;
+    const maxIterations = 1;
+
+    const highlight = setInterval(function() {                  //set interval to repeat the animation every 900ms
+                        $(id).addClass("animation-bkg")         //add the animation class to the entity link
+                        setTimeout(function() {                 //remove the animation class after 450ms
+                            $(id).removeClass("animation-bkg")  //remove the animation class
+                        }, 450);
+                        if (counter >= maxIterations) {         //stop the interval after 1 iteration (it will be highleted two times)
+                            clearInterval(highlight);
+                        }
+                        counter++;
+                        }, 900);
+}
+
