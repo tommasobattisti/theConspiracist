@@ -164,6 +164,7 @@ function loadInA(file){
                 $('.article-container').replaceWith(article)
 
                 addInfo();
+                addMetadata();
             },
             error: function() {
                 alert('Could not load file '+ file)
@@ -262,5 +263,11 @@ function addInfo() {
     };
 
     infoDl.append("<dt>Publication date</dt><dd class='pub-date-dd'>"+$('.publication-date').text()+"</dd>"); //add publication date to the dl element
+
+}
+
+
+function addMetadata() {
+    let peopleUl = $(".people-ul")
 
 }

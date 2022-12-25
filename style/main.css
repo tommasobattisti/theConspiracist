@@ -424,13 +424,15 @@ footer {
 .active-tc {
   display: block !important;
   width: 100% !important;
-  height: auto !important;
+  height: 200px !important;
   border: 1px solid;
   border-radius: 2%;
-  min-height: 200px;
+  overflow-y: scroll !important;
 }
 
-
+.info-dl {
+  padding: 2%;
+}
 
 /*Span backgrounds*/
 
