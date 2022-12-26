@@ -150,7 +150,7 @@ $(document).ready(function(){
             alert("The entity name you inserted is not present in the article")
         
         } else {
-            let key = String($(".article-section .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
+            let key = String($(".article-container .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
             if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
                 let entitiesArr = []
                 localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
@@ -176,9 +176,9 @@ $(document).ready(function(){
 
                 // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
                 const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
-                for (let par of $(".article-p")){
-                    if (par.match(regex) !== null){
-                      count += par.match(regex).length
+                for (const par of $(".article-p")){
+                    if (par.innerHTML.match(regex) !== null){
+                      count += par.innerHTML.match(regex).length
                     }
                 }
                     
@@ -211,11 +211,11 @@ $(document).ready(function(){
                         assignSpan(regex, this, id);
                     });
 
-                    
+                    entitiesArr.push(entityObj);
 
                 };
 
-                entitiesArr.push(entityObj);                                  //push the new entity object to the array
+                                                  //push the new entity object to the array
             }
         }    
     });
@@ -230,9 +230,10 @@ function assignSpan(regex, par, currentId){
     let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
     if (!matches) return; // If there are no matches, return
     // Replace each match with a <span> element
-    par.innerHTML = element.innerHTML.replace(regex, function(match) {
+    par.innerHTML = par.innerHTML.replace(regex, function(match) {
       currentId++;
-      return '<span id="my-entity-'+currentId+'">'+match+'</span>';
+      console.log('<span id="my-entity-'+String(currentId)+'">'+match+'</span>');
+      return '<span id="my-entity-'+String(currentId)+'">'+match+'</span>';
     });
 }
 
