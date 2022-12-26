@@ -139,7 +139,7 @@ $(document).ready(function(){
 
     //Entity creation with local storage
     $(".entity-creation-btn").click(function(){
-        if ($(".entity-string").val() == ""){
+        if ($(".entity-string").val() == ""){               
             alert("Please insert a name for the entity")
         } else if ($(".entity-type-selection option:selected").val() == "") {
             alert("Please select a type for the entity")
@@ -165,6 +165,11 @@ $(document).ready(function(){
         
 
 
+        
+        let entityObjString = JSON.stringify(entityObj);
+        localStorage.setItem(entityName, entityObjString);
+        console.log(entityObjString);
+        console.log(localStorage.getItem(entityName));
     }
     })
 
@@ -188,6 +193,33 @@ $(document).ready(function(){
         }
     }
     
+    function addFromLocalStorage() {
+        var title = document.getElementById("title");
+        if (title != null) {
+            var lS = JSON.parse(localStorage.getItem(JSON.stringify(title.innerHTML)));
+            var box = document.getElementById("keywords");
+            box.innerHTML = "";
+    
+            if (lS != null || lS != undefined) {
+                var keys = Object.keys(lS);
+                var idx = 0;
+                for (var i = 0; i < keys.length; i++) {
+                    var keyword = keys[i];
+                    if (keyword == "totalCount") {
+                        continue
+                    }
+                    addMetadataToBox(keyword);
+                    matchInText(keyword);
+                    count = lS[keyword].count;
+                    for (var l=0; l < count; l++) {
+                        addSingleOccurrences(keyword, idx);
+                        idx+=1;
+                    }
+                }
+            }
+        }
+    }
+
 
 
 });
