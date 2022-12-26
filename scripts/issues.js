@@ -139,86 +139,48 @@ $(document).ready(function(){
 
     //Entity creation with local storage
     $(".entity-creation-btn").click(function(){
-        if ($(".entity-string").val() == ""){               
-            alert("Please insert a name for the entity")
-        } else if ($(".entity-type-selection option:selected").val() == "") {
-            alert("Please select a type for the entity")
-        } else if ($(".article-container p:contains('"+$(".entity-string").val()+"')").length == 0) {
+        
+        if ($(".entity-string").val() == ""){               //check if the entity name is empty
+            alert("Please insert a name for the entity")    //if it is empty, alert the user to insert a name
+        
+        } else if ($(".entity-type-selection option:selected").val() == "") {   //check if the entity type is empty
+            alert("Please select a type for the entity")    //if it is empty, alert the user to select a type
+        
+        } else if ($(".article-container p:contains('"+$(".entity-string").val()+"')").length == 0) {   //check if the entity is present in the article
             alert("The entity name you inserted is not present in the article")
+        
         } else {
-
-
-            let key = String($(".article-section .article-title").attr("data-label").toLowerCase())
-            if (localStorage.getItem(key) === null) {
+            let key = String($(".article-section .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
+            if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
                 let entitiesArr = []
-                localStorage.setItem(key, JSON.stringify(entitiesArr));
+                localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
             }
-            let entitiesArr = JSON.parse(localStorage.getItem(key));
-            let entityName = $(".entity-string").val();
-            let entityType = $(".entity-type").attr("value");
-            let entityObj = {
-                "name": entityName,
-                "type": entityType
-        }
+            let entitiesArr = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
+            let entityName = $(".entity-string").val();                      //get the entity name from the input field
+            let entityType = $(".entity-type").attr("value");               //get the entity type from the input field
+            
 
-
-        
-
-
-        
-        let entityObjString = JSON.stringify(entityObj);
-        localStorage.setItem(entityName, entityObjString);
-        console.log(entityObjString);
-        console.log(localStorage.getItem(entityName));
-    }
-    })
-
-    function addNewKeyToLocalStorage(text, partialCount) {
-        var title = document.getElementById("title");
-    
-        if (localStorage.getItem(JSON.stringify(title.innerHTML)) === null) {
-            var emptyObject = new Object();
-            emptyObject[text] = {count: partialCount};
-            emptyObject["totalCount"] = partialCount;
-            localStorage.setItem(JSON.stringify(title.innerHTML), JSON.stringify(emptyObject));
-        }
-        
-        else {
-            var titleContent = JSON.parse(localStorage.getItem(JSON.stringify(title.innerHTML)));
-            if (titleContent[text] == null || titleContent[text] == undefined) {
-                titleContent[text] = {count: partialCount};
-                titleContent["totalCount"] += partialCount;
-                localStorage.setItem(JSON.stringify(title.innerHTML), JSON.stringify(titleContent));
-            }
-        }
-    }
-    
-    function addFromLocalStorage() {
-        var title = document.getElementById("title");
-        if (title != null) {
-            var lS = JSON.parse(localStorage.getItem(JSON.stringify(title.innerHTML)));
-            var box = document.getElementById("keywords");
-            box.innerHTML = "";
-    
-            if (lS != null || lS != undefined) {
-                var keys = Object.keys(lS);
-                var idx = 0;
-                for (var i = 0; i < keys.length; i++) {
-                    var keyword = keys[i];
-                    if (keyword == "totalCount") {
-                        continue
-                    }
-                    addMetadataToBox(keyword);
-                    matchInText(keyword);
-                    count = lS[keyword].count;
-                    for (var l=0; l < count; l++) {
-                        addSingleOccurrences(keyword, idx);
-                        idx+=1;
-                    }
+            const entity = entitiesArr.find(en => {                             //check if the entity already exists in the array
+                if ((en.name === entityName) && (en.type === entityType)) { 
+                    return true;
+                } else {
+                    return false;
                 }
+            })
+
+            if (entity) {                                                      //if the entity already exists, alert the user
+                alert("This entity already exists")
+            } else {                                                          //if the entity does not exist, create a new entity object and push it to the array
+                let entityObj = {
+                    "name": entityName,
+                    "type": entityType,
+                    "id": "my-entity-"+String(entitiesArr.length + 1)
+                }
+                entitiesArr.push(entityObj);                                  //push the new entity object to the array
+
             }
-        }
-    }
+        }    
+    });
 
 
 
