@@ -155,13 +155,13 @@ $(document).ready(function(){
                 let entitiesArr = []
                 localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
             }
-            let entitiesArr = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
+            let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
             let entityName = $(".entity-string").val();                      //get the entity name from the input field
             let entityType = $(".entity-type").attr("value");               //get the entity type from the input field
             
-
-            const entity = entitiesArr.find(en => {                             //check if the entity already exists in the array
-                if ((en.name === entityName) && (en.type === entityType)) { 
+                                           
+            const entity = entitiesArray.find(en => {                             //check if the entity already exists in the array
+                if ((en.name === entityName) && (en.type === entityType)) {
                     return true;
                 } else {
                     return false;
@@ -170,12 +170,10 @@ $(document).ready(function(){
 
             if (entity) {                                 //if the entity already exists, alert the user
                 alert("This entity already exists")
-
             } else {                                      //if the entity does not exist, create a new entity object and push it to the array
                 let count = 0;
-
                 // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
-                const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
+                const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
                 for (const par of $(".article-p")){
                     if (par.innerHTML.match(regex) !== null){
                       count += par.innerHTML.match(regex).length
@@ -186,56 +184,48 @@ $(document).ready(function(){
                     alert("The entity name you inserted has been already marked as a different entity type")
                 
                 } else {
+                    if (entitiesArray.length === 0) {
+                        var id = 1;
+                    } else {
+                        var id = entitiesArray[entitiesArray.length - 1]['end-id'] + 1;
+                    }
                     const entityObj = {                                            //create the entity object
                         "name": entityName,
                         "type": entityType,
-                        "start-id": function(){                                //create a function to calculate the start-id of the entity based on the previous entities in the array
-                            if (entitiesArr.length == 0){
-                                return 1;
-                            } else {
-                                return entitiesArr[entitiesArr.length-1].end-id + 1;
-                            }
-                        },
-                        "end-id": function(){                                 //create a function to calculate the end-id of the entity based on the previous entities in the array
-                            if (entitiesArr.length == 0){
-                                return count;
-                            } else {
-                                return entitiesArr[entitiesArr.length-1].end-id + count;
-                            }
-                        }
+                        "start-id": id,
+                        "end-id": id + count - 1
                     }
+                
+                    console.log(entityObj)
 
                     let paragraphs = $(".article-p");
                     var id = entityObj["start-id"]
-                    paragraphs.each(function() {          //assign a new id to each newly generated <span> element that contains the entity name
-                        assignSpan(regex, this, id);
-                    });
 
-                    entitiesArr.push(entityObj);
+                    for (par of paragraphs) {
+                        let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+                        if (!matches) return; // If there are no matches, return
+                        // Replace each match with a <span> element
+                        par.innerHTML = par.innerHTML.replace(regex, function(match) {
+                        console.log('<span id="my-entity-'+String(id)+'">'+match+'</span>');
+                        id++;
+                        return '<span id="my-entity-'+String(id)+'">'+match+'</span>';
+                        });
+                    }
+                    
+                    entitiesArray.push(entityObj);
 
                 };
+            };
 
                                                   //push the new entity object to the array
-            }
-        }    
+        }
+            
     });
 
 
 
 });
 
-
-
-function assignSpan(regex, par, currentId){
-    let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
-    if (!matches) return; // If there are no matches, return
-    // Replace each match with a <span> element
-    par.innerHTML = par.innerHTML.replace(regex, function(match) {
-      currentId++;
-      console.log('<span id="my-entity-'+String(currentId)+'">'+match+'</span>');
-      return '<span id="my-entity-'+String(currentId)+'">'+match+'</span>';
-    });
-}
 
 
 
