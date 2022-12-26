@@ -53,6 +53,8 @@ $(document).ready(function(){
 
 
 
+
+    
     //Show metadata in tab divs
 
     $(".info-nav-i").click(function(){
@@ -217,7 +219,7 @@ $(document).ready(function(){
                 };
             };
 
-                                                  //push the new entity object to the array
+                                                  
         }
             
     });
