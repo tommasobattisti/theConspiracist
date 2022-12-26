@@ -146,7 +146,7 @@ $(document).ready(function(){
         } else if ($(".entity-type-selection option:selected").val() == "") {   //check if the entity type is empty
             alert("Please select a type for the entity")    //if it is empty, alert the user to select a type
         
-        } else if ($(".article-container p:contains('"+$(".entity-string").val()+"')").length == 0) {   //check if the entity is present in the article
+        } else if ($(".article-p:contains('"+$(".entity-string").val()+"')").length == 0) {   //check if the entity is present in the article
             alert("The entity name you inserted is not present in the article")
         
         } else {
@@ -168,16 +168,54 @@ $(document).ready(function(){
                 }
             })
 
-            if (entity) {                                                      //if the entity already exists, alert the user
+            if (entity) {                                 //if the entity already exists, alert the user
                 alert("This entity already exists")
-            } else {                                                          //if the entity does not exist, create a new entity object and push it to the array
-                let entityObj = {
-                    "name": entityName,
-                    "type": entityType,
-                    "id": "my-entity-"+String(entitiesArr.length + 1)
-                }
-                entitiesArr.push(entityObj);                                  //push the new entity object to the array
 
+            } else {                                      //if the entity does not exist, create a new entity object and push it to the array
+                let count = 0;
+
+                // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+                const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
+                for (let par of $(".article-p")){
+                    if (par.match(regex) !== null){
+                      count += par.match(regex).length
+                    }
+                }
+                    
+                if (count == 0){             // If there are no matches, return an alert 
+                    alert("The entity name you inserted has been already marked as a different entity type")
+                
+                } else {
+                    const entityObj = {                                            //create the entity object
+                        "name": entityName,
+                        "type": entityType,
+                        "start-id": function(){                                //create a function to calculate the start-id of the entity based on the previous entities in the array
+                            if (entitiesArr.length == 0){
+                                return 1;
+                            } else {
+                                return entitiesArr[entitiesArr.length-1].end-id + 1;
+                            }
+                        },
+                        "end-id": function(){                                 //create a function to calculate the end-id of the entity based on the previous entities in the array
+                            if (entitiesArr.length == 0){
+                                return count;
+                            } else {
+                                return entitiesArr[entitiesArr.length-1].end-id + count;
+                            }
+                        }
+                    }
+
+                    let paragraphs = $(".article-p");
+                    var id = entityObj["start-id"]
+                    paragraphs.each(function() {          //assign a new id to each newly generated <span> element that contains the entity name
+                        assignSpan(regex, this, id);
+                    });
+
+                    
+
+                };
+
+                entitiesArr.push(entityObj);                                  //push the new entity object to the array
             }
         }    
     });
@@ -185,6 +223,18 @@ $(document).ready(function(){
 
 
 });
+
+
+
+function assignSpan(regex, par, currentId){
+    let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+    if (!matches) return; // If there are no matches, return
+    // Replace each match with a <span> element
+    par.innerHTML = element.innerHTML.replace(regex, function(match) {
+      currentId++;
+      return '<span id="my-entity-'+currentId+'">'+match+'</span>';
+    });
+}
 
 
 
