@@ -376,7 +376,7 @@ footer {
 }
 
 
-.entity-creation-div {
+.entity-creation-form {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -386,7 +386,7 @@ footer {
   margin: 0;
 }
 
-.entity-creation-div input {
+.entity-creation-form input {
   width: 100%;
 }
 

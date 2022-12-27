@@ -1,6 +1,8 @@
 $(document).ready(function(){
     loadDocumentsList();
 
+    $(".entity-string").val("");     //clear the entity name input
+    $(".entity-type-selection").val('');   //clear the entity type selection
 
     //Show entities in the text
     $('.show-people').click(function() {
@@ -54,7 +56,7 @@ $(document).ready(function(){
 
 
 
-    
+
     //Show metadata in tab divs
 
     $(".info-nav-i").click(function(){
@@ -140,8 +142,9 @@ $(document).ready(function(){
 
 
     //Entity creation with local storage
-    $(".entity-creation-btn").click(function(){
-        
+    $(".entity-creation-form").submit(function(e){ 
+        e.preventDefault();    //prevent the form from submitting and refreshing the page
+    
         if ($(".entity-string").val() == ""){               //check if the entity name is empty
             alert("Please insert a name for the entity")    //if it is empty, alert the user to insert a name
         
@@ -150,19 +153,23 @@ $(document).ready(function(){
         
         } else if ($(".article-p:contains('"+$(".entity-string").val()+"')").length == 0) {   //check if the entity is present in the article
             alert("The entity name you inserted is not present in the article")
+            
         
         } else {
-            let key = String($(".article-container .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
+            var key = String($(".article-container .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
             if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
-                let entitiesArr = []
+                let entitiesArr = [];
                 localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
             }
+            console.log(key)
+            
             let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
             let entityName = $(".entity-string").val();                      //get the entity name from the input field
-            let entityType = $(".entity-type").attr("value");               //get the entity type from the input field
+            let entityType = $(".entity-type-selection").val();
+                           //get the entity type from the input field
             
                                            
-            const entity = entitiesArray.find(en => {                             //check if the entity already exists in the array
+            const entity = entitiesArray.find((en) => {                             //check if the entity already exists in the array
                 if ((en.name === entityName) && (en.type === entityType)) {
                     return true;
                 } else {
@@ -204,19 +211,25 @@ $(document).ready(function(){
                     var id = entityObj["start-id"]
 
                     for (par of paragraphs) {
+                        
                         let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
-                        if (!matches) return; // If there are no matches, return
+                        if (!matches) continue; // If there are no matches, return
                         // Replace each match with a <span> element
+                        console.log("HEY")
                         par.innerHTML = par.innerHTML.replace(regex, function(match) {
-                        console.log('<span id="my-entity-'+String(id)+'">'+match+'</span>');
-                        id++;
-                        return '<span id="my-entity-'+String(id)+'">'+match+'</span>';
+                            console.log('<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>');
+                            id++;
+                            return '<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>';
                         });
                     }
-                    
                     entitiesArray.push(entityObj);
-
+                    localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
+                    let y = localStorage.getItem(key);
+                    console.log(y)
+                    $(".entity-string").val("");    //empty the input field
+                    $(".entity-type-selection").val('');   //clear the entity type selection
                 };
+                
             };
 
                                                   
@@ -268,6 +281,8 @@ function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
 
 
 function loadInA(file, label){
+    $(".entity-string").val(""); //reset the input field
+
     if (label.toLowerCase() == String($(".article-container .article-title").attr("data-label")).toLowerCase()) {
         console.log("Already loaded")
     } else {
@@ -277,7 +292,6 @@ function loadInA(file, label){
             success: function(d) {
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
-
                 addInfo();
                 addMetadata();
             },

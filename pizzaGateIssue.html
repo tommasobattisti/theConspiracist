@@ -247,10 +247,10 @@
                           </div>
                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                             <div class="card-body">
-                                <div class="entity-creation-div">
+                                <form class="entity-creation-form">
                                     <label> Create entity:
                                         <select class="entity-type-selection">
-                                            <option class="entity-type" value="">-select type-</option>
+                                            <option class="entity-type" value="" disabled>-select type-</option>
                                             <option class="entity-type" value="person">Person</option>
                                             <option class="entity-type" value="place">Place</option>
                                             <option class="entity-type" value="organization">Organization</option>
@@ -259,9 +259,9 @@
                                             <option class="entity-type" value="keyword">Keyword</option>
                                         </select>
                                     </label>
-                                    <input class="entity-string" type="text">
-                                    <button class="entity-creation-btn">Create</button>
-                                </div>
+                                    <input class="entity-string" type="text" placeholder="Enter a valid string" value="">
+                                    <button class="entity-creation-btn" type="submit">Create</button>
+                                </form>
                             </div>
                           </div>
                         </div>
