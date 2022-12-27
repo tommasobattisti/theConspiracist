@@ -46,10 +46,10 @@ $(document).ready(function(){
     });
 
     $('.show-keywords').click(function() {
-        if ($("input.show-keyword").is(':checked')) {
-            $('.keyword').addClass("keyword-bkg");
+        if ($("input.show-keywords").is(':checked')) {
+            $('.keyword').addClass("keywords-bkg");
         }else {
-            $('.keyword').removeClass("keyword-bkg");
+            $('.keyword').removeClass("keywords-bkg");
         }
     });
 
@@ -204,18 +204,14 @@ $(document).ready(function(){
                         "start-id": id,
                         "end-id": id + count - 1
                     }
-                
-                    console.log(entityObj)
 
                     let paragraphs = $(".article-p");
                     var id = entityObj["start-id"]
 
                     for (par of paragraphs) {
-                        
                         let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
                         if (!matches) continue; // If there are no matches, return
                         // Replace each match with a <span> element
-                        console.log("HEY")
                         par.innerHTML = par.innerHTML.replace(regex, function(match) {
                             console.log('<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>');
                             id++;
@@ -224,8 +220,8 @@ $(document).ready(function(){
                     }
                     entitiesArray.push(entityObj);
                     localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
-                    let y = localStorage.getItem(key);
-                    console.log(y)
+
+                    addMetadata();
                     $(".entity-string").val("");    //empty the input field
                     $(".entity-type-selection").val('');   //clear the entity type selection
                 };
@@ -240,8 +236,6 @@ $(document).ready(function(){
 
 
 });
-
-
 
 
 
@@ -274,6 +268,7 @@ function loadDocumentsList(){
 function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
     if(div == "a"){
         loadInA(file, label)
+        
     }else{
         loadInB(file, label)
     }
@@ -293,7 +288,9 @@ function loadInA(file, label){
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
                 addInfo();
+                addEntitiesFromLocalStorage(label);
                 addMetadata();
+                
             },
             error: function() {
                 alert('Could not load file '+ file)
@@ -321,6 +318,26 @@ function loadInB(file, label){
             }
         });
     }
+}
+
+
+function addEntitiesFromLocalStorage(key){
+    let paragraphs = $(".article-p");
+    for (entityObj of JSON.parse(localStorage.getItem(key.toLowerCase()))){
+        var id = entityObj["start-id"]
+        for (par of paragraphs) {
+            let regex = new RegExp('(?!<span[^>]*>)\\b('+entityObj.name+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi')
+            let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+            if (!matches) continue; // If there are no matches, return
+            // Replace each match with a <span> element
+            par.innerHTML = par.innerHTML.replace(regex, function(match) {
+                console.log('<span id="my-entity-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>');
+                id++;
+                return '<span id="my-entity-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
+            });
+        }
+    }
+
 }
 
 
