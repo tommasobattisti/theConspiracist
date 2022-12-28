@@ -1,6 +1,7 @@
 $(document).ready(function(){
     loadDocumentsList();
 
+    changeToSingleMode();
     $(".entity-string").val("");     //clear the entity name input
     $(".entity-type-selection").val('');   //clear the entity type selection
     $(".show").prop("checked", false);   //uncheck the show entities checkbox
@@ -198,14 +199,6 @@ $(document).ready(function(){
     });
 
 
-    //$(".modal-btn").click(function(){
-    //    if ($(".comparison-mode-btn").classList.contains("active-mode")){
-    //        $(".modal-btn").attr("data-target", "#comparison-metadata-modal");
-    //    } else {
-    //        $(".modal-btn").attr("data-target", "#metadata-modal");
-    //    }
-    //});
-
 });
 
 
@@ -387,6 +380,18 @@ function addEntitiesFromLocalStorage(key){
 
 //Modality change
 
+
+let myMediaQuery = window.matchMedia('(max-width: 1080px)'); //media query to check whether the window is smaller than 1080px
+
+function widthChangeCallback(myMediaQuery) { //callback function to execute when media query is triggered
+  if(myMediaQuery.matches) {
+    changeMode("single");
+   }
+}
+
+myMediaQuery.addEventListener('change', widthChangeCallback); //add listener to media query to execute callback function when media query is triggered
+
+
 function changeMode(mode) {
     if (mode == 'single' && $(".active-mode").hasClass('comparison-mode-btn')) {
         changeToSingleMode()
@@ -398,24 +403,6 @@ function changeMode(mode) {
 }
 
 
-
-
-let myMediaQuery = window.matchMedia('(max-width: 1080px)'); //media query to check whether the window is smaller than 1080px
-
-//initial check to see whether the media query is satisfied when the page is loaded but no resizing has occurred
-widthChangeCallback(myMediaQuery);
-
-function widthChangeCallback(myMediaQuery) { //callback function to execute when media query is triggered
-  if(myMediaQuery.matches) {
-    changeMode("single");
-   }
-}
-
-myMediaQuery.addEventListener('change', widthChangeCallback); //add listener to media query to execute callback function when media query is triggered
-
-
-
-
 function changeToSingleMode() {
     $('.comparison-mode-btn').removeClass('active-mode');
     $(".single-mode-btn").addClass('active-mode');
@@ -424,6 +411,7 @@ function changeToSingleMode() {
     $(".article-container").css("width", "70%");
     $(".modal-btn-container").css({"visibility": "hidden", "width": "0"});
     $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
+    $(".right-modal-body").css({"display": "none", "visibility": "hidden", "height": "0"});
 }
 
 
@@ -435,6 +423,7 @@ function changeToComparisonMode() {
     $(".article-container").css("width", "50%");
     $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
     $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
+    $(".right-modal-body").css({"display": "flex", "visibility": "visible", "height": "auto"});
 }
 
 
