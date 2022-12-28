@@ -199,6 +199,8 @@ $(document).ready(function(){
 
 
 
+
+
 function createEntity(form){
     if (form == "ax"){
         var container = ".article-container"
@@ -373,7 +375,7 @@ function loadInA(file, label){
                 $('.article-container').replaceWith(article)
                 addInfo("ax");
                 addMetadata("ax");
-                addEntitiesFromLocalStorage(label);
+                addEntitiesFromLocalStorage("ax", label);
                 addMetadata("ax");
             },
             error: function() {
@@ -397,7 +399,7 @@ function loadInB(file, label){
                 $('.article-comparison-container').replaceWith(article)
                 addInfo("b");
                 addMetadata("b");
-                addEntitiesFromLocalStorage(label);
+                addEntitiesFromLocalStorage("b", label);
                 addMetadata("b");
             },
             error: function() {
@@ -415,7 +417,7 @@ function showEntities(r){
         var toCheck = "-ax";
         var cont = ".article-container";
     } else {
-        var toCheck = r;
+        var toCheck = "-b";
         var cont = ".article-comparison-container";
     }
 
@@ -475,8 +477,13 @@ function showEntities(r){
 
 
 
-function addEntitiesFromLocalStorage(key){
-    let paragraphs = $(".article-p");
+function addEntitiesFromLocalStorage(modal, key){
+    if (modal == "ax"){
+        var cont = ".article-container";
+    } else {
+        var cont = ".article-comparison-container";
+    }
+    let paragraphs = $(""+cont+" .article-p");
     for (entityObj of JSON.parse(localStorage.getItem(key.toLowerCase()))){
         var id = entityObj["start-id"]
         for (par of paragraphs) {
