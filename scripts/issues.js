@@ -177,7 +177,7 @@ $(document).ready(function(){
                 let entitiesArr = [];
                 localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
             }
-            console.log(key)
+            
             
             let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
             let entityName = inputEntityName;                      //get the entity name from the input field
@@ -229,7 +229,6 @@ $(document).ready(function(){
                         if (!matches) continue; // If there are no matches, return
                         // Replace each match with a <span> element
                         par.innerHTML = par.innerHTML.replace(regex, function(match) {
-                            console.log('<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>');
                             id++;
                             return '<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>';
                         });
@@ -250,7 +249,6 @@ $(document).ready(function(){
     });
 
 
-
 });
 
 
@@ -265,7 +263,6 @@ function loadDocumentsList(){
             if (parsedJson.length == 0){
                 alert("No document to show")
             } else {
-                console.log(parsedJson)
                 parsedJson.forEach(obj => {
                     $(".docs-list-a").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \''+obj.label+'\', \'a\'); return false">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>'
                     $(".docs-list-b").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \''+obj.label+'\', \'b\'); return false">'+obj.label+'</a></li>')
@@ -456,7 +453,7 @@ function addMetadata() {
     keywordsUl.empty()
 
     for (const mention of $(".mention")){
-        let entityLink = "<li><a class='entity-link' href='#"+mention.id+"' onclick='animateBkg(\"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
+        let entityLink = "<li><a class='entity-link' href='#' onclick='animateBkg(event, \"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
         if (mention.classList.contains("person")) {
             peopleUl.append(entityLink)
         } else if (mention.classList.contains("place")) {
@@ -476,10 +473,13 @@ function addMetadata() {
 
 
 //Animate background of entity link when clicked
-function animateBkg(id) {
+function animateBkg(event, id) {
+    event.preventDefault(); //prevent the default behaviour of the link (scrolling to the top of the page)
+    var element = $(""+id+""); 
+	$('html, body').animate({ scrollTop: element.offset().top - (window.innerHeight / 2) + element.height() / 2 }, 200); //scroll to the entity link and center it in the window 
+
     let counter = 0;
     const maxIterations = 1;
-
     const highlight = setInterval(function() {                  //set interval to repeat the animation every 900ms
                         $(id).addClass("animation-bkg")         //add the animation class to the entity link
                         setTimeout(function() {                 //remove the animation class after 450ms
@@ -493,9 +493,12 @@ function animateBkg(id) {
 }
 
 
-
-
-
-
+//ANOTHER IMPLEMENTATION OF THE ANIMATION FUNCTION
+//function animateBkg(id) {
+//    $(id).addClass('animate');
+//    setTimeout(function(){
+//        $(id).removeClass('animate');
+//    },5000);
+//}
 
 
