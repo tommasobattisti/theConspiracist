@@ -475,3 +475,14 @@ footer {
 .animation-bkg {
   background-color: rgba(25, 105, 171, 0.671);
 }
+
+
+
+
+/*SINGLE MODAL*/
+
+.single-modal-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

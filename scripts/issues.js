@@ -7,8 +7,10 @@ $(document).ready(function(){
     //Show entities in the text
     $('.show-people').click(function() {
         if ($("input.show-people").is(':checked')) {
+            $(".show-people" ).prop( "checked", true )
             $('.person').addClass("person-bkg");
         }else {
+            $(".show-people" ).prop( "checked", false )
             $('.person').removeClass("person-bkg");
         }
     });
@@ -144,14 +146,28 @@ $(document).ready(function(){
     //Entity creation with local storage
     $(".entity-creation-form").submit(function(e){ 
         e.preventDefault();    //prevent the form from submitting and refreshing the page
-    
-        if ($(".entity-string").val() == ""){               //check if the entity name is empty
+        let inputs = $(".entity-string")
+        let selections = $(".entity-type-selection option:selected")
+
+        if (inputs[0].value == ""){               //check if the entity name is empty
+            var inputEntityName = inputs[1].value
+        } else {
+            var inputEntityName = inputs[0].value
+        }
+
+        if (selections[0].value == ""){
+            var inputSelection = selections[1].value
+        } else {
+            var inputSelection = selections[0].value
+        }
+
+        if (inputEntityName == ""){               //check if the entity name is empty
             alert("Please insert a name for the entity")    //if it is empty, alert the user to insert a name
-        
-        } else if ($(".entity-type-selection option:selected").val() == "") {   //check if the entity type is empty
+            
+        } else if (inputSelection == "") {   //check if the entity type is empty
             alert("Please select a type for the entity")    //if it is empty, alert the user to select a type
         
-        } else if ($(".article-p:contains('"+$(".entity-string").val()+"')").length == 0) {   //check if the entity is present in the article
+        } else if ($(".article-p:contains('"+inputEntityName+"')").length == 0) {   //check if the entity is present in the article
             alert("The entity name you inserted is not present in the article")
             
         
@@ -164,8 +180,8 @@ $(document).ready(function(){
             console.log(key)
             
             let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
-            let entityName = $(".entity-string").val();                      //get the entity name from the input field
-            let entityType = $(".entity-type-selection").val();
+            let entityName = inputEntityName;                      //get the entity name from the input field
+            let entityType = inputSelection;
                            //get the entity type from the input field
             
                                            
@@ -288,6 +304,7 @@ function loadInA(file, label){
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
                 addInfo();
+                addMetadata();
                 addEntitiesFromLocalStorage(label);
                 addMetadata();
                 
