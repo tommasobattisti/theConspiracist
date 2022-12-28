@@ -382,17 +382,24 @@ footer {
 }
 
 
-.entity-creation-form {
+.entity-creation-form, .entity-creation-form-b {
   box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
   padding: 0;
   margin: 0;
 }
 
 .entity-creation-form input {
+  width: 100%;
+}
+
+.entity-creation-form-b input {
   width: 100%;
 }
 
@@ -411,7 +418,7 @@ footer {
   width: 100%;
 }
 
-.nav-i {
+.nav-i, .nav-i-b {
   background-color: transparent;
   border: none;
   padding: 3% 5%;
@@ -422,7 +429,7 @@ footer {
   border: none;
 }
 
-.tab-content {
+.tab-content, .tab-content-b{
   display: none;
 }
 
@@ -436,20 +443,17 @@ footer {
   overflow-y: scroll !important;
 }
 
-.info-dl {
+.info-dl, .info-dl-b{
   padding: 2%;
 }
 
 
-.docs-list-a {
+.docs-list-a, .docs-list-b {
   margin: 0;
   padding-left: 1rem;
 }
 
-.docs-list-a {
-  margin: 0;
-  padding-left: 1rem;
-}
+
 
 /*Span backgrounds*/
 
@@ -500,7 +504,7 @@ footer {
   justify-content: space-around;
 }
 
-.modal-entity-creation {
+.modal-entity-creation, .modal-entity-creation-b {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -509,12 +513,17 @@ footer {
   margin: 5% 0;
 }
 
-.modal-entity-creation input{
+.entity-string, .entity-string-b{
   width: auto !important;
 }
 
 
+
 /*Multiple modal*/
+.entity-type-selection, .entity-type-selection-b {
+  height: 100%;
+}
+
 .width-80 {
   width: 80% !important;
   margin-left: 10% !important;

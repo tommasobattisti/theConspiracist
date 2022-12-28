@@ -1,16 +1,26 @@
 $(document).ready(function(){
     loadDocumentsList();
-
     changeToSingleMode();
+
     $(".entity-string").val("");     //clear the entity name input
+    $(".entity-string-b").val("");     //clear the entity name input
     $(".entity-type-selection").val('');   //clear the entity type selection
-    $(".show").prop("checked", false);   //uncheck the show entities checkbox
+    $(".entity-type-selection-b").val('');   //clear the entity type selection
+    $(".show-a").prop("checked", false);   //uncheck the show entities checkbox
+    $(".show-b").prop("checked", false);   //uncheck the show entities checkbox
+    $(".show-x").prop("checked", false);   //uncheck the show entities checkbox
     
     
-    
-    $(".show").click(function(){       //if the checkbox is clicked, show the entities
-        showEntities();
+    $(".show-x").click(function(){       
+        showEntities("-x");
     })
+    $(".show-a").click(function(){       //if the checkbox is clicked, show the entities
+        showEntities("-a");
+    })
+    $(".show-b").click(function(){       
+        showEntities("-b");
+    })
+
 
     
     //Show metadata in tab divs
@@ -25,6 +35,18 @@ $(document).ready(function(){
         }
     });
 
+    $(".info-nav-i-b").click(function(){
+        if ($(".info-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".info-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".info-nav-i-b").addClass("active-nav-i");
+        }
+    });
+
+
     $(".people-nav-i").click(function(){
         if ($(".people-nav-i").hasClass("active-nav-i")) {
             console.log("already active")
@@ -33,6 +55,17 @@ $(document).ready(function(){
             $(".people-tc").addClass("active-tc");
             $(".nav-i").removeClass("active-nav-i");
             $(".people-nav-i").addClass("active-nav-i");
+        }
+    });
+
+    $(".people-nav-i-b").click(function(){
+        if ($(".people-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".people-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".people-nav-i-b").addClass("active-nav-i");
         }
     });
 
@@ -47,6 +80,18 @@ $(document).ready(function(){
         }
     });
 
+    $(".places-nav-i-b").click(function(){
+        if ($(".places-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".places-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".places-nav-i-b").addClass("active-nav-i");
+        }
+    });
+
+
     $(".orgs-nav-i").click(function(){
         if ($(".orgs-nav-i").hasClass("active-nav-i")) {
             console.log("already active")
@@ -57,6 +102,18 @@ $(document).ready(function(){
             $(".orgs-nav-i").addClass("active-nav-i");
         }
     });
+
+    $(".orgs-nav-i-b").click(function(){
+        if ($(".orgs-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".orgs-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".orgs-nav-i-b").addClass("active-nav-i");
+        }
+    });
+
 
     $(".events-nav-i").click(function(){
         if ($(".events-nav-i").hasClass("active-nav-i")) {
@@ -69,6 +126,18 @@ $(document).ready(function(){
         }
     });
 
+    $(".events-nav-i-b").click(function(){
+        if ($(".events-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".events-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".events-nav-i-b").addClass("active-nav-i");
+        }
+    });
+
+
     $(".concepts-nav-i").click(function(){
         if ($(".concepts-nav-i").hasClass("active-nav-i")) {
             console.log("already active")
@@ -79,6 +148,18 @@ $(document).ready(function(){
             $(".concepts-nav-i").addClass("active-nav-i");
         }
     });
+
+    $(".concepts-nav-i-b").click(function(){
+        if ($(".concepts-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".concepts-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".concepts-nav-i-b").addClass("active-nav-i");
+        }
+    });
+
 
     $(".keywords-nav-i").click(function(){
         if ($(".keywords-nav-i").hasClass("active-nav-i")) {
@@ -91,118 +172,151 @@ $(document).ready(function(){
         }
     });
 
-
-
-
+    $(".keywords-nav-i-b").click(function(){
+        if ($(".keywords-nav-i-b").hasClass("active-nav-i")) {
+            console.log("already active")
+        } else {
+            $(".tab-content-b").removeClass("active-tc");
+            $(".keywords-tc-b").addClass("active-tc");
+            $(".nav-i-b").removeClass("active-nav-i");
+            $(".keywords-nav-i-b").addClass("active-nav-i");
+        }
+    });
 
 
     //Entity creation with local storage 
     $(".entity-creation-form").submit(function(e){ 
         e.preventDefault();    //prevent the form from submitting and refreshing the page
-        let inputs = $(".entity-string")
-        let selections = $(".entity-type-selection option:selected")
-
-        if (inputs[0].value == ""){               //check if the entity name is empty
-            var inputEntityName = inputs[1].value
-        } else {
-            var inputEntityName = inputs[0].value
-        }
-
-        if (selections[0].value == ""){
-            var inputSelection = selections[1].value
-        } else {
-            var inputSelection = selections[0].value
-        }
-
-        if (inputEntityName == ""){               //check if the entity name is empty
-            alert("Please insert a name for the entity")    //if it is empty, alert the user to insert a name
-            
-        } else if (inputSelection == "") {   //check if the entity type is empty
-            alert("Please select a type for the entity")    //if it is empty, alert the user to select a type
-        
-        } else if ($(".article-p:contains('"+inputEntityName+"')").length == 0) {   //check if the entity is present in the article
-            alert("The entity name you inserted is not present in the article")
-            
-        
-        } else {
-            var key = String($(".article-container .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
-            if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
-                let entitiesArr = [];
-                localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
-            }
-            
-            
-            let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
-            let entityName = inputEntityName;                      //get the entity name from the input field
-            let entityType = inputSelection;
-                           //get the entity type from the input field
-            
-                                           
-            const entity = entitiesArray.find((en) => {                             //check if the entity already exists in the array
-                if ((en.name === entityName) && (en.type === entityType)) {
-                    return true;
-                } else {
-                    return false;
-                }
-            })
-
-            if (entity) {                                 //if the entity already exists, alert the user
-                alert("This entity already exists")
-            } else {                                      //if the entity does not exist, create a new entity object and push it to the array
-                let count = 0;
-                // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
-                const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
-                for (const par of $(".article-p")){
-                    if (par.innerHTML.match(regex) !== null){
-                      count += par.innerHTML.match(regex).length
-                    }
-                }
-                    
-                if (count == 0){             // If there are no matches, return an alert 
-                    alert("The entity name you inserted has been already marked as a different entity type")
-                
-                } else {
-                    if (entitiesArray.length === 0) {
-                        var id = 1;
-                    } else {
-                        var id = entitiesArray[entitiesArray.length - 1]['end-id'] + 1;
-                    }
-                    const entityObj = {                                            //create the entity object
-                        "name": entityName,
-                        "type": entityType,
-                        "start-id": id,
-                        "end-id": id + count - 1
-                    }
-
-                    let paragraphs = $(".article-p");
-                    var id = entityObj["start-id"]
-
-                    for (par of paragraphs) {
-                        let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
-                        if (!matches) continue; // If there are no matches, return
-                        // Replace each match with a <span> element
-                        par.innerHTML = par.innerHTML.replace(regex, function(match) {
-                            id++;
-                            return '<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>';
-                        });
-                    }
-                    entitiesArray.push(entityObj);
-                    localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
-
-                    addMetadata();
-                    showEntities();
-                    $(".entity-string").val("");    //empty the input field
-                    $(".entity-type-selection").val('');   //clear the entity type selection
-                };  
-            };                                       
-        }       
+        createEntity("ax");
     });
 
+    $(".entity-creation-form-b").submit(function(e){ 
+        e.preventDefault();    //prevent the form from submitting and refreshing the page
+        createEntity("b");
+    });
 
 });
 
 
 
+function createEntity(form){
+    if (form == "ax"){
+        var container = ".article-container"
+        var inputs = $(".entity-string")
+        var selections = $(".entity-type-selection option:selected")
+    } else {
+        var container = ".article-comparison-container"
+        var input = $(".entity-string-b")
+        var selection = $(".entity-type-selection-b option:selected")
+    }
+
+    if (inputs) {
+        if (inputs[0].value == ""){               //check if the entity name is empty
+            var inputEntityName = inputs[1].value
+        } else {
+            var inputEntityName = inputs[0].value
+        }
+        if (selections[0].value == ""){
+            var inputSelection = selections[1].value
+        } else {
+            var inputSelection = selections[0].value
+        }
+    } else {
+        var inputEntityName = input.val()
+        var inputSelection = selection.val()
+    }
+
+
+    if (inputEntityName == ""){               //check if the entity name is empty
+        alert("Please insert a name for the entity")    //if it is empty, alert the user to insert a name
+        
+    } else if (inputSelection == "") {   //check if the entity type is empty
+        alert("Please select a type for the entity")    //if it is empty, alert the user to select a type
+    
+    } else if ($(""+container+" .article-p:contains('"+inputEntityName+"')").length == 0) {   //check if the entity is present in the article
+        console.log(inputEntityName)
+        alert("The entity name you inserted is not present in the article")
+        
+    
+    } else {
+        var key = String($(""+container+" .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
+        if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
+            let entitiesArr = [];
+            localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
+        }
+        
+        
+        let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
+        let entityName = inputEntityName;                      //get the entity name from the input field
+        let entityType = inputSelection;
+                       //get the entity type from the input field
+        
+                                       
+        const entity = entitiesArray.find((en) => {                             //check if the entity already exists in the array
+            if ((en.name === entityName) && (en.type === entityType)) {
+                return true;
+            } else {
+                return false;
+            }
+        })
+
+        if (entity) {                                 //if the entity already exists, alert the user
+            alert("This entity already exists")
+        } else {                                      //if the entity does not exist, create a new entity object and push it to the array
+            let count = 0;
+            // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+            const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
+            for (const par of $(""+container+" .article-p")){
+                if (par.innerHTML.match(regex) !== null){
+                  count += par.innerHTML.match(regex).length
+                }
+            }
+                
+            if (count == 0){             // If there are no matches, return an alert 
+                alert("The entity name you inserted has been already marked as a different entity type")
+            
+            } else {
+                if (entitiesArray.length === 0) {
+                    var id = 1;
+                } else {
+                    var id = entitiesArray[entitiesArray.length - 1]['end-id'] + 1;
+                }
+                const entityObj = {                                            //create the entity object
+                    "name": entityName,
+                    "type": entityType,
+                    "start-id": id,
+                    "end-id": id + count - 1
+                }
+
+                var id = entityObj["start-id"]
+
+                for (const par of $(""+container+" .article-p")) {
+                    let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+                    if (!matches) continue; // If there are no matches, return
+                    // Replace each match with a <span> element
+                    par.innerHTML = par.innerHTML.replace(regex, function(match) {
+                        id++;
+                        return '<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>';
+                    });
+                }
+                entitiesArray.push(entityObj);
+                localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
+
+                if (form == "ax"){
+                    addMetadata("-x");
+                    showEntities("-x");
+                    $(".entity-string").val("");    //empty the input field
+                    $(".entity-type-selection").val("");   //clear the entity type selection
+                } else {
+                    addMetadata("-b");
+                    showEntities("-b");
+                    $(".entity-string-b").val("");    //empty the input field
+                    $(".entity-type-selection-b").val("");   //clear the entity type selection
+                }
+            };  
+        };                                       
+    }       
+}
 
 
 
@@ -244,6 +358,7 @@ function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
 }
 
 
+
 function loadInA(file, label){
     $(".entity-string").val(""); //reset the input field
 
@@ -256,20 +371,18 @@ function loadInA(file, label){
             success: function(d) {
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
-                addInfo();
-                addMetadata();
+                addInfo("ax");
+                addMetadata("ax");
                 addEntitiesFromLocalStorage(label);
-                addMetadata();
-                
+                addMetadata("ax");
             },
             error: function() {
                 alert('Could not load file '+ file)
             }
         });
-        $(".show").prop( "checked", false ); 
-    }
-    
-
+        $(".show-x").prop( "checked", false );
+        $(".show-a").prop( "checked", false );  
+    }; 
 }
 
 function loadInB(file, label){
@@ -282,73 +395,79 @@ function loadInB(file, label){
             success: function(d) {
                 let article = $('.article-comparison-container').html(d)
                 $('.article-comparison-container').replaceWith(article)
+                addInfo("b");
+                addMetadata("b");
+                addEntitiesFromLocalStorage(label);
+                addMetadata("b");
             },
             error: function() {
                 alert('Could not load file '+ file)
             }
         });
+        $(".show-b").prop( "checked", false );
     }
 }
 
 
 //Show entities in the text
-function showEntities(){
-    if ($("input.show-people").is(':checked')) {
-        $(".show-people" ).prop("checked", true) //set the checkbox to checked so that also the checkbox in the modal will be checked
-        $('.person').addClass("person-bkg");
+function showEntities(r){
+    if ((r == "-a") || (r == "-x")){
+        var toCheck = "-ax";
+        var cont = ".article-container";
     } else {
-        $(".show-people" ).prop( "checked", false) //set the checkbox to unchecked so that also the checkbox in the modal will be unchecked
-        $('.person').removeClass("person-bkg");
+        var toCheck = r;
+        var cont = ".article-comparison-container";
+    }
+
+    if ($(".show-people"+r+"").is(':checked')) {
+        $(".show-people"+toCheck+"").prop("checked", true) //set the checkbox to checked so that also the checkbox in the modal will be checked
+        $(""+cont+" .person").addClass("person-bkg");
+    } else {
+        $(".show-people"+toCheck+"").prop( "checked", false) //set the checkbox to unchecked so that also the checkbox in the modal will be unchecked
+        $(""+cont+" .person").removeClass("person-bkg");
     };
 
-    if ($("input.show-places").is(':checked')) {
-        $(".show-places" ).prop("checked", true)
-        $('.place').addClass("places-bkg");
+    if ($(".show-places"+r+"").is(':checked')) {
+        $(".show-places"+toCheck+"").prop("checked", true)
+        $(""+cont+" .place").addClass("places-bkg");
     } else {
-        $(".show-places" ).prop("checked", false)
-        $('.place').removeClass("places-bkg");
+        $(".show-places"+toCheck+"").prop("checked", false)
+        $(""+cont+" .place").removeClass("places-bkg");
     };
 
-    if ($("input.show-organizations").is(':checked')) {
-        $(".show-organizations" ).prop("checked", true)
-        $('.organization').addClass("organizations-bkg");
+    if ($(".show-organizations"+r+"").is(':checked')) {
+        $(".show-organizations"+toCheck+"").prop("checked", true)
+        $(""+cont+" .organization").addClass("organizations-bkg");
     } else {
-        $(".show-organizations" ).prop("checked", false)
-        $('.organization').removeClass("organizations-bkg");
+        $(".show-organizations"+toCheck+"").prop("checked", false)
+        $(""+cont+" .organization").removeClass("organizations-bkg");
     };
 
-    if ($("input.show-events").is(':checked')) {
-        $(".show-events" ).prop("checked", true)
-        $('.event').addClass("events-bkg");
+    if ($(".show-events"+r+"").is(':checked')) {
+        $(".show-events"+toCheck+"").prop("checked", true)
+        $(""+cont+" .event").addClass("events-bkg");
     } else {
-        $(".show-events" ).prop("checked", false)
-        $('.event').removeClass("events-bkg");
+        $(".show-events"+toCheck+"").prop("checked", false)
+        $(""+cont+" .event").removeClass("events-bkg");
     };
 
-    if ($("input.show-concepts").is(':checked')) {
-        $(".show-concepts" ).prop("checked", true)
-        $('.concept').addClass("concepts-bkg");
+    if ($(".show-concepts"+r+"").is(':checked')) {
+        $(".show-concepts"+toCheck+"").prop("checked", true)
+        $(""+cont+" .concept").addClass("concepts-bkg");
     } else {
-        $(".show-concepts" ).prop("checked", false)
-        $('.concept').removeClass("concepts-bkg");
+        $(".show-concepts"+toCheck+"").prop("checked", false)
+        $(""+cont+" .concept").removeClass("concepts-bkg");
     };
 
-    if ($("input.show-keywords").is(':checked')) {
-        $(".show-keywords" ).prop("checked", true)
-        $('.keyword').addClass("keywords-bkg");
+    if ($(".show-keywords"+r+"").is(':checked')) {
+        $(".show-keywords"+toCheck+"").prop("checked", true)
+        $(""+cont+" .keyword").addClass("keywords-bkg");
     } else {
-        $(".show-keywords" ).prop("checked", false)
-        $('.keyword').removeClass("keywords-bkg");
+        $(".show-keywords"+toCheck+"").prop("checked", false)
+        $(""+cont+" .keyword").removeClass("keywords-bkg");
     };
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -438,42 +557,50 @@ function changeToComparisonMode() {
 
 //Add info and metadata to the metadata container
 
-function addInfo() {
-    let infoDl = $(".info-dl");
+function addInfo(modal) {
+    if (modal == "b"){
+        var infoDl = $(".info-dl-b");
+    } else {
+        var infoDl = $(".info-dl");
+    }    
     infoDl.empty();   //empty the dl element before adding new info
-    
     infoDl.append("<dt>Title</dt><dd class='title-dd'>"+$('.article-title').text()+"</dd>"); //add title to the dl element
-
     infoDl.append("<dt>Author</dt>"); //add author to the dl element
     for (let i = 0; i < $('.author-info').length; i++) {
         infoDl.append("<dd class='author-dd'>"+$('.author-info')[i].innerText+"</dd>");
     };
 
     infoDl.append("<dt>Publication date</dt><dd class='pub-date-dd'>"+$('.publication-date').text()+"</dd>"); //add publication date to the dl element
-
 }
 
 
-function addMetadata() {
-    let peopleUl = $(".people-ul")
+function addMetadata(modal) {
+    if (modal == "b"){
+        var ul = "-ul-b";
+        var mentions = $(".article-comparison-container .mention")
+    } else {
+        var ul = "-ul";
+        var mentions = $(".article-container .mention")
+    }
+    let peopleUl = $(".people"+ul+"")
     peopleUl.empty()
 
-    let placesUl = $(".places-ul")
+    let placesUl = $(".places"+ul+"")
     placesUl.empty()
 
-    let orgsUl = $(".orgs-ul")
+    let orgsUl = $(".orgs"+ul+"")
     orgsUl.empty()
 
-    let eventsUl = $(".events-ul")
+    let eventsUl = $(".events"+ul+"")
     eventsUl.empty()
 
-    let conceptsUl = $(".concepts-ul")
+    let conceptsUl = $(".concepts"+ul+"")
     conceptsUl.empty()
 
-    let keywordsUl = $(".keywords-ul")
+    let keywordsUl = $(".keywords"+ul+"")
     keywordsUl.empty()
 
-    for (const mention of $(".mention")){
+    for (const mention of mentions){
         let entityLink = "<li><a class='entity-link' href='#' data-dismiss='modal' onclick='animateBkg(event, \"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
         if (mention.classList.contains("person")) {
             peopleUl.append(entityLink)
