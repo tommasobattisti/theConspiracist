@@ -4,63 +4,12 @@ $(document).ready(function(){
     $(".entity-string").val("");     //clear the entity name input
     $(".entity-type-selection").val('');   //clear the entity type selection
 
-    //Show entities in the text
-    $('.show-people').click(function() {
-        if ($("input.show-people").is(':checked')) {
-            $(".show-people" ).prop( "checked", true )
-            $('.person').addClass("person-bkg");
-        }else {
-            $(".show-people" ).prop( "checked", false )
-            $('.person').removeClass("person-bkg");
-        }
-    });
+    $(".show").click(function(){
+        showEntities();
+    })
 
-    $('.show-places').click(function() {
-        if ($("input.show-places").is(':checked')) {
-            $('.place').addClass("places-bkg");
-        }else {
-            $('.place').removeClass("places-bkg");
-        }
-    });
-
-    $('.show-organizations').click(function() {
-        if ($("input.show-organizations").is(':checked')) {
-            $('.organization').addClass("organizations-bkg");
-        }else {
-            $('.organization').removeClass("organizations-bkg");
-        }
-    });
-
-    $('.show-events').click(function() {
-        if ($("input.show-events").is(':checked')) {
-            $('.event').addClass("events-bkg");
-        }else {
-            $('.event').removeClass("events-bkg");
-        }
-    });
-
-    $('.show-concepts').click(function() {
-        if ($("input.show-concepts").is(':checked')) {
-            $('.concept').addClass("concepts-bkg");
-        }else {
-            $('.concept').removeClass("concepts-bkg");
-        }
-    });
-
-    $('.show-keywords').click(function() {
-        if ($("input.show-keywords").is(':checked')) {
-            $('.keyword').addClass("keywords-bkg");
-        }else {
-            $('.keyword').removeClass("keywords-bkg");
-        }
-    });
-
-
-
-
-
+    
     //Show metadata in tab divs
-
     $(".info-nav-i").click(function(){
         if ($(".info-nav-i").hasClass("active-nav-i")) {
             console.log("already active")
@@ -143,7 +92,7 @@ $(document).ready(function(){
 
 
 
-    //Entity creation with local storage
+    //Entity creation with local storage 
     $(".entity-creation-form").submit(function(e){ 
         e.preventDefault();    //prevent the form from submitting and refreshing the page
         let inputs = $(".entity-string")
@@ -237,6 +186,7 @@ $(document).ready(function(){
                     localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
 
                     addMetadata();
+                    showEntities();
                     $(".entity-string").val("");    //empty the input field
                     $(".entity-type-selection").val('');   //clear the entity type selection
                 };  
@@ -247,6 +197,12 @@ $(document).ready(function(){
 
 
 });
+
+
+
+
+
+
 
 
 
@@ -330,6 +286,71 @@ function loadInB(file, label){
         });
     }
 }
+
+
+//Show entities in the text
+function showEntities(){
+    if ($("input.show-people").is(':checked')) {
+        $(".show-people" ).prop("checked", true) //set the checkbox to checked so that also the checkbox in the modal will be checked
+        $('.person').addClass("person-bkg");
+    } else {
+        $(".show-people" ).prop( "checked", false) //set the checkbox to unchecked so that also the checkbox in the modal will be unchecked
+        $('.person').removeClass("person-bkg");
+    };
+
+    if ($("input.show-places").is(':checked')) {
+        $(".show-places" ).prop("checked", true)
+        $('.place').addClass("places-bkg");
+    } else {
+        $(".show-places" ).prop("checked", false)
+        $('.place').removeClass("places-bkg");
+    };
+
+    if ($("input.show-organizations").is(':checked')) {
+        $(".show-organizations" ).prop("checked", true)
+        $('.organization').addClass("organizations-bkg");
+    } else {
+        $(".show-organizations" ).prop("checked", false)
+        $('.organization').removeClass("organizations-bkg");
+    };
+
+    if ($("input.show-events").is(':checked')) {
+        $(".show-events" ).prop("checked", true)
+        $('.event').addClass("events-bkg");
+    } else {
+        $(".show-events" ).prop("checked", false)
+        $('.event').removeClass("events-bkg");
+    };
+
+    if ($("input.show-concepts").is(':checked')) {
+        $(".show-concepts" ).prop("checked", true)
+        $('.concept').addClass("concepts-bkg");
+    } else {
+        $(".show-concepts" ).prop("checked", false)
+        $('.concept').removeClass("concepts-bkg");
+    };
+
+    if ($("input.show-keywords").is(':checked')) {
+        $(".show-keywords" ).prop("checked", true)
+        $('.keyword').addClass("keywords-bkg");
+    } else {
+        $(".show-keywords" ).prop("checked", false)
+        $('.keyword').removeClass("keywords-bkg");
+    };
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function addEntitiesFromLocalStorage(key){
