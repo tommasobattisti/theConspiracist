@@ -55,7 +55,7 @@ footer {
     right: 2.5vmin;
     align-items: flex-end;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 99;
 }
 
 #secondaryBtnsContainer {
@@ -321,8 +321,10 @@ footer {
 }
 
 .double-doc-selector {
+  position: relative; 
   visibility: hidden;
   height: 0;
+  z-index: 999;
 }
 
 
