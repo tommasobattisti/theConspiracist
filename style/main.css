@@ -55,7 +55,7 @@ footer {
     right: 2.5vmin;
     align-items: flex-end;
     justify-content: space-between;
-    z-index: 9999;
+    z-index: 999;
 }
 
 #secondaryBtnsContainer {
@@ -269,6 +269,10 @@ footer {
 
 
 /*ISSUES*/
+.modal {
+  z-index: 9999;
+}
+
 .modal-btn-container {
   visibility: hidden;
   width: 0;
@@ -512,6 +516,7 @@ footer {
 
 
 
+/*
 .animate {
   animation-name: bgcolor ;
   animation-duration: 0.75s ; 
@@ -523,3 +528,4 @@ footer {
   from { background-color: #ffffff;  }
   to { background-color: #cccc00; }
 }
+*/

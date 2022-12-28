@@ -239,14 +239,11 @@ $(document).ready(function(){
                     addMetadata();
                     $(".entity-string").val("");    //empty the input field
                     $(".entity-type-selection").val('');   //clear the entity type selection
-                };
-                
-            };
-
-                                                  
-        }
-            
+                };  
+            };                                       
+        }       
     });
+
 
 
 });
@@ -453,7 +450,7 @@ function addMetadata() {
     keywordsUl.empty()
 
     for (const mention of $(".mention")){
-        let entityLink = "<li><a class='entity-link' href='#' onclick='animateBkg(event, \"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
+        let entityLink = "<li><a class='entity-link' href='#' data-dismiss='modal' onclick='animateBkg(event, \"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
         if (mention.classList.contains("person")) {
             peopleUl.append(entityLink)
         } else if (mention.classList.contains("place")) {
