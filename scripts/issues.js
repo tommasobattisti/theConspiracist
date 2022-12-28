@@ -3,8 +3,11 @@ $(document).ready(function(){
 
     $(".entity-string").val("");     //clear the entity name input
     $(".entity-type-selection").val('');   //clear the entity type selection
-
-    $(".show").click(function(){
+    $(".show").prop("checked", false);   //uncheck the show entities checkbox
+    
+    
+    
+    $(".show").click(function(){       //if the checkbox is clicked, show the entities
         showEntities();
     })
 
@@ -195,6 +198,13 @@ $(document).ready(function(){
     });
 
 
+    //$(".modal-btn").click(function(){
+    //    if ($(".comparison-mode-btn").classList.contains("active-mode")){
+    //        $(".modal-btn").attr("data-target", "#comparison-metadata-modal");
+    //    } else {
+    //        $(".modal-btn").attr("data-target", "#metadata-modal");
+    //    }
+    //});
 
 });
 
@@ -518,5 +528,6 @@ function animateBkg(event, id) {
 //        $(id).removeClass('animate');
 //    },5000);
 //}
+
 
 
