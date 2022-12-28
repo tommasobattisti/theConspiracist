@@ -91,201 +91,203 @@
           <div class="modal-header">
             <h5 class="modal-title" id="metadataModalTitle">Modal title</h5>
           </div>
-          <div class="modal-body single-modal-body left-modal-body">
-              
-                  <form class="entity-selector modal-entity-selector">
-                    <div class="left-modal-entity-s">
-                      <div class="checkbox-div">
+          <div id="mainModalContainer">
+            <div class="modal-body single-modal-body left-modal-body">
+                
+                    <form class="entity-selector modal-entity-selector">
+                      <div class="left-modal-entity-s">
+                        <div class="checkbox-div">
+                            <label>
+                                <input class="show show-people" type="checkbox">
+                                Show people
+                            </label>
+                        </div>
+                        <div class="checkbox-div">
+                            <label>
+                                <input class="show show-places" type="checkbox">
+                                Show places
+                            </label>
+                        </div>
+                        <div class="checkbox-div">
+                            <label>
+                                <input class="show show-organizations" type="checkbox">
+                                Show organizations
+                            </label>
+                        </div>
+                      </div>
+                      <div class="right-modal-entity-s">
+                        <div class="checkbox-div">
+                            <label>
+                                <input class="show show-events" type="checkbox">
+                                Show events
+                            </label>
+                        </div>
+                        <div class="checkbox-div">
                           <label>
-                              <input class="show show-people" type="checkbox">
-                              Show people
+                              <input class="show show-concepts" type="checkbox">
+                              Show concepts
                           </label>
-                      </div>
-                      <div class="checkbox-div">
+                        </div>
+                        <div class="checkbox-div">
                           <label>
-                              <input class="show show-places" type="checkbox">
-                              Show places
+                              <input class="show show-keywords" type="checkbox">
+                              Show keywords
                           </label>
+                        </div>
                       </div>
-                      <div class="checkbox-div">
-                          <label>
-                              <input class="show show-organizations" type="checkbox">
-                              Show organizations
-                          </label>
-                      </div>
-                    </div>
-                    <div class="right-modal-entity-s">
-                      <div class="checkbox-div">
-                          <label>
-                              <input class="show show-events" type="checkbox">
-                              Show events
-                          </label>
-                      </div>
-                      <div class="checkbox-div">
-                        <label>
-                            <input class="show show-concepts" type="checkbox">
-                            Show concepts
-                        </label>
-                      </div>
-                      <div class="checkbox-div">
-                        <label>
-                            <input class="show show-keywords" type="checkbox">
-                            Show keywords
-                        </label>
-                      </div>
-                    </div>
-                  </form>
+                    </form>
 
-                  <form class="entity-creation-form modal-entity-creation">
-                          <select class="entity-type-selection">
-                              <option class="entity-type" value="" disabled>-select type-</option>
-                              <option class="entity-type" value="person">Person</option>
-                              <option class="entity-type" value="place">Place</option>
-                              <option class="entity-type" value="organization">Organization</option>
-                              <option class="entity-type" value="event">Event</option>
-                              <option class="entity-type" value="concept">Concept</option>
-                              <option class="entity-type" value="keyword">Keyword</option>
-                          </select>               
-                      <input class="entity-string" type="text" placeholder="Enter a valid string" value="">
-                      <button class="entity-creation-btn" type="submit">Create</button>
-                  </form>
-        
-                  <div class="entities-content-table">
-                          <div class="nav-items-div">
-                              <button class="nav-i info-nav-i active-nav-i">Info</button>
-                              <button class="nav-i people-nav-i">People</button>
-                              <button class="nav-i places-nav-i">Places</button>
-                              <button class="nav-i orgs-nav-i">Organizations</button>
-                              <button class="nav-i events-nav-i">Events</button>
-                              <button class="nav-i concepts-nav-i">Concepts</button>
-                              <button class="nav-i keywords-nav-i">Keywords</button>    
-                          </div>
-                          <div class="tab-content active-tc info-tc">
-                            <dl class="info-dl">
-                            </dl>
-                          </div>
-                          <div class="tab-content people-tc">
-                            <ul class="people-ul">
-                            </ul>
-                          </div>
-                          <div class="tab-content places-tc">
-                            <ul class="places-ul">
-                            </ul>
-                          </div>
-                          <div class="tab-content orgs-tc">
-                            <ul class="orgs-ul">
-                            </ul>
-                          </div>
-                          <div class="tab-content events-tc">
-                            <ul class="events-ul">
-                            </ul>
-                          </div>
-                          <div class="tab-content concepts-tc">
-                            <ul class="concepts-ul">
-                            </ul>
-                          </div>
-                          <div class="tab-content keywords-tc">
-                            <ul class="keywords-ul">
-                            </ul>
-                          </div>
+                    <form class="entity-creation-form modal-entity-creation">
+                            <select class="entity-type-selection">
+                                <option class="entity-type" value="" disabled>-select type-</option>
+                                <option class="entity-type" value="person">Person</option>
+                                <option class="entity-type" value="place">Place</option>
+                                <option class="entity-type" value="organization">Organization</option>
+                                <option class="entity-type" value="event">Event</option>
+                                <option class="entity-type" value="concept">Concept</option>
+                                <option class="entity-type" value="keyword">Keyword</option>
+                            </select>               
+                        <input class="entity-string" type="text" placeholder="Enter a valid string" value="">
+                        <button class="entity-creation-btn" type="submit">Create</button>
+                    </form>
+          
+                    <div class="entities-content-table">
+                            <div class="nav-items-div">
+                                <button class="nav-i info-nav-i active-nav-i">Info</button>
+                                <button class="nav-i people-nav-i">People</button>
+                                <button class="nav-i places-nav-i">Places</button>
+                                <button class="nav-i orgs-nav-i">Organizations</button>
+                                <button class="nav-i events-nav-i">Events</button>
+                                <button class="nav-i concepts-nav-i">Concepts</button>
+                                <button class="nav-i keywords-nav-i">Keywords</button>    
+                            </div>
+                            <div class="tab-content active-tc info-tc">
+                              <dl class="info-dl">
+                              </dl>
+                            </div>
+                            <div class="tab-content people-tc">
+                              <ul class="people-ul">
+                              </ul>
+                            </div>
+                            <div class="tab-content places-tc">
+                              <ul class="places-ul">
+                              </ul>
+                            </div>
+                            <div class="tab-content orgs-tc">
+                              <ul class="orgs-ul">
+                              </ul>
+                            </div>
+                            <div class="tab-content events-tc">
+                              <ul class="events-ul">
+                              </ul>
+                            </div>
+                            <div class="tab-content concepts-tc">
+                              <ul class="concepts-ul">
+                              </ul>
+                            </div>
+                            <div class="tab-content keywords-tc">
+                              <ul class="keywords-ul">
+                              </ul>
+                            </div>
+                    </div>
+            </div>
+            <div class="modal-body right-modal-body">
+              <form class="entity-selector modal-entity-selector">
+                <div class="left-modal-entity-s">
+                  <div class="checkbox-div">
+                      <label>
+                          <input class="show show-people" type="checkbox">
+                          Show people
+                      </label>
                   </div>
-          </div>
-          <div class="modal-body right-modal-body">
-            <form class="entity-selector modal-entity-selector">
-              <div class="left-modal-entity-s">
-                <div class="checkbox-div">
+                  <div class="checkbox-div">
+                      <label>
+                          <input class="show show-places" type="checkbox">
+                          Show places
+                      </label>
+                  </div>
+                  <div class="checkbox-div">
+                      <label>
+                          <input class="show show-organizations" type="checkbox">
+                          Show organizations
+                      </label>
+                  </div>
+                </div>
+                <div class="right-modal-entity-s">
+                  <div class="checkbox-div">
+                      <label>
+                          <input class="show show-events" type="checkbox">
+                          Show events
+                      </label>
+                  </div>
+                  <div class="checkbox-div">
                     <label>
-                        <input class="show show-people" type="checkbox">
-                        Show people
+                        <input class="show show-concepts" type="checkbox">
+                        Show concepts
                     </label>
-                </div>
-                <div class="checkbox-div">
+                  </div>
+                  <div class="checkbox-div">
                     <label>
-                        <input class="show show-places" type="checkbox">
-                        Show places
+                        <input class="show show-keywords" type="checkbox">
+                        Show keywords
                     </label>
+                  </div>
                 </div>
-                <div class="checkbox-div">
-                    <label>
-                        <input class="show show-organizations" type="checkbox">
-                        Show organizations
-                    </label>
-                </div>
-              </div>
-              <div class="right-modal-entity-s">
-                <div class="checkbox-div">
-                    <label>
-                        <input class="show show-events" type="checkbox">
-                        Show events
-                    </label>
-                </div>
-                <div class="checkbox-div">
-                  <label>
-                      <input class="show show-concepts" type="checkbox">
-                      Show concepts
-                  </label>
-                </div>
-                <div class="checkbox-div">
-                  <label>
-                      <input class="show show-keywords" type="checkbox">
-                      Show keywords
-                  </label>
-                </div>
-              </div>
-            </form>
+              </form>
 
-            <form class="entity-creation-form modal-entity-creation">
-                    <select class="entity-type-selection">
-                        <option class="entity-type" value="" disabled>-select type-</option>
-                        <option class="entity-type" value="person">Person</option>
-                        <option class="entity-type" value="place">Place</option>
-                        <option class="entity-type" value="organization">Organization</option>
-                        <option class="entity-type" value="event">Event</option>
-                        <option class="entity-type" value="concept">Concept</option>
-                        <option class="entity-type" value="keyword">Keyword</option>
-                    </select>               
-                <input class="entity-string" type="text" placeholder="Enter a valid string" value="">
-                <button class="entity-creation-btn" type="submit">Create</button>
-            </form>
-  
-            <div class="entities-content-table">
-                    <div class="nav-items-div">
-                        <button class="nav-i info-nav-i active-nav-i">Info</button>
-                        <button class="nav-i people-nav-i">People</button>
-                        <button class="nav-i places-nav-i">Places</button>
-                        <button class="nav-i orgs-nav-i">Organizations</button>
-                        <button class="nav-i events-nav-i">Events</button>
-                        <button class="nav-i concepts-nav-i">Concepts</button>
-                        <button class="nav-i keywords-nav-i">Keywords</button>    
-                    </div>
-                    <div class="tab-content active-tc info-tc">
-                      <dl class="info-dl">
-                      </dl>
-                    </div>
-                    <div class="tab-content people-tc">
-                      <ul class="people-ul">
-                      </ul>
-                    </div>
-                    <div class="tab-content places-tc">
-                      <ul class="places-ul">
-                      </ul>
-                    </div>
-                    <div class="tab-content orgs-tc">
-                      <ul class="orgs-ul">
-                      </ul>
-                    </div>
-                    <div class="tab-content events-tc">
-                      <ul class="events-ul">
-                      </ul>
-                    </div>
-                    <div class="tab-content concepts-tc">
-                      <ul class="concepts-ul">
-                      </ul>
-                    </div>
-                    <div class="tab-content keywords-tc">
-                      <ul class="keywords-ul">
-                      </ul>
-                    </div>
+              <form class="entity-creation-form modal-entity-creation">
+                      <select class="entity-type-selection">
+                          <option class="entity-type" value="" disabled>-select type-</option>
+                          <option class="entity-type" value="person">Person</option>
+                          <option class="entity-type" value="place">Place</option>
+                          <option class="entity-type" value="organization">Organization</option>
+                          <option class="entity-type" value="event">Event</option>
+                          <option class="entity-type" value="concept">Concept</option>
+                          <option class="entity-type" value="keyword">Keyword</option>
+                      </select>               
+                  <input class="entity-string" type="text" placeholder="Enter a valid string" value="">
+                  <button class="entity-creation-btn" type="submit">Create</button>
+              </form>
+    
+              <div class="entities-content-table">
+                      <div class="nav-items-div">
+                          <button class="nav-i info-nav-i active-nav-i">Info</button>
+                          <button class="nav-i people-nav-i">People</button>
+                          <button class="nav-i places-nav-i">Places</button>
+                          <button class="nav-i orgs-nav-i">Organizations</button>
+                          <button class="nav-i events-nav-i">Events</button>
+                          <button class="nav-i concepts-nav-i">Concepts</button>
+                          <button class="nav-i keywords-nav-i">Keywords</button>    
+                      </div>
+                      <div class="tab-content active-tc info-tc">
+                        <dl class="info-dl">
+                        </dl>
+                      </div>
+                      <div class="tab-content people-tc">
+                        <ul class="people-ul">
+                        </ul>
+                      </div>
+                      <div class="tab-content places-tc">
+                        <ul class="places-ul">
+                        </ul>
+                      </div>
+                      <div class="tab-content orgs-tc">
+                        <ul class="orgs-ul">
+                        </ul>
+                      </div>
+                      <div class="tab-content events-tc">
+                        <ul class="events-ul">
+                        </ul>
+                      </div>
+                      <div class="tab-content concepts-tc">
+                        <ul class="concepts-ul">
+                        </ul>
+                      </div>
+                      <div class="tab-content keywords-tc">
+                        <ul class="keywords-ul">
+                        </ul>
+                      </div>
+              </div>
             </div>
           </div>
           

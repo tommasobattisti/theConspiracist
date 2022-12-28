@@ -412,6 +412,8 @@ function changeToSingleMode() {
     $(".modal-btn-container").css({"visibility": "hidden", "width": "0"});
     $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
     $(".right-modal-body").css({"display": "none", "visibility": "hidden", "height": "0"});
+    $(".modal-dialog").removeClass("width-80");
+    $(".modal-dialog").css("max-width", "500px");
 }
 
 
@@ -424,6 +426,8 @@ function changeToComparisonMode() {
     $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
     $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
     $(".right-modal-body").css({"display": "flex", "visibility": "visible", "height": "auto"});
+    $(".modal-dialog").addClass("width-80");
+    $(".modal-dialog").css("max-width", "none");
 }
 
 
