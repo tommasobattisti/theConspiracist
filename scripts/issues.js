@@ -304,17 +304,27 @@ function createEntity(form){
                 entitiesArray.push(entityObj);
                 localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
 
-                if (form == "ax"){
+                if ($(".article-container .article-title").attr("data-label") == $(".article-comparison-container .article-title").attr("data-label")){
+                    addEntitiesFromLocalStorage("b", String($(".article-container .article-title").attr("data-label").toLowerCase()));
+                    addEntitiesFromLocalStorage("ax", String($(".article-container .article-title").attr("data-label").toLowerCase()));
                     addMetadata("-x");
                     showEntities("-x");
-                    $(".entity-string").val("");    //empty the input field
-                    $(".entity-type-selection").val("");   //clear the entity type selection
-                } else {
                     addMetadata("-b");
                     showEntities("-b");
-                    $(".entity-string-b").val("");    //empty the input field
-                    $(".entity-type-selection-b").val("");   //clear the entity type selection
+                } else {
+                    if (form == "ax"){
+                        addMetadata("-x");
+                        showEntities("-x");
+                        $(".entity-string").val("");    //empty the input field
+                        $(".entity-type-selection").val("");   //clear the entity type selection
+                    } else {
+                        addMetadata("-b");
+                        showEntities("-b");
+                        $(".entity-string-b").val("");    //empty the input field
+                        $(".entity-type-selection-b").val("");   //clear the entity type selection
+                    }
                 }
+                
             };  
         };                                       
     }       
