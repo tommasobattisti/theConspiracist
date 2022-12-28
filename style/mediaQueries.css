@@ -81,11 +81,3 @@
 }
 
 
-@media only screen and (orientation: landscape) and (min-width: 680px) {
-    .modal {
-        display: none !important;
-    }
-    .modal-backdrop {
-        display: none;
-    }
-}
