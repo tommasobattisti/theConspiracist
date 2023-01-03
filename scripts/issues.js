@@ -188,6 +188,8 @@ $(document).ready(function(){
     });
 
 
+
+
     //Entity creation with local storage 
     $(".entity-creation-form").submit(function(e){ 
         e.preventDefault();    //prevent the form from submitting and refreshing the page
@@ -212,7 +214,7 @@ $(document).ready(function(){
 
 
 function createEntity(form){
-    if (form == "ax"){
+    if (form == "ax"){          
         var container = ".article-container"
         var inputs = $(".entity-string")
         var selections = $(".entity-type-selection option:selected")
@@ -248,15 +250,14 @@ function createEntity(form){
     } else if ($(""+container+" .article-p:contains('"+inputEntityName+"')").length == 0) {   //check if the entity is present in the article
         console.log(inputEntityName)
         alert("The entity name you inserted is not present in the article")
-        
     
     } else {
         var key = String($(""+container+" .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
+        
         if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
             let entitiesArr = [];
             localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
         }
-        
         
         let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
         let entityName = inputEntityName;                      //get the entity name from the input field
@@ -277,7 +278,7 @@ function createEntity(form){
         } else {                                      //if the entity does not exist, create a new entity object and push it to the array
             let count = 0;
             // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
-            const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
+            const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')[(ing)(s)(n)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
             for (const par of $(""+container+" .article-p")){
                 if (par.innerHTML.match(regex) !== null){
                   count += par.innerHTML.match(regex).length
@@ -300,7 +301,7 @@ function createEntity(form){
                     "end-id": id + count - 1
                 }
 
-                var id = entityObj["start-id"]
+                var id = entityObj["start-id"] -1;
 
                 for (const par of $(""+container+" .article-p")) {
                     let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
