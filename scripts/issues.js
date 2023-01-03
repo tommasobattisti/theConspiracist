@@ -1,16 +1,20 @@
 $(document).ready(function(){
-    loadDocumentsList();
-    changeToSingleMode();
 
-    $(".entity-string").val("");     //clear the entity name input
-    $(".entity-string-b").val("");     //clear the entity name input
-    $(".entity-type-selection").val('');   //clear the entity type selection
-    $(".entity-type-selection-b").val('');   //clear the entity type selection
-    $(".show-a").prop("checked", false);   //uncheck the show entities checkbox
-    $(".show-b").prop("checked", false);   //uncheck the show entities checkbox
-    $(".show-x").prop("checked", false);   //uncheck the show entities checkbox
+    loadDocumentsList(); 
+    changeToSingleMode(); 
+
+
+    $(".entity-string").val("");            //clear the entity name input
+    $(".entity-string-b").val("");          //clear the entity name input
+    $(".entity-type-selection").val("");    //clear the entity type selection
+    $(".entity-type-selection-b").val("");  //clear the entity type selection
+    $(".show-a").prop("checked", false);    //uncheck the show entities checkbox
+    $(".show-b").prop("checked", false);    //uncheck the show entities checkbox
+    $(".show-x").prop("checked", false);    //uncheck the show entities checkbox
     
     
+
+
     $(".show-x").click(function(){       
         showEntities("-x");
     })
@@ -24,15 +28,15 @@ $(document).ready(function(){
 
     
     //Show metadata in tab divs
-    $(".info-nav-i").click(function(){
+    $(".info-nav-i").click(function(){                      
         if ($(".info-nav-i").hasClass("active-nav-i")) {
             console.log("already active")
-        } else {
-            $(".tab-content").removeClass("active-tc");
-            $(".info-tc").addClass("active-tc");
-            $(".nav-i").removeClass("active-nav-i");
-            $(".info-nav-i").addClass("active-nav-i");
-        }
+        } else {                                            //if the info tab is not active already 
+            $(".tab-content").removeClass("active-tc");     //remove the active class from all tab content divs
+            $(".info-tc").addClass("active-tc");            //add the active class to the info tab content div
+            $(".nav-i").removeClass("active-nav-i");        //remove the active class from all nav items
+            $(".info-nav-i").addClass("active-nav-i");      //add the active class to the info nav item 
+        }                                             //the active class is used to show the tab content div and highlight the nav item (all assigned in css)
     });
 
     $(".info-nav-i-b").click(function(){
@@ -196,6 +200,12 @@ $(document).ready(function(){
     });
 
 });
+
+
+
+
+
+
 
 
 
@@ -565,8 +575,6 @@ function changeToComparisonMode() {
     $(".modal-dialog").addClass("width-80");
     $(".modal-dialog").css("max-width", "none");
 }
-
-
 
 
 
