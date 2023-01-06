@@ -368,6 +368,7 @@ footer {
 
 .article-container {
   width: 70%;
+  min-height: 200px;
 }
 
 .article-comparison-container {
