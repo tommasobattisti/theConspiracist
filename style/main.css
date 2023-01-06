@@ -192,6 +192,8 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  row-gap: 5%;
+  column-gap: 5%;
 }
 
 
