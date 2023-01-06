@@ -55,7 +55,7 @@ footer {
     right: 2.5vmin;
     align-items: flex-end;
     justify-content: space-between;
-    z-index: 99;
+    z-index: 999;
 }
 
 #secondaryBtnsContainer {
@@ -145,6 +145,41 @@ footer {
 
 
 
+.btns-grid-container {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px;
+  position: fixed;
+  bottom: 2.5vmin;
+  right: 2.5vmin;
+  row-gap: 2vmax;
+}
+
+.btns-grid-container div button {
+  height: 100%;
+}
+
+.btns-item-1, .btns-item-2, .btns-item-3, .btns-item-4  {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.btns-item-5, .btns-item-7, .btns-item-9  {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*MAIN*/
 .last-container {
@@ -189,7 +224,7 @@ footer {
   margin-right: auto;
 }
 
-.grid-container {
+.home-grid-container {
   display: grid;
   grid-template-columns: auto auto;
   row-gap: 5%;
@@ -273,9 +308,8 @@ footer {
   z-index: 9999;
 }
 
-.modal-btn-container {
-  visibility: hidden;
-  width: 0;
+.btns-item-9, .btns-item-10 {
+  display: none;
 }
 
 .modal-btn {

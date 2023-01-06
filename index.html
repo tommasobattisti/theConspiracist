@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The PPPP Conspiracy magazine - Home</title>
+    <title>The Conspiracist - Home</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="style/main.css">
@@ -26,7 +26,7 @@
 <body>
     <nav class="navbar navbar-expand-md sticky-top navbar-dark pt-2 pb-2 dark-background">
         <div class="container-fluid x">
-          <a class="navbar-brand" href="#">The PPPP Conspiracy Magazine</a>
+          <a class="navbar-brand" href="#">The Conspiracist</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,34 +52,38 @@
     </nav>
 
     <!--Buttons-->
-    <div id="buttonsContainer">
-        <div id="secondaryBtnsContainer">
+    <div class="btns-grid-container">
+        <div class="btns-grid-item btns-item-1">
             <button class="subBtn" type="button">Style 1</button>
+        </div>
+        <div class="btns-grid-item btns-item-2">
             <button class="subBtn" type="button">Style 2</button>
+        </div>
+        <div class="btns-grid-item btns-item-3">
             <button class="subBtn" type="button">Style 3</button>
+        </div>
+        <div class="btns-grid-item btns-item-4">
             <button class="subBtn" type="button">Style 4</button>
         </div>
-        
-        <!--Interactive button div-->
-        <div id="mainBtnsContainer">
-            <div id="mainBtnsEmptyLeftContainer">   
-            </div>
-            <div id="mainBtnsRightContainer">
-                <div id="stylesBtnContainer" onclick="changeBtnsVisibility()">
-                    <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette btn-icon"></i></button>
-                </div>
-                <!--To the top Button-->
-                <div id="toTopContainer" onclick="scrollToTop()">
-                    <button id="toTopBtn"> <i class="fa-solid fa-arrow-up btn-icon"></i></button>
-                </div>
-            </div>
+        <div class="btns-grid-item btns-item-5">
+            
+        </div>
+        <div class="btns-grid-item btns-item-6" onclick="changeBtnsVisibility()">
+            <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette btn-icon"></i></button>
+        </div>
+        <div class="btns-grid-item btns-item-7">
+
+        </div>
+        <div class="btns-grid-item btns-item-8" onclick="scrollToTop()">
+            <button id="toTopBtn"> <i class="fa-solid fa-arrow-up btn-icon"></i></button>
         </div>
     </div>
+
 
     <main>
         <section class="page-presentation">
             <div class="title-container">
-                <h1>The PPPP Conspiracy Magazine</h1>
+                <h1>The Conspiracist</h1>
                 <p class="text-pill">A magazine aiming at ruling the world by means of metadata and powerful visualisations.</p>
             </div>
         </section>
@@ -87,7 +91,7 @@
 
             <div id="magazineDescription">
                 <h2>The Magazine</h2>
-                <p> The PPPP Conspiracy Magazine is a weekly magazine inquiring and analysing conspiracies from around the world under different points of view. The name of the magazine derives from a famous fringe theory called "The Presentationally Perfect Powerful Publications Conspiracy". It is said that many people from around the globe are following a master's degree in Digital Humanities and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interest of these people is still unknown.</p>
+                <p> The Conspiracist is a weekly magazine inquiring and analysing conspiracies from around the world under different points of view. The name of the magazine derives from a famous fringe theory called "The Presentationally Perfect Powerful Publications Conspiracy". It is said that many people from around the globe are following a master's degree in Digital Humanities and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interest of these people is still unknown.</p>
             </div>
 
             <div class="text-left-container">
@@ -110,23 +114,23 @@
             </div>
 
             
-            <div class="grid-container last-container">
-                <div class="grid-item">
+            <div class="home-grid-container last-container">
+                <div class="home-grid-item">
                     <h3>The dark side of the sources</h3>
                 </div>
-                <div class="grid-item">
+                <div class="home-grid-item">
                     <h3>The authors' lodge</h3>
                 </div>
-                <div class="grid-item">
+                <div class="home-grid-item">
                     <p>The texts we present have no mysterious source. Take a look at our disclaimer for more information.</p>
                 </div>
-                <div class="grid-item">
+                <div class="home-grid-item">
                     <p>No hooded people, no aliens, and no aim to manipulate human race (maybe). Discover the androids that run our authors.</p>
                 </div>
-                <div class="grid-item">
+                <div class="home-grid-item">
                     <a class="link-to-other-pages" href="./disclaimer.html">See the disclaimer</a>
                 </div>
-                <div class="grid-item">
+                <div class="home-grid-item">
                     <a class="link-to-other-pages" href="./about.html">Know the authors</a>
                 </div>
             </div>

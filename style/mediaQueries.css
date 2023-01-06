@@ -10,44 +10,7 @@
 
 
 
-
-@media only screen and (orientation: landscape) {
-    #buttonsContainer{
-        height: 40vmin;
-        width: 10vmax;
-    }
-}
-
-@media only screen and (min-aspect-ratio: 2/1) and (orientation: landscape) {
-    #buttonsContainer{
-        height: 60vmin;
-        width: 10vmax;
-    }
-}
-
-@media only screen and (min-aspect-ratio: 3/1) and (orientation: landscape) {
-    #buttonsContainer{
-        height: 70vmin;
-        width: 10vmax;
-    }
-}
-
-
-
-
-@media only screen and (orientation: portrait) {
-    #buttonsContainer{
-        height: 35vmax;
-        width: 15vmax;
-    }
-}
-
-
 @media only screen and (orientation: portrait) and (max-width: 680px) {
-    #buttonsContainer{
-        height: 80vmin;
-        width: 10vmax;
-    }
 
     .meta-text-container {
         flex-direction: column !important;
@@ -73,9 +36,10 @@
 
     }
 
-    .modal-btn-container {
+    .btns-item-9, .btns-item-10 {
         visibility: visible !important;
         width: 100% !important;
+        display: block !important;
     }
 
 }

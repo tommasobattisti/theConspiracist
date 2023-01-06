@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The PPPP Conspiracy magazine - Disclaimer</title>
+    <title>The Conspiracist - Disclaimer</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="style/main.css">
@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-md sticky-top navbar-dark pt-2 pb-2 dark-background">
         <div class="container-fluid x">
-          <a class="navbar-brand" href="./index.html">The PPPP Conspiracy Magazine</a>
+          <a class="navbar-brand" href="./index.html">The Conspiracist</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,29 +54,33 @@
     </nav>
 
     <!--Buttons-->
-    <div id="buttonsContainer">
-        <div id="secondaryBtnsContainer">
+    <div class="btns-grid-container">
+        <div class="btns-grid-item btns-item-1">
             <button class="subBtn" type="button">Style 1</button>
+        </div>
+        <div class="btns-grid-item btns-item-2">
             <button class="subBtn" type="button">Style 2</button>
+        </div>
+        <div class="btns-grid-item btns-item-3">
             <button class="subBtn" type="button">Style 3</button>
+        </div>
+        <div class="btns-grid-item btns-item-4">
             <button class="subBtn" type="button">Style 4</button>
         </div>
-        
-        <!--Interactive button div-->
-        <div id="mainBtnsContainer">
-            <div id="mainBtnsEmptyLeftContainer">   
-            </div>
-            <div id="mainBtnsRightContainer">
-                <div id="stylesBtnContainer" onclick="changeBtnsVisibility()">
-                    <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette"></i></button>
-                </div>
-                <!--To the top Button-->
-                <div id="toTopContainer" onclick="scrollToTop()">
-                    <button id="toTopBtn"> <i class="fa-solid fa-arrow-up"></i></button>
-                </div>
-            </div>
+        <div class="btns-grid-item btns-item-5">
+            
+        </div>
+        <div class="btns-grid-item btns-item-6" onclick="changeBtnsVisibility()">
+            <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette btn-icon"></i></button>
+        </div>
+        <div class="btns-grid-item btns-item-7">
+
+        </div>
+        <div class="btns-grid-item btns-item-8" onclick="scrollToTop()">
+            <button id="toTopBtn"> <i class="fa-solid fa-arrow-up btn-icon"></i></button>
         </div>
     </div>
+
     <main>
         <section class="page-presentation">
             <div class="title-container">
