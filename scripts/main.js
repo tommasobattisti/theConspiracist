@@ -24,12 +24,12 @@ function toggleTopButton()
 
 function changeBtnsVisibility() 
 {
-    if ($('.subBtn').css("visibility") ==  "hidden")
+    if ($('.sub-btn').css("visibility") ==  "hidden")
         {
-            $('.subBtn').css("visibility","visible")
+            $('.sub-btn').css("visibility","visible")
         }
     else
         {
-            $('.subBtn').css("visibility","hidden")
+            $('.sub-btn').css("visibility","hidden")
         }
 }

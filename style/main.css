@@ -533,6 +533,17 @@ footer {
 
 
 
+
+.visible {
+  visibility: visible !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
 /*
 .animate {
   animation-name: bgcolor ;

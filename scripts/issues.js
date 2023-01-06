@@ -556,7 +556,8 @@ function changeToSingleMode() {
     $(".metadata-container").css({"visibility": "visible", "width": "28%"});
     $(".article-comparison-container").css({"display": "none"});
     $(".article-container").css("width", "70%");
-    $(".modal-btn-container").css({"visibility": "hidden", "width": "0"});
+    $(".btns-item-9").removeClass("visible").addClass("hidden");
+    $(".btns-item-10").removeClass("visible").addClass("hidden");
     $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
     $(".right-modal-body").css({"display": "none", "visibility": "hidden", "height": "0"});
     $(".modal-dialog").removeClass("width-80");
@@ -570,7 +571,8 @@ function changeToComparisonMode() {
     $(".metadata-container").css({"visibility": "hidden", "width": "0"});
     $(".article-comparison-container").css({"display": "block", "width": "50%"});
     $(".article-container").css("width", "50%");
-    $(".modal-btn-container").css({"visibility": "visible", "width": "100%"});
+    $(".btns-item-9").removeClass("hidden").addClass("visible");
+    $(".btns-item-10").removeClass("hidden").addClass("visible");
     $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
     $(".right-modal-body").css({"display": "flex", "visibility": "visible", "height": "auto"});
     $(".modal-dialog").addClass("width-80");
