@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The PPPP Conspiracy magazine - Home</title>
+    <title>The PPPP Conspiracy magazine - Documentation</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="style/main.css">
@@ -20,19 +20,18 @@
     
     <!--JavaScript-->
     <script src="./scripts/main.js"></script>
-
-
 </head>
 <body>
+
     <nav class="navbar navbar-expand-md sticky-top navbar-dark pt-2 pb-2 dark-background">
         <div class="container-fluid x">
-          <a class="navbar-brand" href="#">The PPPP Conspiracy Magazine</a>
+          <a class="navbar-brand" href="./index.html">The PPPP Conspiracy Magazine</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
                 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
@@ -40,11 +39,12 @@
                         <li><a class="dropdown-item" href="./pizzagateIssue.html">Issue 1</a></li>
                         <li><a class="dropdown-item disabled">Issue 2</a></li>
                         <li><a class="dropdown-item disabled">Issue 3</a></li>
+                        <li><a class="dropdown-item disabled">Issue 4</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="./disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </li>
-                <a class="nav-link" href="./documentation.html">Documentation</a>
+                <a class="nav-link active" href="#">Documentation</a>
                 <a class="nav-link" href="./about.html">About</a>
             </div>
           </div>
@@ -66,73 +66,23 @@
             </div>
             <div id="mainBtnsRightContainer">
                 <div id="stylesBtnContainer" onclick="changeBtnsVisibility()">
-                    <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette btn-icon"></i></button>
+                    <button id="stylesBtn" type="button"> <i class="fa-solid fa-palette"></i></button>
                 </div>
                 <!--To the top Button-->
                 <div id="toTopContainer" onclick="scrollToTop()">
-                    <button id="toTopBtn"> <i class="fa-solid fa-arrow-up btn-icon"></i></button>
+                    <button id="toTopBtn"> <i class="fa-solid fa-arrow-up"></i></button>
                 </div>
             </div>
         </div>
     </div>
-
     <main>
         <section class="page-presentation">
             <div class="title-container">
-                <h1>The PPPP Conspiracy Magazine</h1>
-                <p class="text-pill">A magazine aiming at ruling the world by means of metadata and powerful visualisations.</p>
+                <h1>Documentation</h1>
+                <p class="text-pill">Transparency, transparency, transparency, transparency, transparency </p>
             </div>
         </section>
-        <section id="homeBody">
-
-            <div id="magazineDescription">
-                <h2>The Magazine</h2>
-                <p> The PPPP Conspiracy Magazine is a weekly magazine inquiring and analysing conspiracies from around the world under different points of view. The name of the magazine derives from a famous fringe theory called "The Presentationally Perfect Powerful Publications Conspiracy". It is said that many people from around the globe are following a master's degree in Digital Humanities and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interest of these people is still unknown.</p>
-            </div>
-
-            <div class="text-left-container">
-                <div class="text-block-left">
-                    <h3>Change style, change visualisations</h3>
-                    <p>inserisci una descrizione di come funziona il tasto del cambio di stile e perchè è li. rimanda alla documentazione per ispirazione ecc.</p>
-                </div>
-                <div class="content-block-right">
-                </div>
-            </div>
-
-            <div class="text-right-container">
-                <div class="content-block-left">
-                    <a class="link-to-other-pages" href="./pizzaGateIssue.html">Go to the first issue</a>
-                </div>
-                <div class="text-block-right">
-                    <h3>Text comparison and metadata analysis</h3>
-                    <p>This magazine allows the reader to read and compare different articles dealing with conspiracies. In particular, comparisons between the occurrence of different entities in the texts are allowed, as well as the addition of personalised keywords.</p>
-                </div>
-            </div>
-
-            <div class="horizontal-double-container last-container">
-                <div class="vertical-sub-container">
-                    <div class="vertical-text-container">
-                        <h3>The dark side of the sources</h3>
-                        <p>The texts we present have no mysterious source. Take a look at our disclaimer for more information.</p>
-                    </div>
-                    <div class="vertical-content-container">
-                        <a class="link-to-other-pages" href="./disclaimer.html">See the disclaimer</a>
-                    </div>
-                </div>
-                <div class="vertical-sub-container">
-                    <div class="vertical-text-container">
-                        <h3>The authors' lodge</h3>
-                        <p>No hooded people, no aliens, and no aim to manipulate human race (maybe). Discover the androids that run our authors.</p>
-                    </div>
-                    <div class="vertical-content-container">
-                        <a class="link-to-other-pages" href="./about.html">Know the authors</a>
-                    </div>
-                </div>
-            </div>
-
-
-
- 
+        <section id="documentationBody">
 
         </section>
     </main>
@@ -144,15 +94,8 @@
         </div>
     </footer>
 
-
-    
-
-
-
-
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
