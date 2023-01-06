@@ -148,6 +148,7 @@ footer {
 
 /*MAIN*/
 .last-container {
+  padding-top: 10%;
   padding-bottom: 10%;
 }
 
@@ -186,6 +187,11 @@ footer {
   width: 70%;
   margin-left: 15%;
   margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 
@@ -245,20 +251,9 @@ footer {
 }
 
 
-.horizontal-double-container {
-  padding-top: 10%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
-}
 
-.vertical-sub-container {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-}
+
+
 
 /*DISCLAIMER*/
 #disclaimerBody, #documentationBody {
