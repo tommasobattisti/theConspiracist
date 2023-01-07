@@ -309,7 +309,7 @@ function createEntity(form){
                     // Replace each match with a <span> element
                     par.innerHTML = par.innerHTML.replace(regex, function(match) {
                         id++;
-                        return '<span id="my-entity-'+String(id)+'" class="mention '+entityType+'">'+match+'</span>';
+                        return '<span id="my-entity-'+form+'-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
                     });
                 }
                 entitiesArray.push(entityObj);
@@ -394,17 +394,21 @@ function loadInA(file, label){
             success: function(d) {
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
+                createIds("ax"
+                );
                 addInfo("ax");
                 addMetadata("ax");
                 addEntitiesFromLocalStorage("ax", label);
                 addMetadata("ax");
+                
             },
             error: function() {
                 alert('Could not load file '+ file)
             }
         });
         $(".show-x").prop( "checked", false );
-        $(".show-a").prop( "checked", false );  
+        $(".show-a").prop( "checked", false );
+          
     }; 
 }
 
@@ -417,7 +421,8 @@ function loadInB(file, label){
             url: file,
             success: function(d) {
                 let article = $('.article-comparison-container').html(d)
-                $('.article-comparison-container').replaceWith(article)
+                $('.article-comparison-container').replaceWith(article);
+                createIds("b");
                 addInfo("b");
                 addMetadata("b");
                 addEntitiesFromLocalStorage("b", label);
@@ -500,11 +505,10 @@ function showEntities(r){
 
 function addEntitiesFromLocalStorage(modal, key){
     if (modal == "ax"){
-        var cont = ".article-container";
+        var paragraphs = $(".article-container .article-p");
     } else {
-        var cont = ".article-comparison-container";
+        var paragraphs = $(".article-comparison-container .article-p");
     }
-    let paragraphs = $(""+cont+" .article-p");
     for (entityObj of JSON.parse(localStorage.getItem(key.toLowerCase()))){
         var id = entityObj["start-id"]
         for (par of paragraphs) {
@@ -514,7 +518,7 @@ function addEntitiesFromLocalStorage(modal, key){
             // Replace each match with a <span> element
             par.innerHTML = par.innerHTML.replace(regex, function(match) {
                 id++;
-                return '<span id="my-entity-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
+                return '<span id="my-entity-'+modal+'-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
             });
         }
     }
@@ -576,6 +580,31 @@ function changeToComparisonMode() {
     $(".right-modal-body").css({"display": "flex", "visibility": "visible", "height": "auto"});
     $(".modal-dialog").addClass("width-80");
     $(".modal-dialog").css("max-width", "none");
+}
+
+
+
+//Create id for each entity in the paragraphs
+
+function createIds(contString) {
+    let idNum = 0;
+    let idString = "mention-"+contString+"-";
+    if (contString == "ax"){
+        var paragraphs = $(".article-container .article-p");
+    } else {
+        var paragraphs = $(".article-comparison-container .article-p");
+    }
+
+    for (let par of paragraphs) {
+        let spanRegex = new RegExp('<span[^>]*class="mention[^>]*>', 'gi')
+        let matches = par.innerHTML.match(spanRegex);
+        if (!matches) continue;
+        for (let match of matches) {
+            idNum++;
+            par.innerHTML = par.innerHTML.replace(match, match.replace(">", 'id="'+idString+idNum+'">'));
+        }
+    }
+
 }
 
 
