@@ -544,6 +544,14 @@ footer {
   display: none !important;
 }
 
+
+.article-img-centre, .figure-caption-centre {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
+
 /*
 .animate {
   animation-name: bgcolor ;
