@@ -513,7 +513,6 @@ function addEntitiesFromLocalStorage(modal, key){
             if (!matches) continue; // If there are no matches, return
             // Replace each match with a <span> element
             par.innerHTML = par.innerHTML.replace(regex, function(match) {
-                console.log('<span id="my-entity-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>');
                 id++;
                 return '<span id="my-entity-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
             });
