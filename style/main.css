@@ -558,6 +558,7 @@ footer {
 }
 
 .link-to-footnote:hover{
+  cursor: pointer;
   color:rgba(0, 217, 255, 0.5);
 }
 
