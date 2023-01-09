@@ -200,12 +200,15 @@ $(document).ready(function(){
         e.preventDefault();    //prevent the form from submitting and refreshing the page
         createEntity("b");
     });
+       
 
 });
 
 
-
-
+function goToFootnote(target){
+    let footnote = $("#note"+target)
+    $('html, body').animate({ scrollTop: footnote.offset().top - (window.innerHeight / 2) + footnote.height() / 2 }, 200);
+}
 
 
 

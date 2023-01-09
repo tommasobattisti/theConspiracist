@@ -552,6 +552,15 @@ footer {
 }
 
 
+
+.link-to-footnote{
+  color: blue;
+}
+
+.link-to-footnote:hover{
+  color:rgba(0, 217, 255, 0.5);
+}
+
 /*
 .animate {
   animation-name: bgcolor ;
