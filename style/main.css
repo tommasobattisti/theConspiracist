@@ -562,6 +562,11 @@ footer {
   color:rgba(0, 217, 255, 0.5);
 }
 
+.btns-grid-item button svg {
+  width: 75%;
+  height: 75%;
+}
+
 /*
 .animate {
   animation-name: bgcolor ;
