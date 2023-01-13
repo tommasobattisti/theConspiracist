@@ -74,7 +74,7 @@ function changeCSS(styleSheet)
 	if (styleSheet == 1910) {
         console.log("Hola")
 		doc.attr("href", "style/main.css");
-		sessionStorage.setItem("style", "style/swissGridStyle.css");
+		sessionStorage.setItem("style", "style/main.css");
  	}
 
  	if (styleSheet == 1950) {
@@ -91,7 +91,6 @@ function changeCSS(styleSheet)
 
 function maintainStyleOnLoad() 
 {
-    
     // This function is called when the page is loaded, and:
     // 1. Checks if the localStorage is empty
     // 2. If it is, it sets the default style
