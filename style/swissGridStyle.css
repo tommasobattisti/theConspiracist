@@ -231,39 +231,40 @@ footer div p {
 
 @-webkit-keyframes hover {
     0% {
-      transform: translateY(-30%);
+      transform: translateX(-120%);
     }
     100% {
-      transform: translateY(30%);
+      transform: translateX(120%);
     }
 }
 
 @-moz-keyframes hover {
     0% {
-    transform: translateY(-30%);
+    transform: translateX(-120%);
     }
     100% {
-    transform: translateY(30%);
+    transform: translateX(120%);
     }
 }
 
 @-o-keyframes hover {
     0% {
-    transform: translateY(-30%);
+    transform: translateX(-120%);
     }
     100% {
-    transform: translateY(30%);
+    transform: translateX(120%);
     }
 }
 
 @-ms-keyframes hover {
     0% {
-    transform: translateY(-30%);
+    transform: translateX(-120%);;
     }
     100% {
-    transform: translateY(30%);
+    transform: translateX(120%);
     }
 }
+
 
 
 @keyframes slide {
