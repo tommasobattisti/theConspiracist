@@ -7,7 +7,7 @@
     <title>The Conspiracist - Home</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/swissgridStyle.css">
     <link rel="stylesheet" href="style/mediaQueries.css">
 
     <!--jQuery-->
@@ -26,26 +26,26 @@
 <body>
     <nav class="navbar navbar-expand-md sticky-top navbar-dark pt-2 pb-2 dark-background">
         <div class="container-fluid x">
-          <a class="navbar-brand" href="#">The Conspiracist</a>
+          <a class="navbar-brand nav-text" href="#">The Conspiracist</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link nav-text active" aria-current="page" href="#">Home</a>
                 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
+                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="./pizzagateIssue.html">Issue 1</a></li>
-                        <li><a class="dropdown-item disabled">Issue 2</a></li>
-                        <li><a class="dropdown-item disabled">Issue 3</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./disclaimer.html">Disclaimer</a></li>
+                        <li><a class="dropdown-item nav-text" href="./pizzagateIssue.html">Issue 1</a></li>
+                        <li><a class="dropdown-item nav-text disabled">Issue 2</a></li>
+                        <li><a class="dropdown-item nav-text disabled">Issue 3</a></li>
+                        <li><hr class="dropdown-divider nav-text"></li>
+                        <li><a class="dropdown-item nav-text" href="./disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </li>
-                <a class="nav-link" href="./documentation.html">Documentation</a>
-                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link nav-text" href="./documentation.html">Documentation</a>
+                <a class="nav-link nav-text" href="./about.html">About</a>
             </div>
           </div>
         </div>
@@ -80,72 +80,92 @@
     </div>
 
 
-    <main>
-        <section class="page-presentation">
-            <div class="title-container">
-                <h1>The Conspiracist</h1>
-                <p class="text-pill">A magazine aiming at ruling the world by means of metadata and powerful visualisations.</p>
-            </div>
-        </section>
-        <section id="homeBody">
-
-            <div id="magazineDescription">
-                <h2>The Magazine</h2>
-                <p> The Conspiracist is a weekly magazine inquiring and analysing conspiracies from around the world under different points of view. The name of the magazine derives from a famous fringe theory called "The Presentationally Perfect Powerful Publications Conspiracy". It is said that many people from around the globe are following a master's degree in Digital Humanities and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interest of these people is still unknown.</p>
-            </div>
-
-            <div class="text-left-container">
-                <div class="text-block-left">
-                    <h3>Change style, change visualisations</h3>
-                    <p>inserisci una descrizione di come funziona il tasto del cambio di stile e perchè è li. rimanda alla documentazione per ispirazione ecc.</p>
-                </div>
-                <div class="content-block-right">
-                </div>
-            </div>
-
-            <div class="text-right-container">
-                <div class="content-block-left">
-                    <a class="link-to-other-pages" href="./pizzaGateIssue.html">Go to the first issue</a>
-                </div>
-                <div class="text-block-right">
-                    <h3>Text comparison and metadata analysis</h3>
-                    <p>This magazine allows the reader to read and compare different articles dealing with conspiracies. In particular, comparisons between the occurrence of different entities in the texts are allowed, as well as the addition of personalised keywords.</p>
-                </div>
-            </div>
-
-            
-            <div class="home-grid-container last-container">
-                <div class="home-grid-item">
-                    <h3>The dark side of the sources</h3>
-                </div>
-                <div class="home-grid-item">
-                    <h3>The authors' lodge</h3>
-                </div>
-                <div class="home-grid-item">
-                    <p>The texts we present have no mysterious source. Take a look at our disclaimer for more information.</p>
-                </div>
-                <div class="home-grid-item">
-                    <p>No hooded people, no aliens, and no aim to manipulate human race (maybe). Discover the androids that run our authors.</p>
-                </div>
-                <div class="home-grid-item">
-                    <a class="link-to-other-pages" href="./disclaimer.html">See the disclaimer</a>
-                </div>
-                <div class="home-grid-item">
-                    <a class="link-to-other-pages" href="./about.html">Know the authors</a>
-                </div>
-            </div>
 
 
+    <div class="circles-animation">
+        <div class="circles-animation-row circles-animation-row-1">
+            <div class="circle blue-circle"></div>
+        </div>
+        <div class="circles-animation-row circles-animation-row-2">
+            <div class="circle red-circle"></div>
+            <div class="circle blue-circle"></div>
+            <div class="circle red-circle"></div>
+            <div class="circle blue-circle"></div>
+            <div class="circle red-circle"></div>
+            <div class="circle blue-circle"></div>
+        </div>
+        <div class="circles-animation-row circles-animation-row-3">
+            <div class="circle red-circle"></div>
+        </div>
+    </div>
+    
+    <section class="page-presentation">
+        <div class="title-container">
+            <h1>The Conspiracist</h1>
+        </div>
+        <p class="text-pill" id="homeTp1">A magazine aiming at ruling the world by means of metadata and powerful visualisations</p>
+        <p class="text-pill" id="homeTp2">Articles comparison</p>
+        <p class="text-pill" id="homeTp3">Fringe theories</p>
+        <p class="text-pill" id="homeTp4">Entity tagging</p>
+    </section>
+    <main id="homeMainGrid">
 
- 
+            <section id="homeBody">
 
-        </section>
+                <div id="magazineDescription">
+                    <h2>The Magazine</h2>
+                    <p> The Conspiracist is a weekly magazine inquiring and analysing conspiracies from around the world under different points of view. The name of the magazine derives from a famous fringe theory called "The Presentationally Perfect Powerful Publications Conspiracy". It is said that many people from around the globe are following a master's degree in Digital Humanities and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interest of these people is still unknown.</p>
+                </div>
+
+                <div class="text-left-container">
+                    <div class="text-block-left">
+                        <h3>Change style, change visualisations</h3>
+                        <p>inserisci una descrizione di come funziona il tasto del cambio di stile e perchè è li. rimanda alla documentazione per ispirazione ecc.</p>
+                    </div>
+                    <div class="content-block-right">
+                    </div>
+                </div>
+
+                <div class="text-right-container">
+                    <div class="content-block-left">
+                        <a class="link-to-other-pages" href="./pizzaGateIssue.html">Go to the first issue</a>
+                    </div>
+                    <div class="text-block-right">
+                        <h3>Text comparison and metadata analysis</h3>
+                        <p>This magazine allows the reader to read and compare different articles dealing with conspiracies. In particular, comparisons between the occurrence of different entities in the texts are allowed, as well as the addition of personalised keywords.</p>
+                    </div>
+                </div>
+
+                
+                <div class="home-grid-container last-container">
+                    <div class="home-grid-item">
+                        <h3>The dark side of the sources</h3>
+                    </div>
+                    <div class="home-grid-item">
+                        <h3>The authors' lodge</h3>
+                    </div>
+                    <div class="home-grid-item">
+                        <p>The texts we present have no mysterious source. Take a look at our disclaimer for more information.</p>
+                    </div>
+                    <div class="home-grid-item">
+                        <p>No hooded people, no aliens, and no aim to manipulate human race (maybe). Discover the androids that run our authors.</p>
+                    </div>
+                    <div class="home-grid-item">
+                        <a class="link-to-other-pages" href="./disclaimer.html">See the disclaimer</a>
+                    </div>
+                    <div class="home-grid-item">
+                        <a class="link-to-other-pages" href="./about.html">Know the authors</a>
+                    </div>
+                </div>
+
+            </section>
+
     </main>
 
     <footer class="dark-background">
         <div class="footer-container">
-              <p class="text-center white-text">A project for the "Information Modelling and Web Technologies" course of the master's degree in Digital Humanities and Digital Knowlege, University of Bologna</p>
-              <p class="text-center white-text">© 2022 - The PPPP Conspiracy Magazine</p>
+              <p class="text-center">A project for the "Information Modelling and Web Technologies" course of the master's degree in Digital Humanities and Digital Knowlege, University of Bologna</p>
+              <p class="text-center">© 2022 - The PPPP Conspiracy Magazine</p>
         </div>
     </footer>
 

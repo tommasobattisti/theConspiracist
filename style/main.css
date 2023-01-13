@@ -40,14 +40,13 @@ footer {
   margin-right: auto;
 }
 
+
+
 /*BUTTONS SUB-SECTION */
 
 .btn-icon {
   font-size: 1.4vmax;
 }
-
-
-
 
 #toTopContainer {
   width: 100%;
@@ -56,7 +55,6 @@ footer {
 #stylesBtnContainer{
   width: 100%
 }
-
 
 
 #toTopBtn {
@@ -132,7 +130,9 @@ footer {
 
 
 
-
+#homeTp2, #homeTp3, #homeTp4 {
+  display: none;
+}
 
 
 
@@ -566,6 +566,14 @@ footer {
   width: 75%;
   height: 75%;
 }
+
+
+
+.circles-animation {
+  display: none;
+}
+
+
 
 /*
 .animate {
