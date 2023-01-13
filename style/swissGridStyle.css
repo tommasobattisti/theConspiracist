@@ -43,7 +43,8 @@ nav {
 .svg-inline--fa {
     height: 65% !important;
 }
-  
+
+
 #toTopContainer {
     width: 100%;
 }
@@ -100,7 +101,7 @@ nav {
     bottom: 2.5vmin;
     right: 2.5vmin;
     row-gap: 2vmax;
-   
+   z-index: 999;
 }
   
 .btns-grid-container div button {
