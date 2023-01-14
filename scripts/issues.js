@@ -397,8 +397,7 @@ function loadInA(file, label){
             success: function(d) {
                 let article = $('.article-container').html(d)
                 $('.article-container').replaceWith(article)
-                createIds("ax"
-                );
+                createIds("ax");
                 addInfo("ax");
                 addMetadata("ax");
                 addEntitiesFromLocalStorage("ax", label);

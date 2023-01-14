@@ -223,6 +223,16 @@ main {
 }
 
 
+.text-line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 2.5px;
+}
+
+
+
+
+
+
 /*FOOTER*/
 footer {
     height: 30vh;
