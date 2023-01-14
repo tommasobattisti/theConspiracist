@@ -12,7 +12,7 @@
 */
 
 body {
-    background-color: #e6e1d7;
+    background-color: #f0e5d1e6 !important;
 }
 
 
@@ -240,6 +240,7 @@ main {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2%;
+    color: #5A8094;
 }
 
 
