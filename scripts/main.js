@@ -48,14 +48,11 @@ function adjustDimestionsAfterRotation(div, rotation) {
 }
 
 function changeNavBackground() {
-    let thresholdHeight = $(window).height()/100*70
-    console.log(thresholdHeight)
+    let thresholdHeight = $(window).height()/100*70   
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
-        console.log("cambio colore")
         $("nav").removeClass("nav-transparent-background");
         $("nav").addClass("nav-colored-background");
     } else {
-        console.log("ri-cambio colore")
         $("nav").removeClass("nav-colored-background");
         $("nav").addClass("nav-transparent-background");
     };
@@ -102,7 +99,6 @@ function changeCSS(styleSheet)
  	}
 
 	if (styleSheet == 1910) {
-        console.log("Hola")
 		doc.attr("href", "style/main.css");
 		sessionStorage.setItem("style", "style/main.css");
  	}

@@ -1,0 +1,274 @@
+/*
+    COLOR PALETTE
+    #4C412E
+    #F08B48
+    #F6BF77
+    #f0e5d1e6
+    #5A8094
+*/
+
+/*
+    font-family: 'Inknut Antiqua', serif;
+*/
+
+body {
+    background-color: #e6e1d7;
+}
+
+
+
+/*Navbar*/
+nav {
+    width: 100% !important;
+    position: fixed !important;
+}
+
+.nav-transparent-background {
+    background-color: transparent !important;
+}
+
+.nav-colored-background {
+    background-color: #f0e5d1e6 !important;
+    border-bottom: #212529 solid 1px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-text {
+    color: #212529 !important;
+    font-family: 'Inknut Antiqua', serif !important;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+  }
+  
+.navbar-toggler:hover{
+    box-shadow: 0 0 0 0.1rem !important;
+}
+  
+
+
+
+
+/*BUTTONS SUB-SECTION */
+
+.svg-inline--fa {
+    height: 65% !important;
+}
+
+
+#toTopContainer {
+    width: 100%;
+}
+  
+#stylesBtnContainer{
+    width: 100%
+}
+  
+  
+#toTopBtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    align-self: right;
+    visibility: hidden;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+}
+  
+#stylesBtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    align-self: right;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+}
+  
+.sub-btn {
+    width: 100%;
+    height: 20%;
+    border: none;
+    visibility: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+}
+
+  
+.btns-grid-container {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px;
+    position: fixed;
+    bottom: 2.5vmin;
+    right: 2.5vmin;
+    row-gap: 2vmax;
+   z-index: 999;
+}
+  
+.btns-grid-container div button {
+    height: 100%;
+}
+  
+.btns-item-1, .btns-item-2, .btns-item-3, .btns-item-4  {
+    grid-column: 1/4;
+}
+  
+.btns-item-5, .btns-item-7, .btns-item-9  {
+    grid-column: 1/3;
+}
+
+
+
+
+/*Page presentation*/
+
+.page-presentation {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
+    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("../images_styles/presentation_incunabula.png");
+    background-size: cover;
+    padding: 10.5vh 14vh 0 7vh;
+    border-bottom: #212529 1px solid;
+}
+
+
+.title-container{
+    grid-row: 3;
+    grid-column: 3/7;
+    z-index: 1;
+}
+
+
+.title-container h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+.subtitle-div {
+    grid-row: 5;
+    grid-column: 2/8;
+    text-align: center;
+}
+
+#homeTp1 {
+    font-size: 2vw;
+    font-weight: 400;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+#homeTp2, #homeTp3, #homeTp4 {
+    display:none;
+}
+
+
+
+/*MAIN*/
+main {
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+#homeBody {
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-left: 3vw;
+    margin-bottom: 8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#homeBody p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+
+#homeBody h3 {
+    margin-bottom: 2%;
+}
+
+
+#editorsAndSourcesDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.esd-lt-block, .esd-rt-block {
+    width: 44%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 50% 20%;
+}
+
+.esd-lt-block div {
+    margin-bottom: 5%;
+}
+
+.esd-rt-block div {
+    margin-bottom: 5%;
+}
+
+
+
+
+/* Title "The magazine" */
+#mdTitleCont h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+
+.home-flex-row {
+    margin-top: 10%;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 2.5px;
+}
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    height: 30vh;
+    justify-content: center;
+    background-color: #84765e;
+}
+
+
+footer div p {
+    color: whitesmoke;
+}
+
+
+
+
