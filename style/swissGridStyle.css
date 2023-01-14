@@ -131,6 +131,9 @@ nav {
     border-bottom: #212529 1px solid;
 }
 
+.page-presentation p {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+}
 
 .title-container{
     grid-row: 1/5;
@@ -146,17 +149,19 @@ nav {
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
-
-
-#homeTp1 {
+#swissRotatedPill{
+    grid-column: 7/9;
+    grid-row: 3/7;
     transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
+}
+
+
+#homeTp1 {
     font-size: 1.7vw;
-    grid-column: 7/9;
-    grid-row: 3/7;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
@@ -198,6 +203,19 @@ main {
     gap: 0.8%;
 }
 
+.home-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.row-rt-block, .row-lt-block {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
 
 #magazineDescription {
     grid-column: 3/7;
@@ -205,7 +223,39 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
+
+#mdTitleCont {
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+
+#mdTitleCont h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+
+#mdParCont {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mdParCont p {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 #styleChangeDescription {
     grid-column: 3/7;

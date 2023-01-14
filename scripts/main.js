@@ -1,8 +1,10 @@
 $(document).ready(function(){
     maintainStyleOnLoad();
+
     $("nav").removeClass("dark-background")
     $("nav").addClass("nav-transparent-background");
     
+
     window.onscroll = () => {
     toggleTopButton();
     changeNavBackground();
@@ -14,8 +16,36 @@ $(document).ready(function(){
         $('.sub-btn').css("visibility","hidden")           
     });
 
+
+    for (let div of $("div")) {
+        if(div.css("transform") == true) {
+            let rotation = div.css("transform")
+            switch (rotation) {
+                case "rotate(90deg)":
+                    adjustDimestionsAfterRotation(div, 90);
+                    break;
+                case "rotate(-90deg)":
+                    adjustDimestionsAfterRotation(div, -90);
+                    break;
+            }
+        }
+    }
+
+
 });
 
+
+
+
+function adjustDimestionsAfterRotation(div, rotation) {
+    let divWidth = $("#"+div.id).width()
+    let divHeight = $("#"+div.id).height()
+    nw = abs(divWidth * cos(rotation)) + abs(divHeight * sin(rotation))
+    nh = abs(divWidth * sin(rotation)) + abs(divHeight * cos(rotation))
+
+    $(".mdTitleCont").css("width", nw)
+    $(".mdTitleCont").css("height", nh)
+}
 
 function changeNavBackground() {
     let thresholdHeight = $(window).height()/100*70
