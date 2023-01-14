@@ -97,8 +97,8 @@ function changeCSS(styleSheet)
 
     // we set the attribute "href" with the value of the variable "nameOfTheStyle"
     if (styleSheet == 1500) {
-		doc.attr("href", "style/main.css");
-		sessionStorage.setItem("style", "style/main.css");
+		doc.attr("href", "style/incunabula.css");
+		sessionStorage.setItem("style", "style/incunabula.css");
  	}
 
 	if (styleSheet == 1910) {
