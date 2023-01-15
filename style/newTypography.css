@@ -8,12 +8,22 @@
     font-family: 'Cinzel', serif;
 */
 
+/*
+    SFONDO MARGINE CON LINEE COLORATE
+    background: repeating-linear-gradient(
+            to right,
+            black,
+            black 2px,
+            white 2px,
+            white 4px
+        );
+*/
+
 body {
     background-color: white !important;
     border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
     border-right: #D62503 3vw solid;              /* QUELLE SCRITTE QUI SONO A CASO */
 }
-
 
 
 /*Navbar*/
