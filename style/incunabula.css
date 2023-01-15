@@ -180,6 +180,11 @@ nav {
 
 
 /*MAIN*/
+
+#styleChangePoster {
+    display: none;
+}
+
 main {
     margin-top: 10%;
     margin-right: 20%;
@@ -202,6 +207,31 @@ main {
     text-align: justify;
 }
 
+#homeBody h2::first-letter {
+    font-size: 4em;
+    float:left;
+    padding-bottom: 0;
+    margin-right: 3%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../images_styles/incunabula/trump_incunabula.png);
+    background-size: cover;
+    object-position: top;
+    border: 5px solid #ed4007;
+    font-weight: 100;
+    color: #ed4007;
+}
+
+#homeBody h3::first-letter{
+    font-size: 2em;
+    float:left;
+    padding-bottom: 0;
+    margin-right: 1%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../images_styles/incunabula/trump_incunabula.png);
+    background-size: cover;
+    object-position: top;
+    border: 2px solid #ed4007;
+    font-weight: 100;
+    color: #ed4007;
+}
 
 
 #homeBody h3 {
@@ -218,17 +248,14 @@ main {
 
 .esd-lt-block, .esd-rt-block {
     width: 44%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 50% 20%;
 }
 
 .esd-lt-block div {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 .esd-rt-block div {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 
@@ -237,10 +264,10 @@ main {
 /* Title "The magazine" */
 #mdTitleCont h2 {
     font-size: 2.5em;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 2%;
-    color: #5A8094;
+    color: black;
 }
 
 
