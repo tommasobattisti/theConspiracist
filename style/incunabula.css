@@ -223,6 +223,7 @@ main {
     background-size: cover;
     object-position: top;
     border: 5px solid #ed4007;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     font-weight: 100;
     color: #ed4007;
 }
