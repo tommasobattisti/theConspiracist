@@ -215,6 +215,9 @@ main {
     justify-content: space-between;
 }
 
+.home-magazine-img-container {
+    display:none;
+}
 
 .row-rt-block, .row-lt-block {
     display: flex;
