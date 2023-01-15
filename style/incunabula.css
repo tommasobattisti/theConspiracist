@@ -204,13 +204,13 @@ main {
 #homeBody {
     margin-top: 15vw;
     margin-right: 15vw;
-    margin-left: 1vw;
+    margin-left: 9vw;
     margin-bottom: 24vw;
     display: flex;
     flex-direction: column;
-    border-left: 6vw solid transparent;
+    border-left: 5vw solid transparent;
     padding: 2vw;
-    border-image: url("../images_styles/incunabula/ornament_incunabula.jpeg") 70 stretch;
+    border-image: url("../images_styles/incunabula/ornament_incunabula.jpeg") 50 stretch;
 }
 
 
@@ -309,14 +309,25 @@ main {
 
 /*FOOTER*/
 footer {
-    height: 30vh;
+    height: fit-content;
+    display: flex;
     justify-content: center;
-    background-color: #84765e;
+    font-family: 'Inknut Antiqua', serif !important;
+    font-size: 1.2em;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 60%;
+}
 
+/* Cpopyright */
 footer div p {
-    color: whitesmoke;
+    text-align: center;
+    color: #212529;
 }
 
 
