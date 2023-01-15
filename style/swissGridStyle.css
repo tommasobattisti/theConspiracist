@@ -2,6 +2,8 @@
 nav {
     width: 100% !important;
     position: fixed !important;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 600 !important;
 }
 
 
@@ -122,7 +124,7 @@ nav {
 /*Page presentation*/
 
 .page-presentation {
-    height: 75vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
@@ -136,7 +138,7 @@ nav {
 }
 
 .title-container{
-    grid-row: 1/5;
+    grid-row: 2/6;
     grid-column: 2/6;
     z-index: 1;
 }
@@ -208,6 +210,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -289,6 +292,7 @@ main {
 /*Style poster*/
 
 .poster-container {
+    height: 100%;
     display: flex !important;
     flex-direction: column;
     align-items: center !important;
@@ -297,21 +301,27 @@ main {
 
 
 #styleChangePoster {
-    height: 100%;
-    aspect-ratio: 5/8;
+    height: 90%;
+    aspect-ratio: 2/3;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+    background-color: #db2f27;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
 }
 
-#styleChangePoster {
+#posterPar1Container {
+    width: 80%;
+    text-align: right;
+}
+
+#posterPar1Container p {
     font-weight: 600;
-    font-size: 2em;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-size: 1.5em;
 }
 
 #bottomPosterPs {
@@ -324,12 +334,19 @@ main {
     justify-content: space-between;
 }
 
-#bppsCol1{
+#bottomPosterPs p {
+    font-weight: 500;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+#bppsCol1 {
     width: 40%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #bppsCol2 {
@@ -337,19 +354,23 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 
 #posterIconContainer {
-    width: 80%;
+    width: 85%;
     aspect-ratio: 1/1;
-    background-color: rgb(75, 127, 122);
+    background-color: #e5e7de;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+#posterIconContainer svg:nth-child(1) {
+    color: #0d0f05;
 }
 
 
@@ -473,7 +494,7 @@ footer div p {
 .circles-animation {
     position: absolute;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     overflow: hidden;
 }
 

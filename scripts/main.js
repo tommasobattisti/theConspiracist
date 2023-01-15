@@ -47,8 +47,9 @@ function adjustDimestionsAfterRotation(div, rotation) {
     $(".mdTitleCont").css("height", nh)
 }
 
+
 function changeNavBackground() {
-    let thresholdHeight = $(window).height()/100*70   
+    let thresholdHeight = $(window).height()/100*92;   
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
         $("nav").removeClass("nav-transparent-background");
         $("nav").addClass("nav-colored-background");
