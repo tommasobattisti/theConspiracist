@@ -2,8 +2,6 @@
 nav {
     width: 100% !important;
     position: fixed !important;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-weight: 600 !important;
 }
 
 
@@ -22,6 +20,7 @@ nav {
 .nav-text {
     color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 600 !important;
 }
 
 .navbar-toggler:focus{
@@ -309,7 +308,7 @@ main {
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    background-color: #db2f27;
+    background-color: #e37718;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
 }
 
@@ -362,7 +361,7 @@ main {
     width: 85%;
     aspect-ratio: 1/1;
     background-color: #e5e7de;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,7 +369,7 @@ main {
 }
 
 #posterIconContainer svg:nth-child(1) {
-    color: #0d0f05;
+    color: rgba(13, 15, 5, 0.9);
 }
 
 
