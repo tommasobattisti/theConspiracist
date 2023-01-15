@@ -201,6 +201,11 @@ main {
     flex-direction: column;
 }
 
+#ornament {
+    background-color: red
+    
+}
+
 
 #homeBody p {
     font-size: 1.1em;
