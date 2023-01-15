@@ -136,7 +136,7 @@ nav {
 /*Page presentation*/
 
 .page-presentation {
-    height: 75vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
