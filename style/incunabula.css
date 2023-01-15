@@ -180,6 +180,11 @@ nav {
 
 
 /*MAIN*/
+
+#styleChangePoster {
+    display: none;
+}
+
 main {
     margin-top: 10%;
     margin-right: 20%;
