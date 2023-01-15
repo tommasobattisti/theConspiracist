@@ -100,8 +100,8 @@ function changeCSS(styleSheet)
  	}
 
  	if (styleSheet == 1930) {
-		doc.attr("href", "style/newTypography.css");
-		sessionStorage.setItem("style", "style/newTypography.css")
+		doc.attr("href", "style/time.css");
+		sessionStorage.setItem("style", "style/time.css")
  	}
 
      if (styleSheet == 1970) {
