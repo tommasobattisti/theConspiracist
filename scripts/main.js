@@ -98,14 +98,14 @@ function changeCSS(styleSheet)
 		sessionStorage.setItem("style", "style/incunabula.css");
  	}
 
- 	if (styleSheet == 1950) {
-		doc.attr("href", "style/swissGridStyle.css");
-		sessionStorage.setItem("style", "style/swissGridStyle.css")
+ 	if (styleSheet == 1930) {
+		doc.attr("href", "style/newTypography.css");
+		sessionStorage.setItem("style", "style/newTypography.css")
  	}
 
-     if (styleSheet == 2000) {
-		doc.attr("href", "style/time.css");
-		sessionStorage.setItem("style", "style/time.css");
+     if (styleSheet == 1970) {
+		doc.attr("href", "style/swissGridStyle.css");
+		sessionStorage.setItem("style", "style/swissGridStyle.css")
  	}
 
     if (styleSheet == 2030) {
