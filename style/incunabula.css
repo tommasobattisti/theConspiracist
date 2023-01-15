@@ -52,10 +52,15 @@ nav {
 
 
 
+
 /*BUTTONS SUB-SECTION */
 
 .svg-inline--fa {
     height: 65% !important;
+}
+
+#timeMachineImg {
+    height: 85%;
 }
 
 
@@ -109,13 +114,13 @@ nav {
   
 .btns-grid-container {
     display: grid;
-    grid-template-columns: 40px 40px 40px;
-    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
     position: fixed;
-    bottom: 2.5vmin;
-    right: 2.5vmin;
+    bottom: 3.5vmin;
+    right: 3.5vmin;
     row-gap: 2vmax;
-   z-index: 999;
+    z-index: 999;
 }
   
 .btns-grid-container div button {

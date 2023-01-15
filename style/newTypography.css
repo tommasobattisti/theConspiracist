@@ -73,6 +73,10 @@ nav {
     height: 65% !important;
 }
 
+#timeMachineImg {
+    height: 85%;
+}
+
 
 #toTopContainer {
     width: 100%;
@@ -96,7 +100,7 @@ nav {
     border-radius: 50%;
     border: none;
     color: black;
-    box-shadow: 0px 8px 15px rgba(214, 37, 3, 0.8);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
 }
   
 #stylesBtn {
@@ -110,7 +114,7 @@ nav {
     border-radius: 50%;
     border: none;
     color: black;
-    box-shadow: 0px 8px 15px rgba(214, 37, 3, 0.8);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
 }
   
 .sub-btn {
@@ -118,17 +122,17 @@ nav {
     height: 20%;
     border: none;
     visibility: hidden;
-    box-shadow: 0px 8px 15px rgba(214, 37, 3, 0.8) 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
 }
 
   
 .btns-grid-container {
     display: grid;
-    grid-template-columns: 40px 40px 40px;
-    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
     position: fixed;
-    bottom: 2.5vmin;
-    right: 2.5vmin;
+    bottom: 3.5vmin;
+    right: 3.5vmin;
     row-gap: 2vmax;
     z-index: 999;
 }
@@ -144,7 +148,6 @@ nav {
 .btns-item-5, .btns-item-7, .btns-item-9  {
     grid-column: 1/3;
 }
-
 
 
 
