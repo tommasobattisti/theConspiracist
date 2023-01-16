@@ -240,7 +240,7 @@ main {
     flex-direction: column;
     border-left: 5vw solid transparent;
     padding: 2vw;
-    border-image: url("../images_styles/incunabula/ornament_incunabula.jpeg") 100 round;
+    border-image: url("../images_styles/incunabula/ornament_incunabula.jpeg") 100 repeat;
 }
 
 
@@ -414,17 +414,13 @@ main {
 }
 
 
-
-
-
-
 .mode-selector {
     width: 100%;
     height: fit-content;
     margin: 0;
     margin-top: 5%;
     display: none;
-    background-image: url("../images_styles/incunabula/ornament_incunabula.svg");
+    background-image: linear-gradient(0.25turn, rgba(255,255,255,0.2), rgba(255,255,255,0.4), rgba(255,255,255,0.4), rgba(255,255,255,0.2))  , url("../images_styles/incunabula/mode_selector_ornament.svg");
   }
   
 
@@ -445,79 +441,105 @@ main {
 .h-flex-no-wrap button {
     padding: 1.5% 0;
     height: 100%;
-    width: 20%;
+    width: 25%;
+    font-size: 1.5em;
+    background-color:#f0e5d1e2;
+    border: solid 2px;
 }
 
 
 
-  .double-doc-selector {
+.double-doc-selector {
     position: relative; 
     visibility: hidden;
     height: 0;
     z-index: 999;
-  }
+}
   
   
   
-  .width-100 {
+.width-100 {
     width: 100% !important;
-  }
+}
   
-  .card {
-    background-color: none !important;
-  }
-  
-  .card-header {
-    background-color: transparent !important;
-    padding: 0 !important;
-  }
-  
-  .meta-menu-card{
-    background-color: white !important;
-  }
-  
-  .meta-text-container {
+
+
+
+
+.meta-text-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 90%;
-    margin: 5%;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-left: 3vw;
+    margin-bottom: 8vw;
     justify-content: space-between;
-  }
-  
-  .metadata-container {
+}
+
+
+.metadata-container {
     width: 28%;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .sticky-container {
+.sticky-container {
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
     top: 10%;
-  }
+}
+
+.card {
+    background-color: transparent;
+}
   
-  .metadata-container > div {  /*Select only first level div children*/
-    margin: 5% 0;
-  }
+.card-header {
+    padding: .5rem 0;
+}
   
-  
-  .article-container {
+.meta-menu-card{
+    background-color: white !important;
+}
+
+.card-body li {
+    padding: .5rem 0;
+}
+
+.card-body form div {
+    margin: 1rem 0;
+}
+
+.entity-string {
+    border: solid 1px;
+    margin: .5rem 0;
+}
+
+
+
+/*Artice container*/
+.article-container {
     width: 70%;
     min-height: 200px;
   }
 
 .article-container p {
-    justify-content: justify;
+    text-align: justify;
+    font-size: 1.3em;
 }
   
-  .article-comparison-container {
+.article-comparison-container {
     display: none;
-  }
+}
+
+.article-comparison-container p {
+    text-align: justify;
+    font-size: 1.3em;
+}
   
   
-  .entity-creation-form, .entity-creation-form-b {
+.entity-creation-form, .entity-creation-form-b {
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -528,7 +550,7 @@ main {
     align-content: center;
     padding: 0;
     margin: 0;
-  }
+}
   
   .entity-creation-form input {
     width: 100%;
@@ -648,9 +670,7 @@ main {
     margin: 5% 0;
   }
   
-  .entity-string, .entity-string-b{
-    width: auto !important;
-  }
+
   
   
   
