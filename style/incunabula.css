@@ -17,6 +17,7 @@ body {
 
 
 
+
 /*Navbar*/
 nav {
     width: 100% !important;
@@ -511,34 +512,7 @@ main {
     margin: 1rem 0;
 }
 
-.entity-string {
-    border: solid 1px;
-    margin: .5rem 0;
-}
 
-
-
-/*Artice container*/
-.article-container {
-    width: 70%;
-    min-height: 200px;
-  }
-
-.article-container p {
-    text-align: justify;
-    font-size: 1.3em;
-}
-  
-.article-comparison-container {
-    display: none;
-}
-
-.article-comparison-container p {
-    text-align: justify;
-    font-size: 1.3em;
-}
-  
-  
 .entity-creation-form, .entity-creation-form-b {
     box-sizing: border-box;
     width: 100%;
@@ -559,46 +533,146 @@ main {
   .entity-creation-form-b input {
     width: 100%;
   }
+
+.entity-string {
+    border: solid 1px;
+    margin: .5rem 0;
+}
+
+
+
+
   
-  .entities-content-table {
+.entities-content-table {
     box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .nav-items-div {
+.nav-items-div {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-  }
+}
   
-  .nav-i, .nav-i-b {
+.nav-i, .nav-i-b {
     background-color: transparent;
     border: none;
     padding: 3% 5%;
-  }
+}
   
-  .active-nav-i {
-    background-color: rgb(196, 127, 127);
-    border: none;
-  }
+.active-nav-i {
+    background-color: #F6BF77;
+    border: 1px solid;
+}
+
   
-  .tab-content, .tab-content-b{
+.tab-content, .tab-content-b{
     display: none;
   }
   
   
-  .active-tc {
+.active-tc {
     display: block !important;
     width: 100% !important;
     height: 200px !important;
     border: 1px solid;
     border-radius: 2%;
     overflow-y: scroll !important;
+}
+
+.active-tc li {
+    padding-right: 1rem;
+}
+
+
+
+
+/*Artice container*/
+.article-container {
+    width: 70%;
+    min-height: 200px;
   }
+
+.article-container p {
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+.article-container h3::first-letter {
+    font-size: 3em;
+    float:left;
+    padding-bottom: 0;
+    margin: 0 2% 0 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
+    background-size: cover;
+    object-position: top;
+    border: 2px solid #ed4007;
+    font-weight: 100;
+    color: #ed4007;
+}
+
+
+.article-container h3 {
+    margin-top: 2em;
+}
+
+
+.article-title, .author-info, .publication-info {
+    padding-bottom: 1.5em;
+    text-align: center !important;
+    text-transform: uppercase;
+}
+
+
+
+
+.article-comparison-container h3::first-letter {
+    font-size: 3em;
+    float:left;
+    padding-bottom: 0;
+    margin: 0 2% 0 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
+    background-size: cover;
+    object-position: top;
+    border: 2px solid #ed4007;
+    font-weight: 100;
+    color: #ed4007;
+}
+
+.article-comparison-container h3 {
+    margin-top: 2em;
+}
+
+.article-comparison-container {
+    display: none;
+}
+
+.article-comparison-container p {
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+
+
+li a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+.article-container a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+.article-comparison-container a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
   
   .info-dl, .info-dl-b{
     padding: 2%;
@@ -695,13 +769,26 @@ main {
 
 
 
-  .article-img-centre, .figure-caption-centre {
+.article-img-centre {
+    margin-top: 2em;
     width: 70%;
     margin-left: 15%;
     margin-right: auto;
   }
-  
-  
+
+.figure-caption-centre {
+    margin-bottom: 2em;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+    font-size: 1em !important;
+}
+
+
+
+.notes-h3, .references-h3 {
+    padding-bottom: 2em;
+}
   
   .link-to-footnote{
     color: blue;
