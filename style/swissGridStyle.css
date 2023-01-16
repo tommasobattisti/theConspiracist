@@ -30,10 +30,6 @@ nav {
 .navbar-toggler:hover{
     box-shadow: 0 0 0 0.1rem !important;
 }
-  
-.dark-background {
-    background-color: rgb(24, 31, 31);
-}
 
 
 
@@ -426,10 +422,11 @@ main {
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
+    font-size: 0.8em;
 }
 
 #bppsCol1 {
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -437,7 +434,7 @@ main {
 }
 
 #bppsCol2 {
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -445,10 +442,14 @@ main {
 }
 
 
+
+
+
+
 #posterIconContainer {
     width: 85%;
     aspect-ratio: 1/1;
-    background-color: #e5e7de;
+    background-color: whitesmoke;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -477,13 +478,19 @@ main {
 
 /*FOOTER*/
 footer {
-    height: 30vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+footer div {
+    width: 50%;
+}
 
 footer div p {
-    color: whitesmoke;
+    color:#212529
 }
 
 
