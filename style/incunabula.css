@@ -145,10 +145,18 @@ nav {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
-    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("../images_styles/incunabula/presentation_incunabula.png");
-    background-size: cover;
     padding: 10.5vh 14vh 0 7vh;
     border-bottom: #212529 1px solid;
+}
+
+.index-page-presentation {
+    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("../images_styles/incunabula/presentation_incunabula.png");
+    background-size: cover;
+}
+
+.issue-page-presentation {
+    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("");
+    background-size: cover;
 }
 
 
@@ -191,10 +199,6 @@ nav {
 }
 
 main {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-items: center;
     margin-right: 15%;
     margin-left: 15%;
     font-family: 'Inknut Antiqua', serif !important;
@@ -358,6 +362,16 @@ main {
     box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 15px;
     transition: 400ms;
 }
+
+/* ISSUES ------------------------------------ */
+
+.issue-body {
+
+}
+
+
+
+
 
 
 
