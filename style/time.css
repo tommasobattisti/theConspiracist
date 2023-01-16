@@ -5,7 +5,7 @@
 */
 
 /*
-    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel', serif !important;
 */
 
 /* 
@@ -31,6 +31,7 @@ nav {
     position: fixed !important;
 }
 
+
 .container-fluid {
     text-align: right;
 }
@@ -44,11 +45,13 @@ nav {
     transition: 0.2s ease-in-out;
 }
 
+
 .nav-text {
     color: #212529 !important;
     font-family: 'Cinzel', serif !important;
-    font-weight: 500;
+    font-weight: 600 !important;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .navbar-toggler:focus{
@@ -212,6 +215,14 @@ nav {
 }
 
 #homeTp1 {
+    align-self: center;
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: 'Cinzel', serif !important;
+    text-align: center;
+}
+
+#issueTp1 {
     align-self: center;
     font-size: 1.5vw;
     font-weight: 300;
