@@ -444,7 +444,9 @@ main {
 
 
 
-
+#incunabulaPoster {
+    display: none;
+}
 
 #posterIconContainer {
     width: 85%;
