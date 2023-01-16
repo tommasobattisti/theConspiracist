@@ -253,6 +253,7 @@ main {
 }
 
 #editorsAndSourcesDescription {
+    flex-direction: column !important;
     grid-area: 10/3/13/11;
 }
 
@@ -289,9 +290,8 @@ main {
 
 .esd-lt-block, .esd-rt-block {
     width: 45%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 33% 33% 33%;
+    display: flex;
+    flex-direction: column;
 }
 
 .esd-link-div {
@@ -404,7 +404,7 @@ main {
 #posterPar1Container p {
     font-weight: 600;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 #bottomPosterPs {
