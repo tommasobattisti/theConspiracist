@@ -271,7 +271,10 @@ main {
 }
 
 .esd-lt-block, .esd-rt-block {
-    width: 44%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .esd-lt-block div {
@@ -313,6 +316,35 @@ main {
     text-decoration: line-through;
     text-decoration-thickness: 2.5px;
 }
+
+#issuesFeaturesDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-link-container {
+    margin: 0 !important;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.link-to-other-pages {
+    padding: 10px 10px;
+    background-color: #dadadae6;
+    transition: 600ms;
+}
+
+
+.link-to-other-pages:hover {
+
+    transition: 600ms;
+    border: solid 2px #212529;
+}
+
+
 
 
 
