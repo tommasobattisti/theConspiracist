@@ -507,6 +507,10 @@ main {
     width: 70%;
     min-height: 200px;
   }
+
+.article-container p {
+    justify-content: justify;
+}
   
   .article-comparison-container {
     display: none;
