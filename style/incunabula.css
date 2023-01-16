@@ -55,9 +55,12 @@ nav {
 
 /*BUTTONS SUB-SECTION */
 
-.svg-inline--fa {
-    height: 65% !important;
-}
+
+
+.btns-grid-item button svg {
+    width: 70%;
+    height: 70%;
+  }
 
 #timeMachineImg {
     height: 85%;
@@ -135,10 +138,36 @@ nav {
     grid-column: 1/3;
 }
 
+.modal-btn {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: right;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
 
 
 
-/*Page presentation*/
+
+
+
+
+
+/*HOME*/
 
 .page-presentation {
     height: 100vh;
@@ -154,10 +183,7 @@ nav {
     background-size: cover;
 }
 
-.issue-page-presentation {
-    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("");
-    background-size: cover;
-}
+
 
 
 .title-container{
@@ -168,7 +194,7 @@ nav {
 
 
 .title-container h1 {
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
     text-align: center;
     font-family: 'Inknut Antiqua', serif !important;
@@ -181,7 +207,7 @@ nav {
 }
 
 #homeTp1 {
-    font-size: 2vw;
+    font-size: 2em;
     font-weight: 400;
     font-family: 'Inknut Antiqua', serif !important;
 }
@@ -192,7 +218,7 @@ nav {
 
 
 
-/*MAIN*/
+/*HOME MAIN*/
 
 #styleChangePoster {
     display: none;
@@ -363,16 +389,304 @@ main {
     transition: 400ms;
 }
 
+
+
+
+
+
+
 /* ISSUES ------------------------------------ */
 
-.issue-body {
+.issue-page-presentation {
+    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("../images_styles/incunabula/anthropomorphic_pizza_guys_handmade_illustration__ac90dc65-ce4d-4bba-b56a-30e55755d3b3.png");
+    background-size: cover;
+}
 
+
+
+#issueTp1 {
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'Inknut Antiqua', serif !important;
+    grid-row: 5;
+    grid-column: 3/7;
+    text-align: center;
 }
 
 
 
 
 
+
+.mode-selector {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    margin-top: 5%;
+    display: none;
+    background-image: url("../images_styles/incunabula/ornament_incunabula.svg");
+  }
+  
+
+.h-flex-no-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+
+
+  
+.h-flex-no-wrap button {
+    padding: 1.5% 0;
+    height: 100%;
+    width: 20%;
+}
+
+
+
+  .double-doc-selector {
+    position: relative; 
+    visibility: hidden;
+    height: 0;
+    z-index: 999;
+  }
+  
+  
+  
+  .width-100 {
+    width: 100% !important;
+  }
+  
+  .card {
+    background-color: none !important;
+  }
+  
+  .card-header {
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  
+  .meta-menu-card{
+    background-color: white !important;
+  }
+  
+  .meta-text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 5%;
+    justify-content: space-between;
+  }
+  
+  .metadata-container {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sticky-container {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+  }
+  
+  .metadata-container > div {  /*Select only first level div children*/
+    margin: 5% 0;
+  }
+  
+  
+  .article-container {
+    width: 70%;
+    min-height: 200px;
+  }
+  
+  .article-comparison-container {
+    display: none;
+  }
+  
+  
+  .entity-creation-form, .entity-creation-form-b {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .entity-creation-form input {
+    width: 100%;
+  }
+  
+  .entity-creation-form-b input {
+    width: 100%;
+  }
+  
+  .entities-content-table {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-items-div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .nav-i, .nav-i-b {
+    background-color: transparent;
+    border: none;
+    padding: 3% 5%;
+  }
+  
+  .active-nav-i {
+    background-color: rgb(196, 127, 127);
+    border: none;
+  }
+  
+  .tab-content, .tab-content-b{
+    display: none;
+  }
+  
+  
+  .active-tc {
+    display: block !important;
+    width: 100% !important;
+    height: 200px !important;
+    border: 1px solid;
+    border-radius: 2%;
+    overflow-y: scroll !important;
+  }
+  
+  .info-dl, .info-dl-b{
+    padding: 2%;
+  }
+  
+  
+  .docs-list-a, .docs-list-b {
+    margin: 0;
+    padding-left: 1rem;
+  }
+  
+  
+  
+  /*Span backgrounds*/
+  
+  .person-bkg {
+    background-color: rgba(0, 217, 255, 0.5);
+  }
+  
+  .places-bkg {
+    background-color: rgba(182, 143, 87, 0.628);
+  }
+  
+  .organizations-bkg {
+    background-color: rgba(102, 75, 121, 0.483);
+  }
+  
+  .events-bkg {
+    background-color: rgba(165, 42, 42, 0.569);
+  }
+  
+  .concepts-bkg {
+    background-color: rgba(88, 137, 74, 0.462);
+  }
+  
+  .keywords-bkg {
+    background-color: rgba(126, 50, 197, 0.537);
+  }
+  
+  
+  .animation-bkg {
+    background-color: rgba(25, 105, 171, 0.671);
+  }
+  
+  
+  
+  
+  /*SINGLE MODAL*/
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .modal-entity-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .modal-entity-creation, .modal-entity-creation-b {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 5% 0;
+  }
+  
+  .entity-string, .entity-string-b{
+    width: auto !important;
+  }
+  
+  
+  
+  /*Multiple modal*/
+  .entity-type-selection, .entity-type-selection-b {
+    height: 100%;
+  }
+  
+  .width-80 {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: auto;
+  }
+  
+  #mainModalContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+
+
+
+  .article-img-centre, .figure-caption-centre {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+  }
+  
+  
+  
+  .link-to-footnote{
+    color: blue;
+  }
+  
+  .link-to-footnote:hover{
+    cursor: pointer;
+    color:rgba(0, 217, 255, 0.5);
+  }
 
 
 
