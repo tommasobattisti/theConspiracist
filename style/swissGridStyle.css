@@ -437,7 +437,7 @@ main {
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    background-color: #ec0;
+    background-color: #558a86;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
 }
 
@@ -449,9 +449,10 @@ main {
 #posterPar1Container p {
     margin: 0;
     padding: 0;
-    font-weight: 600;
+    font-weight: 900 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-size: 2em;
+    font-size: 2.2em;
+    text-transform: lowercase;
 }
 
 #bottomPosterPs {
@@ -465,7 +466,7 @@ main {
 }
 
 #bottomPosterPs p {
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
