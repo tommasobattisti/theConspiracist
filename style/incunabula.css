@@ -15,7 +15,9 @@ body {
     background-color: #f0e5d1e6 !important;
 }
 
-
+#timeTitle {
+    display: none;
+}
 
 
 /*Navbar*/

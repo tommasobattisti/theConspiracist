@@ -4,7 +4,11 @@ nav {
     position: fixed !important;
 }
 
-
+/* AGGIUNTA DA LORENZO !!!!!!!!!!!!!!!!!!!!!!*/
+#timeTitle {
+    display: none;
+}
+/* AGGIUNTA DA LORENZO !!!!!!!!!!!!!!!!!!!!!!*/
 
 .nav-transparent-background {
     background-color: transparent !important;
