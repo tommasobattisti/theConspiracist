@@ -188,7 +188,6 @@ nav {
     justify-content: space-around;
     background-color: white;
     background-size: cover;
-    padding: 10.5vh 14vh 0 7vh;
     border-bottom: #D62503 3vw solid; /* LA MISURA è A CASO!!!! DA GIUSTIFICARE */
     border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
     border-right: #D62503 3vw solid;              /* QUELLE SCRITTE QUI SONO A CASO */
@@ -208,7 +207,12 @@ nav {
     font-family: 'Cinzel', serif !important;
 }
 
+.subtitle-div {
+    align-self: center;
+}
+
 #homeTp1 {
+    align-self: center;
     font-size: 1.5vw;
     font-weight: 300;
     font-family: 'Cinzel', serif !important;
@@ -226,26 +230,34 @@ main {
     font-family: 'Cinzel', serif !important;
     border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
     border-right: #D62503 3vw solid;  
-    padding-bottom: 10%;            /* QUELLE SCRITTE QUI SONO A CASO */
+    display: flex;
+    flex-direction: column;   /* QUELLE SCRITTE QUI SONO A CASO */
+    justify-items: space-around;       
 }
 
 #timeTitle {
+    width: 90%;
+    align-self: center;
+    padding: 1%;
     font-size: 2.5vw;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
-    padding: 5%;
+    margin: 5%;
+    border-top: solid black;
+    border-bottom: solid black;
 }
 
 #homeBody {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    align-self: center;
     display:flex;
     flex-direction: row;
     justify-items: space-between;
     flex-wrap: wrap;
     font-size: 1.1em;
-    padding: 5%;
+    padding-bottom: 5%;
 }
 
 

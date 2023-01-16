@@ -123,92 +123,90 @@
     </section>
     
     <main>
-        <div>
-            <div id="timeTitle">
-                <h1><i>CONSPIRACIST AFFAIRS</i></h1>
+        <section id="timeTitle">
+            <h1><i>CONSPIRACIST AFFAIRS</i></h1>
+        </section>
+        <section id="homeBody">
+            <div id="magazineDescription">
+                <div id="mdTitleCont">
+                    <h2>The Magazine</h2>
+                </div>
+                <div id="mdParCont">
+                    <p> The Conspiracist is a magazine whose issues aim at analyzing a specific conspiracy theory at the time by means of authoritative articles. 
+                    The name of the magazine derives from a crasis of the words "conspiracy" and "theorist", even though no one among the editors is a conspiracy theorist (<em>maybe...it depends on who asks</em>).</p>
+                    <p>Our interest on conspiracies derives from a famous fringe theory called "The PPPP Conspiracy". 
+                        It is said that many people from around the globe are following a master's degree in Digital Humanities 
+                        and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed 
+                        at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interests 
+                        of these people are still unknown.</p>
+                </div>
             </div>
-            <section id="homeBody">
-                <div id="magazineDescription">
-                    <div id="mdTitleCont">
-                        <h2>The Magazine</h2>
+            <div class="home-magazine-img-container">
+                <img src="./images_styles/incunabula/pizza_incunabula.svg" alt="Image of people in incunabula style">
+            </div>
+            <div id="styleChangeDescription" class="home-flex-row">
+                <div class="row-lt-block">
+                    <h3>OPEN YOUR EYES!</h3>
+                    <p>Click on the style-widget to run the time machine and project yourself into another dimension (yes, time machines already exist).</p>
+                    <div id="incunabulaPoster">
+                        <img src="./images_styles/incunabula/incunabula_button_container.svg" onclick="changeBtnsVisibility()">
                     </div>
-                    <div id="mdParCont">
-                        <p> The Conspiracist is a magazine whose issues aim at analyzing a specific conspiracy theory at the time by means of authoritative articles. 
-                        The name of the magazine derives from a crasis of the words "conspiracy" and "theorist", even though no one among the editors is a conspiracy theorist (<em>maybe...it depends on who asks</em>).</p>
-                        <p>Our interest on conspiracies derives from a famous fringe theory called "The PPPP Conspiracy". 
-                            It is said that many people from around the globe are following a master's degree in Digital Humanities 
-                            and Digital Knowledge at the University of Bologna, working on, among other projects, a Website aimed 
-                            at producing Presentationally Perfect Powerful Publications. The possible outcomes and the real interests 
-                            of these people are still unknown.</p>
-                    </div>
+                    <p>You can choose to display contents with a 1500, 1910, 1950 or 2040 typographic style. For further information about the inspiraional material look at the <a href="./documentation.html">documentation</a>.</p>
                 </div>
-                <div class="home-magazine-img-container">
-                    <img src="./images_styles/incunabula/pizza_incunabula.svg" alt="Image of people in incunabula style">
-                </div>
-                <div id="styleChangeDescription" class="home-flex-row">
-                    <div class="row-lt-block">
-                        <h3>OPEN YOUR EYES!</h3>
-                        <p>Click on the style-widget to run the time machine and project yourself into another dimension (yes, time machines already exist).</p>
-                        <div id="incunabulaPoster">
-                            <img src="./images_styles/incunabula/incunabula_button_container.svg" onclick="changeBtnsVisibility()">
+                <div class="row-rt-block poster-container">
+                    <div id="styleChangePoster">
+                        <div id="posterPar1Container">
+                            <p>Click the button</p>
                         </div>
-                        <p>You can choose to display contents with a 1500, 1910, 1950 or 2040 typographic style. For further information about the inspiraional material look at the <a href="./documentation.html">documentation</a>.</p>
-                    </div>
-                    <div class="row-rt-block poster-container">
-                        <div id="styleChangePoster">
-                            <div id="posterPar1Container">
-                                <p>Click the button</p>
+                        <div id="posterIconContainer" onclick="changeBtnsVisibility()">
+                            <img src="./images_styles/icons/time_machine_icon.svg">
+                        </div>
+                        
+                        <div id="bottomPosterPs">
+                            <div id="bppsCol1">
+                                <p>change all you need</br>to look at things</br>with different</p>
                             </div>
-                            <div id="posterIconContainer" onclick="changeBtnsVisibility()">
-                                <img src="./images_styles/icons/time_machine_icon.svg">
+                            <div id="bppsCol2">
+                                <p>style</p>
+                                <p>type</p>
+                                <p>colors</p>
                             </div>
-                            
-                            <div id="bottomPosterPs">
-                                <div id="bppsCol1">
-                                    <p>change all you need</br>to look at things</br>with different</p>
-                                </div>
-                                <div id="bppsCol2">
-                                    <p>style</p>
-                                    <p>type</p>
-                                    <p>colors</p>
-                                </div>
-                            </div>
-                            
                         </div>
+                        
                     </div>
                 </div>
-                <div id="issuesFeaturesDescription" class="home-flex-row">
-                    <div class="row-rt-block">
-                        <h3>Text comparison and metadata analysis</h3>
-                        <p>Each issue-page allows the reader to compare different articles dealing with the same conspiracy. Since metadata and keywords have been already added by the semantic-secret-society, entities and personalized keywords can be added by the user for its own (secret) purpose.</p>
+            </div>
+            <div id="issuesFeaturesDescription" class="home-flex-row">
+                <div class="row-rt-block">
+                    <h3>Text comparison and metadata analysis</h3>
+                    <p>Each issue-page allows the reader to compare different articles dealing with the same conspiracy. Since metadata and keywords have been already added by the semantic-secret-society, entities and personalized keywords can be added by the user for its own (secret) purpose.</p>
+                </div>
+                <div class="row-lt-block home-link-container">
+                    <a class="link-to-other-pages poster-link" href="./pizzaGateIssue.html">Go to the first issue</a>
+                </div>
+            </div>
+            
+            <div id="editorsAndSourcesDescription" class="home-flex-row">
+                <div class="esd-lt-block">
+                    <div class="esd-title-par">
+                        <h3>The dark sources</h3>
+                        <p>The texts we present have no mysterious source. Take a look at our disclaimer for more information.</p>
                     </div>
-                    <div class="row-lt-block home-link-container">
-                        <a class="link-to-other-pages poster-link" href="./pizzaGateIssue.html">Go to the first issue</a>
+                    <div class="esd-link-div home-link-container">
+                        <a class="link-to-other-pages esd-link" href="./disclaimer.html">Read the disclaimer</a>
                     </div>
                 </div>
-
-                
-                <div id="editorsAndSourcesDescription" class="home-flex-row">
-                    <div class="esd-lt-block">
-                        <div class="esd-title-par">
-                            <h3>The dark sources</h3>
-                            <p>The texts we present have no mysterious source. Take a look at our disclaimer for more information.</p>
-                        </div>
-                        <div class="esd-link-div home-link-container">
-                            <a class="link-to-other-pages esd-link" href="./disclaimer.html">Read the disclaimer</a>
-                        </div>
+                <div class="esd-rt-block">
+                    <div class="esd-title-par">
+                        <h3>The editors' lodge</h3>
+                        <p><span class="text-line-through">No</span> hooded people, no aliens, and <span class="text-line-through">no</span> aim to manipulate human race. Discover the occult power running our editors.</p>
                     </div>
-                    <div class="esd-rt-block">
-                        <div class="esd-title-par">
-                            <h3>The editors' lodge</h3>
-                            <p><span class="text-line-through">No</span> hooded people, no aliens, and <span class="text-line-through">no</span> aim to manipulate human race. Discover the occult power running our editors.</p>
-                        </div>
-                        <div class="esd-link-div home-link-container">
-                            <a class="link-to-other-pages esd-link" href="./about.html">Unveil the secret society</a>
-                        </div>
+                    <div class="esd-link-div home-link-container">
+                        <a class="link-to-other-pages esd-link" href="./about.html">Unveil the secret society</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
     </main>
 
