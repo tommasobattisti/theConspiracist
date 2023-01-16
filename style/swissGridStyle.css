@@ -313,14 +313,14 @@ main {
     margin: 20px -20px;
     border-top: solid #212529 2px;
     border-bottom: solid #212529 2px;
-    transition: 600ms;
+    transition: 600ms ease-in-out;
 }
 
 
 .esd-link:hover {
     padding: 20px 30px;
     margin: 0;
-    transition: 600ms;
+    transition: 600ms ease-in-out;
 }
 
 
