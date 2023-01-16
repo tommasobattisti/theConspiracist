@@ -210,7 +210,7 @@ main {
     flex-direction: column;
     border-left: 5vw solid transparent;
     padding: 2vw;
-    border-image: url("../images_styles/incunabula/ornament_incunabula.jpeg") 50 stretch;
+    border-image: url("../images_styles/incunabula/ornament_incunabula.jpeg") 100 round;
 }
 
 
@@ -339,13 +339,25 @@ main {
 
 
 .link-to-other-pages:hover {
-
     transition: 600ms;
     border: solid 2px #212529;
 }
 
 
 
+#incunabulaPoster {
+    width: 40%;
+    margin: 5% 30% 8% 30%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 25px;
+    transition: 400ms;
+}
+
+#incunabulaPoster:hover {
+    width: 40%;
+    margin: 5% 30% 8% 30%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 15px;
+    transition: 400ms;
+}
 
 
 
