@@ -106,7 +106,7 @@ function changeCSS(styleSheet)
 
      if (styleSheet == 1970) {
 		doc.attr("href", "style/swissGridStyle.css");
-		sessionStorage.setItem("style", "style/swissGridStyle.css")
+		sessionStorage.setItem("style", "style/swissGridStyle.css");
  	}
 
     if (styleSheet == 2030) {

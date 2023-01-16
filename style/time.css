@@ -8,10 +8,19 @@
     font-family: 'Cinzel', serif;
 */
 
+/* 
+border: 20px solid;
+border-image: repeating-linear-gradient(
+    to right,
+    black,
+    black 2px,
+    white 2px,
+    white 4px
+) 20 round;
+*/
+
 body {
     background-color: white !important;
-    border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
-    border-right: #D62503 3vw solid;              /* QUELLE SCRITTE QUI SONO A CASO */
 }
 
 
@@ -20,12 +29,14 @@ body {
 nav {
     width: 100% !important;
     position: fixed !important;
-    z-index: 100;
-    margin-left: -3vw; /* DIMENSIONE DA CAMBIARE IN ACCORDO CON QUELLA DEI MARGINI DEL BODY */
+}
+
+.container-fluid {
+    text-align: right;
 }
 
 .nav-transparent-background {
-    background-color: #D62503 !important;
+    background-color: rgba(214, 37, 3, 1) !important;
 }
 
 .nav-colored-background {
@@ -37,7 +48,7 @@ nav {
     color: #212529 !important;
     font-family: 'Cinzel', serif !important;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
 }
 
 .navbar-toggler:focus{
@@ -172,20 +183,15 @@ nav {
 
 .page-presentation {
     height: 100vh; /* Va bene così, perché deve sembrare la cover di time, quindi deve occupare tutto il viewport*/
-    display: grid;
-    grid-template-columns: repeat(9, 12.5%);
-    grid-template-rows: repeat(9, 12.5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
     background-size: cover;
-    padding: 10.5vh 14vh 0 7vh;
     border-bottom: #D62503 3vw solid; /* LA MISURA è A CASO!!!! DA GIUSTIFICARE */
-}
-
-
-.title-container{
-    grid-row: 3;
-    grid-column: 2/8;
-    z-index: 1;
+    border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
+    border-right: #D62503 3vw solid;              /* QUELLE SCRITTE QUI SONO A CASO */
+    border-top: #D62503 3vw solid;
 }
 
 /* It is fot the "The" of "The conspiracist" */
@@ -194,23 +200,23 @@ nav {
 }
 
 .title-container h1 {
-    font-size: 8vw;
-    font-weight: 500;
+    font-size: 10vw;
+    font-weight: 800;
     text-transform: capitalize;
     text-align: center;
     font-family: 'Cinzel', serif !important;
 }
 
 .subtitle-div {
-    grid-row: 7;
-    grid-column: 2/8;
-    text-align: center;
+    align-self: center;
 }
 
 #homeTp1 {
-    font-size: 2vw;
+    align-self: center;
+    font-size: 1.5vw;
     font-weight: 300;
     font-family: 'Cinzel', serif !important;
+    text-align: center;
 }
 
 #homeTp2, #homeTp3, #homeTp4 {
@@ -222,104 +228,108 @@ nav {
 /*MAIN*/
 main {
     font-family: 'Cinzel', serif !important;
+    border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
+    border-right: #D62503 3vw solid;  
+    display: flex;
+    flex-direction: column;   /* QUELLE SCRITTE QUI SONO A CASO */
+    justify-items: space-around;       
+}
+
+#timeTitle {
+    width: 90%;
+    align-self: center;
+    padding: 1%;
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5%;
+    border-top: solid black;
+    border-bottom: solid black;
 }
 
 #homeBody {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 7.6%);
-    grid-template-rows: repeat(12, 7.6%);
-    gap: 0.8%;
+    align-self: center;
+    display:flex;
+    flex-direction: row;
+    justify-items: space-between;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+    padding-bottom: 5%;
 }
 
-.home-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .home-magazine-img-container {
     display:none;
 }
 
-.row-rt-block, .row-lt-block {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
 
 #magazineDescription {
-    grid-row: 1/8;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: left;
+    flex: 1;
+    padding-right: 1%;
 }
 
 
 #styleChangeDescription {
-    grid-area: 4/3/6/11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    flex: 1;
+    padding-right: 1%;
 }
 
 #issuesFeaturesDescription {
-    grid-area: 7/3/9/11;
+    flex: 1;
+    padding-right: 1%;
 }
 
 #editorsAndSourcesDescription {
-    grid-area: 10/3/13/11;
+    display: flex;
+    flex-direction: column !important;
+    flex: 1;
 }
 
+
+
+/* Title "The magazine" */
+#mdTitleCont h2 {
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 1%;
+}
+
+#homeBody h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#posterIconContainer {
+    display: none;
+}
+
+#incunabulaPoster {
+    display: none;
+}
+
+.poster-container {
+    display:none;
+}
+
+.home-link-container {
+    margin-bottom: 1vh;
+}
 
 #homeBody p {
     font-size: 1.1em;
     text-align: justify;
 }
 
-
-
-#homeBody h3 {
-    margin-bottom: 2%;
-}
-
-
-#editorsAndSourcesDescription {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: max-content;
-}
-
-.esd-lt-block, .esd-rt-block {
-    width: 44%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 50% 20%;
-}
-
-.esd-lt-block div {
-    margin-bottom: 5%;
-}
-
-.esd-rt-block div {
-    margin-bottom: 5%;
-}
-
-
-
-
-/* Title "The magazine" */
-#mdTitleCont h2 {
-    font-size: 2.5em;
-    font-weight: 800;
-    margin-bottom: 2%;
-    color: #5A8094;
-}
-
-
-.home-flex-row {
-    margin-top: 10%;
-}
 
 .text-line-through {
     text-decoration: line-through;
@@ -333,15 +343,19 @@ main {
 
 /*FOOTER*/
 footer {
-    height: 30vh;
     justify-content: center;
     background-color: #D62503;
 }
 
-
-footer div p {
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     color: whitesmoke;
 }
+
+
 
 
 
