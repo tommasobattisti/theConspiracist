@@ -8,16 +8,6 @@
     font-family: 'Cinzel', serif !important;
 */
 
-/* 
-border: 20px solid;
-border-image: repeating-linear-gradient(
-    to right,
-    black,
-    black 2px,
-    white 2px,
-    white 4px
-) 20 round;
-*/
 
 body {
     background-color: white !important;
@@ -37,7 +27,7 @@ nav {
 }
 
 .nav-transparent-background {
-    background-color: rgba(214, 37, 3, 1) !important;
+    background-color: transparent !important;
 }
 
 .nav-colored-background {
@@ -197,6 +187,29 @@ nav {
     border-top: #D62503 3vw solid;
 }
 
+.page-presentation:before {
+    content: "";
+    position: absolute;
+    top: 4vw;
+    left: 4vw;
+    right: 4vw;
+    bottom: 4vw;
+    border: solid 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.page-presentation:after {
+    content: "";
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+    right: 5vw;
+    bottom: 5vw;
+    border: solid 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
 /* It is fot the "The" of "The conspiracist" */
 .invisiblePart {
     display: none;
@@ -250,25 +263,39 @@ main {
     width: 90%;
     align-self: center;
     padding: 1%;
-    font-size: 2.5vw;
-    font-weight: 500;
-    text-transform: capitalize;
-    text-align: center;
     margin: 5%;
     border-top: solid black;
     border-bottom: solid black;
 }
 
+#timeTitle h2 {
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+
 #homeBody {
     width: 90%;
     height: 100%;
     align-self: center;
-    display:flex;
-    flex-direction: row;
-    justify-items: space-between;
-    flex-wrap: wrap;
+    column-count: 3 !important;
     font-size: 1.1em;
-    padding-bottom: 5%;
+    padding: 5%;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    #homeBody {
+        column-count: 2 !important;
+        column-fill: balance;
+    }
 }
 
 
@@ -339,6 +366,11 @@ main {
 #homeBody p {
     font-size: 1.1em;
     text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
 }
 
 
