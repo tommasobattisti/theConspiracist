@@ -923,6 +923,18 @@ li a {
 
 
 
+/* DISCLAIMER */
+#disclaimerSection {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 2%;
+}
+
 
 
 
