@@ -92,10 +92,12 @@ nav {
     border-radius: 50%;
     border: none;
     color: black;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: 400ms;
 }
   
 #stylesBtn {
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -106,16 +108,28 @@ nav {
     border-radius: 50%;
     border: none;
     color: black;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: 400ms
 }
   
 .sub-btn {
+    background-color: whitesmoke;
     width: 100%;
     height: 20%;
     border: none;
     visibility: hidden;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4)
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: 400ms;
 }
+
+.sub-btn:hover {
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.3);
+    scale: 1.1;
+    transition: 400ms;
+}
+
+
+
 
   
 .btns-grid-container {
@@ -153,6 +167,8 @@ nav {
     border: none;
     color: black;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    background-color: whitesmoke;
+    transition: 400ms;
   }
 
   .visible {
@@ -164,6 +180,11 @@ nav {
   }
 
 
+
+.modal-btn:hover, #stylesBtn:hover, #toTopBtn:hover {
+    box-shadow: 0px 4px 7.5px rgba(0, 0, 0, 0.8);
+    transition: 400ms;
+}
 
 
 
@@ -505,7 +526,7 @@ main {
 }
   
 .card-header {
-    padding: .5rem 0;
+    padding:0 !important;
 }
   
 .meta-menu-card{
@@ -527,10 +548,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin: 0;
 }
   
@@ -542,7 +564,7 @@ main {
     width: 100%;
   }
 
-.entity-string {
+.entity-string, .entity-string-b {
     border: solid 1px;
     margin: .5rem 0;
 }
@@ -613,13 +635,25 @@ main {
       -o-hyphens: auto;
      -ms-hyphens: auto;
          hyphens: auto;
+    line-height: 2.4em;
 }
 
-.article-container h3::first-letter {
-    font-size: 3em;
+
+.article-container li {
+    padding: 1rem 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+.article-container h3:not(.references-h3, .notes-h3)::first-letter {
     float:left;
     padding: 2%;
     margin: 0 2% 0 0;
+    font-size: 3em;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
     background-size: cover;
     object-position: top;
@@ -627,6 +661,9 @@ main {
     font-weight: 100;
     color: #ed4007;
 }
+
+
+
 
 
 .article-container h3 {
@@ -643,11 +680,11 @@ main {
 
 
 
-.article-comparison-container h3::first-letter {
-    font-size: 3em;
+.article-comparison-container h3:not(.references-h3, .notes-h3)::first-letter {
     float:left;
-    padding-bottom: 0;
+    padding: 2%;
     margin: 0 2% 0 0;
+    font-size: 3em;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
     background-size: cover;
     object-position: top;
@@ -655,6 +692,8 @@ main {
     font-weight: 100;
     color: #ed4007;
 }
+
+
 
 .article-comparison-container h3 {
     margin-top: 2em;
@@ -666,8 +705,24 @@ main {
 
 .article-comparison-container p {
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+    line-height: 2.4em;
 }
+
+.article-comparison-container li {
+    padding: 1rem 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
 
 
 
@@ -698,36 +753,44 @@ li a {
   }
   
   
-  
+
   /*Span backgrounds*/
   
+/*PALETTE: https://color.adobe.com/it/search?q=ancient%20book https://color.adobe.com/it/search?q=incunabula https://color.adobe.com/it/search?q=incunabula  https://color.adobe.com/it/search?q=incunabula*/
+
   .person-bkg {
-    background-color: rgba(0, 217, 255, 0.5);
+    color: #F2B705 !important;
+    font-weight: 900;
   }
   
   .places-bkg {
-    background-color: rgba(182, 143, 87, 0.628);
+    color: #F08B48;
+    font-weight: 900;
   }
   
   .organizations-bkg {
-    background-color: rgba(102, 75, 121, 0.483);
+    color: rgb(102, 75, 121);
+    font-weight: 900;
   }
   
   .events-bkg {
-    background-color: rgba(165, 42, 42, 0.569);
+    color: #BF4B21;
+    font-weight: 900;
   }
   
   .concepts-bkg {
-    background-color: rgba(88, 137, 74, 0.462);
+    color: #667339;
+    font-weight: 900;
   }
   
   .keywords-bkg {
-    background-color: rgba(126, 50, 197, 0.537);
+    color: #9CBCD9;
+    font-weight: 900;
   }
   
   
   .animation-bkg {
-    background-color: rgba(25, 105, 171, 0.671);
+    background-color: rgba(61, 156, 207, 0.5);
   }
   
   
@@ -757,14 +820,24 @@ li a {
     margin: 5% 0;
   }
   
+.metadata-modal-btn {
+    background-color: #5A8094 !important;
+    border-color: #5A8094 !important;
+}
 
+.metadata-modal-btn:hover {
+    background-color: #3c85ac !important;
+    border-color: #3c85ac  !important;
+}
   
   
   
   /*Multiple modal*/
-  .entity-type-selection, .entity-type-selection-b {
-    height: 100%;
-  }
+
+.modal-content {
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
   
   .width-80 {
     width: 80% !important;
@@ -799,8 +872,9 @@ li a {
 
 
 
-.notes-h3, .references-h3 {
-    padding-bottom: 3em;
+.notes-h3::first-letter, .references-h3::first-letter {
+
+    float: none !important;
 }
   
   .link-to-footnote{
@@ -811,6 +885,9 @@ li a {
     cursor: pointer;
     color:rgba(0, 217, 255, 0.5);
   }
+
+
+
 
 
 
