@@ -13,9 +13,9 @@ $(document).ready(function(){
     $(".btns-grid-container").on('mouseleave', function() {
         // This function is called with the "onmouseleave" trigger, and:
         // 1. It hides the buttons when you move away the mouse
-        $('.sub-btn').css("visibility","hidden")           
+        $('.sub-btn').css("display", "none");
+        closeOverlay();           
     });
-
 
     for (let div of $("div")) {
         if(div.css("transform") == true) {
@@ -77,17 +77,22 @@ function toggleTopButton() {
         }
     }
 
+
+
+    
 function changeBtnsVisibility() 
 {
-    if ($('.sub-btn').css("visibility") ==  "hidden")
+    if ($('.sub-btn').css("display") ==  "none")
         {
-            $('.sub-btn').css("visibility","visible")
+            $('.sub-btn').css("display","block")
         }
     else
         {
-            $('.sub-btn').css("visibility","hidden")
+            $('.sub-btn').css("display","none")
         }
 }
+
+
 
 function changeCSS(styleSheet) 
 {
@@ -138,3 +143,50 @@ function maintainStyleOnLoad()
 	}
 }
 
+
+//°°°°°°°°°°°°°°°°°°
+/* Open when someone clicks on the span element */
+function displayOverlay() {
+    if ($(".overlay-style-page").css("display") == "none"){
+        openOverlay();
+    } else {
+        closeOverlay();
+    }
+}
+
+
+function closeOverlay() {
+    $(".overlay-style-page").css("display", "none");
+    $(".text-overlay").css("display", "none");
+    $("#general-overlay").css("display", 'block');
+}
+
+function openOverlay(){
+    $(".overlay-style-page").css("display", "block");
+}
+
+
+function showTextOverlay(year){
+    switch(year){
+        case 1500:
+            $(".text-overlay").css("display", "none");
+            $("#incunabula-overlay").css("display", 'block');
+            break;
+        case 1930:
+            $(".text-overlay").css("display", "none");
+            $("#time-overlay").css("display", 'block');
+            break;
+        case 1970:  
+            $(".text-overlay").css("display", "none");
+            $("#swiss-overlay").css("display", 'block');
+            break;
+        case 2030:
+            $(".text-overlay").css("display", "none");
+            $("#future-overlay").css("display", 'block');
+            break;
+        case 0:
+            $(".text-overlay").css("display", "none");
+            $("#general-overlay").css("display", 'block');
+            break;
+    }
+}

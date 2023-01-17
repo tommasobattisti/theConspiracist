@@ -57,34 +57,43 @@
         </div>
     </nav>
 
-    <!--Buttons-->
-    <div class="btns-grid-container">
-        <div class="btns-grid-item btns-item-1">
-            <button class="sub-btn" type="button" onclick="changeCSS(1500)">Incunabulum</button>
+        <!--Overlay-->
+        <div class="overlay-style-page">
+            <div class="overlay-content">
+                <p id="general-overlay" class="text-overlay">miao</p>
+                <p id="incunabula-overlay" class="text-overlay">bau</p>
+                <p id="time-overlay" class="text-overlay">cip</p>
+                <p id="swiss-overlay" class="text-overlay">beeeh</p>
+                <p id="future-overlay" class="text-overlay">muuuu</p>
+            </div>
         </div>
-        <div class="btns-grid-item btns-item-2">
-            <button class="sub-btn" type="button" onclick="changeCSS(1930)">Time</button>
-        </div>
-        <div class="btns-grid-item btns-item-3">
-            <button class="sub-btn" type="button" onclick="changeCSS(1970)">Swiss Style</button>
-        </div>
-        <div class="btns-grid-item btns-item-4">
-            <button class="sub-btn" type="button" onclick="changeCSS(2030)">Futuro brutto</button>
-        </div>
-        <div class="btns-grid-item btns-item-5">
-            
-        </div>
-        <div class="btns-grid-item btns-item-6" onclick="changeBtnsVisibility()">
-            <button id="stylesBtn" type="button"><img class="btn-icon" id="timeMachineImg" src="./images_styles/icons/time_machine_icon.svg"></button>
-        </div>
-        <div class="btns-grid-item btns-item-7">
+        <!--Buttons-->
+        <div class="btns-grid-container">
+            <div class="btns-grid-item btns-item-1">
+                <button class="sub-btn" type="button" onclick="changeCSS(1500)" onmouseover="showTextOverlay(1500)">1500</button>
+            </div>
+            <div class="btns-grid-item btns-item-2">
+                <button class="sub-btn" type="button" onclick="changeCSS(1930)" onmouseover="showTextOverlay(1930)">1930</button>
+            </div>
+            <div class="btns-grid-item btns-item-3">
+                <button class="sub-btn" type="button" onclick="changeCSS(1970)" onmouseover="showTextOverlay(1970)">1970</button>
+            </div>
+            <div class="btns-grid-item btns-item-4">
+                <button class="sub-btn" type="button" onclick="changeCSS(2030)" onmouseover="showTextOverlay(2030)">2030</button>
+            </div>
+            <div class="btns-grid-item btns-item-5" onmouseover="showTextOverlay(0)">
+                
+            </div>
+            <div class="btns-grid-item btns-item-6" onclick="changeBtnsVisibility()" onmouseover="showTextOverlay(0)">
+                <button id="stylesBtn" type="button" onclick="displayOverlay()"><img class="btn-icon" id="timeMachineImg" src="./images_styles/icons/time_machine_icon.svg"></button>
+            </div>
+            <div class="btns-grid-item btns-item-7">
 
+            </div>
+            <div class="btns-grid-item btns-item-8" onclick="scrollToTop()">
+                <button id="toTopBtn"> <i class="fa-solid fa-arrow-up btn-icon"></i></button>
+            </div>
         </div>
-        <div class="btns-grid-item btns-item-8" onclick="scrollToTop()">
-            <button id="toTopBtn"> <i class="fa-solid fa-arrow-up btn-icon"></i></button>
-        </div>
-    
-    </div>
 
     <main>
         <section class="page-presentation">
