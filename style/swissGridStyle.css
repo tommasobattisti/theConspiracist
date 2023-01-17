@@ -565,7 +565,7 @@ main {
 
 #issueTp1 {
     grid-column: 2/4;
-    grid-row: 1/4;
+    grid-row: 3/6;
     color: whitesmoke;
     font-size: 1.8em;
     font-weight: 600;
