@@ -254,7 +254,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
-    padding: 10.5vh 14vh 0 7vh;
     border-bottom: #212529 1px solid;
 }
 
@@ -264,7 +263,7 @@ nav {
 }
 
 .title-container {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 3/7;
     z-index: 1;
 }
@@ -277,7 +276,7 @@ nav {
 }
 
 .subtitle-div {
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 2/8;
     text-align: center;
 }
@@ -984,26 +983,21 @@ main {
 
 
 #disclaimerTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/disclaimer_background_image.jpg");
     background-size: cover;
     overflow:hidden;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
-    padding: 10.5vh 14vh 0 7vh;
     border-bottom: #212529 1px solid;
 }
 
 #disclaimerTitle h1 {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 3/7;
+    align-self: center;
     z-index: 1;
 }
 
@@ -1015,9 +1009,11 @@ main {
 }
 
 #disclaimerTitle p {
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 2/8;
     text-align: center;
+    font-size: 2em;
+    font-weight: 400;
 }
 
 #disclaimerTitle h1 {
@@ -1037,7 +1033,7 @@ main {
     padding-bottom: 0;
     padding: 2%;
     margin-right: 2%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images_styles/incunabula/trump_incunabula.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images_styles/incunabula/trump_incunabula.png");
     background-size: cover;
     object-position: top;
     border: 5px solid #ed4007;
@@ -1052,7 +1048,7 @@ main {
     padding-bottom: 0;
     padding: 2%;
     margin-right: 2%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/trump_incunabula.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images_styles/incunabula/trump_incunabula.png");
     background-size: cover;
     object-position: top;
     border: 5px solid #ed4007;
