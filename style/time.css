@@ -55,6 +55,7 @@ nav {
 }
 
 
+
 .container-fluid {
     text-align: right;
 }
@@ -65,6 +66,7 @@ nav {
 
 .nav-colored-background {
     background-color: rgba(214, 37, 3, 1) !important;
+    border-bottom: #212529 solid 1px;
     transition: 0.2s ease-in-out;
 }
 
@@ -89,6 +91,24 @@ nav {
     background-color: #D62503;
     color: black;
 }
+
+.navbar-nav a {
+    padding: 0 .5rem;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: white !important;
+}
+
+.active {
+    color: white !important;
+}
+
+.dropdown-active {
+    color: #D62503 !important;
+}
+
   
 
 
