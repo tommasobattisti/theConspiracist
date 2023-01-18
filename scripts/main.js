@@ -11,6 +11,10 @@ $(document).ready(function(){
 
 
 
+
+
+
+
     $(".btns-grid-container").on('mouseleave', function() {
         // This function is called with the "onmouseleave" trigger, and:
         // 1. It hides the buttons when you move away the mouse
@@ -33,6 +37,9 @@ $(document).ready(function(){
             }
         }
     }
+
+
+
 
 
 });
@@ -115,7 +122,7 @@ function changeCSS(styleSheet)
 
  	if (styleSheet == 1930) {
 		doc.attr("href", "style/time.css");
-		sessionStorage.setItem("style", "style/time.css")
+		sessionStorage.setItem("style", "style/time.css");
  	}
 
      if (styleSheet == 1970) {
@@ -125,7 +132,7 @@ function changeCSS(styleSheet)
 
     if (styleSheet == 2030) {
 		doc.attr("href", "style/main.css");
-		sessionStorage.setItem("style", "style/main.css")
+		sessionStorage.setItem("style", "style/main.css");
  	}
 }
 
