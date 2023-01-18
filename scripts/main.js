@@ -1,7 +1,6 @@
 $(document).ready(function(){
     maintainStyleOnLoad();
 
-    $("nav").removeClass("dark-background")
     $("nav").addClass("nav-transparent-background");
     
 
@@ -10,12 +9,16 @@ $(document).ready(function(){
     changeNavBackground();
     }
 
+
+
     $(".btns-grid-container").on('mouseleave', function() {
         // This function is called with the "onmouseleave" trigger, and:
         // 1. It hides the buttons when you move away the mouse
         $('.sub-btn').css("display", "none");
         closeOverlay();           
     });
+
+
 
     for (let div of $("div")) {
         if(div.css("transform") == true) {
@@ -48,12 +51,18 @@ function adjustDimestionsAfterRotation(div, rotation) {
 }
 
 
+
 function changeNavBackground() {
     let thresholdHeight = $(window).height()/100*92;   
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
+        $("nav").removeClass("issue-nav");
         $("nav").removeClass("nav-transparent-background");
         $("nav").addClass("nav-colored-background");
     } else {
+        if (!$("nav").hasClass("home-nav")){
+            $("nav").addClass("issue-nav");
+        }
+        
         $("nav").removeClass("nav-colored-background");
         $("nav").addClass("nav-transparent-background");
     };
