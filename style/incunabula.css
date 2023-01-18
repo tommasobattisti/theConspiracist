@@ -348,6 +348,16 @@ main {
     margin-bottom: 1%;
 }
 
+
+#homeBody a {
+    color:#5A8094;
+}
+
+#homeBody a:hover {
+    color: #3c85ac;
+    text-decoration: none;
+}
+
 .home-magazine-img-container {
     width: 100%;
     height: fit-content;
@@ -427,15 +437,20 @@ main {
 }
 
 .link-to-other-pages {
-    padding: 10px 10px;
-    background-color: #dadadae6;
-    transition: 600ms;
+    padding: .5rem .5rem;
+    background-color: none;
+    border: solid 2px #212529;
+    transition: 400ms;
+    color: #5A8094;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 
 .link-to-other-pages:hover {
-    transition: 600ms;
-    border: solid 2px #212529;
+    transition: 400ms;
+    background-color: #5A8094;
+    color: #212529 !important;
 }
 
 
@@ -913,7 +928,7 @@ li a {
 }
   
   .link-to-footnote{
-    color: blue;
+    color: #5A8094;
   }
   
   .link-to-footnote:hover{
