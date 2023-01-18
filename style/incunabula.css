@@ -91,6 +91,7 @@ nav {
     transition: 0.2s ease-in-out;
 }
 
+
 .nav-text {
     color: #212529;
     font-family: 'Inknut Antiqua', serif !important;
@@ -248,6 +249,7 @@ nav {
 /*HOME*/
 
 .page-presentation {
+    overflow:hidden;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
@@ -261,15 +263,11 @@ nav {
     background-size: cover;
 }
 
-
-
-
-.title-container{
+.title-container {
     grid-row: 3;
     grid-column: 3/7;
     z-index: 1;
 }
-
 
 .title-container h1 {
     font-size: 4em;
@@ -964,17 +962,104 @@ main {
 
 /* DISCLAIMER */
 #disclaimerSection {
-    margin-top: 20vh;
+    overflow: hidden;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+#disclaimerBody p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+#disclaimerBody li {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+#disclaimerTitle {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
     width: 100%;
-    height: fit-content;
-    padding: 2%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
+    background-size: cover;
+    overflow:hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
+    padding: 10.5vh 14vh 0 7vh;
+    border-bottom: #212529 1px solid;
 }
 
+#disclaimerTitle h1 {
+    grid-row: 3;
+    grid-column: 3/7;
+    z-index: 1;
+}
 
+#disclaimerTitle h1 {
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+#disclaimerTitle p {
+    grid-row: 5;
+    grid-column: 2/8;
+    text-align: center;
+}
+
+#disclaimerTitle h1 {
+    font-size: 4.5em;
+}
+
+#disclaimerBody {
+    margin-top: 15vw;
+    margin-right: 15vw;
+    margin-left: 9vw;
+    margin-bottom: 24vw;
+}
+
+#disclaimerPurpose h2::first-letter {
+    font-size: 1.5em;
+    float:left;
+    padding-bottom: 0;
+    padding: 2%;
+    margin-right: 2%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images_styles/incunabula/trump_incunabula.png");
+    background-size: cover;
+    object-position: top;
+    border: 5px solid #ed4007;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    font-weight: 100;
+    color: #ed4007;
+}
+
+#disclaimerSources h2::first-letter {
+    font-size: 1.5em;
+    float:left;
+    padding-bottom: 0;
+    padding: 2%;
+    margin-right: 2%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/trump_incunabula.png");
+    background-size: cover;
+    object-position: top;
+    border: 5px solid #ed4007;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    font-weight: 100;
+    color: #ed4007;
+}
 
 
 
