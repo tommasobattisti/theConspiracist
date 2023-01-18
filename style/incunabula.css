@@ -62,6 +62,25 @@ nav {
     position: fixed !important;
 }
 
+.navbar-nav a {
+    padding: 0 .5rem;
+    text-decoration: none;
+}
+
+
+.navbar-nav a:hover {
+    color: #212529 !important;
+}
+
+.active, .dropdown-active {
+    color: #ed4007 !important;
+}
+
+
+.navbar-brand:hover {
+    color: #212529 !important;
+}
+
 .nav-transparent-background {
     background-color: transparent !important;
 }
@@ -74,7 +93,7 @@ nav {
 
 
 .nav-text {
-    color: #212529 !important;
+    color: #212529;
     font-family: 'Inknut Antiqua', serif !important;
     font-weight: 700;
     font-size: larger;
@@ -346,6 +365,16 @@ main {
     margin-bottom: 1%;
 }
 
+
+#homeBody a {
+    color:#5A8094;
+}
+
+#homeBody a:hover {
+    color: #3c85ac;
+    text-decoration: none;
+}
+
 .home-magazine-img-container {
     width: 100%;
     height: fit-content;
@@ -425,15 +454,20 @@ main {
 }
 
 .link-to-other-pages {
-    padding: 10px 10px;
-    background-color: #dadadae6;
-    transition: 600ms;
+    padding: .5rem .5rem;
+    background-color: none;
+    border: solid 2px #212529;
+    transition: 400ms;
+    color: #5A8094;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 
 .link-to-other-pages:hover {
-    transition: 600ms;
-    border: solid 2px #212529;
+    transition: 400ms;
+    background-color: #5A8094;
+    color: #212529 !important;
 }
 
 
@@ -759,7 +793,12 @@ main {
 
 
 
-li a {
+.article-container li a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+.article-comparison-container li a {
     color: #5A8094 !important;
     font-size: 1.1em;
 }
@@ -911,7 +950,7 @@ li a {
 }
   
   .link-to-footnote{
-    color: blue;
+    color: #5A8094;
   }
   
   .link-to-footnote:hover{

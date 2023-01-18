@@ -873,6 +873,13 @@ main {
     
 }
 
+.info-dl dt {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 600;
+    border-left: #f54123 solid;
+    padding-left: .5rem;
+}
+
 
 
 
@@ -916,6 +923,14 @@ main {
          hyphens: auto;
 }
 
+
+.article-container li {
+    margin-bottom: .5rem;
+}
+
+.article-comparison-container li {
+    margin-bottom: .5rem;
+}
 
 
 .article-container h3 {
@@ -1140,19 +1155,6 @@ main {
 }
 
 
-
-.notes-h3, .references-h3 {
-    padding-bottom: 3em;
-}
-  
-  .link-to-footnote{
-    color: blue;
-  }
-  
-  .link-to-footnote:hover{
-    cursor: pointer;
-    color:rgba(0, 217, 255, 0.5);
-  }
 
 
 
