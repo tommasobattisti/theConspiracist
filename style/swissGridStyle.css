@@ -30,7 +30,7 @@
     display: block;
 }
 
-#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay {
+#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay,  #nav2030 {
     display: none;
 }
 
@@ -63,8 +63,18 @@ nav {
     color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 600 !important;
+    padding: 0 .5rem;
+    text-decoration: none;
 }
 
+
+.nav-text:hover {
+    color:#f54123;
+}
+
+.active::first-letter {
+    color:#f54123;
+}
 
 .issue-nav .nav-text{
     color: whitesmoke !important;
@@ -81,6 +91,10 @@ nav {
     box-shadow: 0 0 0 0.1rem !important;
 }
 
+
+.dropdown-item {
+    color: #212529 !important;
+}
 
 
 
@@ -790,11 +804,11 @@ main {
 }
   
 
-.entity-creation-form, input {
+.entity-creation-form input {
     width: 100%;
 }
 
-.entity-creation-form-b, input {
+.entity-creation-form-b input {
     width: 100%;
 }
 

@@ -8,7 +8,7 @@
 */
 
 
-nav, .home-main, .home-footer, #homeTp2, #homeTp3, #homeTp4 {
+.navbar, .home-main, .home-footer, #homeTp2, #homeTp3, #homeTp4 {
   display: none !important;
 }
 
@@ -119,7 +119,6 @@ body {
 
 .nav-text:hover {
   color:  #4C3B4D;
-  font-weight: 600;
   transition: 400ms;
 }
 

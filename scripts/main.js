@@ -46,6 +46,13 @@ $(document).ready(function(){
 
 
 
+function goToPageSection(target){
+    $('html, body').animate({ scrollTop: $(target).offset().top - (window.innerHeight / 2) + $(target).height() / 2 }, 200);
+}
+
+
+
+
 function adjustDimestionsAfterRotation(div, rotation) {
     let divWidth = $("#"+div.id).width()
     let divHeight = $("#"+div.id).height()
@@ -61,16 +68,16 @@ function adjustDimestionsAfterRotation(div, rotation) {
 function changeNavBackground() {
     let thresholdHeight = $(window).height()/100*92;   
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
-        $("nav").removeClass("issue-nav");
-        $("nav").removeClass("nav-transparent-background");
-        $("nav").addClass("nav-colored-background");
+        $(".navbar").removeClass("issue-nav");
+        $(".navbar").removeClass("nav-transparent-background");
+        $(".navbar").addClass("nav-colored-background");
     } else {
-        if (!$("nav").hasClass("home-nav")){
-            $("nav").addClass("issue-nav");
+        if (!$(".navbar").hasClass("home-nav")){
+            $(".navbar").addClass("issue-nav");
         }
         
-        $("nav").removeClass("nav-colored-background");
-        $("nav").addClass("nav-transparent-background");
+        $(".navbar").removeClass("nav-colored-background");
+        $(".navbar").addClass("nav-transparent-background");
     };
 
 }
