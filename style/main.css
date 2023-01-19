@@ -87,6 +87,7 @@ body {
   text-decoration: none;
   margin: 0;
   font-size: 0.8em;
+  padding: 0 .5rem;
 }
 
 
@@ -107,13 +108,14 @@ body {
 
 
 .div-2030 p {
-  color: rgba(245, 245, 245, 0.8);
+  color: rgba(245, 245, 245, 0.7);
   font-size: 1em;
   transition: 600ms;
 }
 
 .div-2030 p:hover {
-  scale: 1.1;
+  color: rgba(245, 245, 245, 0.9);
+  scale: 1.05;
   transition: 600ms;
 }
 
