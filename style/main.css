@@ -125,7 +125,7 @@ body {
 
 #secondDiv2030 img {
   width: 20%;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 
@@ -160,6 +160,8 @@ body {
   background-color: rgb(0,0,0); /* Black fallback color */
   background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
  }
+
+
 
 .overlay-content {
   position: absolute;
