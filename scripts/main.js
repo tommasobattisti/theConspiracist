@@ -40,6 +40,22 @@ $(document).ready(function(){
 
 
 
+    var Y = 0, X = 0;
+    var moveY = 0, moveX = 0;
+       
+    $(document).mousemove(function(event){
+        Y = event.pageY - 33; 
+        X = event.pageX - 33;
+      });
+        
+    setInterval(function(){
+        moveY += ((Y - moveY)/15);
+        moveX += ((X - moveX)/15);
+        $(".tc2").css({ top: moveY +'px', left: moveX +'px'});
+    }, 0);
+    
+
+
 
 
 });
