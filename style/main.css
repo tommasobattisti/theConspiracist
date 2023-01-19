@@ -34,6 +34,7 @@ body {
   color: rgba(49, 53, 65, 0.7);
   font-size: 6em;
   font-weight: 800;
+  font-family: 'Orbitron', sans-serif;
 }
 
 
@@ -42,7 +43,6 @@ body {
   left: 15%;
   top: 60%;
   width: 20%;
-  color: whitesmoke;
   padding-left: 0.5rem;
   border-left: 2px solid whitesmoke;
   font-size: 0.8em;
@@ -51,6 +51,10 @@ body {
 .subtitle-div p {
   margin: 0;
   padding: 0;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: 'Exo', sans-serif;
 }
 
 
