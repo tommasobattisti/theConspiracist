@@ -11,7 +11,10 @@
     font-family: 'Inknut Antiqua', serif;
 */
 
-
+.eye-container, .home-2030 {
+    display: none;
+}
+ 
 
 /* The Overlay (background) */
 .overlay-style-page {

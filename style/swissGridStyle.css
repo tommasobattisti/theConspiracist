@@ -1,3 +1,7 @@
+.eye-container, .home-2030 {
+    display: none;
+}
+
 /* The Overlay (background) */
 .overlay-style-page {
     display: none; 
