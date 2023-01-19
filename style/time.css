@@ -19,12 +19,11 @@ body {
 
 /* The Overlay (background) */
 .overlay-style-page {
-    display: none; 
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    display: none;   
     height: 100%;
     width: 100%;
     position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
+    z-index: 99; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
@@ -37,7 +36,7 @@ body {
     left: 25%;
     width: 25%; /* 100% width */
     text-align: left;
-    z-index: 3;
+    z-index: 99;
     color: whitesmoke;
 }
 
@@ -56,16 +55,15 @@ body {
 nav {
     width: 100% !important;
     position: fixed !important;
+    height: 10vh;
 }
-
-
 
 .container-fluid {
     text-align: right;
 }
 
 .nav-transparent-background {
-    background-color: transparent !important;
+    background-color: rgba(214, 37, 3, 1) !important;
 }
 
 .nav-colored-background {
@@ -96,6 +94,16 @@ nav {
     color: black;
 }
 
+.dropdown-item:hover {
+    background-color: #D62503 !important;
+    color: black !important;
+}
+
+.dropdown-active {
+    color: #D62503 !important;
+    z-index: 1;
+}
+
 .navbar-nav a {
     padding: 0 .5rem;
     text-decoration: none;
@@ -107,11 +115,9 @@ nav {
 
 .active {
     color: white !important;
+    z-index: 0;
 }
 
-.dropdown-active {
-    color: #D62503 !important;
-}
 
   
 
@@ -256,54 +262,43 @@ nav {
     height: 100vh; /* Va bene così, perché deve sembrare la cover di time, quindi deve occupare tutto il viewport*/
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: white;
     background-size: cover;
     border-bottom: #D62503 3vw solid; /* LA MISURA è A CASO!!!! DA GIUSTIFICARE */
     border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
     border-right: #D62503 3vw solid;              /* QUELLE SCRITTE QUI SONO A CASO */
-    border-top: #D62503 3vw solid;
+    border-top: #D62503 10vh solid;
+    box-shadow: 
+    inset 0 0 0 5px rgb(0, 0, 0),
+    inset 0 0 0 15px white,
+    inset 0 0 0 17.5px rgb(0, 0, 0),
+    inset 0 0 0 35px white,
+    inset 0 0 0 37.5px rgb(0, 0, 0),
+    inset 0 0 0 55px white,
+    inset 0 0 0 57.5px rgb(0, 0, 0);
+    overflow: hidden;
 }
-
-.page-presentation:before {
-    content: "";
-    position: absolute;
-    top: 4vw;
-    left: 4vw;
-    right: 4vw;
-    bottom: 4vw;
-    border: solid 5px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.page-presentation:after {
-    content: "";
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
-    right: 5vw;
-    bottom: 5vw;
-    border: solid 5px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
 
 /* It is fot the "The" of "The conspiracist" */
 .invisiblePart {
     display: none;
 }
 
+.title-container {
+    align-self: center;
+    width: fit-content;
+    margin: 2%;
+}
+
 .title-container h1 {
-    font-size: 10vw;
+    font-size: 11em;
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
     font-family: 'Cinzel', serif !important;
 }
 
-.subtitle-div {
-    align-self: center;
-}
 
 #homeTp1 {
     align-self: center;
@@ -311,6 +306,7 @@ nav {
     font-weight: 300;
     font-family: 'Cinzel', serif !important;
     text-align: center;
+    box-shadow:
 }
 
 #issueTp1 {
@@ -330,12 +326,16 @@ nav {
 /*MAIN*/
 main {
     font-family: 'Cinzel', serif !important;
-    border-left: #D62503 3vw solid; /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
-    border-right: #D62503 3vw solid;  
+    /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
+    /*
+    border-left: #D62503 3vw solid;
+    border-right: #D62503 3vw solid;  */
     display: flex;
-    flex-direction: column;   /* QUELLE SCRITTE QUI SONO A CASO */
-    justify-items: space-around;       
+    flex-direction: column; 
+    justify-items: space-around;
+    margin: 5%;    /* Dimension to match dimension of the page-presentation*/
 }
+
 
 #timeTitle {
     width: 90%;
@@ -363,8 +363,9 @@ main {
     column-count: 3 !important;
     font-size: 1.1em;
     padding: 5%;
+    border: double 6px rgb(0, 0, 0);
+    margin-bottom: 5%;
 }
-
 
 
 
@@ -425,17 +426,17 @@ main {
     font-weight: 700;
 }
 
-#posterIconContainer {
+
+#styleChangePoster {
     display: none;
 }
+
 
 #incunabulaPoster {
     display: none;
 }
 
-.poster-container {
-    display:none;
-}
+
 
 .home-link-container {
     margin-bottom: 1vh;
@@ -466,6 +467,7 @@ main {
 footer {
     justify-content: center;
     background-color: #D62503;
+    height: 14vh;
 }
 
 footer div {
