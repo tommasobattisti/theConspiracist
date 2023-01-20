@@ -68,14 +68,20 @@ function adjustDimestionsAfterRotation(div, rotation) {
 function changeNavBackground() {
     let thresholdHeight = $(window).height()/100*92;   
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
+        if ($(".navbar").hasClass("issue-nav")) {
+            $(".navbar-toggler").removeClass("light-nav-toggler");
+            $(".navbar-toggler").addClass("dark-nav-toggler");
+        }
         $(".navbar").removeClass("issue-nav");
         $(".navbar").removeClass("nav-transparent-background");
         $(".navbar").addClass("nav-colored-background");
     } else {
         if (!$(".navbar").hasClass("home-nav")){
             $(".navbar").addClass("issue-nav");
+            $(".navbar-toggler").removeClass("dark-nav-toggler");
+            $(".navbar-toggler").addClass("light-nav-toggler");
+
         }
-        
         $(".navbar").removeClass("nav-colored-background");
         $(".navbar").addClass("nav-transparent-background");
     };
