@@ -30,7 +30,7 @@ body {
   top: 40%;
 }
 
-.text-pill {
+#issueTp1 {
 	position: absolute;
 	left: 15%;
 	top: 60%;
@@ -329,7 +329,7 @@ body {
 }
 
 .btns-grid-container div button {
-  height: 100%;
+  	height: 100%;
 }
 
 .btns-item-1, .btns-item-2, .btns-item-3, .btns-item-4  {
@@ -486,6 +486,7 @@ body {
   width: 80%;
   margin: 5% 10% 2.5% 10%;
   justify-content: space-between;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .document-selection-container {
@@ -499,8 +500,15 @@ body {
 }
 
 .card-header {
-  background-color: rgba(237, 238, 243, 0.6) !important;
+  background: inherit;
+  box-shadow: inset 0 2000px rgba(255, 255, 255, 0.55);
   padding: 0 !important;
+  border-radius: 5px;
+
+}
+
+.card-header button {
+	width: 100%;
 }
 
 
@@ -544,7 +552,11 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 15vh;
+  background: inherit;
+  box-shadow: inset 0 2000px rgba(255, 255, 255, .2);
+  border-radius: 5px;
 }
+
 
 .metadata-container > div {  /*Select only first level div children*/
   margin: 5% 0;
@@ -577,6 +589,13 @@ body {
 
 .article-comparison-container {
   display: none;
+}
+
+
+.article-container h2, .article-container h3, .article-comparison-container h2, .article-comparison-container h3 {
+	font-family: 'Orbitron', sans-serif;
+	margin-bottom: 4%;
+	margin-top: 6%;
 }
 
 .article-comparison-container p {
@@ -616,10 +635,29 @@ body {
 
 .entity-creation-form input {
   width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(10, 34, 57, 0.9);
+  margin: 1%;
 }
 
 .entity-creation-form-b input {
   width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(10, 34, 57, 0.9);
+  margin: 1%;
+}
+
+.metadata-modal-btn, .entity-creation-btn, .entity-creation-btn-b {
+	background: rgba(255, 255, 255, 0.6);
+  	color: rgba(10, 34, 57, 0.9);
+  	margin: 1%;
+	border: none;
+	border-radius: 5px;
+}
+
+.metadata-modal-btn:hover, .entity-creation-btn:hover, .entity-creation-btn-b:hover {
+	background: rgba(255, 255, 255, 0.8);
+	transition: 400ms;
 }
 
 .entities-content-table {
@@ -644,8 +682,10 @@ body {
 }
 
 .active-nav-i {
-  background-color: rgb(196, 127, 127);
-  border: none;
+	background: inherit !important;
+	box-shadow: inset 0 2000px rgba(255, 255, 255, 0.5);
+	border: none;
+	border-radius: 5px;
 }
 
 .tab-content, .tab-content-b{
@@ -740,7 +780,10 @@ body {
 
 /*Multiple modal*/
 .entity-type-selection, .entity-type-selection-b {
-  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(10, 34, 57, 0.9);
+  border-color: rgba(10, 34, 57, 0.9);
+  margin: 2%;
 }
 
 .width-80 {
@@ -754,6 +797,27 @@ body {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
+}
+
+
+.modal-content {
+	font-family: 'Exo', sans-serif;
+	background: inherit !important;
+	box-shadow: inset 2000px 2000px rgba(134, 145, 179, 0.6),
+				inset 2000px 2000px rgba(237, 238, 243, 0.7);
+	border-radius: 5px !important;
+}
+
+
+.modal-header {
+	font-family: 'Orbitron', sans-serif;
+	background: inherit !important;
+	box-shadow: inset 0 2000px rgba(255, 255, 255, 0.5);
+}
+
+.modal-footer {
+	background: inherit !important;
+	box-shadow: inset 0 2000px rgba(255, 255, 255, 0.5);
 }
 
 

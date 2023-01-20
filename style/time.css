@@ -556,8 +556,8 @@ main {
 
 .double-doc-selector {
     position: relative; 
-    visibility: hidden;
-    height: 0;
+    display: none;
+    height: auto;
     z-index: 1;
     margin-top: 5vw;
     margin-right: 5vw;

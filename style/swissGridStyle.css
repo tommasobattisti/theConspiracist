@@ -798,8 +798,8 @@ main {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5%;
-    visibility: hidden;
-    height: 0;
+    display: none;
+    height: auto;
     z-index: 1;
     margin: 10% 0;
 }
