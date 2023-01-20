@@ -24,9 +24,9 @@ $(document).ready(function(){
 
 
 
-    for (let div of $("div")) {
-        if(div.css("transform") == true) {
-            let rotation = div.css("transform")
+    for (const div of $("div")) {
+        if(div.style.transform == true) {
+            let rotation = div.style.transform
             switch (rotation) {
                 case "rotate(90deg)":
                     adjustDimestionsAfterRotation(div, 90);

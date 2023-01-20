@@ -59,6 +59,13 @@ nav {
 }
 
 
+
+
+
+
+
+
+
 .nav-text {
     color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
@@ -75,6 +82,25 @@ nav {
 .active::first-letter {
     color:#f54123;
 }
+
+.dropdown-active::first-letter {
+    color:#f54123;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(245, 67, 35, 0.8) !important;
+}
+
+
+.ddm-nav-text {
+    color: #212529 !important;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 600 !important;
+    padding: 0 .5rem;
+    text-decoration: none;
+}
+
+
 
 .issue-nav .nav-text{
     color: whitesmoke !important;
@@ -349,6 +375,20 @@ main {
     align-items: center;
 }
 
+.home-flex-row a {
+        color: #212529;
+        font-size: 0.9em;
+        text-decoration: underline .2rem #558a86;
+        font-weight: 500;
+}
+
+.home-flex-row a:hover {
+        color: #558a86 !important;
+        text-decoration: none;
+}
+
+
+
 
 .row-rt-block, .row-lt-block {
     display: flex;
@@ -427,14 +467,18 @@ main {
     width: fit-content;
 }
 
+
+
+
+
 .esd-link {
     padding: 10px 30px;
     margin: 20px -20px;
     border-top: solid #212529 2px;
     border-bottom: solid #212529 2px;
     transition: 600ms ease-in-out;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.2em !important;
+    font-weight: 600; 
 }
 
 
@@ -457,12 +501,14 @@ main {
 
 
 
+
+
 .poster-link {
-    text-decoration: none;
-    color: #212529;
+    text-decoration: underline .2rem #00aabb;
+    color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 600 !important;
+    font-size: 1.5em !important;
     text-decoration: underline;
     text-decoration-thickness: 3px;
 
@@ -484,7 +530,7 @@ main {
     padding: 100px 15px;
     transform : translateY(-0px);
     background-color: rgba(159, 127, 106, 0.4);
-    color: #294765;
+    color: #00abbba9 !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 9px;
 
     text-decoration: none;
@@ -661,25 +707,23 @@ main {
 }
   
 
-.h-flex-no-wrap {
+.mode-selctor-btns-div {
     padding: 30px 15px;
     margin: -20px 20px;
+    /* background-color: #f1f2f0; */
+    border-left: solid 2px;
+    border-right: solid 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    /* background-color: #f1f2f0; */
-    border-left: solid 2px;
-    border-right: solid 2px;
-
-  }
+}
   
 
-
   
-.h-flex-no-wrap button {
+.mode-selctor-btns-div button {
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 600;
     text-transform: lowercase;
@@ -694,8 +738,7 @@ main {
     background-color: #f1f2f0;
 }
 
-
-.h-flex-no-wrap button:hover {
+.mode-selctor-btns-div button:hover {
     color: #f54123;
     border: #212529 solid 2px;
     transition: 400ms;
@@ -708,22 +751,53 @@ main {
 
 
 
-
-
-
 .double-doc-selector {
-    position: relative; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
     visibility: hidden;
     height: 0;
     z-index: 1;
+    margin: 10% 0;
 }
-  
-  
-  
-.width-100 {
-    width: 100% !important;
+
+
+.document-selection-container {
+    width: 47.5%;
 }
-  
+
+
+.document-selection-container div {
+    width: 100%;
+}
+
+
+
+.h-flex-no-wra {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding: .5rem 0;
+    height: 100%;
+    border: solid 2px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px 0px;
+    background-color: #f1f2f0;
+}
+
+
+.h-flex-no-w {
+    color: #f54123;
+    border: #212529 solid 2px;
+    transition: 400ms;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px 0px;
+}
+
+
+
+
+
 
 
 
@@ -1000,11 +1074,11 @@ main {
 
 .meta-text-container li a {
     color: #212529;
-    text-decoration: underline .2rem #00aabb;
+    text-decoration: underline .2rem #558a86;
 }
 
 .meta-text-container li a:hover {
-    color: #00aabb !important;
+    color: #558a86 !important;
     text-decoration: none;
 }
 
@@ -1012,24 +1086,24 @@ main {
 .article-container a {
     color: #212529;
     font-size: 0.9em;
-    text-decoration: underline .2rem #00aabb;
+    text-decoration: underline .2rem #558a86;
     font-weight: 500;
 }
 
 .article-comparison-container a {
     color: #212529;
     font-size: 0.9em;
-    text-decoration: underline .2rem #00aabb;
+    text-decoration: underline .2rem #558a86;
     font-weight: 500;
 }
 
 .article-container a:hover {
-    color: #00aabb !important;
+    color: #558a86 !important;
     text-decoration: none;
 }
 
 .article-comparison-container a:hover {
-    color: #00aabb !important;
+    color: #558a86 !important;
     text-decoration: none;
 }
 
@@ -1050,23 +1124,23 @@ main {
   /*Span backgrounds*/
   
   .person-bkg {
-    background-color: rgba(0, 217, 255, 0.5);
+    background-color: rgba(240, 194, 79, 0.6);
   }
   
   .places-bkg {
-    background-color: rgba(182, 143, 87, 0.628);
+    background-color: rgba(69, 124, 57, 0.6);
   }
   
   .organizations-bkg {
-    background-color: rgba(102, 75, 121, 0.483);
+    background-color: rgba(236, 105, 45, 0.6);
   }
   
   .events-bkg {
-    background-color: rgba(165, 42, 42, 0.569);
+    background-color: rgba(0, 149, 163, 0.6);
   }
   
   .concepts-bkg {
-    background-color: rgba(88, 137, 74, 0.462);
+    background-color: rgba(8, 51, 125, 0.4);
   }
   
   .keywords-bkg {
@@ -1075,7 +1149,7 @@ main {
   
   
   .animation-bkg {
-    background-color: rgba(25, 105, 171, 0.671);
+    background-color: rgba(245, 67, 35, 0.7);
   }
   
   

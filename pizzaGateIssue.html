@@ -94,12 +94,12 @@
                 
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle nav-text active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item nav-text dropdown-active" href="#">Issue 1</a></li>
-                        <li><a class="dropdown-item nav-text">Issue 2</a></li>
-                        <li><a class="dropdown-item nav-text">Issue 3</a></li>
+                    <ul class="dropdown-menu issue-ddm" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item ddm-nav-text dropdown-active" href="#">Issue 1</a></li>
+                        <li><a class="dropdown-item ddm-nav-text">Issue 2</a></li>
+                        <li><a class="dropdown-item ddm-nav-text">Issue 3</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item nav-text" href="./disclaimer.html">Disclaimer</a></li>
+                        <li><a class="dropdown-item ddm-nav-text" href="./disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </li>
                 <a class="nav-text" href="./documentation.html">Documentation</a>
@@ -410,7 +410,7 @@
       </nav>
 
         <section class="mode-selector">
-          <div class="h-flex-no-wrap">
+          <div class="h-flex-no-wrap mode-selctor-btns-div">
             <button onclick="changeMode('single')" class="single-mode-btn active-mode">
               Single text
             </button>
@@ -420,39 +420,33 @@
           </div>
         </section>
 
+
         <section class="double-doc-selector h-flex-no-wrap">
-          <div class="card">
-            <div class="card-header" id="headingA">
-              <h2 class="mb-0">
-                <button class="btn width-100" type="button" data-toggle="collapse" data-target="#collapseA" aria-expanded="true" aria-controls="collapseA">
+          <div class="document-selection-container">
+            <div id="headingA">
+              <h2 class="doc-selection-title">
                   Document selection
-                </button>
               </h2>
             </div>
-            <div id="collapseA" class="collapse" aria-labelledby="headingA">
-              <div class="card-body">
-                  <ul class="docs-list-a"> 
-                  </ul>
-              </div>
+            <div class="docs-list-container">
+              <ul class="docs-list-a"> 
+              </ul>
             </div>
           </div>
           
-          <div class="card">
-            <div class="card-header" id="headingB">
-              <h2 class="mb-0">
-                <button class="btn width-100" type="button" data-toggle="collapse" data-target="#collapseB" aria-expanded="true" aria-controls="collapseB">
+          <div class="document-selection-container">
+            <div id="headingB">
+              <h2 class="doc-selection-title">
                   Document selection
-                </button>
               </h2>
             </div>
-            <div id="collapseB" class="collapse" aria-labelledby="headingB">
-              <div class="card-body">
-                  <ul class="docs-list-b"> 
-                  </ul>
-              </div>
+            <div class="docs-list-container">
+              <ul class="docs-list-b"> 
+              </ul>
             </div>
           </div>
         </section>
+
 
         <section class="meta-text-container">
                 <div class="metadata-container">
@@ -461,7 +455,7 @@
                         <div class="card sm-d-show">
                           <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
-                              <button class="btn width-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Document selection
                               </button>
                             </h2>
@@ -477,7 +471,7 @@
                         <div class="card sm-d-hide">
                           <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
-                              <button class="btn collapsed width-100" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Show entities
                               </button>
                             </h2>
@@ -529,7 +523,7 @@
                         <div class="card sm-d-hide">
                           <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
-                              <button class="btn collapsed width-100" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Create entity
                               </button>
                             </h2>
@@ -556,7 +550,7 @@
                         <div class="card sm-d-hide">
                             <div class="card-header" id="headingFour">
                               <h2 class="mb-0">
-                                <button class="btn collapsed width-100" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                   Info and metadata
                                 </button>
                               </h2>

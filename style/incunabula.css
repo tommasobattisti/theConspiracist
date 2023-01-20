@@ -523,7 +523,7 @@ main {
   }
   
 
-.h-flex-no-wrap {
+.mode-selctor-btns-div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -537,7 +537,7 @@ main {
 
 
   
-.h-flex-no-wrap button {
+.mode-selctor-btns-div button {
     padding: 1.5% 0;
     height: 100%;
     width: 25%;
@@ -553,14 +553,24 @@ main {
     visibility: hidden;
     height: 0;
     z-index: 1;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.double-doc-selector div {
+    width: 47.5%;
+}
+
+.document-selection-container div {
+    width: 100%;
 }
   
-  
-  
-.width-100 {
-    width: 100% !important;
-}
-  
+
 
 
 
