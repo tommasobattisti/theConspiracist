@@ -97,6 +97,7 @@ nav {
     font-weight: 600 !important;
     padding: 0 .5rem;
     text-decoration: none;
+    -webkit-text-decoration: none;
 }
 
 
@@ -408,13 +409,19 @@ main {
 .home-flex-row a {
         color: #212529;
         font-size: 0.9em;
-        text-decoration: underline .2rem #558a86;
+        text-decoration: underline;
+        text-decoration-color: #558a86;
+        text-decoration-thickness: .2rem;
+        -webkit-text-decoration: underline;
+        -webkit-text-decoration-color: #558a86;
+        -webkit-text-decoration-thickness: .2rem;
         font-weight: 500;
 }
 
 .home-flex-row a:hover {
         color: #558a86 !important;
         text-decoration: none;
+        -webkit-text-decoration: none;
 }
 
 
@@ -519,6 +526,7 @@ main {
     color: #558a86;
     font-weight: 600;
     text-decoration: none;
+    -webkit-text-decoration: none;
 }
 
 
@@ -526,7 +534,9 @@ main {
 
 .text-line-through {
     text-decoration: line-through;
+    -webkit-text-decoration: line-through;
     text-decoration-thickness: 2.5px;
+    -webkit-text-decoration-thickness: 2.5px;
 }
 
 
@@ -534,14 +544,16 @@ main {
 
 
 .poster-link {
-    text-decoration: underline .2rem #00aabb;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 600 !important;
     font-size: 1.5em !important;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-
     background-color: rgba(105, 126, 124, 0.4);
     padding: 80px 20px;
     border: solid #212529 2px;
@@ -807,7 +819,12 @@ main {
 .docs-list-container li a {
     color: #212529;
     font-weight: 500;
-    text-decoration: underline .2rem #558a86;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     font-size: 1.1em;
     transition: 200ms;
 }
@@ -815,6 +832,7 @@ main {
 .docs-list-container li a:hover {
     color: #558a86 !important;
     text-decoration: none;
+    -webkit-text-decoration: none;
     transition: 200ms;
 }
 
@@ -1077,7 +1095,12 @@ main {
 .article-container h3 {
     margin-top: 2em;
     margin-bottom: 1em;
-    text-decoration: underline .3rem #f54123;
+    text-decoration: underline;
+    text-decoration-color: #f54123;
+    text-decoration-thickness: .3rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #f54123;
+    -webkit-text-decoration-thickness: .3rem;
     font-size: 2.5em;
     font-weight: 700;
     text-transform: lowercase;
@@ -1086,7 +1109,12 @@ main {
 .article-comparison-container h3 {
     margin-top: 2em;
     margin-bottom: 1em;
-    text-decoration: underline .3rem #f54123;
+    text-decoration: underline;
+    text-decoration-color: #f54123;
+    text-decoration-thickness: .3rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #f54123;
+    -webkit-text-decoration-thickness: .3rem;
     font-size: 2.5em;
     font-weight: 700;
     text-transform: lowercase;
@@ -1140,13 +1168,19 @@ main {
 
 .meta-text-container li a {
     color: #212529;
-    text-decoration: underline .2rem #558a86;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     transition: 200ms;
 }
 
 .meta-text-container li a:hover {
     color: #558a86 !important;
     text-decoration: none;
+    -webkit-text-decoration: none;
     transition: 200ms;
 }
 
@@ -1154,25 +1188,37 @@ main {
 
 .tab-content li a {
     color: #212529;
-    text-decoration: underline .2rem #558a86;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     transition: 200ms;
 }
 
 .tab-content li a:hover {
     color: #558a86 !important;
     text-decoration: none;
+    -webkit-text-decoration: none;
     transition: 200ms;
 }
 
 .tab-content-b li a {
     color: #212529;
-    text-decoration: underline .2rem #558a86;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     transition: 200ms;
 }
 
 .tab-content-b li a:hover {
     color: #558a86 !important;
     text-decoration: none;
+    -webkit-text-decoration: none;
     transition: 200ms;
 }
 
@@ -1182,7 +1228,12 @@ main {
 .article-container a {
     color: #212529;
     font-size: 0.9em;
-    text-decoration: underline .2rem #558a86;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     font-weight: 500;
     transition: 200ms;
 }
@@ -1190,7 +1241,12 @@ main {
 .article-comparison-container a {
     color: #212529;
     font-size: 0.9em;
-    text-decoration: underline .2rem #558a86;
+    text-decoration: underline;
+    text-decoration-color: #558a86;
+    text-decoration-thickness: .2rem;
+    -webkit-text-decoration: underline;
+    -webkit-text-decoration-color: #558a86;
+    -webkit-text-decoration-thickness: .2rem;
     font-weight: 500;
     transition: 200ms;
 }
@@ -1198,12 +1254,14 @@ main {
 .article-container a:hover {
     color: #558a86 !important;
     text-decoration: none;
+    -webkit-text-decoration: none;
     transition: 200ms;
 }
 
 .article-comparison-container a:hover {
     color: #558a86 !important;
     text-decoration: none;
+    -webkit-text-decoration: none;
     transition: 200ms;
 }
 
