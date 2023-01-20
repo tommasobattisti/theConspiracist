@@ -75,16 +75,17 @@ nav {
 }
 
 
+
 .nav-text:hover {
     color:#f54123;
 }
 
 .active::first-letter {
-    color:#f54123;
+    color:#f54123 !important;
 }
 
 .dropdown-active::first-letter {
-    color:#f54123;
+    color:#f54123 !important;
 }
 
 .dropdown-item:hover {
@@ -93,12 +94,13 @@ nav {
 
 
 .ddm-nav-text {
-    color: #212529 !important;
+    color: #212529;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 600 !important;
     padding: 0 .5rem;
     text-decoration: none;
 }
+
 
 
 
@@ -119,7 +121,16 @@ nav {
 
 
 .dropdown-item {
-    color: #212529 !important;
+    color: #212529;
+}
+
+.disabled-nav-text {
+    color: #21252966 !important;
+}
+
+.disabled-nav-text:hover {
+    color: #21252966 !important;
+    background-color: none !important;
 }
 
 
@@ -668,7 +679,7 @@ main {
 
 
 .issue-page-presentation {
-    background-image: url("../images_styles/swiss/pepperoni_pizza_black_and_white_60s_photographic.png");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url("../images_styles/swiss/pepperoni_pizza_black_and_white_60s_photographic.png");
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -1292,18 +1303,18 @@ main {
 
 
 .metadata-modal-btn {
-        font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-        font-weight: 600;
-        text-transform: lowercase;
-        margin: .5rem 0;
-        padding: .5rem 0;
-        height: 100%;
-        width: 10%;
-        font-size: 1em;
-        border: solid 2px;
-        border-radius: 25px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px 0px;
-        background-color: #f1f2f0;
+    padding: 0.4rem 0.8rem !important;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 600;
+    text-transform: lowercase;
+    margin: .5rem 0;
+    padding: .5rem 0;
+    height: 100%;
+    font-size: 1em;
+    border: solid 2px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px 0px;
+    background-color: #f1f2f0;
 }
     
 .metadata-modal-btn:hover {
