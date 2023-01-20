@@ -61,6 +61,24 @@ nav {
 
 
 
+.navbar-toggler span {
+    height: 2px;
+    width: 25px;
+    background-color: #212529;
+    display: block;
+  }
+
+.navbar-toggler span:not(:last-child) {
+    margin-bottom: .3rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+  }
+  
+.navbar-toggler:hover{
+    box-shadow: 0 0 0 0.1rem !important;
+}
 
 
 
@@ -111,13 +129,7 @@ nav {
 }
 
 
-.navbar-toggler:focus{
-    box-shadow: none !important;
-  }
-  
-.navbar-toggler:hover{
-    box-shadow: 0 0 0 0.1rem !important;
-}
+
 
 
 .dropdown-item {
