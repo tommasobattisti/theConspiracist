@@ -71,9 +71,6 @@ nav {
 }
 
 
-.navbar-nav a:hover {
-    color: #212529 !important;
-}
 
 .active, .dropdown-active {
     color: #ed4007 !important;
@@ -99,8 +96,33 @@ nav {
     color: #212529;
     font-family: 'Inknut Antiqua', serif !important;
     font-weight: 700;
-    font-size: larger;
 }
+
+.ddm-nav-text {
+    color: #212529;
+    font-family: 'Inknut Antiqua', serif !important;
+    font-weight: 700;
+}
+
+
+.disabled-nav-text {
+    font-family: 'Inknut Antiqua', serif !important;
+    font-weight: 600;
+    color: #21252966 !important;
+}
+
+
+.nav-text:hover {
+    color: #ed4007 !important;
+    background-color: none !important;
+}
+
+
+.ddm-nav-text:hover {
+    color: #ed4007 !important;
+    background-color: none !important;
+}
+
 
 .navbar-toggler:focus{
     box-shadow: none !important;
