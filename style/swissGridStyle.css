@@ -91,9 +91,6 @@ nav {
 }
 
 
-
-
-
 .nav-text {
     color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
@@ -101,8 +98,6 @@ nav {
     padding: 0 .5rem;
     text-decoration: none;
 }
-
-
 
 
 .active::first-letter {

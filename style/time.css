@@ -32,13 +32,28 @@ body {
 
 .overlay-content {
     position: absolute;
-    bottom: 25%; 
-    left: 25%;
-    width: 25%; /* 100% width */
+    top: 25%;
+    bottom: 15%; 
+    left: 15%;
+    width: 40%; /* 100% width */
     text-align: left;
     z-index: 99;
     color: whitesmoke;
+    font-family: 'Cinzel', serif !important;
 }
+
+.overlay-content h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.overlay-content h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
 
 #general-overlay {
     display: block;
@@ -56,6 +71,33 @@ nav {
     width: 100% !important;
     position: fixed !important;
     height: 10vh;
+}
+
+.navbar-toggler span {
+    height: 4px;
+    width: 25px;
+    display: block;
+}
+
+.navbar-toggler span:not(:last-child) {
+    margin-bottom: .3rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+  }
+  
+.navbar-toggler:hover{
+    box-shadow: 0 0 0 0.1rem !important;
+}
+
+
+.dark-nav-toggler span{
+    background-color: #212529;
+}
+
+.light-nav-toggler span{
+    background-color: #212529;
 }
 
 .container-fluid {
@@ -84,7 +126,8 @@ nav {
 .navbar-toggler:focus{
     box-shadow: none !important;
   }
-  
+
+
 .navbar-toggler:hover{
     box-shadow: 0 0 0 0.1rem !important;
 }
@@ -97,6 +140,10 @@ nav {
 .dropdown-item:hover {
     background-color: #D62503 !important;
     color: black !important;
+}
+
+.disabled-nav-text {
+    font-family: 'Cinzel', serif !important;
 }
 
 .dropdown-active {
@@ -113,9 +160,22 @@ nav {
     color: white !important;
 }
 
-.active {
+.active, .active-issue {
     color: white !important;
-    z-index: 0;
+}
+
+
+.ddm-nav-text {
+    color: #212529;
+    font-family: 'Cinzel', serif !important;
+    font-weight: 600 !important;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.dropdown-menu li:hover {
+    background-color: #D62503 !important;
+    color: black !important;
 }
 
 
