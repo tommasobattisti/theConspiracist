@@ -689,7 +689,7 @@ main {
     width: 100% !important;
     height: 200px !important;
     border: 1px solid;
-    border-radius: 2%;
+    border-radius: 5px;
     overflow-y: scroll !important;
 }
 
