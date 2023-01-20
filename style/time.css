@@ -315,7 +315,6 @@ nav {
 
 
 
-
 /*Page presentation*/
 
 .page-presentation {
@@ -520,7 +519,422 @@ main {
 
 
 
+/* ---------- ISSUES -----------*/
 
+
+.mode-selector {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    margin-top: 5%;
+    display: none;
+}
+  
+
+.mode-selctor-btns-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+  
+
+
+  
+.mode-selctor-btns-div button {
+    padding: 1.5% 0;
+    height: 100%;
+    width: 25%;
+    font-size: 1.5em;
+    background-color:#D62503;
+    border: solid 2px;
+}
+
+.double-doc-selector {
+    position: relative; 
+    visibility: hidden;
+    height: 0;
+    z-index: 1;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.double-doc-selector div {
+    width: 47.5%;
+}
+
+.document-selection-container div {
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.meta-text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.metadata-container {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.sticky-container {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+}
+
+.card {
+    background-color: transparent;
+}
+  
+.card-header {
+    padding:0 !important;
+}
+  
+.meta-menu-card{
+    background-color: white !important;
+}
+
+.card-body li {
+    padding: .5rem 0;
+}
+
+.card-body form div {
+    margin: 1rem 0;
+}
+
+
+.entity-creation-form, .entity-creation-form-b {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+}
+  
+.entity-creation-form input {
+    width: 100%;
+}
+
+.entity-creation-form-b input {
+    width: 100%;
+}
+
+.entity-string, .entity-string-b {
+    border: solid 1px;
+    margin: .5rem 0;
+}
+
+
+
+.entities-content-table {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.nav-items-div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.nav-i, .nav-i-b {
+    background-color: transparent;
+    border: none;
+    padding: 3% 5%;
+}
+  
+.active-nav-i {
+    background-color: #F6BF77;
+    border: 1px solid;
+}
+
+  
+.tab-content, .tab-content-b{
+    display: none;
+  }
+  
+  
+.active-tc {
+    display: block !important;
+    width: 100% !important;
+    height: 200px !important;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow-y: scroll !important;
+}
+
+.active-tc li {
+    padding-right: 1rem;
+}
+
+
+
+
+/*Artice container*/
+.article-container {
+    width: 70%;
+    min-height: 200px;
+  }
+
+.article-container p {
+    text-align: justify;
+    font-size: 1.2em;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+    line-height: 1.5em;
+}
+
+.article-comparison-container p {
+    text-align: justify;
+    font-size: 1.2em;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+    line-height: 1.5em;
+}
+
+
+.article-container li {
+    padding: 1rem 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+
+.article-container h3 {
+    margin-top: 2em;
+}
+
+
+.article-title, .author-info, .publication-info {
+    padding-bottom: 1.5em;
+    text-align: center !important;
+    text-transform: uppercase;
+}
+
+
+
+.article-comparison-container h3 {
+    margin-top: 2em;
+}
+
+.article-comparison-container {
+    display: none;
+}
+
+
+
+.article-comparison-container li {
+    padding: 1rem 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+
+
+.article-container li a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+.article-comparison-container li a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+.article-container a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+.article-comparison-container a {
+    color: #5A8094 !important;
+    font-size: 1.1em;
+}
+
+  
+  .info-dl, .info-dl-b{
+    padding: 2%;
+  }
+  
+  
+  .docs-list-a, .docs-list-b {
+    margin: 0;
+    padding-left: 1rem;
+  }
+  
+  
+
+  /*Span backgrounds*/
+  
+/*PALETTE: https://color.adobe.com/it/search?q=ancient%20book https://color.adobe.com/it/search?q=incunabula https://color.adobe.com/it/search?q=incunabula  https://color.adobe.com/it/search?q=incunabula*/
+
+  .person-bkg {
+    color: #F2B705 !important;
+    font-weight: 900;
+  }
+  
+  .places-bkg {
+    color: #F08B48;
+    font-weight: 900;
+  }
+  
+  .organizations-bkg {
+    color: rgb(102, 75, 121);
+    font-weight: 900;
+  }
+  
+  .events-bkg {
+    color: #BF4B21;
+    font-weight: 900;
+  }
+  
+  .concepts-bkg {
+    color: #667339;
+    font-weight: 900;
+  }
+  
+  .keywords-bkg {
+    color: #9CBCD9;
+    font-weight: 900;
+  }
+  
+  
+  .animation-bkg {
+    background-color: rgba(61, 156, 207, 0.5);
+  }
+  
+  
+  
+  
+  /*SINGLE MODAL*/
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .modal-entity-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .modal-entity-creation, .modal-entity-creation-b {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 5% 0;
+  }
+  
+.metadata-modal-btn {
+    background-color: #5A8094 !important;
+    border-color: #5A8094 !important;
+}
+
+.metadata-modal-btn:hover {
+    background-color: #3c85ac !important;
+    border-color: #3c85ac  !important;
+}
+  
+  
+  
+  /*Multiple modal*/
+
+.modal-content {
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+  
+  .width-80 {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: auto;
+  }
+  
+  #mainModalContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+
+
+
+.article-img-centre {
+    margin-top: 2em;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+  }
+
+.figure-caption-centre {
+    margin-bottom: 2em;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+    font-size: 1em !important;
+}
+
+
+
+.notes-h3::first-letter, .references-h3::first-letter {
+
+    float: none !important;
+}
+  
+  .link-to-footnote{
+    color: #5A8094;
+  }
+  
+  .link-to-footnote:hover{
+    cursor: pointer;
+    color:rgba(0, 217, 255, 0.5);
+  }
 
 
 /*FOOTER*/

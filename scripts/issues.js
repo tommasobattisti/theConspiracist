@@ -563,11 +563,11 @@ function changeToSingleMode() {
     $(".article-container").css("width", "70%");
     $(".btns-item-9").removeClass("visible").addClass("hidden");
     $(".btns-item-10").removeClass("visible").addClass("hidden");
-    $(".double-doc-selector").css({"visibility": "hidden", "height": "0"});
+    $(".double-doc-selector").css("display", "none");
     $(".right-modal-body").css({"display": "none", "visibility": "hidden", "height": "0"});
     $(".modal-dialog").removeClass("width-80");
     $(".modal-dialog").css("max-width", "500px");
-    $(".meta-text-container").css("margin", "10%");
+
 }
 
 
@@ -579,11 +579,11 @@ function changeToComparisonMode() {
     $(".article-container").css("width", "47.5%");
     $(".btns-item-9").removeClass("hidden").addClass("visible");
     $(".btns-item-10").removeClass("hidden").addClass("visible");
-    $(".double-doc-selector").css({"visibility": "visible", "height": "auto"});
+    $(".double-doc-selector").css("display", "flex");
     $(".right-modal-body").css({"display": "flex", "visibility": "visible", "height": "auto"});
     $(".modal-dialog").addClass("width-80");
     $(".modal-dialog").css("max-width", "none");
-    $(".meta-text-container").css("margin", "0");
+  
 }
 
 

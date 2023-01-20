@@ -1,6 +1,6 @@
 @media only screen and (orientation: landscape) and (min-width: 1080px) {
     .mode-selector {
-        display: block;
+        display: block !important;
       }
 }
 
