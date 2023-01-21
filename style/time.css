@@ -486,12 +486,7 @@ main {
 }
 
 
-#styleChangePoster {
-    display: none;
-}
-
-
-#incunabulaPoster {
+#styleChangePoster, #swissDocIllustration, #incunabulaPoster {
     display: none;
 }
 
