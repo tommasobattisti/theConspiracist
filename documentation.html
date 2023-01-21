@@ -41,7 +41,9 @@
     <script src="./scripts/main.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-top pt-2 pb-2">
+
+
+    <nav class="navbar navbar-expand-md sticky-top pt-2 pb-2 home-nav">
         <div class="container-fluid x">
           <a class="navbar-brand nav-text" href="./index.html">The Conspiracist</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +88,7 @@
                     <button class="sub-btn" type="button" onclick="changeCSS(1500)" onmouseover="showTextOverlay(1500)">1500</button>
                 </div>
                 <div class="btns-grid-item btns-item-2">
-                    <button class="sub-btn" type="button" onclick="changeCSS(1930)" onmouseover="showTextOverlay(1930)">1930</button>
+                    <button class="sub-btn" type="button" onclick="changeCSS(1940)" onmouseover="showTextOverlay(1940)">1940</button>
                 </div>
                 <div class="btns-grid-item btns-item-3">
                     <button class="sub-btn" type="button" onclick="changeCSS(1950)" onmouseover="showTextOverlay(1950)">1950</button>
@@ -109,32 +111,39 @@
         </div>
 
 
-    <main>
-        <section class="page-presentation">
-            <div class="title-container">
-                <h1>Documentation</h1>
-            </div>
-            <div id="swissRotatedPill" class="subtitle-div">
-                <p class="text-pill">Transparency, transparency, transparency, transparency, transparency </p>
-            </div>
-        </section>
+    <section class="page-presentation documentation-page-presentation">
+        <div class="title-container">
+            <h1>Documentation</h1>
+        </div>
+        <div id="swissRotatedPill" class="subtitle-div">
+            <p class="text-pill">Transparency, transparency, transparency, transparency, transparency </p>
+        </div>
+    </section>
+
+    <main class="documentation-main">
+
         <section id="documentationBody">
 
             <h2>Idea and website's features</h2>
-            <p>The project has been deveoped for the final exam of the “Information Modelling and Web Technologies” couse of the master's degree in Digital Humaities and Digital Knowledge of the University of Bologna.</p>
-            <p>the magazine's topic is a personal choice of the project's authors. The selected texts has been chosen among authoritative articles aiming at analyzing conspiracies from differnet points of view and the souces can be found in the <a href="./disclaimer.html">disclaimer</a>. in particular, the issue where the texts are contained focuses on the Pizzagate conspiracy theory and, therefore, containes only articles and book-chapters dealing with this topic. This choice has been made so to provide the users with the possibility of comparing documents with references to similar entities.</p>
-            <p>The entities we decided to highlight are the ones that made more sense to focus on given the topic, named people, places, organizations, events and concepts. Moreover, also general keywords without a specific refrence to the entity type can be added and highlighted.</p>
-            <p>The website presents the possibility to change between different historically-inspired typographic styles and, in the issue section, the one of annotating and highlight keywords and entities. Furthermore, it is possible to choose between the single text and the comparison view to analyze the documents in the preferred way. In the comparison mode, metadata and entities-related fetures can be accessed by means of a modal, which can be activated by a button on the right side that appears only in two cases: when the user is in the comparison mode and when the screen is not enough wide to display the single-text-modal in a suitable way.</p>
+            <div class="doc-section">
+                <p>The project has been deveoped for the final exam of the “Information Modelling and Web Technologies” couse of the master's degree in Digital Humaities and Digital Knowledge of the University of Bologna.</p>
+                <p>the magazine's topic is a personal choice of the project's authors. The selected texts has been chosen among authoritative articles aiming at analyzing conspiracies from differnet points of view and the souces can be found in the <a href="./disclaimer.html">disclaimer</a>. in particular, the issue where the texts are contained focuses on the Pizzagate conspiracy theory and, therefore, containes only articles and book-chapters dealing with this topic. This choice has been made so to provide the users with the possibility of comparing documents with references to similar entities.</p>
+                <p>The entities we decided to highlight are the ones that made more sense to focus on given the topic, named people, places, organizations, events and concepts. Moreover, also general keywords without a specific refrence to the entity type can be added and highlighted.</p>
+                <p>The website presents the possibility to change between different historically-inspired typographic styles and, in the issue section, the one of annotating and highlight keywords and entities. Furthermore, it is possible to choose between the single text and the comparison view to analyze the documents in the preferred way. In the comparison mode, metadata and entities-related fetures can be accessed by means of a modal, which can be activated by a button on the right side that appears only in two cases: when the user is in the comparison mode and when the screen is not enough wide to display the single-text-modal in a suitable way.</p>
+            </div>
+
 
             <h2>1500</br>To latest incunabula and beyond!</h2>
+            <div class="doc-section">
                 <p>Incunabula are</p>
                 <blockquote>
                     <p>books printed during the earliest period of typography—i.e., from the invention of the art of typographic printing in Europe in the 1450s to the end of the 15th century (i.e., January 1501).</p>
                 </blockquote>
                 <cite>From<a href="https://www.britannica.com/topic/incunabula">Encyclopedia Britannica</a></cite>
-            <p>We decided to refer to this year as a year of "transition" from the incunabula-period to the principles that governed western printing to the late 18th century. in particular, we took inspiration from the typographic type of incunabula, which are the ones <q cite="http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html#Three">made with movable type on a printing press in the style of Johann Gutenberg</q> and, starting from here, we decided to adapt to the current medium the canonical structures governing the layut of books printed during the 16th century.</p>
-            
-            <p>It would have been difficult to grasp each detail of about an entire century of print and typographic history, also because <q cite="https://en.wikipedia.org/wiki/Incunable#Types">the spread of printing to cities both in the North and in Italy ensured that there was great variety in the texts and the styles which appeared.</q> Therefore, we decided to stick with the basic principles and the main features of these editions.</p>
+                <p>We decided to refer to this year as a year of "transition" from the incunabula-period to the principles that governed western printing to the late 18th century. in particular, we took inspiration from the typographic type of incunabula, which are the ones <q cite="http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html#Three">made with movable type on a printing press in the style of Johann Gutenberg</q> and, starting from here, we decided to adapt to the current medium the canonical structures governing the layut of books printed during the 16th century.</p>
+                
+                <p>It would have been difficult to grasp each detail of about an entire century of print and typographic history, also because <q cite="https://en.wikipedia.org/wiki/Incunable#Types">the spread of printing to cities both in the North and in Italy ensured that there was great variety in the texts and the styles which appeared.</q> Therefore, we decided to stick with the basic principles and the main features of these editions.</p>
+            </div>
 
             <h3>Layout</h3>
             We decided to mix a single column layout with the presence of a double column in some sub-sections adding, especially in the homepage, an ornametation on the left side of the text to achieve a more balanced composition. In fact, while 
@@ -148,11 +157,11 @@
             <h3>Font and color palette</h3>
             <p>For what concerns the typeface, we decided to provide the user with a pleasent reading experience avoiding Gothic typefaces even though they were the most used one especially at the time of incunabula, accounting for abput 80% of the editions. <q cite="https://www.ndl.go.jp/incunabula/e/chapter2/index.html">Roman type, meanwhile, accounts for 20% of all the types used in incunabula</q> and are the ones that are still pleasently readable nowadays.</p>
             <p>More specifically, we choose Inknut Antiqua, which is, according to its description, <q cite="https://fonts.google.com/specimen/Inknut+Antiqua/about">designed to evoke Venetian incunabula and humanist manuscripts, but with the quirks and idiosyncrasies of the kinds of typefaces you find in this artisanal tradition</q>.</p>
-            <p>Finally, we choose the colors by making use of the "explore" section of <a href="https://color.adobe.com/it/search?q=incunabula&t=tag">Adobe Color</a> and the <b>BLABLABLA NON TROVO PIù IL SITO CON LA PALETTE http://www.colorhunter.com/tag/incunabula/1</b></p>
+            <p>Finally, we choose the colors by making use of the "explore" section of <a href="https://color.adobe.com/it/search?q=incunabula&t=tag">Adobe Color</a> and <a href="http://www.colorhunter.com/tag/incunabula/1">Color hunter</a>.</p>
 
 
 
-            <h2>1930</br>The Time and the elegance of vintage</h2>
+            <h2>1940</br>The Time and the elegance of vintage</h2>
             <p>qua è tutto di lorenzo--> vedi se trovi qualcosa di interessante qui: http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html#Fourteen</p>
 
 

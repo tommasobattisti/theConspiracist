@@ -132,7 +132,7 @@ function changeCSS(styleSheet)
 		sessionStorage.setItem("style", "style/incunabula.css");
  	}
 
- 	if (styleSheet == 1930) {
+ 	if (styleSheet == 1940) {
 		doc.attr("href", "style/time.css");
 		sessionStorage.setItem("style", "style/time.css");
  	}
@@ -200,7 +200,7 @@ function showTextOverlay(year){
             $(".text-overlay").css("display", "none");
             $("#incunabula-overlay").css("display", 'block');
             break;
-        case 1930:
+        case 1940:
             $(".text-overlay").css("display", "none");
             $("#time-overlay").css("display", 'block');
             break;
