@@ -5,6 +5,9 @@
   - GRADIENTI
   - ANIMAZIONI 3D
   - AUDIO
+
+  font-family: 'Exo', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 */
 
 
@@ -88,20 +91,22 @@ body {
 
 
 #nav2030 {
-  display: flex;
-  flex-direction: row;
-  position: sticky;
-  position: -webkit-sticky;
-  top: -1px;
-  height: 11vh;
-  width: 100%;
-  color:  rgba(10, 34, 57, 0.9);;
-  font-size: 1.2em;
-  background: linear-gradient(90deg, #8691b3, #edeef3);
-  z-index: 1;
-  border-bottom: solid 1px rgba(10, 34, 57, 0.9);;
-
+	font-family: 'Exo', sans-serif !important;
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	position: -webkit-sticky;
+	top: -1px;
+	height: 11vh;
+	width: 100%;
+	color:  rgba(10, 34, 57, 0.9);;
+	font-size: 1.2em;
+	background: linear-gradient(90deg, #8691b3, #edeef3);
+	z-index: 1;
+	border-bottom: solid 1px rgba(10, 34, 57, 0.9);
 }
+
+
 
 #centerNav2030 {
   border-top: solid 1px  rgba(10, 34, 57, 0.9);;
@@ -117,11 +122,12 @@ body {
 }
 
 
+
 .nav-text {
   color: rgba(10, 34, 57, 0.9);
   text-decoration: none;
   margin: 0;
-  font-size: 0.8em;
+  font-size: 1,2em;
   padding: 0 .5rem;
   transition: 400ms;
 }
@@ -538,6 +544,18 @@ body {
   width: 80%;
   margin: 2.5% 10% 5% 10%;
   justify-content: space-between;
+}
+
+.meta-text-container ul {
+	font-family: 'Exo', sans-serif;
+	font-size: 1.2em;
+	transition: 600ms;
+}
+
+.meta-text-container li:hover {
+	color: rgba(10, 34, 57, 0.9);
+	scale: 1.02;
+	transition: 600ms;
 }
 
 .metadata-container {
