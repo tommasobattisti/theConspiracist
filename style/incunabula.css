@@ -11,7 +11,7 @@
     font-family: 'Inknut Antiqua', serif;
 */
 
-.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph {
+.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription {
     display: none;
 }
  
