@@ -6,6 +6,8 @@
 
 /*
     font-family: 'Cinzel', serif !important;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
 */
 
 .eye-container, .home-2030 {
@@ -426,6 +428,49 @@ main {
     margin: 0;
 }
 
+#timeImage {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    background-image: url("../images_styles/Time/Time_image.png");
+    background-size: cover;
+    background-position: center;
+    border: solid 2px black;
+    margin-bottom: 2%;
+}
+
+#timeImageDescription {
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: 'Crimson Text', serif;
+}
+
+#timeImageDescription1 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 0.5%;
+}
+
+.time-first-letter {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.time-first-letter-p {
+    font-size: 1.15em;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#timeImageDescription2 {
+    font-size: 1.4em;
+    font-style: italic;
+    word-spacing: 0.25em;
+}
+
+
 
 #homeBody {
     width: 90%;
@@ -433,9 +478,10 @@ main {
     align-self: center;
     column-count: 3 !important;
     font-size: 1.1em;
-    /*padding: 5%;
-    border: double 6px rgb(0, 0, 0);*/
-    margin-bottom: 5%;
+    padding: 5%;
+    border: double 6px rgb(0, 0, 0);
+    font-family: 'Crimson Text', serif;
+    line-height: 1.4em;
 }
 
 
@@ -448,6 +494,60 @@ main {
     }
 }
 
+#homeBody h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#homeBody h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: none;
+}
+
+.time-title-paragraph {
+    font-size: 1.15em;
+    font-weight: bold;
+    word-spacing: 0.25em;
+    text-transform: capitalize;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    word-spacing: 0.2em;
+    letter-spacing: .05em;
+}
+
+
+#homeBody p {
+    font-size: 1.25em;
+    word-spacing: 0.15em;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+    text-indent: 8%;
+    margin-bottom: 0.65em;
+    font-weight:100;
+}
+
+.home-link-container, .time-no-display {
+    display: none;
+}
+
+#homeBody a {
+    font-size: 1.1em;
+    word-spacing: 0.15em;
+    letter-spacing: .05em;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
 
 .home-magazine-img-container {
     display:none;
@@ -487,35 +587,18 @@ main {
 
 /* Title "The magazine" */
 #mdTitleCont h2 {
-    font-size: 2em;
-    font-weight: 700;
-    padding-bottom: 1%;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding-bottom: 5%;
+    word-spacing: 0.3em;
+    letter-spacing: .05em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
 
-#homeBody h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-}
 
 
 #styleChangePoster, #swissDocIllustration, #incunabulaPoster {
     display: none;
-}
-
-
-
-.home-link-container {
-    margin-bottom: 1vh;
-}
-
-#homeBody p {
-    font-size: 1.1em;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
 }
 
 
