@@ -330,12 +330,24 @@ nav {
     border-top: #D62503 10vh solid;
     box-shadow: 
     inset 0 0 0 5px rgb(0, 0, 0),
-    inset 0 0 0 15px white,
-    inset 0 0 0 17.5px rgb(0, 0, 0),
+    inset 0 0 0 12.5px white,
+    inset 0 0 0 15px rgb(0, 0, 0),
+    inset 0 0 0 20px white,
+    inset 0 0 0 22.5px rgb(0, 0, 0),
+    inset 0 0 0 27.5px white,
+    inset 0 0 0 30px rgb(0, 0, 0),
     inset 0 0 0 35px white,
     inset 0 0 0 37.5px rgb(0, 0, 0),
-    inset 0 0 0 55px white,
-    inset 0 0 0 57.5px rgb(0, 0, 0);
+    inset 0 0 0 42.5px white,
+    inset 0 0 0 45px rgb(0, 0, 0),
+    inset 0 0 0 50px white,
+    inset 0 0 0 52.5px rgb(0, 0, 0),
+    inset 0 0 0 57.5px white,
+    inset 0 0 0 60px rgb(0, 0, 0),
+    inset 0 0 0 65px white,
+    inset 0 0 0 67.5px rgb(0, 0, 0),
+    inset 0 0 0 72.5px white,
+    inset 0 0 0 75px rgb(0, 0, 0);
     overflow: hidden;
 }
 
@@ -421,8 +433,8 @@ main {
     align-self: center;
     column-count: 3 !important;
     font-size: 1.1em;
-    padding: 5%;
-    border: double 6px rgb(0, 0, 0);
+    /*padding: 5%;
+    border: double 6px rgb(0, 0, 0);*/
     margin-bottom: 5%;
 }
 
