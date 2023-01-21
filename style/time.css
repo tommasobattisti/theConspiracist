@@ -583,7 +583,9 @@ main {
     flex: 1;
 }
 
-
+#styleChangePoster, #swissDocIllustration, #incunabulaPoster {
+    display: none;
+}
 
 /* Title "The magazine" */
 #mdTitleCont h2 {
@@ -595,11 +597,6 @@ main {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
 
-
-
-#styleChangePoster, #swissDocIllustration, #incunabulaPoster {
-    display: none;
-}
 
 
 .text-line-through {
