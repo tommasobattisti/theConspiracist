@@ -600,9 +600,7 @@ main {
     display: none;
     height: auto;
     z-index: 1;
-    margin-top: 5vw;
-    margin-right: 5vw;
-    margin-left: 3vw;
+    margin: 10% 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -611,6 +609,7 @@ main {
 
 .double-doc-selector div {
     width: 47.5%;
+    text-align: center;
 }
 
 .document-selection-container div {

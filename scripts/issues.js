@@ -567,7 +567,9 @@ function changeToSingleMode() {
     $(".right-modal-body").css({"display": "none", "visibility": "hidden", "height": "0"});
     $(".modal-dialog").removeClass("width-80");
     $(".modal-dialog").css("max-width", "500px");
-
+    if(sessionStorage.getItem("style") != "style/main.css"){
+        $(".meta-text-container").css("margin","10%");
+    };
 }
 
 
@@ -583,7 +585,9 @@ function changeToComparisonMode() {
     $(".right-modal-body").css({"display": "flex", "visibility": "visible", "height": "auto"});
     $(".modal-dialog").addClass("width-80");
     $(".modal-dialog").css("max-width", "none");
-  
+    if(sessionStorage.getItem("style") != "style/main.css"){
+        $(".meta-text-container").css("margin","0");
+    };
 }
 
 
