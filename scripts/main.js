@@ -137,7 +137,7 @@ function changeCSS(styleSheet)
 		sessionStorage.setItem("style", "style/time.css");
  	}
 
-     if (styleSheet == 1970) {
+     if (styleSheet == 1950) {
 		doc.attr("href", "style/swissGridStyle.css");
 		sessionStorage.setItem("style", "style/swissGridStyle.css");
  	}
@@ -204,7 +204,7 @@ function showTextOverlay(year){
             $(".text-overlay").css("display", "none");
             $("#time-overlay").css("display", 'block');
             break;
-        case 1970:  
+        case 1950:  
             $(".text-overlay").css("display", "none");
             $("#swiss-overlay").css("display", 'block');
             break;
