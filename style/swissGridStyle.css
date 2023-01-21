@@ -113,8 +113,9 @@ nav {
 }
 
 .dropdown-menu li:not(:nth-child(2)):not(:nth-child(3)):hover {
-    background-color: rgba(245, 67, 35, 0.8);
+    background-color: rgba(245, 67, 35, 0.8) !important;
 }
+
 
 .ddm-nav-text:hover {
     color: #212529;
@@ -126,7 +127,7 @@ nav {
     color: #212529;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 500 !important;
-    padding: 0 1em;
+    padding: 1em;
     text-decoration: none;
 }
 
@@ -946,8 +947,6 @@ nav {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images_styles/documentation/about_background.jpg");
-    background-size: cover;
 }
 
 .about-page-presentation {
