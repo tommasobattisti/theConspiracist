@@ -34,6 +34,14 @@
     display: none;
 }
 
+
+
+
+
+
+
+
+
 /*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
 /*Navbar*/
@@ -701,9 +709,54 @@ main {
 
 
 
+/*Documentation------------------------------*/
+
+#documentationBody {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+
+#documentationBody h2 {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: lowercase;
+    margin-bottom: 2%;
+}
 
 
 
+.doc-subtitle {
+    font-size: 1.5em !important;
+    font-weight: 800;
+    text-transform: lowercase;
+    margin-bottom: 2%;
+}
+
+
+#documentationBody p {
+    font-size: 1.2em;
+}
+
+#documentationBody li {
+    font-size: 1.1em;
+}
+
+
+
+.doc-section {
+    margin: 10%;
+}
+
+.doc-subsection {
+    margin: 5%;
+}
+
+.doc-subsection h3::first-letter {
+    color: #f54123;
+}
 
 
 
