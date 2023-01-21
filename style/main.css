@@ -870,17 +870,18 @@ body {
 .eye-container *, .eye-container *:before, .eye-container *:after {
 		content: '';
 		position: absolute;
-		top: 50%; left: 50%;
-	}
+		top: 50%; 
+		left: 50%;
+}
 
 
 .eye {
-	width: 332px; height: 332px;
+	width: 332px; 
+	height: 332px;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
 	background: #EBEDF3;
 	filter: blur(5px);
-
 	animation: eyeAnimation 4s cubic-bezier(1, 0, 1, 1) infinite;
 }
 @keyframes eyeAnimation {
