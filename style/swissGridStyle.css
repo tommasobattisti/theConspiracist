@@ -27,7 +27,7 @@
     display: block;
 }
 
-#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph {
+#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription {
     display: none;
 }
 
@@ -73,7 +73,7 @@ nav {
 }
 
 .navbar-toggler span:not(:last-child) {
-    margin-bottom: .3rem;
+    margin-bottom: .2em;
 }
 
 .navbar-toggler:focus{
@@ -97,8 +97,8 @@ nav {
 .nav-text {
     color: #212529 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-weight: 600 !important;
-    padding: 0 .5rem;
+    font-weight: 500 !important;
+    padding: 0 .5em;
     text-decoration: none;
     -webkit-text-decoration: none;
 }
@@ -125,8 +125,8 @@ nav {
     width: 100%;
     color: #212529;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-weight: 600 !important;
-    padding: 0 1rem;
+    font-weight: 500 !important;
+    padding: 0 1em;
     text-decoration: none;
 }
 
@@ -219,17 +219,19 @@ nav {
     height: 20%;
     border: none;
     display: none;
-    box-shadow: 0px 8px 15px rgba(240, 229, 209, 0.3);
+    box-shadow: 0px 8px 15px rgba(240, 229, 209, 0.2);
     border-radius: 50px;
-    font-family: 'Inknut Antiqua', serif;
-    font-weight: 700;
-    font-size: 1.2em;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-weight: 800;
+    font-size: 1.4em;
+    transition: 600ms;
 }
 
 .sub-btn:hover {
     box-shadow: 0px 12px 18px rgba(240, 229, 209, 0.1);
     scale: 1.1;
-    transition: 400ms;
+    transition: 600ms;
+    color: #f54123;
 }
 
 
@@ -332,28 +334,28 @@ nav {
 #homeTp1 {
     font-size: 1.8em;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 #homeTp2 {
     grid-column: 2;
     grid-row: 5;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #homeTp3 {
     grid-column: 3;
     grid-row: 6;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #homeTp4 {
     grid-column: 4;
     grid-row: 7;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 
@@ -370,7 +372,7 @@ nav {
 }
   
 
-main {
+.home-main, .issue-main, .documentation-main {
     margin: 10.5vw 14vw 21vw 7vw;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
@@ -724,8 +726,8 @@ main {
 }
 
 .doc-subtitle-container p {
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1.3em;
+    font-weight: 200;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
@@ -816,7 +818,7 @@ main {
 
 .doc-subtitle {
     font-size: 1.5em !important;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: lowercase;
     margin-bottom: 2%;
 }
@@ -917,7 +919,7 @@ main {
 
 #documentationBody a {
     color: #212529;
-    font-weight: 500;
+    font-weight: 300;
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2rem;
@@ -933,6 +935,35 @@ main {
     -webkit-text-decoration: none;
     transition: 200ms;
 }
+
+
+
+
+/*About -------------------------- */
+
+.about-main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images_styles/documentation/about_background.jpg");
+    background-size: cover;
+}
+
+.about-page-presentation {
+    display: block;
+    z-index: 9999 !important;
+    padding: 10.5vw 14vw 21vw 7vw;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+.about-container {
+    color: whitesmoke;
+}
+
+
+
+
 
 
 
@@ -965,11 +996,11 @@ main {
 }
 
 #issueTp1 {
-    grid-column: 2/4;
+    grid-column: 2/6;
     grid-row: 3/6;
     color: whitesmoke;
-    font-size: 1.8em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 

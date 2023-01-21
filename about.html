@@ -41,10 +41,10 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md sticky-top pt-2 pb-2">
+    <nav class="navbar navbar-expand-md sticky-top pt-2 pb-2 issue-nav">
         <div class="container-fluid x">
           <a class="navbar-brand nav-text" href="./index.html">The Conspiracist</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler light-nav-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
@@ -55,12 +55,12 @@
                 
                 <li class="nav-item dropdown">
                     <a class="dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Issues</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item nav-text" href="./pizzagateIssue.html">Issue 1</a></li>
-                        <li><a class="dropdown-item disabled-nav-text nav-text disabled">Issue 2</a></li>
-                        <li><a class="dropdown-item disabled-nav-text nav-text disabled">Issue 3</a></li>
+                    <ul class="dropdown-menu issue-ddm" aria-labelledby="navbarDropdown">
+                        <li><a class="ddm-nav-text" href="./pizzagateIssue.html">Issue 1</a></li>
+                        <li><a class="disabled-nav-text ddm-nav-text">Issue 2</a></li>
+                        <li><a class="disabled-nav-text ddm-nav-text">Issue 3</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item nav-text" href="./disclaimer.html">Disclaimer</a></li>
+                        <li><a class="ddm-nav-text" href="./disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </li>
                 <a class="nav-text" href="./documentation.html">Documentation</a>
@@ -108,24 +108,18 @@
             </div>
         </div>
 
-    <main>
-        <section class="page-presentation">
-            <div class="title-container">
-                <h1>About</h1>
-                <p class="text-pill">Know the members of the group ruling the PPPP conspiracy</p>
+    <main class="about-main">
+        <section class="about-page-presentation">
+            <div class="about-container">
+                <h1>About us</h1>
+                <div id="aboutTextContainer">
+                    <p id="aboutText">
+
+                    </p>
+                </div>
             </div>
         </section>
-        <section id="documentationBody">
-
-        </section>
     </main>
-
-    <footer>
-        <div class="footer-container">
-              <p class="text-center white-text">A project for the "Information Modelling and Web Technologies" course of the master's degree in Digital Humanities and Digital Knowlege, University of Bologna</p>
-              <p class="text-center white-text">© 2022 - The Conspiracist</p>
-        </div>
-    </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
