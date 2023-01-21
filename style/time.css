@@ -615,6 +615,7 @@ main {
 /* ---------- ISSUES -----------*/
 
 .issue-main {
+    padding: 2.5%;
     box-shadow: 
      0 0 0 5px rgb(0, 0, 0),
      0 0 0 12.5px white,
@@ -709,27 +710,23 @@ main {
 }
 
 
+
+
 .double-doc-selector {
     position: relative; 
     display: none;
     height: auto;
-    z-index: 1;
-    margin-top: 5vw;
-    margin-right: 5vw;
-    margin-left: 3vw;
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.double-doc-selector div {
-    width: 47.5%;
-}
-
-.document-selection-container div {
-    margin-bottom: 5%;
     width: 100%;
+    justify-content: space-between;
+    font-family: 'Cinzel', serif !important;
+    margin-bottom: 5%;
+  }
+
+
+.document-selection-container {
+    width: 47.5%;
+    text-align: center;
 }
 
 .meta-text-container {
@@ -859,6 +856,13 @@ main {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
 */
 
+
+.article-comparison-container {
+    display: none;
+    min-height: 200px;
+    columns: 2;
+}
+
 .article-container {
     width: 70%;
     min-height: 200px;
@@ -876,7 +880,7 @@ main {
     text-transform: uppercase;
 }
 
-.article-container h3 {
+.article-container h3, .article-comparison-container h3 {
     font-size: 1.3em;
     font-weight: 500;
     padding-bottom: 5%;
@@ -887,7 +891,7 @@ main {
     text-transform: uppercase;
 }
 
-.article-container h4 {
+.article-container h4, .article-comparison-container h4 {
     font-size: 1.1em;
     font-weight: 400;
     padding-bottom: 5%;
@@ -898,7 +902,7 @@ main {
     text-transform: uppercase;
 }
 
-.article-container p {
+.article-container p, .article-comparison-container p {
     text-align: justify;
     font-size: 1.2em;
     -webkit-hyphens: auto;
@@ -906,24 +910,12 @@ main {
       -o-hyphens: auto;
      -ms-hyphens: auto;
          hyphens: auto;
-    font-size: 1.1em;
     font-family: 'Crimson Text', serif;
     line-height: 1.4em;
 }
 
-.article-comparison-container p {
-    text-align: justify;
-    font-size: 1.2em;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
-    line-height: 1.5em;
-}
 
-
-.article-container li {
+.article-container li, .article-comparison-container li {
     padding: 1rem 0;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -943,47 +935,17 @@ main {
 
 
 
-.article-comparison-container h3 {
-    margin-top: 2em;
-}
-
-.article-comparison-container {
-    display: none;
-}
-
-
-
-.article-comparison-container li {
-    padding: 1rem 0;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
-}
-
-
-
-
-.article-container li a {
+.article-container li a, .article-comparison-container li a {
     color: #5A8094 !important;
     font-size: 1.1em;
 }
 
-.article-comparison-container li a {
+
+.article-container a, .article-comparison-container a {
     color: #5A8094 !important;
     font-size: 1.1em;
 }
 
-.article-container a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
-}
-
-.article-comparison-container a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
-}
 
   
   .info-dl, .info-dl-b{
