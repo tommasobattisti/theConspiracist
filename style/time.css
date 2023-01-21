@@ -614,6 +614,30 @@ main {
 
 /* ---------- ISSUES -----------*/
 
+/*
+    font-family: 'Cinzel', serif !important;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+*/
+
+#timeIssueExplore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timeIssueExplore h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 3em;
+}
+
+#timeIssueExplore p {
+    font-family: 'Crimson Text', serif;
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
 .issue-main {
     padding: 2.5%;
     box-shadow: 
@@ -642,9 +666,13 @@ main {
     width: 100%;
     height: fit-content;
     margin: 0;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding-top: 2.5%;
+    margin-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-bottom: 2.5%;
     display: none;
+    border-bottom: solid .2em black;
+    border-top: solid .2em black;
 }
   
 
@@ -710,8 +738,6 @@ main {
 }
 
 
-
-
 .double-doc-selector {
     position: relative; 
     display: none;
@@ -720,8 +746,11 @@ main {
     width: 100%;
     justify-content: space-between;
     font-family: 'Cinzel', serif !important;
-    margin-bottom: 5%;
-  }
+    margin-bottom: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 2.5%;
+    border-bottom: double .4em black;
+}
 
 
 .document-selection-container {
@@ -869,7 +898,11 @@ main {
     columns: 2;
 }
 
-.article-container h2 {
+.doc-select-text {
+    display: none;
+}
+
+.article-container h2, .article-comparison-container h2 {
     font-size: 1.35em;
     font-weight: 900;
     padding-bottom: 5%;
@@ -878,6 +911,21 @@ main {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    align-self: center;
+}
+
+.author-info {
+    text-align: center !important;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    font-family: 'Crimson Text', serif;
+}
+
+.publication-info {
+    text-align: center !important;
+    font-style: italic;
+    margin-bottom: 10%;
+    font-family: 'Crimson Text', serif;
 }
 
 .article-container h3, .article-comparison-container h3 {
@@ -909,48 +957,34 @@ main {
     -moz-hyphens: auto;
       -o-hyphens: auto;
      -ms-hyphens: auto;
-         hyphens: auto;
+    hyphens: auto;
     font-family: 'Crimson Text', serif;
     line-height: 1.4em;
 }
 
 
 .article-container li, .article-comparison-container li {
-    padding: 1rem 0;
+    text-align: justify;
+    font-size: 1.2em;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
      -ms-hyphens: auto;
-         hyphens: auto;
+    hyphens: auto;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.3em;
 }
 
 
 
-
-.article-title, .author-info, .publication-info {
-    padding-bottom: 1.5em;
-    text-align: center !important;
-    text-transform: uppercase;
+.article-container li a, .article-comparison-container li a, .article-container a, .article-comparison-container a {
+    font-size: 1.2em;
 }
-
-
-
-.article-container li a, .article-comparison-container li a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
-}
-
-
-.article-container a, .article-comparison-container a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
-}
-
 
   
-  .info-dl, .info-dl-b{
+.info-dl, .info-dl-b{
     padding: 2%;
-  }
+}
   
   
   .docs-list-a, .docs-list-b {
