@@ -139,7 +139,7 @@ nav {
     color: black;
 }
 
-.dropdown-item:hover {
+.dropdown-menu li:hover {
     background-color: #D62503 !important;
     color: black !important;
 }
@@ -614,38 +614,100 @@ main {
 
 /* ---------- ISSUES -----------*/
 
+.issue-main {
+    box-shadow: 
+     0 0 0 5px rgb(0, 0, 0),
+     0 0 0 12.5px white,
+     0 0 0 15px rgb(0, 0, 0),
+     0 0 0 20px white,
+     0 0 0 22.5px rgb(0, 0, 0),
+     0 0 0 27.5px white,
+     0 0 0 30px rgb(0, 0, 0),
+     0 0 0 35px white,
+     0 0 0 37.5px rgb(0, 0, 0),
+     0 0 0 42.5px white,
+     0 0 0 45px rgb(0, 0, 0),
+     0 0 0 50px white,
+     0 0 0 52.5px rgb(0, 0, 0),
+     0 0 0 57.5px white,
+     0 0 0 60px rgb(0, 0, 0),
+     0 0 0 65px white,
+     0 0 0 67.5px rgb(0, 0, 0),
+     0 0 0 72.5px white,
+     0 0 0 75px rgb(0, 0, 0);
+}
 
 .mode-selector {
     width: 100%;
     height: fit-content;
     margin: 0;
     margin-top: 5%;
+    margin-bottom: 5%;
     display: none;
 }
   
 
 .mode-selctor-btns-div {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
 }
-  
 
-
-  
 .mode-selctor-btns-div button {
     padding: 1.5% 0;
     height: 100%;
     width: 25%;
+    font-family: 'Cinzel', serif !important;
     font-size: 1.5em;
-    background-color:#D62503;
-    border: solid 2px;
+    background-color: transparent;
+    border: none;
 }
+  
+.btn-hover {
+    letter-spacing: 0;
+    transition: all 500ms ease-in-out;
+}
+  
+.btn-hover:hover, .btn-hover:active {
+    letter-spacing: .2em;
+    font-style: italic;
+    transition: all 400ms;
+}
+  
+.btn-hover:after, .btn-hover:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 0.05em solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 400ms ease-in-out;
+    width: 0;
+}
+  
+.btn-hover:hover:after, .btn-hover:hover:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-color: #D62503;
+    transition: all 400ms ease-in-out;
+    width: 100%;
+}
+  
+.btn-hover:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 100%;
+    transition: all 400ms ease-in-out;
+}
+
 
 .double-doc-selector {
     position: relative; 
@@ -790,10 +852,51 @@ main {
 
 
 /*Artice container*/
+
+/*
+    font-family: 'Cinzel', serif !important;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+*/
+
 .article-container {
     width: 70%;
     min-height: 200px;
-  }
+    columns: 2;
+}
+
+.article-container h2 {
+    font-size: 1.35em;
+    font-weight: 900;
+    padding-bottom: 5%;
+    word-spacing: 0.2em;
+    letter-spacing: .05em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.article-container h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-bottom: 5%;
+    word-spacing: 0.2em;
+    letter-spacing: .05em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.article-container h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-bottom: 5%;
+    word-spacing: 0.2em;
+    letter-spacing: .05em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .article-container p {
     text-align: justify;
@@ -803,7 +906,9 @@ main {
       -o-hyphens: auto;
      -ms-hyphens: auto;
          hyphens: auto;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.4em;
 }
 
 .article-comparison-container p {
@@ -828,10 +933,6 @@ main {
 }
 
 
-
-.article-container h3 {
-    margin-top: 2em;
-}
 
 
 .article-title, .author-info, .publication-info {
