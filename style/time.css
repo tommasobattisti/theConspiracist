@@ -1490,12 +1490,6 @@ main {
 }
 
 
-/*
-    font-family: 'Cinzel', serif !important;
-    font-family: 'Crimson Text', serif;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-*/
-
 .about-container {
     color: #212529;
 }
@@ -1517,6 +1511,15 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+}
+
+#aboutDoubleContainer p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
 }
 
 .editor-container {
@@ -1577,6 +1580,109 @@ main {
 
 /*----------------------------*/
 
+
+/*--------Disclaimer--------- */
+
+
+.disclaimer-page-presentation {
+    height: 100vh; /* Va bene così, perché deve sembrare la cover di time, quindi deve occupare tutto il viewport*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    background-size: cover;
+    border-bottom: #D62503 3vw solid; 
+    border-left: #D62503 3vw solid; 
+    border-right: #D62503 3vw solid;             
+    border-top: #D62503 10vh solid;
+    box-shadow: none;
+    overflow: hidden;
+    padding: 5%;
+}
+
+
+#disclaimerTitle {
+    align-self: center;
+    width: fit-content;
+    margin: 5%;
+}
+
+
+#disclaimerTitle h1 {
+    font-size: 8em;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Cinzel', serif !important;
+}
+
+#swissDisclaimerTitle {
+    display: none;
+}
+
+#disclaimerPurpose {
+    align-self: center;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+}
+
+#disclaimerSources {
+    align-self: center;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;
+}
+
+/*
+    font-family: 'Cinzel', serif !important;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+*/
+
+#disclaimerPurpose h2 {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: .05em;
+}
+
+#disclaimerSources h2 {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: .05em;
+}
+
+
+#disclaimerPurpose p {
+    text-align: center;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+#disclaimerSources p {
+    text-align: center;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+
+.fa-github {
+    font-size: 1.2em;
+    color: #212529;
+    transition: 400ms;
+}
+
+.fa-github:hover {
+    color: #558a86;
+    transition: 400ms;
+}
 
 
 /*FOOTER*/
