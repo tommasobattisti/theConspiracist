@@ -27,7 +27,7 @@
     display: block;
 }
 
-#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription {
+#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, .link-time-home {
     display: none;
 }
 

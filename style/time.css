@@ -10,7 +10,7 @@
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
 */
 
-.eye-container, .home-2030, .home-link-container, .time-no-display {
+.eye-container, .home-2030, .home-link-container, .time-no-display, #nav2030 {
     display: none;
 }
 
@@ -70,12 +70,12 @@ body {
 
 /*Navbar*/
 nav {
-    width: 100% !important;
+    width: 100%;
     position: fixed !important;
-    height: 10vh;
     z-index: 9 !important;
 }
 
+/* Button when navbar is closed */
 .navbar-toggler span {
     height: 4px;
     width: 25px;
@@ -83,7 +83,7 @@ nav {
 }
 
 .navbar-toggler span:not(:last-child) {
-    margin-bottom: .3rem;
+    margin-bottom: .2rem;
 }
 
 .navbar-toggler:focus{
@@ -104,7 +104,7 @@ nav {
 }
 
 .container-fluid {
-    text-align: right;
+    text-align: center;
 }
 
 .nav-transparent-background {
@@ -114,36 +114,34 @@ nav {
 .nav-colored-background {
     background-color: rgba(214, 37, 3, 1) !important;
     border-bottom: #212529 solid 1px;
-    transition: 0.2s ease-in-out;
+    transition: 300ms ease-in-out;
 }
 
 
 .nav-text {
-    color: #212529 !important;
+    color: #212529;
     font-family: 'Cinzel', serif !important;
     font-weight: 600 !important;
     text-align: center;
+    padding: 0 .5em;
     text-transform: capitalize;
 }
 
 .navbar-toggler:focus{
     box-shadow: none !important;
-  }
+}
 
 
 .navbar-toggler:hover{
     box-shadow: 0 0 0 0.1rem !important;
+    transition: all 250ms ease-in-out;
 }
 
 .dropdown-menu {
-    background-color: #D62503;
+    background-color: white;
     color: black;
 }
 
-.dropdown-menu li:hover {
-    background-color: #D62503 !important;
-    color: black !important;
-}
 
 .disabled-nav-text {
     font-family: 'Cinzel', serif !important;
@@ -155,7 +153,7 @@ nav {
 }
 
 .navbar-nav a {
-    padding: 0 .5rem;
+    width: 100% !important;
     text-decoration: none;
 }
 
@@ -169,21 +167,18 @@ nav {
 
 
 .ddm-nav-text {
+    width: 100% !important;
     color: #212529;
     font-family: 'Cinzel', serif !important;
     font-weight: 600 !important;
-    text-align: center;
     text-transform: capitalize;
+    padding-left: .5em;
 }
 
 .dropdown-menu li:hover {
     background-color: #D62503 !important;
-    color: black !important;
+    color: white !important;
 }
-
-
-  
-
 
 
 
@@ -395,12 +390,8 @@ nav {
 
 
 /*MAIN*/
-.home-main, .issue-main, .documentation-main, .about-main {
+.home-main, .issue-main, .about-main {
     font-family: 'Cinzel', serif;
-    /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
-    /*
-    border-left: #D62503 3vw solid;
-    border-right: #D62503 3vw solid;  */
     display: flex;
     flex-direction: column; 
     justify-items: space-around;
@@ -1348,12 +1339,22 @@ nav {
     display: none;
 }
 
+.documentation-main {
+    font-family: 'Cinzel', serif;
+    margin: 5%; 
+}
+
+
+.doc-section {
+    column-count: 2;
+    margin-bottom: 10%;
+}
 
 #documentationBody {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: space-around;
+    justify-items: space-around;*/
     font-family: 'Crimson Text', serif;
 }
 
@@ -1416,11 +1417,6 @@ nav {
     font-weight:100;
 }
 
-.doc-section {
-    column-count: 2;
-    margin-bottom: 10%;
-}
-
 
 .doc-images-container, .doc-images-container-3, .doc-figure-container {
     width: 80%;
@@ -1461,10 +1457,10 @@ nav {
 #documentationBody blockquote {
     font-family: 'Crimson Text', serif;
     width: 90%;
-    margin-top: 5%;
     margin-left: 10%;
     margin-right: auto;
     font-size: 0.95em;
+    font-style: italic;
 }
 
 .blockquote-caption {
@@ -1487,6 +1483,7 @@ nav {
     border-bottom: #D62503 3vw solid; 
     border-left: #D62503 3vw solid; 
     border-right: #D62503 3vw solid;
+    border-top: #D62503 10vh solid;
 }
 
 .about-page-presentation {
