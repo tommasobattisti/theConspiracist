@@ -597,21 +597,50 @@ body {
 
 /*About --------------------- */
 
+.about-page-presentation {
+	display: none ;
+}
+
+
+.about-main {
+	height: calc(90vh - 1px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
 #about2030Container {
+	width: 70%;
+	height: 80%;
+}
+
+
+#about2030Container h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #4C3B4D;
+	font-size: 3.5em;
+	font-weight: 800;
+	margin-bottom: 5%;
+}
+
+
+#editorsContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
 .editor-container {
-	width: 45%;
+	width: 42.5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 }
 
 .editor-container img {
-	width: 90%;
+	width: 50%;
 	aspect-ratio: 4/5;
 	object-fit: cover;
 	border-radius: 5px;
@@ -623,8 +652,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 	margin: 7.5% 0;
 }
 
@@ -634,13 +661,14 @@ body {
 	color: #4C3B4D;
 	font-size: 1.5em;
 	font-weight: 800;
-	margin-bottom: 2%;
+	margin: 0;
 }
 
 .fa-envelope {
 	color: rgba(10, 34, 57, 0.8);
 	font-size: 1.8em;
 	transition: 400ms;
+	margin-left: 100%;
 }
 
 .fa-envelope:hover {
