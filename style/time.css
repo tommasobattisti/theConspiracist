@@ -624,8 +624,8 @@ main {
 }
 
 #timeIssueExplore h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: 500;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: 600;
     font-size: 3em;
 }
 
@@ -634,6 +634,7 @@ main {
     font-weight: 200;
     font-size: 1.6em;
 }
+
 
 .issue-main {
     padding: 2.5%;
@@ -1126,7 +1127,7 @@ main {
 
 
 
-/*Artice container*/
+/*Article container*/
 
 /*
     font-family: 'Cinzel', serif !important;
@@ -1208,7 +1209,11 @@ main {
      -ms-hyphens: auto;
     hyphens: auto;
     font-family: 'Crimson Text', serif;
-    line-height: 1.4em;
+    text-indent: 5%;
+}
+
+.article-container p::first-letter, .article-comparison-container p::first-letter {
+    font-size: 1.2em;
 }
 
 
@@ -1342,11 +1347,6 @@ main {
     display: none;
 }
 
-/*
-    font-family: 'Cinzel', serif !important;
-    font-family: 'Crimson Text', serif;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-*/
 
 #documentationBody {
     display: flex;
@@ -1373,7 +1373,7 @@ main {
     font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
     text-transform: uppercase;
     margin-bottom: 0;
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 
 .doc-subtitle {
@@ -1471,6 +1471,112 @@ main {
     text-align: center;
     font-family: 'Crimson Text', serif;
 }
+
+
+/*About -------------------------- */
+
+.about-main {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-bottom: #D62503 3vw solid; 
+    border-left: #D62503 3vw solid; 
+    border-right: #D62503 3vw solid;
+}
+
+.about-page-presentation {
+    padding: 15vh 5vh 5vh 5vh;
+    font-family: 'Cinzel', serif;
+}
+
+
+/*
+    font-family: 'Cinzel', serif !important;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+*/
+
+.about-container {
+    color: #212529;
+}
+
+.about-container h1 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+    text-transform: lowercase;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-top: .05em solid black;
+    border-bottom: .05em solid black;
+    width: 100%;
+}
+
+#aboutDoubleContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.editor-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editor-container p {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Crimson Text', serif;
+}
+
+.editor-name-img {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.editor-name-img div {
+    margin: 5%;
+}
+
+.editor-name-img h2 {
+    width: 100%;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: .2em;
+    transition: all 600ms ease-in-out;
+}
+
+.editor-name-img h2:hover {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    letter-spacing: 0.2em;
+    word-spacing: .25em;
+    font-style: italic;
+    border-top: .1em solid #D62503;
+    border-bottom: .1em solid #D62503;
+    transition: all 600ms ease-in-out;
+}
+
+.fa-envelope {
+    color: #212529;
+    font-size: 2em;
+    transition: all 400ms ease-in;
+}
+
+.fa-envelope:hover {
+    color: #D62503;
+    transition: all 400ms ease-in;
+    scale: 1.2;
+}
+
+/*----------------------------*/
+
 
 
 /*FOOTER*/
