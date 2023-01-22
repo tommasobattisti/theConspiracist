@@ -23,7 +23,7 @@
     height: 100%;
     width: 100%;
     position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
+    z-index: 99; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
@@ -63,6 +63,7 @@ body {
 nav {
     width: 100% !important;
     position: fixed !important;
+    z-index: 9 !important;
 }
 
 .navbar-nav a {
@@ -235,8 +236,6 @@ nav {
     scale: 1.1;
     transition: 400ms;
 }
-
-
 
 
   

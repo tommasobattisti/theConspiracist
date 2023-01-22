@@ -73,6 +73,7 @@ nav {
     width: 100% !important;
     position: fixed !important;
     height: 10vh;
+    z-index: 9 !important;
 }
 
 .navbar-toggler span {
@@ -394,8 +395,8 @@ nav {
 
 
 /*MAIN*/
-main {
-    font-family: 'Cinzel', serif !important;
+.home-main, .issue-main, .documentation-main, .about-main {
+    font-family: 'Cinzel', serif;
     /* ATTENZIONE -> LE MISURE SONO DA ADATTARE A QUELLE VERE, */
     /*
     border-left: #D62503 3vw solid;
@@ -1475,6 +1476,10 @@ main {
 
 /*About -------------------------- */
 
+#about2030Container {
+    display: none;
+}
+
 .about-main {
     min-height: 100vh;
     margin: 0;
@@ -1583,9 +1588,8 @@ main {
 
 /*--------Disclaimer--------- */
 
-
-.disclaimer-page-presentation {
-    height: 100vh; /* Va bene così, perché deve sembrare la cover di time, quindi deve occupare tutto il viewport*/
+.disclaimer-main {
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1595,9 +1599,14 @@ main {
     border-left: #D62503 3vw solid; 
     border-right: #D62503 3vw solid;             
     border-top: #D62503 10vh solid;
-    box-shadow: none;
-    overflow: auto;
+    overflow: scroll;
     padding: 5%;
+}
+
+.disclaimer-page-presentation {
+    box-shadow: none;
+    margin: none;
+    border: none;
 }
 
 
