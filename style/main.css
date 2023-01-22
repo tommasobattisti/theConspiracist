@@ -11,7 +11,7 @@
 */
 
 
-.navbar, .home-main, .home-footer, #homeTp2, #homeTp3, #homeTp4, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription {
+.navbar, .home-main, #homeTp2, #homeTp3, #homeTp4, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription {
   display: none !important;
 }
 
@@ -40,7 +40,7 @@ body {
 	width: 20%;
 	padding-left: 0.5rem;
 	border-left: 2px solid rgba(10, 34, 57, 0.9);
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 .title-container h1 {
@@ -55,7 +55,7 @@ body {
   font-size: 3.5em;
   font-weight: 800;
   font-family: 'Orbitron', sans-serif;
-  margin-bottom: 1.5em;
+  margin-bottom: 5%;
 }
 
 .home-2030 h3 {
@@ -63,7 +63,7 @@ body {
   font-size: 2em;
   font-weight: 900;
   font-family: 'Orbitron', sans-serif;
-  margin-bottom: 1em;
+  margin-bottom: 5%;
 }
 
 
@@ -76,7 +76,6 @@ body {
   width: 20%;
   padding-left: 0.5rem;
   border-left: 2px solid rgba(10, 34, 57, 0.9);
-  font-size: 0.8em;
 }
 
 .subtitle-div p {
@@ -84,7 +83,7 @@ body {
   padding: 0;
   color: rgba(10, 34, 57, 0.9);
   font-weight: 500;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Exo', sans-serif;
 }
 
@@ -97,7 +96,7 @@ body {
 	position: sticky;
 	position: -webkit-sticky;
 	top: -1px;
-	height: 11vh;
+	height: calc(10vh + 1px);
 	width: 100%;
 	color:  rgba(10, 34, 57, 0.9);;
 	font-size: 1.2em;
@@ -146,7 +145,7 @@ body {
 
 
 .div-2030 {
-  width: 42.5%;
+  width: 45%;
   margin-left: 20%;
   margin-top: 20%;
 }
@@ -155,7 +154,7 @@ body {
 .div-2030 p {
   font-family: 'Exo', sans-serif;
   color: rgba(10, 34, 57, 0.7);
-  font-size: 0.9em;
+  font-size: 1em;
   transition: 600ms;
 }
 
@@ -167,14 +166,13 @@ body {
 
 .div-2030 a {
   font-family: 'Exo', sans-serif;
-  color: #4C3B4D;
-  font-weight: 400;
+  color: rgba(10, 34, 57, 0.8);
+  font-weight: 500;
   transition: 400ms;
 }
 
 .div-2030 a:hover {
-  color: #4C3B4D;
-  font-weight: 600;
+  color: #028090;
   transition: 400ms;
   text-decoration: none;
 }
@@ -183,7 +181,7 @@ body {
 .div-2030 li {
   font-family: 'Exo', sans-serif;
   color: rgba(10, 34, 57, 0.7);
-  font-size: 0.9em;
+  font-size: 1em;
   transition: 600ms;
 }
 
@@ -197,16 +195,6 @@ body {
 
 
 
-
-#secondDiv2030 img {
-  width: 20%;
-  opacity: 0.8;
-}
-
-#fifthDiv2030 {
-  width: 50% !important;
-  margin-left: 25% !important;
-}
 
 
 /* The Overlay (background) */
@@ -414,9 +402,19 @@ body {
 	width: 20%;
 	padding-left: 0.5rem;
 	border-left: 2px solid rgba(10, 34, 57, 0.9);
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
+
+
+
+.doc-section {
+    margin-top: 40%;
+}
+
+.doc-subsection {
+    margin-bottom: 10%;
+}
 
 
 
@@ -431,7 +429,7 @@ body {
 
 
 #documentationBody {
-	width: 42.5%;
+	width: 45%;
 	margin-left: 20%;
 	margin-top: 20%;
 }
@@ -442,15 +440,14 @@ body {
 	font-size: 3.5em;
 	font-weight: 800;
 	font-family: 'Orbitron', sans-serif;
-	margin-bottom: 1.5em;
 }
 
 .doc-subtitle {
 	color: rgba(76, 59, 77, 0.8);
-	font-size: 0.5em;
+	font-size: 0.7em;
 	font-weight: 800;
 	font-family: 'Orbitron', sans-serif;
-	margin-bottom: .5em;
+	margin-bottom: 5%;
 }
 
 
@@ -459,7 +456,7 @@ body {
 	font-size: 2em;
 	font-weight: 900;
 	font-family: 'Orbitron', sans-serif;
-	margin-bottom: 1em;
+	margin-bottom: 2%;
 }
 
 
@@ -469,7 +466,7 @@ body {
 #documentationBody p {
     font-family: 'Exo', sans-serif;
 	color: rgba(10, 34, 57, 0.7);
-	font-size: 0.9em;
+	font-size: 1em;
 	transition: 600ms;
 }
 
@@ -482,7 +479,7 @@ body {
 #documentationBody li {
 	font-family: 'Exo', sans-serif;
 	color: rgba(10, 34, 57, 0.7);
-	font-size: 0.9em;
+	font-size: 1em;
 	transition: 600ms;
 }
 
@@ -493,14 +490,13 @@ body {
 }
 
 
-
-.doc-section {
-    margin: 10% 0;
+#documentationBody cite {
+	font-family: 'Exo', sans-serif;
+	color: rgba(10, 34, 57, 0.7);
+	font-size: 0.9em;
+	transition: 600ms;
 }
 
-.doc-subsection {
-    margin: 5% 0;
-}
 
 
 
@@ -518,7 +514,6 @@ body {
     width: 30%;
     aspect-ratio: 2/3;
     object-fit: cover;
-    border: solid 2px #212529;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
 }
 
@@ -527,7 +522,6 @@ body {
     width: 40%;
     aspect-ratio: 2/3;
     object-fit: cover;
-    border: solid 2px #212529;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
 }
 
@@ -541,7 +535,7 @@ body {
     justify-content: center;
     margin-left: 25%;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 
@@ -549,7 +543,6 @@ body {
     width: 100%;
     aspect-ratio: 2/3;
     object-fit: cover;
-    border: solid 1px #212529;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
 }
 
@@ -557,6 +550,9 @@ body {
     width: 50%;
     margin-left: 25%;
     margin-right: auto;
+	font-family: 'Exo', sans-serif;
+	color: rgba(10, 34, 57, 0.8);
+	font-size: 0.9em;
 }
 
 
@@ -575,22 +571,20 @@ body {
 
 
 #documentationBody a {
-    color: #212529;
-    font-weight: 300;
-    text-decoration: underline;
-    text-decoration-color: #558a86;
-    text-decoration-thickness: .2rem;
-    -webkit-text-decoration: underline;
-    -webkit-text-decoration-color: #558a86;
-    -webkit-text-decoration-thickness: .2rem;
-    transition: 200ms;
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-thickness: .1em;
+	-webkit-text-decoration: underline;
+	-webkit-text-decoration-thickness: .1em;
+	transition: 400ms;
 }
 
 #documentationBody a:hover {
-    color: #558a86 !important;
-    text-decoration: none;
-    -webkit-text-decoration: none;
-    transition: 200ms;
+	color: #028090;
+	text-decoration: none;
+	-webkit-text-decoration: none;
+    transition: 400ms;
 }
 
 
@@ -598,6 +592,70 @@ body {
 
 
 
+
+
+
+/*About --------------------- */
+
+#about2030Container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.editor-container {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.editor-container img {
+	width: 90%;
+	aspect-ratio: 4/5;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 12px 0;
+}
+
+
+.editor-container div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 7.5% 0;
+}
+
+
+.editor-container div h4 {
+	font-family: 'Orbitron', sans-serif !important;
+	color: #4C3B4D;
+	font-size: 1.5em;
+	font-weight: 800;
+	margin-bottom: 2%;
+}
+
+.fa-envelope {
+	color: rgba(10, 34, 57, 0.8);
+	font-size: 1.8em;
+	transition: 400ms;
+}
+
+.fa-envelope:hover {
+	color: #028090;
+	font-weight: 500;
+	transition: 400ms;
+}
+
+.fa-github {
+	font-size: 1.5em;
+}
+
+#spanCopyrightCenter {
+	text-align: center !important;
+}
 
 
 
@@ -638,6 +696,7 @@ body {
     height: fit-content;
     display: none;
 	margin-top: 10%;
+	margin-bottom: 10%;
 }
   
 
@@ -709,7 +768,7 @@ body {
   height: auto;
   flex-direction: row;
   width: 80%;
-  margin: 5% 10% 2.5% 10%;
+  margin: 5% 10%;
   justify-content: space-between;
   font-family: 'Orbitron', sans-serif;
 }
@@ -739,20 +798,25 @@ body {
 
 
 .card-body li a {
-	color: rgba(10, 34, 57, 0.7);
-	text-decoration-color: #326585;
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
+	font-size: 1.2em;
 	text-decoration: underline;
-	text-decoration-thickness: .1rem;
+	text-decoration-thickness: .1em;
 	-webkit-text-decoration: underline;
-	-webkit-text-decoration-thickness: .1rem;
-	-webkit-text-decoration-color: #326585;
+	-webkit-text-decoration-thickness: .1em;
+	transition: 400ms;
 }
 
 .card-body li a:hover {
-	color: #326585;
+	color: #028090;
 	text-decoration: none;
 	-webkit-text-decoration: none;
+	transition: 400ms;
 }
+
+
+
 
 
 
@@ -761,21 +825,11 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 80%;
-  margin: 2.5% 10% 5% 10%;
+  margin: 5% 10%;
   justify-content: space-between;
 }
 
-.meta-text-container ul {
-	font-family: 'Exo', sans-serif;
-	font-size: 1.2em;
-	transition: 600ms;
-}
 
-.meta-text-container li:hover {
-	color: rgba(10, 34, 57, 0.9);
-	scale: 1.02;
-	transition: 600ms;
-}
 
 .metadata-container {
   width: 28%;
@@ -805,18 +859,59 @@ body {
   min-height: 70vh;
 }
 
-.article-container p {
+.article-container p, .article-comparison-container p, .article-container ul, .article-comparison-container ul, .article-container ol, .article-comparison-container ol {
 	font-family: 'Exo', sans-serif;
 	color: rgba(10, 34, 57, 0.7);
-	font-size: 1.2em;
+	font-size: 1em;
 	transition: 600ms;
 }
   
-.article-container p:hover {
+.article-container p:hover, .article-comparison-container p:hover  {
 	color: rgba(10, 34, 57, 0.9);
 	scale: 1.02;
 	transition: 600ms;
 }
+
+
+.article-container a, .article-comparison-container a, .double-doc-selector a {
+	font-family: 'Exo', sans-serif;
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
+	transition: 400ms;
+}
+
+.article-container a:hover, .article-comparison-container a:hover, .double-doc-selector a:hover  {
+		color: #028090;
+
+		transition: 400ms;
+		text-decoration: none;
+}
+
+
+.double-doc-selector li, .card-body li, .card-body form div{
+	padding-bottom: .5em;
+}
+
+.tab-content li {
+	font-size: 0.8em !important;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	  -o-hyphens: auto;
+	 -ms-hyphens: auto;
+		 hyphens: auto;
+}
+
+.tab-content ul {
+	width: 95%;
+	padding-right: 5%;
+}
+
+
+
+
+
+
+
 
 .article-container img {
 	margin-top: 6%;
@@ -824,29 +919,7 @@ body {
 }
 
 
-.article-comparison-container {
-  display: none;
-}
 
-
-.article-container h2, .article-container h3, .article-container h4, .article-comparison-container h2, .article-comparison-container h3, .article-comparison-container h4 {
-	font-family: 'Orbitron', sans-serif;
-	margin-bottom: 4%;
-	margin-top: 6%;
-}
-
-.article-comparison-container p {
-	font-family: 'Exo', sans-serif;
-	color: rgba(10, 34, 57, 0.7);
-	font-size: 1.2em;
-	transition: 600ms;
-}
-  
-.article-comparison-container p:hover {
-	color: rgba(10, 34, 57, 0.9);
-	scale: 1.02;
-	transition: 600ms;
-}
 
 .article-comparison-container img {
 	margin-top: 6%;
@@ -856,6 +929,49 @@ body {
 .figure-caption-centre {
 	margin-bottom: 4%;
 }
+
+
+.article-comparison-container {
+  display: none;
+}
+
+
+.article-container h2, .article-comparison-container h2, .double-doc-selector h2  {
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(76, 59, 77, 0.8);
+	font-size: 2em;
+	font-weight: 800;
+	margin-bottom: 2.5%;
+}
+
+
+.article-container h3, .article-comparison-container h3  {
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(76, 59, 77, 0.8);
+	font-size: 1.5em;
+	font-weight: 900;
+	font-family: 'Orbitron', sans-serif;
+	margin-top: 12.5%;
+	margin-bottom: 2.5%;
+}
+
+.article-container h4, .article-comparison-container h4 {
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(76, 59, 77, 0.9);
+	font-size: 1.2em;
+	font-weight: 800;
+	margin-top: 7.5%;
+	margin-bottom: 1.5%;
+}
+
+
+
+
+
+
+
+
+
 
 .entity-creation-form, .entity-creation-form-b {
   box-sizing: border-box;
@@ -954,33 +1070,70 @@ body {
 /*Span backgrounds*/
 
 .person-bkg {
-  background-color: rgba(0, 217, 255, 0.5);
+  background-color: rgba(252, 208, 161, 0.6);
+  border-radius: 5px;
 }
 
 .places-bkg {
-  background-color: rgba(182, 143, 87, 0.628);
+  background-color: rgba(211, 73, 84, 0.6);
+  border-radius: 5px;
 }
 
 .organizations-bkg {
-  background-color: rgba(102, 75, 121, 0.483);
+  background-color: rgba(53, 79, 82, 0.5);
+  border-radius: 5px;
 }
 
 .events-bkg {
-  background-color: rgba(165, 42, 42, 0.569);
+  background-color: rgba(211, 252, 213, 0.6);
+  border-radius: 5px;
 }
 
 .concepts-bkg {
-  background-color: rgba(88, 137, 74, 0.462);
+  background-color: rgba(180, 97, 150, 0.6);
+  border-radius: 5px;
 }
 
 .keywords-bkg {
-  background-color: rgba(126, 50, 197, 0.537);
+  background-color: rgba(67, 74, 66, 0.6);
+  border-radius: 5px;
 }
 
 
 .animation-bkg {
-  background-color: rgba(25, 105, 171, 0.671);
+  background-color: rgba(255, 186, 8, 0.9);
+  border-radius: 5px;
 }
+
+
+/*Footer ---------------- */
+
+footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding-top: 5%;
+	border-top: solid 1px rgba(10, 34, 57, 0.9);
+	margin-top: 20%;
+}
+
+footer div {
+    width: 60%;
+}
+
+footer div p {
+	font-family: 'Exo', sans-serif;
+	color: rgba(10, 34, 57, 0.8);
+	font-size: 1em;
+}
+
+
+
+
+
+
 
 
 
