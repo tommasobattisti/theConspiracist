@@ -194,6 +194,41 @@ body {
 
 
 
+#thirdDiv2030 p, #fourthDiv2030 p, #fifthDiv2030 p {
+	margin-bottom: 10%;
+}
+
+
+.future-link-btn {
+	font-weight: 700;
+	color: rgba(10, 34, 57, 0.9) !important;
+	font-size: 1.2em;
+	text-decoration: none;
+  	background: linear-gradient(90deg, #a2b3e5 25%, rgb(97, 218, 206) 100%);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 8px 8px 16px rgba(79,209,197,.65);
+	transition: all 600ms ease-in-out;
+	cursor: pointer;
+	position: relative;
+	padding: .5em;
+}
+
+
+.future-link-btn:hover {
+	box-shadow: 6px 6px 12px rgba(69, 182, 171, 0.5);
+	color: rgba(10, 34, 57, 0.8) !important;
+	transform: scale(1.1);
+	background: linear-gradient(45deg, #a2b3e5 0%, rgb(99, 220, 208) 100%);
+	transition: all 600ms ease-in-out;
+}
+
+
+
+
+
+
+
 
 
 
@@ -514,7 +549,7 @@ body {
     width: 30%;
     aspect-ratio: 2/3;
     object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+	box-shadow: 8px 8px 12px rgba(57, 152, 142, 0.5);
 }
 
 
@@ -522,7 +557,7 @@ body {
     width: 40%;
     aspect-ratio: 2/3;
     object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+	box-shadow: 8px 8px 12px rgba(57, 152, 142, 0.5);
 }
 
 
@@ -543,7 +578,7 @@ body {
     width: 100%;
     aspect-ratio: 2/3;
     object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+	box-shadow: 8px 8px 12px rgba(57, 152, 142, 0.5);
 }
 
 .doc-figure-caption {
@@ -619,9 +654,10 @@ body {
 
 #about2030Container h2 {
 	color: rgba(76, 59, 77, 0.8);
-	font-size: 6em;
+	font-size: 5em;
 	font-weight: 800;
 	font-family: 'Orbitron', sans-serif;
+	margin-bottom: 0.5em;
 }
 
 
@@ -638,12 +674,30 @@ body {
 	justify-content: flex-start;
 }
 
+
+
+
+
+
+.editor-container p, .editor-container p {
+	color: rgba(10, 34, 57, 0.7);
+	font-size: 1em;
+	transition: 600ms;
+}
+
+
+.editor-container p:hover, .editor-container p:hover  {
+color: rgba(10, 34, 57, 0.9);
+scale: 1.02;
+transition: 600ms;
+}
+
 .editor-container img {
 	width: 50%;
 	aspect-ratio: 4/5;
 	object-fit: cover;
 	border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 12px 0;
+	box-shadow: 8px 8px 12px rgba(57, 152, 142, 0.5);
 }
 
 
@@ -2035,3 +2089,11 @@ footer div p {
 }
 
 /* ---- Code adapted from https://codepen.io/miocene/pen/rNOVWor ---- */
+
+
+
+
+
+
+
+
