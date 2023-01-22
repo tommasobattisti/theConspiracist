@@ -350,7 +350,7 @@ nav {
     display: none;
 }
 
-main {
+.home-main, .issue-main, .about-main, .documentation-main {
     margin-right: 15%;
     margin-left: 15%;
     font-family: 'Inknut Antiqua', serif !important;
@@ -418,11 +418,14 @@ main {
 
 #homeBody a {
     color:#5A8094;
+    text-decoration-color: #5A8094;
+    transition: 300ms;
 }
 
 #homeBody a:hover {
     color: #3c85ac;
     text-decoration: none;
+    transition: 300ms;
 }
 
 .home-magazine-img-container {
@@ -535,6 +538,204 @@ main {
     box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 15px;
     transition: 400ms;
 }
+
+
+
+
+/*Documentation------------------------------*/
+
+.documentation-page-presentation {
+    overflow: hidden;
+}
+
+.doc-title-container {
+    grid-row: 4;
+    grid-column: 3/7;
+}
+
+.doc-title-container h1 {
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+
+.doc-subtitle-container {
+    grid-column: 3/7;
+    grid-row: 6;
+}
+
+.doc-subtitle-container p {
+    font-size: 2em;
+    font-family: 'Inknut Antiqua', serif !important;
+}
+
+
+
+
+
+#swissDocIllustration {
+    display: none;
+}
+
+
+
+
+
+#documentationBody {
+    margin-top: 15vw;
+    margin-right: 15vw;
+    margin-left: 9vw;
+    margin-bottom: 24vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inknut Antiqua', serif !important;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+#documentationBody h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+
+
+#documentationBody p {
+    font-size: 1.2em;
+}
+
+#documentationBody li {
+    font-size: 1.1em;
+}
+
+
+
+.doc-section {
+    margin: 10% 0;
+}
+
+.doc-subsection {
+    margin: 5% 0;
+}
+
+.doc-subsection h3::first-letter {
+    float:left;
+    padding: 2%;
+    margin: 0 2% 0 0;
+    font-size: 3em;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
+    background-size: cover;
+    object-position: top;
+    border: 2px solid #ed4007;
+    font-weight: 100;
+    color: #ed4007;
+}
+
+
+
+.doc-images-container, .doc-images-container-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.doc-images-container-3  img {
+    width: 30%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px;
+}
+
+
+.doc-images-container img {
+    width: 40%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px;
+}
+
+
+
+.doc-figure-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+
+.doc-figure-container img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px;
+}
+
+.doc-figure-caption {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+
+#documentationBody blockquote {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+    font-size: 0.85em;
+}
+
+.blockquote-caption {
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+
+
+#documentationBody a {
+    color:#5A8094;
+    text-decoration-color: #5A8094;
+    transition: 300ms;
+}
+
+#documentationBody a:hover {
+    color: #3c85ac;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
