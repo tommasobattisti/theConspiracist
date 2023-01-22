@@ -944,6 +944,10 @@ nav {
 
 /*About -------------------------- */
 
+#about2030Container {
+    display: none;
+}
+
 .about-main {
     width: 100vw;
     height: 100vh;
