@@ -618,11 +618,10 @@ body {
 
 
 #about2030Container h2 {
-	font-family: 'Orbitron', sans-serif;
-	color: #4C3B4D;
-	font-size: 3.5em;
+	color: rgba(76, 59, 77, 0.8);
+	font-size: 6em;
 	font-weight: 800;
-	margin-bottom: 5%;
+	font-family: 'Orbitron', sans-serif;
 }
 
 
@@ -681,11 +680,90 @@ body {
 	font-size: 1.5em;
 }
 
-#spanCopyrightCenter {
-	text-align: center !important;
+
+
+/*Disclaimer ------------------*/
+#swissDisclaimerTitle {
+	display: none;
+}
+
+.disclaimer-main {
+	height: calc(90vh - 1px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.disclaimer-page-presentation {
+	width: 70%;
+	height: 80%;
+}
+
+#disclaimerTitle h1 {
+	color: rgba(76, 59, 77, 0.8);
+	font-size: 6em;
+	font-weight: 800;
+	font-family: 'Orbitron', sans-serif;
+}
+
+#disclaimerPurpose h2, #disclaimerSources h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #4C3B4D;
+	font-size: 2.5em;
+	font-weight: 800;
+	margin-top: 2.5%;
+	margin-bottom: 1%;
+}
+
+#disclaimerPurpose, #disclaimerSources {
+	width: 90%;
+	margin-left: 0;
+	margin-right: 10%;
 }
 
 
+#disclaimerPurpose p, #disclaimerSources p {
+	color: rgba(10, 34, 57, 0.7);
+	font-size: 1em;
+	transition: 600ms;
+}
+
+
+#disclaimerPurpose p:hover, #disclaimerSources p:hover  {
+color: rgba(10, 34, 57, 0.9);
+scale: 1.02;
+transition: 600ms;
+}
+
+#disclaimerPurpose li, #disclaimerSources li {
+	color: rgba(10, 34, 57, 0.7);
+	font-size: 1em;
+	transition: 600ms;
+}
+
+
+#disclaimerPurpose li:hover, #disclaimerSources li:hover  {
+color: rgba(10, 34, 57, 0.9);
+scale: 1.02;
+transition: 600ms;
+}
+
+
+
+#disclaimerPurpose a, #disclaimerSources a {
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
+	transition: 400ms;
+}
+
+#disclaimerPurpose a:hover, #disclaimerSources a:hover {
+	color: #028090;
+	text-decoration: none;
+	-webkit-text-decoration: none;
+	transition: 400ms;
+}
 
 
 
