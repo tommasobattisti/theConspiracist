@@ -1596,7 +1596,7 @@ main {
     border-right: #D62503 3vw solid;             
     border-top: #D62503 10vh solid;
     box-shadow: none;
-    overflow: hidden;
+    overflow: auto;
     padding: 5%;
 }
 
