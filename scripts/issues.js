@@ -646,26 +646,26 @@ function addMetadata(modal) {
         var ul = "-ul";
         var mentions = $(".article-container .mention")
     }
-    let peopleUl = $(".people"+ul+"")
+    let peopleUl = $(".people"+ul)
     peopleUl.empty()
 
-    let placesUl = $(".places"+ul+"")
+    let placesUl = $(".places"+ul)
     placesUl.empty()
 
-    let orgsUl = $(".orgs"+ul+"")
+    let orgsUl = $(".orgs"+ul)
     orgsUl.empty()
 
-    let eventsUl = $(".events"+ul+"")
+    let eventsUl = $(".events"+ul)
     eventsUl.empty()
 
-    let conceptsUl = $(".concepts"+ul+"")
+    let conceptsUl = $(".concepts"+ul)
     conceptsUl.empty()
 
-    let keywordsUl = $(".keywords"+ul+"")
+    let keywordsUl = $(".keywords"+ul)
     keywordsUl.empty()
 
     for (const mention of mentions){
-        let entityLink = "<li><a class='entity-link' href='#' data-dismiss='modal' onclick='animateBkg(event, \"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
+        let entityLink = "<li><a class='entity-link' href='#' onclick='animateBkg(event, \"#"+mention.id+"\")'>"+mention.innerText+"</a></li>"
         if (mention.classList.contains("person")) {
             peopleUl.append(entityLink)
         } else if (mention.classList.contains("place")) {
@@ -687,7 +687,7 @@ function addMetadata(modal) {
 //Animate background of entity link when clicked
 function animateBkg(event, id) {
     event.preventDefault(); //prevent the default behaviour of the link (scrolling to the top of the page)
-    var element = $(""+id+""); 
+    var element = $(id); 
 	$('html, body').animate({ scrollTop: element.offset().top - (window.innerHeight / 2) + element.height() / 2 }, 200); //scroll to the entity link and center it in the window 
 
     let counter = 0;
