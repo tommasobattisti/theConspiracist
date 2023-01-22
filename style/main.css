@@ -166,14 +166,13 @@ body {
 
 .div-2030 a {
   font-family: 'Exo', sans-serif;
-  color: #4C3B4D;
-  font-weight: 400;
+  color: rgba(10, 34, 57, 0.8);
+  font-weight: 500;
   transition: 400ms;
 }
 
 .div-2030 a:hover {
-  color: #4C3B4D;
-  font-weight: 500;
+  color: #028090;
   transition: 400ms;
   text-decoration: none;
 }
@@ -572,20 +571,17 @@ body {
 
 
 #documentationBody a {
-	color: #4C3B4D;
-	font-weight: 400;
-	text-decoration-color: #4C3B4D;
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
 	text-decoration: underline;
 	text-decoration-thickness: .1em;
 	-webkit-text-decoration: underline;
 	-webkit-text-decoration-thickness: .1em;
-	-webkit-text-decoration-color: #4C3B4D;
 	transition: 400ms;
 }
 
 #documentationBody a:hover {
-	color: #4C3B4D;
-	font-weight: 500;
+	color: #028090;
 	text-decoration: none;
 	-webkit-text-decoration: none;
     transition: 400ms;
@@ -642,16 +638,25 @@ body {
 }
 
 .fa-envelope {
-	color: rgba(10, 34, 57, 0.7);
+	color: rgba(10, 34, 57, 0.8);
 	font-size: 1.8em;
 	transition: 400ms;
 }
 
 .fa-envelope:hover {
-	color: #4C3B4D;
+	color: #028090;
 	font-weight: 500;
 	transition: 400ms;
 }
+
+.fa-github {
+	font-size: 1.5em;
+}
+
+#spanCopyrightCenter {
+	text-align: center !important;
+}
+
 
 
 
@@ -793,20 +798,18 @@ body {
 
 
 .card-body li a {
-	color: #4C3B4D;
-	font-weight: 400;
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
 	font-size: 1.2em;
-	text-decoration-color: #4C3B4D;
 	text-decoration: underline;
 	text-decoration-thickness: .1em;
 	-webkit-text-decoration: underline;
 	-webkit-text-decoration-thickness: .1em;
-	-webkit-text-decoration-color: #4C3B4D;
 	transition: 400ms;
 }
 
 .card-body li a:hover {
-	color: #4C3B4D;
+	color: #028090;
 	text-decoration: none;
 	-webkit-text-decoration: none;
 	transition: 400ms;
@@ -872,14 +875,14 @@ body {
 
 .article-container a, .article-comparison-container a, .double-doc-selector a {
 	font-family: 'Exo', sans-serif;
-	color: #4C3B4D;
-	font-weight: 400;
+	color: rgba(10, 34, 57, 0.8);
+	font-weight: 500;
 	transition: 400ms;
 }
 
 .article-container a:hover, .article-comparison-container a:hover, .double-doc-selector a:hover  {
-		color: #4C3B4D;
-		font-weight: 500;
+		color: #028090;
+
 		transition: 400ms;
 		text-decoration: none;
 }
@@ -1067,32 +1070,39 @@ body {
 /*Span backgrounds*/
 
 .person-bkg {
-  background-color: rgba(0, 217, 255, 0.5);
+  background-color: rgba(252, 208, 161, 0.6);
+  border-radius: 5px;
 }
 
 .places-bkg {
-  background-color: rgba(182, 143, 87, 0.628);
+  background-color: rgba(211, 73, 84, 0.6);
+  border-radius: 5px;
 }
 
 .organizations-bkg {
-  background-color: rgba(102, 75, 121, 0.483);
+  background-color: rgba(53, 79, 82, 0.5);
+  border-radius: 5px;
 }
 
 .events-bkg {
-  background-color: rgba(165, 42, 42, 0.569);
+  background-color: rgba(211, 252, 213, 0.6);
+  border-radius: 5px;
 }
 
 .concepts-bkg {
-  background-color: rgba(88, 137, 74, 0.462);
+  background-color: rgba(180, 97, 150, 0.6);
+  border-radius: 5px;
 }
 
 .keywords-bkg {
-  background-color: rgba(126, 50, 197, 0.537);
+  background-color: rgba(67, 74, 66, 0.6);
+  border-radius: 5px;
 }
 
 
 .animation-bkg {
-  background-color: rgba(25, 105, 171, 0.671);
+  background-color: rgba(255, 186, 8, 0.9);
+  border-radius: 5px;
 }
 
 
