@@ -490,7 +490,7 @@ nav {
 #timeImageDescription2 {
     font-size: 1.4em;
     font-style: italic;
-    word-spacing: 0.25em;
+    word-spacing: 0.15em;
 }
 
 
@@ -1597,7 +1597,7 @@ nav {
 }
 
 .about-page-presentation {
-    padding: 15vh 5vh 5vh 5vh;
+    margin: 5%;
     font-family: 'Cinzel', serif;
 }
 
@@ -1607,14 +1607,12 @@ nav {
 }
 
 .about-container h1 {
-    font-size: 4em;
+    font-size: 12em;
     text-align: center;
     font-weight: 900;
     text-transform: lowercase;
     margin-bottom: 5%;
     padding: 2%;
-    border-top: .05em solid black;
-    border-bottom: .05em solid black;
     width: 100%;
 }
 
@@ -1800,6 +1798,11 @@ nav {
     transition: 400ms;
 }
 
+/*
+    font-family: 'Cinzel', serif !important;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+*/
 
 /*FOOTER*/
 footer {
@@ -1816,8 +1819,8 @@ footer div {
     align-items: center;
     height: 100%;
     color: white;
-    font-family: 'Crimson Text', serif;
-    font-size: 1.2em;
+    font-family: 'Cinzel', serif !important;
+    font-weight: 500;
 }
 
 
