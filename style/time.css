@@ -19,6 +19,10 @@ body {
     background-color: white !important;
 }
 
+.navbar-brand:hover {
+    color: white;
+}
+
 /* The Overlay (background) */
 .overlay-style-page {
     display: none;   
@@ -221,7 +225,7 @@ nav {
     aspect-ratio: 1/1;
     align-self: right;
     visibility: hidden;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 50%;
     border: none;
     color: black;
@@ -230,7 +234,7 @@ nav {
 }
   
 #stylesBtn {
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -241,27 +245,34 @@ nav {
     border-radius: 50%;
     border: none;
     color: black;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
     transition: 400ms
 }
   
 .sub-btn {
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
     height: 20%;
     border: none;
     display: none;
-    box-shadow: 0px 8px 15px rgba(240, 229, 209, 0.3);
-    border-radius: 50px;
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: 1.2em;
+    box-shadow: 0px 8px 12px rgba(240, 229, 209, 0.3);
+    border-radius: 10px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    transition: all 350ms ease-in-out;
 }
 
 .sub-btn:hover {
+    background-color: #D62503;
+    color: white;
     box-shadow: 0px 12px 18px rgba(240, 229, 209, 0.1);
-    scale: 1.1;
+    scale: 1.2;
+    font-weight: 700;
+    font-size: 1.5em;
     transition: 400ms;
+    letter-spacing: .1em;
+    transition: all 350ms ease-in-out;
 }
 
 
@@ -1475,7 +1486,8 @@ nav {
 }
 
 #documentationBody p::first-letter {
-    font-size: 1.15em;
+    font-size: 1.3em;
+    font-weight: 400;
 }
 
 #documentationBody li {
