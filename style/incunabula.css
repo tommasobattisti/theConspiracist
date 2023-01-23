@@ -784,7 +784,7 @@ nav {
 
 
 .about-main {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/about_bkg.jpeg");
+    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("../images_styles/incunabula/about_bkg.jpeg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -841,11 +841,12 @@ nav {
 
 .editor-img-container {
     width: 30%;
+    max-height: 90%;
 }
 
 .editor-image {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80%;
 }
 
 
@@ -888,6 +889,10 @@ nav {
     color: #ed4007;
 }
 
+
+.editor-name-mail h2 {
+    font-size: 2.2em;
+}
 
 .fa-envelope {
     color:#5A8094;
@@ -1400,7 +1405,7 @@ nav {
 
 /* DISCLAIMER */
 .disclaimer-main {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/disclaimer_background_image.jpg");
+    background-image: linear-gradient(rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8), rgba(240, 229, 209, 0.8)), url("../images_styles/incunabula/disclaimer_background_image.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -1432,6 +1437,15 @@ nav {
       -o-hyphens: auto;
      -ms-hyphens: auto;
          hyphens: auto;
+}
+
+
+#disclaimerSources h2, #disclaimerPurpose h2 {
+    font-size: 2.2em;
+}
+
+#disclaimerPurpose {
+    margin-bottom: 5%;
 }
 
 
