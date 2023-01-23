@@ -186,7 +186,7 @@ function displayOverlay() {
 function closeOverlay() {
     $(".overlay-style-page").css("display", "none");
     $(".text-overlay").css("display", "none");
-    $("#general-overlay").css("display", 'block');
+    $("#generalOverlay").css("display", 'block');
 }
 
 function openOverlay(){
@@ -198,23 +198,23 @@ function showTextOverlay(year){
     switch(year){
         case 1500:
             $(".text-overlay").css("display", "none");
-            $("#incunabula-overlay").css("display", 'block');
+            $("#incunabulaOverlay").css("display", 'block');
             break;
         case 1940:
             $(".text-overlay").css("display", "none");
-            $("#time-overlay").css("display", 'block');
+            $("#timeOverlay").css("display", 'block');
             break;
         case 1950:  
             $(".text-overlay").css("display", "none");
-            $("#swiss-overlay").css("display", 'block');
+            $("#swissOverlay").css("display", 'block');
             break;
         case 2030:
             $(".text-overlay").css("display", "none");
-            $("#future-overlay").css("display", 'block');
+            $("#futureOverlay").css("display", 'block');
             break;
         case 0:
             $(".text-overlay").css("display", "none");
-            $("#general-overlay").css("display", 'block');
+            $("#generalOverlay").css("display", 'block');
             break;
     }
 }

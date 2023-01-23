@@ -1,5 +1,6 @@
 
 /* The Overlay (background) */
+
 .overlay-style-page {
     display: none; 
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
@@ -12,22 +13,56 @@
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
    }
-
-.overlay-content {
+  
+  
+  
+  .overlay-content {
     position: absolute;
-    bottom: 25%; 
-    left: 25%;
-    width: 25%; /* 100% width */
+    top: 25%; 
+    left: 15%;
+    width: 40%; /* 100% width */
     text-align: left;
     z-index: 3;
-    color: whitesmoke;
-}
-
-#general-overlay {
+    color: #f1f2f0;
+  }
+  
+  #generalOverlay {
     display: block;
-}
+  }
+  
+  
+  #generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
+      font-size: 3em;
+      font-weight: 800;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      margin-bottom: 0.5em;
+  }
+  
+  
+  
+  
+  #generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
+      border-bottom: solid .15em #f54123;
+      font-size: 2em;
+      font-weight: 100;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      margin-bottom: 2%;
+      font-style: italic;
+      padding-bottom: 1px;
+  }
+  
+  #generalOverlay p, #incunabulaOverlay p, #timeOverlay p, #swissOverlay p, #futureOverlay p {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
 
-#incunabula-overlay, #time-overlay, #swiss-overlay, #future-overlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, .link-time-home {
+  }
+
+
+
+  
+
+#incunabulaOverlay, #timeOverlay, #swissOverlay, #futureOverlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, .link-time-home {
     display: none;
 }
 
