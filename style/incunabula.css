@@ -11,7 +11,7 @@
     font-family: 'Inknut Antiqua', serif;
 */
 
-.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container, #nav2030 {
+.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container, #nav2030, .link-time-home {
     display: none;
 } 
  
@@ -115,6 +115,7 @@ body {
 nav {
     width: 100% !important;
     position: fixed !important;
+    z-index: 9 !important;
 }
 
 .navbar-nav a {
@@ -580,14 +581,14 @@ nav {
 #incunabulaPoster {
     width: 40%;
     margin: 5% 30% 8% 30%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 12px;
     transition: 400ms;
 }
 
 #incunabulaPoster:hover {
     width: 40%;
     margin: 5% 30% 8% 30%;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 8px;
     transition: 400ms;
 }
 
