@@ -293,36 +293,29 @@ nav {
 
     /* NAV */
     .nav-text {
-        font-size: 1.6em !important;
-        padding: 2%;
+        font-size: 1.1em !important;
     }
     .dropdown-menu {
         padding-bottom: 0 !important;
     }
     .navbar-brand {
-        font-size: 1.4em !important;
-        padding: 2%;
+        font-size: 1.2em !important;
+        padding: 0;
     }
     .dropdown-menu li a {
-        font-size: 1.2em !important;
-        font-weight: 500;
-        align-items: center !important;
         padding: 5%;
     }
 
     /* OVERLAY */
-    .overlay-content {
-        width: 50%;
-    }
     .overlay-content h2 {
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     .overlay-content h3 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         padding-bottom: 2.5%;
     }
     .overlay-paragraph {
-        font-size: 1.2em;
+        font-size: .8em;
     }
 
     /* BUTTONS STYLE AND TOP - PORTRAIT*/
@@ -340,7 +333,7 @@ nav {
     .btns-grid-container * {
         height: 80%;
         scale: 0.7 !important;
-        font-size: 2.2em !important;
+        font-size: 1.8em;
     }
     .btns-item-5, .btns-item-7, .btns-item-8 {
         display: none;
@@ -351,7 +344,7 @@ nav {
 
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) and (orientation:landscape) {
+@media (max-width: 767.98px) {
     /* NAV */
     .nav-text {
         font-size: 1.2em !important;
@@ -376,7 +369,8 @@ nav {
     .overlay-content h3, .overlay-paragraph {
         display: none;
     }
-    
+}
+@media (max-width: 767.98px) and (orientation:landscape) {
     /* CHANGE OVERLAY IN LANDSCAPE - LANDSCAPE */
     .overlay-content {
         width: 80%;
@@ -411,16 +405,35 @@ nav {
         display: none;
     }
 }
-
-
-
+@media (max-width: 767.98px) and (orientation:portrait) {
+    /* BUTTONS STYLE AND TOP - PORTRAIT*/
+    .btns-grid-container {
+        display: flex !important;
+        flex-direction: column;
+        justify-items: right;
+        position: fixed;
+        z-index: 999;
+        width: 25%;
+        height: 80%;
+        bottom: .1vmin !important;
+        right: .1vmin !important;
+    }
+    .btns-grid-container * {
+        height: 100%;
+        scale: 0.7 !important;
+        font-size: 2em !important;
+    }
+    .btns-item-5, .btns-item-7, .btns-item-8 {
+        display: none;
+    }
+}
 
 /* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) and (orientation:landscape) {
+@media (max-width: 575.98px) { 
     /* NAV */
     .nav-text {
         font-size: 0.7em !important;
-        padding: 2%;
+        padding: 1%;
     }
     .navbar-brand {
         font-size: 1.2em !important;
@@ -430,14 +443,16 @@ nav {
         font-size: .6em;
         font-weight: 500;
         align-items: center !important;
-        padding: 2%;
+        padding: 1%;
     }
 
     /* OVERLAY */
     .overlay-content {
         display: none;
-    } 
-    
+    }  
+}
+
+@media (max-width: 575.98px) and (orientation:landscape) {
     /* BUTTONS STYLE AND TOP - LANDSCAPE*/
     .btns-grid-container {
         display: flex !important;
@@ -467,33 +482,6 @@ nav {
     }
 }
 @media (max-width: 575.98px) and (orientation:portrait) {
-    /* NAV */
-    .nav-text {
-        font-size: 0.8em !important;
-        padding: 5%;
-    }
-    .navbar-brand {
-        font-size: 1.2em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a {
-        font-size: .7em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 5%;
-    }
-
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.5em !important;
-    }
-    .overlay-content h3 {
-        font-size: 1.5em !important;
-    }
-    .overlay-content p {
-        display: none;
-    } 
-    
     /* BUTTONS STYLE AND TOP - PORTRAIT*/
     .btns-grid-container {
         display: flex !important;
@@ -510,7 +498,7 @@ nav {
         height: 100%;
         width: 100%;
         scale: 0.7 !important;
-        font-size: 1.6em !important;
+        font-size: 1.8em;
     }
     .btns-item-5, .btns-item-7, .btns-item-8 {
         display: none;

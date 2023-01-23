@@ -3,17 +3,10 @@ $(document).ready(function(){
 
     $("nav").addClass("nav-transparent-background");
     
-
     window.onscroll = () => {
     toggleTopButton();
     changeNavBackground();
     }
-
-
-
-
-
-
 
     $(".btns-grid-container").on('mouseleave', function() {
         // This function is called with the "onmouseleave" trigger, and:
@@ -21,8 +14,6 @@ $(document).ready(function(){
         $('.sub-btn').css("display", "none");
         closeOverlay();           
     });
-
-
 
     for (const div of $("div")) {
         if(div.style.transform == true) {
@@ -37,10 +28,6 @@ $(document).ready(function(){
             }
         }
     }
-
-
-
-
 });
 
 
@@ -66,7 +53,7 @@ function adjustDimestionsAfterRotation(div, rotation) {
 
 
 function changeNavBackground() {
-    let thresholdHeight = $(window).height()/100*92;   
+    let thresholdHeight = $(window).height()/100*92;  
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
         if ($(".navbar").hasClass("issue-nav")) {
             $(".navbar-toggler").removeClass("light-nav-toggler");
