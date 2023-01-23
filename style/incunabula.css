@@ -11,7 +11,7 @@
     font-family: 'Inknut Antiqua', serif;
 */
 
-.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container {
+.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container, #nav2030 {
     display: none;
 } 
  
@@ -1273,101 +1273,91 @@ nav {
 
 
 /* DISCLAIMER */
-#disclaimerSection {
-    overflow: hidden;
-    font-family: 'Inknut Antiqua', serif !important;
-}
-
-#disclaimerBody p {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
-}
-
-#disclaimerBody li {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
-}
-
-
-#disclaimerTitle {
-    width: 100%;
+.disclaimer-main {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/disclaimer_background_image.jpg");
-    background-size: cover;
-    overflow:hidden;
+    width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: repeat(8, 12.5%);
-    border-bottom: #212529 1px solid;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
-#disclaimerTitle h1 {
-    grid-row: 4;
-    grid-column: 3/7;
-    align-self: center;
-    z-index: 1;
+#swissDisclaimerTitle {
+    display: none;
 }
+
+
+.disclaimer-page-presentation { /* with these margins we respect the horizontal proportion */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 15%;
+    height: fit-content;
+    border: none !important;
+}
+
+
+#disclaimerSources, #disclaimerPurpose {
+    font-size: 1.1em;
+    font-family: 'Inknut Antiqua', serif !important;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
 
 #disclaimerTitle h1 {
     font-size: 4em;
     font-weight: 700;
     text-align: center;
     font-family: 'Inknut Antiqua', serif !important;
+    margin-bottom: 5%;
 }
 
-#disclaimerTitle p {
-    grid-row: 6;
-    grid-column: 2/8;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 400;
+
+.incunabula-fp::first-letter  {
+        font-size: 3.5em;
+        float:left;
+        padding-bottom: 0;
+        padding: 1%;
+        margin-right: 2%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/trump_incunabula.png");
+        background-size: cover;
+        object-position: top;
+        border: 5px solid #ed4007;
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        font-weight: 100;
+        color: #ed4007;
 }
 
-#disclaimerTitle h1 {
-    font-size: 4.5em;
+
+#disclaimerSources a {
+        color:#5A8094;
+        text-decoration-color: #5A8094;
+        font-size: 600;
+        transition: 300ms;
 }
 
-#disclaimerBody {
-    margin-top: 15vw;
-    margin-right: 15vw;
-    margin-left: 9vw;
-    margin-bottom: 24vw;
+#disclaimerSources a:hover {
+        color: #3c85ac;
+        text-decoration: none;
+        transition: 300ms;
+
 }
 
-#disclaimerPurpose h2::first-letter {
-    font-size: 1.5em;
-    float:left;
-    padding-bottom: 0;
-    padding: 2%;
-    margin-right: 2%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images_styles/incunabula/trump_incunabula.png");
-    background-size: cover;
-    object-position: top;
-    border: 5px solid #ed4007;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    font-weight: 100;
-    color: #ed4007;
+.fa-github {
+    color:#5A8094;
+    font-size: 1.3em;
+    transition: 300ms;
 }
 
-#disclaimerSources h2::first-letter {
-    font-size: 1.5em;
-    float:left;
-    padding-bottom: 0;
-    padding: 2%;
-    margin-right: 2%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images_styles/incunabula/trump_incunabula.png");
-    background-size: cover;
-    object-position: top;
-    border: 5px solid #ed4007;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    font-weight: 100;
-    color: #ed4007;
+.fa-github:hover {
+    color: #3c85ac;
+    scale: 1.05;
+    transition: 300ms;
 }
 
 
