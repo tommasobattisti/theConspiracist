@@ -41,19 +41,28 @@ body {
     text-align: left;
     z-index: 99;
     color: whitesmoke;
-    font-family: 'Cinzel', serif !important;
 }
 
 .overlay-content h2 {
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 0.5em;
+    font-family: 'Cinzel', serif;
 }
 
 .overlay-content h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 0.5em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.overlay-paragraph {
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-bottom: 0.5em;
+    font-family: 'Crimson Text', serif;
 }
 
 
