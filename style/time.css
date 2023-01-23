@@ -158,6 +158,7 @@ nav {
 
 .disabled-nav-text {
     font-family: 'Cinzel', serif !important;
+    color: grey !important;
 }
 
 .dropdown-active {
@@ -189,8 +190,12 @@ nav {
 }
 
 .dropdown-menu li:hover {
-    background-color: #D62503 !important;
-    color: white !important;
+    background-color: #D62503;
+    color: white;
+}
+
+.disabled-nav-text:hover {
+    background-color: none !important;
 }
 
 
