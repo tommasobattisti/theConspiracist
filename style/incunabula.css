@@ -878,7 +878,7 @@ nav {
     font-size: 3.5em;
     float:left;
     padding-bottom: 0;
-    padding: 0.5% 1%;
+    padding:  1%;
     margin-right: 2%;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/trump_incunabula.png");
     background-size: cover;
@@ -1445,7 +1445,7 @@ nav {
 }
 
 #disclaimerPurpose {
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 
 
