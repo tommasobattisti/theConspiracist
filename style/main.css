@@ -11,7 +11,7 @@
 */
 
 
-.navbar, .home-main, #homeTp2, #homeTp3, #homeTp4, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription {
+.navbar, .home-main, #homeTp2, #homeTp3, #homeTp4, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #incunabulaAboutContainer {
   display: none !important;
 }
 

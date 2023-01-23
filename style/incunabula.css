@@ -11,7 +11,7 @@
     font-family: 'Inknut Antiqua', serif;
 */
 
-.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container, #nav2030, .link-time-home {
+.eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container, #nav2030, .link-time-home, .about-container {
     display: none;
 } 
  
@@ -403,7 +403,7 @@ nav {
     display: none;
 }
 
-.home-main, .issue-main, .about-main, .documentation-main {
+.home-main, .issue-main, .documentation-main {
     margin-right: 15%;
     margin-left: 15%;
     font-family: 'Inknut Antiqua', serif !important;
@@ -773,6 +773,131 @@ nav {
 #documentationBody a:hover {
     color: #3c85ac;
     text-decoration: none;
+    transition: 300ms;
+}
+
+
+
+
+
+/* About ------------------------------------ */
+
+
+.about-main {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images_styles/incunabula/about_bkg.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+
+.about-page-presentation { /* with these margins we respect the horizontal proportion */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 15%;
+    height: fit-content;
+    border: none !important;
+    justify-content: space-between;
+}
+
+#aboutDoubleContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#incunabulaAboutContainer {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.1em;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+#incunabulaAboutTitle {
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+
+.editor-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 47.5%;
+}
+
+
+.editor-img-container {
+    width: 30%;
+}
+
+.editor-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+.editor-text-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 65%;
+}
+
+
+
+.editor-name-mail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-beteween;
+}
+
+.editor-name-mail a {
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+
+
+
+.editor-container p::first-letter  {
+    font-size: 3.5em;
+    float:left;
+    padding-bottom: 0;
+    padding: 1%;
+    margin-right: 2%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/trump_incunabula.png");
+    background-size: cover;
+    object-position: top;
+    border: 5px solid #ed4007;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    font-weight: 100;
+    color: #ed4007;
+}
+
+
+.fa-envelope {
+    color:#5A8094;
+    font-size: 1.3em;
+    transition: 300ms;
+}
+
+.fa-envelope:hover {
+    color: #3c85ac;
+    scale: 1.05;
     transition: 300ms;
 }
 

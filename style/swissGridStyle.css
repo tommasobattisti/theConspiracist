@@ -62,7 +62,7 @@
 
   
 
-#incunabulaOverlay, #timeOverlay, #swissOverlay, #futureOverlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, .link-time-home {
+#incunabulaOverlay, #timeOverlay, #swissOverlay, #futureOverlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, .link-time-home, #incunabulaAboutContainer {
     display: none;
 }
 

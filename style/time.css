@@ -10,7 +10,7 @@
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
 */
 
-.eye-container, .home-2030, .home-link-container, .time-no-display, #nav2030 {
+.eye-container, .home-2030, .home-link-container, .time-no-display, #nav2030, #incunabulaAboutContainer {
     display: none;
 }
 
