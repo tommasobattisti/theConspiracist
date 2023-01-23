@@ -23,6 +23,8 @@ body {
     color: white;
 }
 
+
+
 /* The Overlay (background) */
 .overlay-style-page {
     display: none;   
@@ -46,6 +48,7 @@ body {
     z-index: 99;
     color: whitesmoke;
 }
+
 
 .overlay-content h2 {
     font-size: 2.5em;
