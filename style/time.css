@@ -428,6 +428,15 @@ nav {
     background-position: center;
     border: solid 6px rgb(0, 0, 0);
     margin-bottom: 1%;
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   transition: all 400ms ease-in-out;
+}
+
+#timeImage:hover {
+    filter: none;
+   -webkit-filter: none;
+   transition: all 400ms ease-in-out;
 }
 
 #timeImageDescription {
@@ -501,6 +510,7 @@ nav {
     text-transform: capitalize;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
+    padding-right: 5%;
 }
 
 
@@ -547,6 +557,7 @@ nav {
 .bullet-divider {
     width: .25em;
     margin-bottom: 0.85em;
+    margin-top: 0.85em;
 }
 
 
@@ -616,7 +627,9 @@ nav {
 }
 
 #timeIssueExplore h2 {
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    font-family: 'Cinzel', serif;
     font-weight: 600;
     font-size: 3em;
 }
@@ -625,11 +638,13 @@ nav {
     font-family: 'Crimson Text', serif;
     font-weight: 200;
     font-size: 1.6em;
+    font-style: italic;
+    margin-bottom: 2.5%;
 }
 
 
 .issue-main {
-    padding: 2.5%;
+    padding: 2%;
     box-shadow: 
      0 0 0 5px rgb(0, 0, 0),
      0 0 0 12.5px white,
@@ -653,7 +668,7 @@ nav {
 }
 
 .mode-selector {
-    width: 100%;
+    width: 90%;
     height: fit-content;
     margin: 0;
     padding-top: 2.5%;
@@ -663,6 +678,7 @@ nav {
     display: none;
     border-bottom: solid .2em black;
     border-top: solid .2em black;
+    align-self: center;
 }
   
 
@@ -878,7 +894,17 @@ nav {
     width: 70%;
     margin-left: 15%;
     margin-right: auto;
-  }
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   transition: all 400ms ease-in-out;
+}
+
+.article-img-centre:hover {
+    scale: 1.1;
+    filter: none;
+   -webkit-filter: none;
+   transition: all 400ms ease-in-out;
+}
 
 .figure-caption-centre {
     margin-bottom: 2em;
@@ -1345,10 +1371,28 @@ nav {
 }
 
 
-.doc-section {
-    column-count: 2;
-    margin-bottom: 10%;
+
+
+#timeTitleDoc {
+    width: 100%;
+    align-self: center;
+    padding: 1%;
+    margin: 5% 0;
+    border-top: solid black;
+    border-bottom: solid black;
 }
+
+
+/* It is the only "Inspiration and features title */
+#timeTitleDoc h2 {
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
 
 #documentationBody {
     /*display: flex;
@@ -1356,26 +1400,45 @@ nav {
     justify-content: center;
     justify-items: space-around;*/
     font-family: 'Crimson Text', serif;
+    column-count: 3;
+}
+
+.star-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+    margin-left: 22.5%;
+    margin-bottom: 1.2em;
+    margin-top: 2em;
+}
+
+.single-star-divider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.single-star {
+    width: .8em;
 }
 
 
 #documentationBody h2 {
     width: 100%;
-    font-family: 'Cinzel', serif !important;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
     font-size: 2.5em;
     font-weight: 900;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     padding: 2% 0;
-    text-align: center;
-    border-top: .1em solid black;
-    border-bottom: .1em solid black;
+    text-align: left;
 }
 
 #documentationBody h3 {
-    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    margin-top: 2.5%;
+    display: none;
 }
 
 .doc-subtitle {
@@ -1384,6 +1447,7 @@ nav {
     font-weight: 600;
     margin-bottom: 2%;
 }
+
 
 
 #documentationBody p {
@@ -1396,7 +1460,8 @@ nav {
      -ms-hyphens: auto;
          hyphens: auto;
     text-indent: 5%;
-    margin-bottom: 0.15em;
+    margin-bottom: 0.1em;
+    margin-top: 0.05em;
     font-weight:100;
 }
 
@@ -1417,39 +1482,59 @@ nav {
     font-weight:100;
 }
 
-
-.doc-images-container, .doc-images-container-3, .doc-figure-container {
-    width: 80%;
+.time-single-image {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 0%;
+    margin-top: 5%;
 }
 
-.doc-figure-container img, .doc-images-container img, .doc-images-container-3 img {
-    width: 60%;
+
+.time-single-image img {
+    width: 90%;
     object-fit: cover;
     border: solid 2px #212529;
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     transition: all 600ms ease-in-out;
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
 }
 
-
-.doc-images-container img:hover, .doc-figure-container img:hover, .doc-images-container-3 img:hover {
-    scale: 1.1;
+.time-single-image figure {
+    width: 100%;
     transition: all 600ms ease-in-out;
+    align-self: center;
+    justify-content: center;
 }
 
+.time-single-image figure img {
+    object-fit: cover;
+    width: 90%;
+    margin-left: 5%;;
+    object-fit: cover;
+    transition: all 600ms ease-in-out;
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
 
 .doc-figure-caption {
-    width: 60%;
+    width: 100%;
     font-style: italic;
     align-self: center;
     text-align: center;
-    margin-left: 20%;
     margin-bottom: 5%;
     font-family: 'Crimson Text', serif;
+}
+
+.time-single-image img:hover {
+    scale: 1.05;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 600ms ease-in-out;
 }
 
 
