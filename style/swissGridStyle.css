@@ -28,8 +28,12 @@
 
 
 @media only screen and (width <= 820px) {
-    #homeBody {
+    #homeBody, #documentationBody {
         margin: 5% !important;
+    }
+
+    .doc-subsection {
+        margin: 0 !important;
     }
 }
 
@@ -101,6 +105,15 @@
     #editorsAndSourcesDescription .esd-rt-block {
         margin-top: 50% !important;
     }
+
+    .doc-section {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    p {
+        font-weight: 400 !important;
+    }
 }
 
 
@@ -113,7 +126,9 @@
 
 
 
-
+p {
+    font-size: clamp(0.9rem, 0.8545rem + 0.2273vw, 1.4rem);
+}
 
 
 
@@ -150,7 +165,7 @@
   
   
   #generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
-      font-size: 3em;
+    font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
       font-weight: 600;
       font-family: 'Helvetica Neue', Helvetica, sans-serif;
       margin-bottom: 0.5em;
@@ -161,7 +176,7 @@
   
   #generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
       border-bottom: solid .15em #f54123;
-      font-size: 2em;
+      font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
       font-weight: 100;
       font-family: 'Helvetica Neue', Helvetica, sans-serif;
       margin-bottom: 2%;
@@ -171,7 +186,6 @@
   
   #generalOverlay p, #incunabulaOverlay p, #timeOverlay p, #swissOverlay p, #futureOverlay p {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.2em;
     font-weight: 300;
 
   }
@@ -535,13 +549,12 @@ nav {
 
 #homeBody h3 {
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
     font-weight: 600;
 }
 
 #homeBody p {
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-size: 1.2em;
     font-weight: 300;
 }
 
@@ -611,7 +624,7 @@ nav {
 }
 
 #mdTitleCont h2 {
-    font-size: 3em;
+    font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
     font-weight: 600;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     text-transform: lowercase;
@@ -739,7 +752,7 @@ nav {
     padding: 0;
     font-weight: 900 !important;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-size: 2.2em;
+    font-size: 2.2em !important;
     text-transform: lowercase;
 }
 
@@ -758,7 +771,7 @@ nav {
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
-    font-size: 0.7em;
+    font-size: 0.7em !important;
 }
 
 #bppsCol1 {
@@ -841,7 +854,7 @@ nav {
 }
 
 .doc-subtitle-container p {
-    font-size: 1.4em;
+    font-size: 1.4em !important;
     font-weight: 300;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
@@ -930,7 +943,7 @@ nav {
 
 
 #documentationBody h2 {
-    font-size: 3em;
+    font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
     font-weight: 600;
     text-transform: lowercase;
     margin-bottom: 2%;
@@ -952,7 +965,6 @@ nav {
 
 
 #documentationBody p {
-    font-size: 1.2em;
     font-weight: 300;
 }
 
@@ -975,6 +987,7 @@ nav {
     text-decoration: underline;
     text-decoration-color: #f54123 ;
     text-decoration-thickness: .15em;
+    font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);;
 }
 
 
@@ -1039,7 +1052,7 @@ nav {
     width: 80%;
     margin-left: 10%;
     margin-right: auto;
-    font-size: 0.9em;
+    font-size: 0.9em !important;
     font-weight: 400;
 }
 
@@ -1085,18 +1098,26 @@ nav {
 
 .about-main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     margin: 0;
     padding: 0;
     background-color: #e5e7de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .about-page-presentation {
-    padding: 10.5vw 14vw 0 7vw;
+    padding: 0 14vw 0 7vw;
+    height: 100%;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
 .about-container {
+    height: fit-content;
     color: #212529;
 }
 
@@ -1123,7 +1144,6 @@ nav {
 
 
 .editor-container p {
-    font-size: 1.2em;
     font-weight: 300;
 }
 
@@ -1152,6 +1172,7 @@ nav {
     -webkit-text-decoration: underline;
     -webkit-text-decoration-color: #f54123;
     -webkit-text-decoration-thickness: .1em;
+    font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
 }
 
 .editor-name-img a {
@@ -1627,7 +1648,6 @@ margin: 0;
 .article-container p, .article-comparison-container p {
     width: 90%;
     margin-left: 10%;
-    font-size: 1.2em;
     font-weight: 300;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -1678,7 +1698,7 @@ margin: 0;
     -webkit-text-decoration: underline;
     -webkit-text-decoration-color: #f54123;
     -webkit-text-decoration-thickness: .25rem;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
     font-weight: 600;
     text-transform: lowercase;
 }
