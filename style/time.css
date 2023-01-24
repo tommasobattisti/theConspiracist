@@ -50,14 +50,14 @@ body {
 
 
 .overlay-content h2 {
-    font-size: 2.5em;
+    font-size: 2.5vw;
     font-weight: 700;
     margin-bottom: 0.5em;
     font-family: 'Cinzel', serif;
 }
 
 .overlay-content h3 {
-    font-size: 2em;
+    font-size: 2vw;
     font-weight: 600;
     margin-bottom: 0.5em;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -65,7 +65,7 @@ body {
 }
 
 .overlay-paragraph {
-    font-size: 1.25em;
+    font-size: 1.5vw;
     font-weight: 200;
     margin-bottom: 0.5em;
     font-family: 'Crimson Text', serif;
@@ -126,11 +126,16 @@ nav {
 
 
 .nav-text {
+    font-size: 1.5vw;
     color: #212529;
     font-family: 'Cinzel', serif;
     font-weight: 600;
     text-align: center;
     padding: 0 .5em;
+}
+
+.navbar-brand {
+    font-size: 1.5vw;
 }
 
 .navbar-toggler:focus{
@@ -172,6 +177,7 @@ nav {
 }
 
 .ddm-nav-text {
+    font-size: 1.5vw;
     width: 100%;
     color: black;
     font-family: 'Cinzel', serif;
@@ -257,7 +263,7 @@ nav {
     border-radius: 10px;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 2vw;
     transition: all 350ms ease-in-out;
 }
 
@@ -265,9 +271,9 @@ nav {
     background-color: #D62503;
     color: white;
     box-shadow: 0px 12px 18px rgba(240, 229, 209, 0.1);
-    scale: 1.2;
+    scale: 1.1;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.6vw;
     transition: 400ms;
     letter-spacing: .1em;
     transition: all 350ms ease-in-out;
@@ -276,8 +282,8 @@ nav {
 
 .btns-grid-container {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 4vw 4vw 4vw;
+    grid-template-rows: 4vw 4vw 4vw 4vw;
     position: fixed;
     bottom: 3.5vmin;
     right: 3.5vmin;
@@ -376,7 +382,7 @@ nav {
 }
 
 .title-container h1 {
-    font-size: 11em;
+    font-size:11vw;
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
@@ -427,7 +433,7 @@ nav {
 }
 
 #timeTitle h2 {
-    font-size: 3em;
+    font-size: 4vw;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
@@ -465,7 +471,7 @@ nav {
 
 #timeImageDescription1 {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     margin-bottom: 0.5%;
 }
 
@@ -481,7 +487,7 @@ nav {
 }
 
 #timeImageDescription2 {
-    font-size: 1.4em;
+    font-size: 1.4vw;
     font-style: italic;
     word-spacing: 0.15em;
 }
@@ -491,14 +497,13 @@ nav {
     height: 100%;
     align-self: center;
     column-count: 3;
-    font-size: 1.1em;
     font-family: 'Crimson Text', serif;
     line-height: 1.4em;
 }
 
 
 #homeBody h2 {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-weight: 700;
     text-align: center;
 }
@@ -508,18 +513,19 @@ nav {
 }
 
 .time-title-paragraph {
-    font-size: 1.15em;
+    font-size: 2vw;
     font-weight: bold;
     word-spacing: 0.15em;
     text-transform: capitalize;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    letter-spacing: .05em;
+    letter-spacing: .01vw;
     padding-right: 5%;
 }
 
 
 #homeBody p {
-    font-size: 1.25em;
+    font-size: 1.5vw;
+    line-height: 100%;
     word-spacing: 0.15em;
     text-align: justify;
     -webkit-hyphens: auto;
@@ -528,13 +534,13 @@ nav {
      -ms-hyphens: auto;
          hyphens: auto;
     text-indent: 8%;
-    margin-bottom: 0.45em;
+    margin-bottom: 5%;
     font-weight:100;
 }
 
 
 #homeBody a {
-    font-size: 1.1em;
+    font-size: 1.5vw;
     word-spacing: 0.15em;
     letter-spacing: .05em;
     text-align: justify;
@@ -600,7 +606,7 @@ nav {
 
 /* Title "The magazine" */
 #mdTitleCont h2 {
-    font-size: 2.5em;
+    font-size: 2.5vw;
     font-weight: 400;
     padding-bottom: 5%;
     word-spacing: 0.3em;
@@ -630,13 +636,13 @@ nav {
     margin-bottom: 2.5%;
     font-family: 'Cinzel', serif;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 #timeIssueExplore p {
     font-family: 'Crimson Text', serif;
     font-weight: 200;
-    font-size: 1.6em;
+    font-size: 1.6vw;
     font-style: italic;
     margin-bottom: 2.5%;
 }
@@ -697,7 +703,7 @@ nav {
     height: 100%;
     width: 25%;
     font-family: 'Cinzel', serif;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     background-color: transparent;
     border: none;
 }
@@ -816,7 +822,7 @@ nav {
     justify-content: space-around;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     margin-bottom: 2%;
 }
   
@@ -895,7 +901,7 @@ nav {
     width: 70%;
     margin-left: 15%;
     margin-right: auto;
-    font-size: 1em !important;
+    font-size: 1vw;
 }
 
 
@@ -976,16 +982,19 @@ nav {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     word-spacing: 0.15em;
     letter-spacing: .05em;
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
 
 .card-body form div {
     margin: .8em 0;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
 
+.card button {
+    font-size: 1.25vw;
+}
 
 .entity-creation-form, .entity-creation-form-b {
     box-sizing: border-box;
@@ -1107,7 +1116,7 @@ nav {
     padding: .3em 0;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
   
 
@@ -1155,7 +1164,7 @@ nav {
 }
 
 .article-container h2, .article-comparison-container h2 {
-    font-size: 1.35em;
+    font-size: 1.8vw;
     font-weight: 900;
     padding-bottom: 5%;
     word-spacing: 0.2em;
@@ -1181,7 +1190,7 @@ nav {
 }
 
 .article-container h3, .article-comparison-container h3 {
-    font-size: 1.3em;
+    font-size: 1.6vw;
     font-weight: 500;
     padding-bottom: 5%;
     word-spacing: 0.2em;
@@ -1192,19 +1201,19 @@ nav {
 }
 
 .article-container h4, .article-comparison-container h4 {
-    font-size: 1.1em;
+    font-size: 1.3vw;
     font-weight: 400;
     padding-bottom: 5%;
     word-spacing: 0.2em;
     letter-spacing: .05em;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
 }
 
 .article-container p, .article-comparison-container p {
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.5vw;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
@@ -1215,26 +1224,26 @@ nav {
 }
 
 .article-container p::first-letter, .article-comparison-container p::first-letter {
-    font-size: 1.2em;
+    font-size: 1.6vw;
 }
 
 
 .article-container li, .article-comparison-container li {
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.5vw;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
      -ms-hyphens: auto;
     hyphens: auto;
     font-family: 'Crimson Text', serif;
-    line-height: 1.3em;
+    line-height: 100%;
 }
 
 
 
 .article-container li a, .article-comparison-container li a, .article-container a, .article-comparison-container a {
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 
   
@@ -1329,7 +1338,7 @@ nav {
 }
 
 .doc-title-container h1 {
-    font-size: 8em;
+    font-size: 8vw;
     font-weight: 900;
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -1369,7 +1378,7 @@ nav {
 
 /* It is the only "Inspiration and features title */
 #timeTitleDoc h2 {
-    font-size: 3em;
+    font-size: 3vw;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
@@ -1414,7 +1423,7 @@ nav {
 #documentationBody h2 {
     width: 100%;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5vw;
     font-weight: 900;
     margin-bottom: 2%;
     padding: 2% 0;
@@ -1435,7 +1444,7 @@ nav {
 
 
 #documentationBody p {
-    font-size: 1.25em;
+    font-size: 1.5vw;
     word-spacing: 0.15em;
     text-align: justify;
     -webkit-hyphens: auto;
@@ -1450,12 +1459,12 @@ nav {
 }
 
 #documentationBody p::first-letter {
-    font-size: 1.3em;
+    font-size: 1.6vw;
     font-weight: 400;
 }
 
 #documentationBody li {
-    font-size: 1.25em;
+    font-size: 1.5em;
     word-spacing: 0.15em;
     text-align: justify;
     -webkit-hyphens: auto;
@@ -1528,7 +1537,7 @@ nav {
     width: 90%;
     margin-left: 10%;
     margin-right: auto;
-    font-size: 0.95em;
+    font-size: 0.95vw;
     font-style: italic;
 }
 
@@ -1566,7 +1575,7 @@ nav {
 }
 
 .about-container h1 {
-    font-size: 12em;
+    font-size: 8vw;
     text-align: center;
     font-weight: 900;
     text-transform: lowercase;
@@ -1599,7 +1608,7 @@ nav {
 }
 
 .editor-container p {
-    font-size: 1.2em;
+    font-size: 1.5vw;
     font-weight: 300;
     font-family: 'Crimson Text', serif;
 }
@@ -1637,7 +1646,7 @@ nav {
 
 .fa-envelope {
     color: #212529;
-    font-size: 2em;
+    font-size: 3vw;
     transition: all 400ms ease-in;
 }
 
@@ -1686,7 +1695,8 @@ nav {
 
 
 #disclaimerTitle h1 {
-    font-size: 8em;
+    margin-top: 20%;
+    font-size: 8vw;
     font-weight: 900;
     text-transform: capitalize;
     text-align: center;
@@ -1701,25 +1711,25 @@ nav {
     align-self: center;
     text-align: center;
     font-family: 'Crimson Text', serif;
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 
 #disclaimerSources {
     align-self: center;
     text-align: center;
     font-family: 'Crimson Text', serif;
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 
 #disclaimerPurpose h2 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 2.5em;
+    font-size: 3.5vw;
     letter-spacing: .05em;
 }
 
 #disclaimerSources h2 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 2.5em;
+    font-size: 3.5vw;
     letter-spacing: .05em;
 }
 
@@ -1745,7 +1755,7 @@ nav {
 
 
 .fa-github {
-    font-size: 1.2em;
+    font-size: 1.4vw;
     color: #212529;
     transition: 400ms;
 }
@@ -1790,287 +1800,10 @@ footer div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ########################################################################################## */
-/* ########################################################################################## */
-/* ########################################################################################## */
-/* ########################################################################################## */
-
-
-
-
-@media only screen and (max-width: 927px) and (orientation:landscape) {
-    .home-main, .issue-main, .about-main {
+@media only screen and (width <= 1036px) {
+    .home-main, .issue-main {
         margin: 5%;
         padding-bottom: 5%;
-    }
-    /* NAV */
-    .navbar-nav {
-        width: 60%;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        margin: 0 !important;
-        text-align: left !important;
-    }
-    .nav-text, .nav-item {
-        height: 100%;
-        font-size: 1.1em;
-        padding: 2%;
-        flex-basis: 10%;
-	    flex-grow: 0;
-	    flex-shrink: 0;
-    }
-    .nav-item {
-        font-size: 1.1em;
-        padding-top: 2% !important;
-        margin: 0 !important;
-        align-self: center !important;
-    }
-    .dropdown-divider {
-        display: none;
-    }
-    .navbar-brand {
-        font-size: 1.2em;
-        padding: 0;
-    }
-    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
-        font-size: .8em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 2%;
-    }
-
-    /* OVERLAY */
-    .overlay-content {
-        display: none;
-    } 
-    
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 15vw 15vw 15vw 15vw 10vw 10vw 5vw 5vw;
-        /*60px 60px 60px 60px 60px 60px 60px 60px;*/
-        grid-template-rows: 5vw;
-    } 
-    .btns-item-1 {
-        grid-row: 1;
-        grid-column: 1;
-        margin-left: 2vw;
-    }
-    .btns-item-2 {
-        grid-row: 1;
-        grid-column: 2;
-        margin-left: 2vw;
-    }
-    .btns-item-3 {
-        grid-row: 1;
-        grid-column: 3;
-        margin-left: 2vw;
-    } 
-    .btns-item-4 {
-        grid-row: 1;
-        grid-column: 4;
-        margin-left: 2vw;
-    }
-    .btns-item-5 {
-        grid-row: 1;
-        grid-column: 5;
-    }
-    .btns-item-6 {
-        margin-right: 2vw;
-        margin-left: -2vw;
-    }
-    .btns-item-7 {
-        grid-row: 1;
-        grid-column: 6;
-    }
-    
-    /* PAGE PRESENTATION */
-    .page-presentation, .issue-page-presentation {
-        box-shadow: none;
-    }
-    .title-container h1 {
-        font-size: 2.5em !important;
-        margin-bottom: 5%;
-    }
-
-    /* MAIN - HOME */
-    #timeTitle h2 {
-        font-size: 2em !important;
-    }
-    #timeImageDescription1 {
-        font-size: .9em !important;
-    }
-    #timeImageDescription2 {
-        font-size: 1.2em !important;
-        font-style: italic;
-        word-spacing: 0.15em;
-    }
-    .time-first-letter {
-        font-size: 1.2em !important;
-    }
-    .time-first-letter-p {
-        font-size: 1.1em !important;
-    }
-    #homeBody {
-        column-count: 1 !important;
-    }
-    #homeBody h2 {
-        font-size: 2em !important;
-    }
-    .time-title-paragraph {
-        word-spacing: none !important;
-    }
-    
-    /* MAIN - ISSUE */
-    #timeIssueExplore {
-        display: none !important;
-    }
-    .issue-main {
-        box-shadow: none !important;
-        overflow: hidden;
-    }
-    .meta-text-container {
-        margin: 0% !important;
-        width: 100% !important;
-        flex-direction: column !important;
-    }
-    .metadata-container {
-        width: 100% !important;
-    }
-    .article-container {
-        margin-top: 5%;
-        width: 100% !important;
-        column-count: 1 !important;
-    }
-    .article-comparison-container {
-        display: none !important;
-    }
-
-    /* DOCUMENTATION */
-    .documentation-page-presentation {
-        box-shadow: none !important;
-    }
-    .doc-title-container h1 {
-        font-size: 2.5em;
-    }
-    #timeTitleDoc h2 {
-        font-size: 2em;
-    }
-    #documentationBody {
-        column-count: 1;
-    }
-    #documentationBody h2 {
-        font-size: 2em;
-    }
-    #documentationBody p::first-letter {
-        font-size: 1.1em;
-    }
-    .time-single-image {
-        display: none;
-    }
-    .doc-images-container {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-around;
-        width: 90% !important;
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-        margin-left: 5%;
-    }
-    .doc-images-container img {
-        width: 40% !important;
-    }
-    .doc-image-container {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-        margin-left: 5%;
-    }
-    .doc-image-container figure img {
-        margin-left: 30%;
-        width: 40% !important;
-    }
-    .doc-images-container-3 {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-        margin-left: 5%;
-    }
-    .doc-images-container-3 img {
-        width: 27.5%;
-        margin-left: 5%;
-    }
-
-    /* ABOUT */
-    .about-page-presentation {
-        margin: 2%;
-    }
-    .about-container h1 {
-        font-size: 2.5em;
-        margin-top: 5%;
-    }
-    .editor-name-img {
-        justify-content: space-around;
-    }
-
-    /* DISCLAIMER */
-    .disclaimer-main { 
-        flex-direction: row;
-    }
-    .disclaimer-page-presentation {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-    }
-    #disclaimerTitle h1 {
-        font-size: 2em;
-    }
-    #disclaimerPurpose {
-        font-size: 1em;
-    }
-    #disclaimerSources {
-        font-size: 1em;
-    }
-    #disclaimerPurpose h2 {
-        font-size: 1.5em;
-    }
-    #disclaimerSources h2 {
-        font-size: 1.5em;
-    }
-
-    /* FOOTER */
-    
-    footer div {
-        font-size: .6em !important;
-    }
-}
-
-@media only screen and (max-width: 1560px) and (orientation:landscape) {
-    .home-main, .issue-main {
-        margin: 5% !important;
-        padding-bottom: 5% !important;
     }
     .about-main {
         margin: 0;
@@ -2083,53 +1816,8 @@ footer div {
         margin: 0 !important;
         text-align: left !important;
     }
-    .nav-text {
-        height: 100%;
-        font-size: 1.6em;
-        padding: 2%;
-        flex-basis: 15%;
-	    flex-grow: 0;
-	    flex-shrink: 0;
-    }
-    .nav-item {
-        font-size: 1.1em !important;
-        padding-top: .5% !important;
-        margin: 0 !important;
-        align-self: center !important;
-        flex-basis: 15%;
-	    flex-grow: 0;
-	    flex-shrink: 0;
-    }
-    .dropdown-divider {
-        display: block;
-    }
-    .navbar-brand {
-        font-size: 1.8em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
-        width: 100%;
-        font-size: 1em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 0 10%;
-    }
 
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 2em !important;
-    }
-    .overlay-content h3 {
-        font-size: 2em !important;
-    }
-    .overlay-content p {
-        font-size: 1em !important;
-    } 
-    .issue-main {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        box-shadow: none;;
-    }
+
     
     /* BUTTONS STYLE AND TOP - LANDSCAPE*/
     .btns-grid-container {
@@ -2137,839 +1825,179 @@ footer div {
         grid-template-columns: 6vh 6vh 6vh;
         grid-template-rows: 8vh 8vh 8vh 8vh;
     }
-    .sub-btn {
-        font-size: 2.4em !important;
-    }
-    .sub-btn:hover {
-        scale: 1.1;
-        font-size: 2.6em !important;
-    }
     
     /* PAGE PRESENTATION */
     .title-container h1 {
-        font-size: 8em !important;
+        font-size: 9vw;
         margin-bottom: 5%;
     }
 
     /* MAIN - HOME */
     #timeTitle h2 {
-        font-size: 2em !important;
-    }
-    #timeImageDescription1 {
-        font-size: 1.6em !important;
-    }
-    #timeImageDescription2 {
-        font-size: 1.6em !important;
-        font-style: italic;
-        word-spacing: 0.15em;
-    }
-    .time-first-letter {
-        font-size: 1.3em !important;
-    }
-    .time-first-letter-p {
-        font-size: 1.2em !important;
+        font-size: 5vw;
     }
     #timeTitle {
-        font-size: 3em;
+        font-size: 3vw;
     }
     #homeBody {
-        column-count: 3 !important;
+        column-count: 2;
     }
     #homeBody h2 {
-        font-size: 4em !important;
+        font-size: 5vw;
     }
     #homeBody p {
-        font-size: 1.5em;
-        line-height: 1.5em;
-    }
-    .time-title-paragraph {
-        word-spacing: .2em !important;
+        font-size: 2vw;
     }
     
     /* MAIN - ISSUE */
     #timeIssueExplore {
-        font-size: 1.4em;
-    }
-    .issue-main {
-        box-shadow: none !important;
-        overflow: hidden;
-    }
-    .article-container {
-        column-count: 2 !important;
-    }
-    .article-container h2, .article-comparison-container h2 {
-        font-size: 2em;
-    }
-    .article-container h3, .article-comparison-container h3 {
-        font-size: 1.8em;
-    }
-    .article-container h4, .article-comparison-container h4 {
-        font-size: 1.4em;
-        text-align: left;
-    }
-    .article-container p, .article-comparison-container p {
-        font-size: 1.2em;
-    }
-
-    /* DOCUMENTATION */
-    .doc-title-container h1 {
-        font-size: 10em;
-    }
-    #timeTitleDoc h2 {
-        font-size: 4em;
-    }
-    #documentationBody {
-        column-count: 3;
-    }
-    #documentationBody h2 {
-        font-size: 4em;
-    }
-    #documentationBody p {
-        font-size: 1.8em;
-    }
-    #documentationBody p::first-letter {
-        font-size: 1.5em;
-    }
-    .time-single-image img {
-        width: 80%;
-    }
-    
-
-    /* ABOUT */
-    .about-page-presentation {
-        margin: 2%;
-    }
-    .about-container h1 {
-        font-size: 8em;
-        margin-top: 5%;
-    }
-    .editor-name-img {
-        justify-content: space-around;
-    }
-    .editor-name-img img {
-        width: 60%;
-    }
-    .editor-name-img h2 {
-        font-size: 4em;
-    }
-
-    /* DISCLAIMER */
-    .disclaimer-main { 
-        flex-direction: row;
-    }
-    .disclaimer-page-presentation {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-    }
-    #disclaimerTitle h1 {
-        font-size: 10em;
-    }
-    #disclaimerPurpose {
-        font-size: 1.8em;
-        margin-bottom: 5%;
-    }
-    #disclaimerSources {
-        font-size: 1.8em;
-    }
-    #disclaimerPurpose h2 {
-        font-size: 5.5em;
-    }
-    #disclaimerSources h2 {
-        font-size: 5.5em;
-    }
-
-    /* FOOTER */
-    
-    footer div {
-        font-size: 1.5em !important;
-    }
-}
-
-@media only screen and (max-width: 1919.98px) and (orientation:landscape) {
-    .home-main, .issue-main {
-        margin: 5% !important;
-        padding-bottom: 5% !important;
-    }
-    .about-main {
-        margin: 0;
-    }
-    /* NAV */
-    .navbar-nav {
-        width: 60%;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        margin: 0 !important;
-        text-align: left !important;
-    }
-    .nav-text {
-        height: 100%;
-        font-size: 1.6em;
-        padding: 2%;
-        flex-basis: 10%;
-	    flex-grow: 0;
-	    flex-shrink: 0;
-    }
-    .nav-item {
-        font-size: 1.1em !important;
-        padding-top: .5% !important;
-        margin: 0 !important;
-        align-self: center !important;
-        flex-basis: 10%;
-	    flex-grow: 0;
-	    flex-shrink: 0;
-    }
-    .dropdown-divider {
-        display: block;
-    }
-    .navbar-brand {
-        font-size: 1.8em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
-        width: 100%;
-        font-size: 1em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 0 10%;
-    }
-
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 2.5em !important;
-    }
-    .overlay-content h3 {
-        font-size: 2.5em !important;
-    }
-    .overlay-content p {
-        font-size: 1.2em;
-    } 
-    .issue-main {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        box-shadow: none;;
-    }
-    
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 8vh 8vh 8vh;
-        grid-template-rows: 10vh 10vh 10vh 10vh;
-    }
-    .sub-btn {
-        font-size: 3em;
-    }
-    .sub-btn:hover {
-        scale: 1.1;
-        font-size: 3.2em;
-    }
-    
-    /* PAGE PRESENTATION */
-    .title-container h1 {
-        font-size: 12em !important;
-        margin-bottom: 5%;
-    }
-
-    /* MAIN - HOME */
-    #timeTitle h2 {
-        font-size: 2em !important;
-    }
-    #timeImageDescription1 {
-        font-size: 1.6em !important;
-    }
-    #timeImageDescription2 {
-        font-size: 1.6em !important;
-        font-style: italic;
-        word-spacing: 0.15em;
-    }
-    .time-first-letter {
-        font-size: 1.3em !important;
-    }
-    .time-first-letter-p {
-        font-size: 1.2em !important;
-    }
-    #timeTitle {
-        font-size: 3em;
-    }
-    #homeBody {
-        column-count: 3 !important;
-    }
-    #homeBody h2 {
-        font-size: 4em !important;
-    }
-    #homeBody p {
-        font-size: 1.5em;
-        line-height: 1.5em;
-    }
-    .time-title-paragraph {
-        word-spacing: .2em !important;
-    }
-    
-    /* MAIN - ISSUE */
-    #timeIssueExplore {
-        font-size: 1.4em;
-    }
-    .issue-main {
-        box-shadow: none !important;
-        overflow: hidden;
-    }
-    .article-container {
-        column-count: 2 !important;
-    }
-    .article-container h2, .article-comparison-container h2 {
-        font-size: 2em;
-    }
-    .article-container h3, .article-comparison-container h3 {
-        font-size: 1.8em;
-    }
-    .article-container h4, .article-comparison-container h4 {
-        font-size: 1.4em;
-        text-align: left;
-    }
-    .article-container p, .article-comparison-container p {
-        font-size: 1.2em;
-    }
-
-    /* DOCUMENTATION */
-    .doc-title-container h1 {
-        font-size: 10em;
-    }
-    #timeTitleDoc h2 {
-        font-size: 4em;
-    }
-    #documentationBody {
-        column-count: 3;
-    }
-    #documentationBody h2 {
-        font-size: 4em;
-    }
-    #documentationBody p {
-        font-size: 1.8em;
-    }
-    #documentationBody p::first-letter {
-        font-size: 1.5em;
-    }
-    .time-single-image img {
-        width: 80%;
-    }
-    
-
-    /* ABOUT */
-    .about-page-presentation {
-        margin: 2%;
-    }
-    .about-container h1 {
-        font-size: 8em;
-        margin-top: 5%;
-    }
-    .editor-name-img {
-        justify-content: space-around;
-    }
-    .editor-name-img img {
-        width: 60%;
-    }
-    .editor-name-img h2 {
-        font-size: 4em;
-    }
-
-    /* DISCLAIMER */
-    .disclaimer-main { 
-        flex-direction: row;
-    }
-    .disclaimer-page-presentation {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-    }
-    #disclaimerTitle h1 {
-        font-size: 10em;
-    }
-    #disclaimerPurpose {
-        font-size: 1.8em;
-        margin-bottom: 5%;
-    }
-    #disclaimerSources {
-        font-size: 1.8em;
-    }
-    #disclaimerPurpose h2 {
-        font-size: 5.5em;
-    }
-    #disclaimerSources h2 {
-        font-size: 5.5em;
-    }
-
-    /* FOOTER */
-    
-    footer div {
-        font-size: 1.5em !important;
-    }
-}
-
-@media (max-width: 1025px) and (orientation:portrait) {
-    /* PAGE PRESENTATION */
-    .page-presentation {
-        border-top: solid 8vw #D62503;
-        overflow: hidden !important;
-    }
-    .title-container h1 {
-        font-size: 3.5em !important;
-        margin-bottom: 2.5%;
-    }
-    #homeTp1 {
-        font-size: 1.8em;
-        text-justify: distribute;
-        padding: 2.5% 15%;
-    }
-
-    /* NAV */
-    .navbar-nav {
-        width: 60%;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        margin: 0 !important;
-        text-align: left !important;
-    }
-    .nav-text, .nav-item {
-        height: 100%;
-        font-size: 1.1em;
-        padding: 2%;
-        flex-basis: 10%;
-	    flex-grow: 0;
-	    flex-shrink: 0;
-    }
-    .nav-item {
-        font-size: 1em !important;
-        padding-top: 2% !important;
-        margin: 0 !important;
-        align-self: center !important;
-    }
-    .dropdown-divider {
         display: none;
     }
-    .navbar-brand {
-        font-size: 1.4em !important;
-        padding: 0;
-    }
-    .dropdown-menu {
-        margin: 0 !important;
-    }
-    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
-        font-size: 1.1em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 5%;
-    }
-
-    /* OVERLAY */
-    .overlay-content {
-        top: 15%;
-        width: 50%;
-    }
-    .overlay-content h2 {
-        font-size: 2.5em !important;
-    }
-    .overlay-content h3 {
-        font-size: 2.5em !important;
-    }
-    .overlay-content p {
-        font-size: 1.2em;
-    } 
     .issue-main {
-        margin: 5% !important; 
-        overflow-x: hidden;
-        overflow-y: scroll;
-        box-shadow: none;;
-    }
-
-    /* BUTTONS STYLE AND TOP - PORTRAIT*/
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 5vh 5vh 5vh;
-        grid-template-rows: 6vh 6vh 6vh 6vh;
-    }
-    .sub-btn {
-        font-size: 2.5em;
-    }
-    .sub-btn:hover {
-        scale: 1.1;
-        font-size: 2.6em;
-    }
-    
-    /* GENERAL MAIN */
-    .home-main, .issue-main {
-        margin: 1% !important;
-        padding-bottom: 5%;
-    }
-
-    /* MAIN - HOME */
-    #timeTitle h2 {
-        font-size: 3em !important;
-    }
-    #timeImageDescription1 {
-        font-size: 1.5em !important;
-    }
-    #timeImageDescription2 {
-        font-size: 1.5em !important;
-        font-style: italic;
-        word-spacing: 0.15em;
-    }
-    .time-first-letter {
-        font-size: 1.2em !important;
-    }
-    .time-first-letter-p {
-        font-size: 1.1em !important;
-    }
-    #homeBody {
-        column-count: 2 !important;
-    }
-    #homeBody h2 {
-        font-size: 3em !important;
-    }
-    #homeBody p {
-        margin-top: 2%;
-        font-size: 1.5em;
-    }
-    .time-title-paragraph {
-        word-spacing: none !important;
-    }
-    
-    /* MAIN - ISSUE */
-    #pizzagateTitle {
-        font-size: 3.5em !important;
-    }
-    #issueTp1 {
-        font-size: 1.8em;
-        text-justify: distribute;
-    }
-    #timeIssueExplore {
-        display: none !important;
-    }
-    
-    .meta-text-container {
-        margin: 0% !important;
-        width: 100% !important;
-        flex-direction: column !important;
-    }
-    .metadata-container {
-        width: 100% !important;
-    }
-    .metadata-container a {
-        font-size: 1.2em;
-    }
-    .metadata-container .nav-i {
-        font-size: 1.5em;
-    }
-    .metadata-container button {
-        padding: 2% 2%;
-        font-size: 1em;
+        box-shadow: none;
     }
     .article-container {
-        margin-top: 5%;
-        width: 100% !important;
-        column-count: 2 !important;
+        column-count: 1;
     }
-    .article-container h2 {
-        font-size: 2.5em;
+    .article-container h2, .article-comparison-container h2 {
+        font-size: 3vw;
     }
-    .article-container h3 {
-        font-size: 2em;
+    .article-container h3, .article-comparison-container h3 {
+        font-size: 2.8vw;
     }
-    .article-container p {
-        font-size: 1.5em;
-    }
-    .article-comparison-container {
-        display: none !important;
+    .article-container h4, .article-comparison-container h4 {
+        font-size: 2.2vw;
+        text-align: left;
     }
 
     /* DOCUMENTATION */
     .doc-title-container h1 {
-        font-size: 3.5em;
-    }
-    .doc-subtitle-container p {
-        padding: 5%;
-        font-size: 1.8em;
-        margin: 10%;
+        font-size: 8vw;
     }
     #timeTitleDoc h2 {
-        font-size: 2.8em;
+        font-size: 4vw;
     }
     #documentationBody {
         column-count: 2;
     }
     #documentationBody h2 {
-        font-size: 2em;
+        font-size: 4vw;
     }
-    .doc-sm-title {
-        font-size: 1.8em;
-    }
-    .doc-subtitle {
-        font-size: 1.3em;
-    }
-    #documentationBody p {
-        font-size: 1.4em;
+    #documentationBody p, #documentationBody li, #documentationBody a {
+        font-size: 2.2vw;
     }
     #documentationBody p::first-letter {
-        font-size: 1.1em;
+        font-size: 3vw;
     }
-    .time-single-image {
-        display: none;
-    }
-    .doc-images-container {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-around;
-        width: 90% !important;
-        margin-top: 3.5%;
-        margin-bottom: 3.5%;
-        margin-left: 5%;
-    }
-    .doc-images-container img {
-        width: 40% !important;
-    }
-    .doc-image-container {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin-top: 3.5%;
-        margin-bottom: 3.5%;
-        margin-left: 5%;
-    }
-    .doc-image-container figure img {
-        margin-left: 30%;
-        width: 40% !important;
-    }
-    .doc-images-container-3 {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        margin-top: 3.5%;
-        margin-bottom: 3.5%;
-        margin-left: 5%;
-    }
-    .doc-images-container-3 img {
-        width: 27.5%;
-        margin-left: 5%;
-    }
-
+    
     /* ABOUT */
     .about-page-presentation {
         margin: 2%;
     }
     .about-container h1 {
-        font-size: 3.5em;
+        font-size: 8vw;
         margin-top: 5%;
     }
     .editor-name-img {
-        justify-content: space-between;
-    }
-    .editor-name-img h2 {
-        text-align: center;
-        font-size: 2.5em;
-    }
-    .about-container p {
-        font-size: 1.8em;
+        justify-content: space-around;
     }
     .editor-name-img img {
-        width: 80%;
+        width: 60%;
+    }
+    .editor-name-img h2 {
+        font-size: 4vw;
     }
 
     /* DISCLAIMER */
     .disclaimer-main { 
         flex-direction: row;
-        overflow: auto;
-
     }
     .disclaimer-page-presentation {
-        border: none;
         height: fit-content;
         display: flex;
         flex-direction: column;
         overflow: scroll;
     }
     #disclaimerTitle h1 {
-        font-size: 5em;
+        font-size: 10vw;
     }
     #disclaimerPurpose {
-        font-size: 1.8em;
+        font-size: 2vw;
+        margin-bottom: 5%;
     }
     #disclaimerSources {
-        font-size: 1.8em;
+        font-size: 2vw;
     }
     #disclaimerPurpose h2 {
-        font-size: 2.5em;
+        font-size: 6vw;
     }
     #disclaimerSources h2 {
-        font-size: 2.5em;
+        font-size: 6vw;
     }
 
     /* FOOTER */
     footer div {
-        font-size: 1.1em !important;
-    } 
+        font-size: 1.5vw;
+    }
 }
 
 
+@media only screen and (width <= 820px) {
+    .home-main, .issue-main {
+        margin: 0%;
+        padding-bottom: 2%;
+    }
 
-@media (max-width: 577) and (orientation:portrait) {
+    /* NAV */
+    .navbar-nav {
+        width: 100%;
+    }
+    .nav-text {
+        padding: 2%;
+        font-size: 2.5vw;
+    }
+
     /* PAGE PRESENTATION */
     .page-presentation {
         box-shadow: none;
     }
-    .title-container h1 {
-        font-size: 2em !important;
-        margin-bottom: 5%;
-    }
-    #homeTp1 {
-        font-size: .9em;
-        text-justify: distribute;
-        padding: 5%;
-    }
-
-
-    /* NAV */
-    .nav-text {
-        font-size: 0.8em !important;
-        padding: 5%;
-    }
-    .navbar-brand {
-        font-size: 1.2em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a {
-        font-size: .7em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 5%;
-    }
-    .nav-items-div {
-        display: flex;
-        flex-direction: row;
-        justify-content:first baseline;
-    }
-    .nav-items-div button {
-       padding: 5%;
-    }
-    .nav-i:hover, .nav-i-b:hover {
-        letter-spacing: none;
-        font-style: normal;
-        scale: none;
-    }
 
     /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.5em !important;
-    }
-    .overlay-content h3 {
-        font-size: 1.5em !important;
-    }
     .overlay-content p {
         display: none;
     } 
-    .issue-main {
-        margin: 0 !important; 
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
-
-    /* BUTTONS STYLE AND TOP - PORTRAIT*/
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 5vh 5vh 5vh;
-        grid-template-rows: 8vh 8vh 8vh 8vh;
-    }
-    
-    /* GENERAL MAIN */
-    .home-main, .issue-main, .about-main {
-        margin: 1% !important;
-        padding-bottom: 5%;
+    .sub-btn {
+        font-size: 3vw;
     }
 
     /* MAIN - HOME */
-    #timeTitle h2 {
-        font-size: 2em !important;
-    }
-    #timeImageDescription1 {
-        font-size: .8em !important;
-    }
-    #timeImageDescription2 {
-        font-size: 1em !important;
-        font-style: italic;
-        word-spacing: 0.15em;
-    }
-    .time-first-letter {
-        font-size: 1.2em !important;
-    }
-    .time-first-letter-p {
-        font-size: 1.1em !important;
-    }
     #homeBody {
-        column-count: 1 !important;
-    }
-    #homeBody h2 {
-        font-size: 2em !important;
+        column-count: 1;
     }
     #homeBody p {
-        font-size: 1em;;
-    }
-    .time-title-paragraph {
-        word-spacing: none !important;
+        font-size: 3vw;
     }
     
     /* MAIN - ISSUE */
-    #pizzagateTitle {
-        font-size: 2.5em !important;
-    }
-    #issueTp1 {
-        font-size: 1em;
-        text-justify: distribute;
-    }
-    #timeIssueExplore {
-        display: none !important;
-    }
-    .issue-main {
-        box-shadow: none !important;
-    }
     .meta-text-container {
-        margin: 0% !important;
-        width: 100% !important;
-        flex-direction: column !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .metadata-container {
-        width: 100% !important;
+        width: 100%;
+        margin-bottom: 5%;
     }
     .article-container {
-        margin-top: 5%;
         width: 100% !important;
-        column-count: 1 !important;
-    }
-    .article-comparison-container {
-        display: none !important;
     }
 
     /* DOCUMENTATION */
-    .documentation-page-presentation {
-        box-shadow: none !important;
-    }
-    .doc-title-container h1 {
-        font-size: 2em;
-    }
-    .doc-subtitle-container p {
-        padding: 5%;
-        font-size: .9em;
-    }
-    #timeTitleDoc h2 {
-        font-size: 1.8em;
-    }
     #documentationBody {
         column-count: 1;
     }
-    #documentationBody h2 {
-        font-size: 2em;
-    }
-    #documentationBody p::first-letter {
-        font-size: 1.1em;
+    #documentationBody p {
+        font-size: 3vw;
     }
     .time-single-image {
         display: none;
@@ -3010,58 +2038,31 @@ footer div {
         width: 27.5%;
         margin-left: 5%;
     }
-
-    /* ABOUT */
-    .about-page-presentation {
-        margin: 2%;
-    }
-    .about-container h1 {
-        font-size: 2.5em;
-        margin-top: 5%;
-    }
-    .editor-name-img {
-        justify-content: space-between;
-    }
-    .editor-name-img h2 {
-        text-align: center;
-    }
-    .editor-name-img img {
-        width: 80%;
-    }
-
-    /* DISCLAIMER */
-    .disclaimer-main { 
-        flex-direction: row;
-        overflow: auto;
-
-    }
-    .disclaimer-page-presentation {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-    }
-    #disclaimerTitle h1 {
-        font-size: 2em;
-    }
-    #disclaimerPurpose {
-        font-size: 1em;
-    }
-    #disclaimerSources {
-        font-size: 1em;
-    }
-    #disclaimerPurpose h2 {
-        font-size: 1.5em;
-    }
-    #disclaimerSources h2 {
-        font-size: 1.5em;
-    }
-
-    /* FOOTER */
-    footer div {
-        font-size: .5em !important;
-    } 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########################################################################################## */
+/* ########################################################################################## */
+/* ########################################################################################## */
+/* ########################################################################################## */
+
+
+
+
 
 /* ########################################################################################## */
 /* ########################################################################################## */
