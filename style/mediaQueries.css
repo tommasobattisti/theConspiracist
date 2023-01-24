@@ -5,7 +5,7 @@
 }
 
 
-@media only screen and (orientation: portrait) and (max-width: 680px) {
+@media only screen and (width <= 768px), (orientation: portrait) and (width <= 1280px) {
 
     .meta-text-container {
         flex-direction: column !important;
@@ -31,7 +31,7 @@
     .article-container {
         width: 100% !important;
     }
-    /* SBAGLIATO SECONDO ME...
+
     .btns-item-9, .btns-item-10 {
         visibility: visible !important;
         width: 100% !important;
@@ -43,7 +43,7 @@
         display: block;
         width: 100% !important;
     }
-    */
+
 
 }
 

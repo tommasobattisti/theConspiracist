@@ -27,7 +27,7 @@
 }
 
 
-@media only screen and (width <= 820px) {
+@media only screen and (width <= 860px), (orientation: portrait) and (width <= 1280px) {
     #homeBody, #documentationBody {
         margin: 5% !important;
     }
@@ -35,11 +35,7 @@
     .doc-subsection {
         margin: 0 !important;
     }
-}
 
-
-
-@media only screen and (width <= 768px) {
     #magazineDescription {
         flex-direction: column !important;
     }
@@ -82,9 +78,25 @@
         margin-bottom: 5%;
     }
 
+    #issuesFeaturesDescription .row-lt-block {
+        width: 100% !important;
+    }
+
     .footer-container {
         width: 80% !important;
     }
+
+
+    .meta-text-container {
+        margin: 0 !important;
+    }
+
+}
+
+
+
+@media only screen and (width <= 768px) {
+    
 
 }
 
@@ -95,7 +107,7 @@
     }
 
     .home-flex-row {
-        margin-top: 50% !important;
+        margin-top: 35% !important;
     }
 
     .poster-container{
@@ -103,7 +115,7 @@
     }
 
     #editorsAndSourcesDescription .esd-rt-block {
-        margin-top: 50% !important;
+        margin-top: 35% !important;
     }
 
     .doc-section {
@@ -111,9 +123,11 @@
         margin-right: 0 !important;
     }
 
-    p {
+    p, li {
+        font-size: 0.9em !important;
         font-weight: 400 !important;
     }
+
 }
 
 
@@ -126,9 +140,11 @@
 
 
 
-p {
-    font-size: clamp(0.9rem, 0.8545rem + 0.2273vw, 1.4rem);
+p, li {
+    font-size: clamp(1.2rem, 1.1091rem + 0.4545vw, 2.2rem);
 }
+
+
 
 
 
@@ -266,6 +282,11 @@ nav {
 .nav-text, .ddm-nav-text, .navbar-brand {
     font-size: clamp(1.2rem, 1.1818rem + 0.0909vw, 1.4rem) !important;
     font-weight: 400 !important;
+}
+
+
+.navbar-nav .dropdown {
+    display: flex;
 }
 
 .dropdown-menu {
@@ -496,7 +517,7 @@ nav {
 #homeTp1 {
     font-size: clamp(1rem, 0.8000rem + 1.0000vw, 3.2rem);
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #homeTp2 {
@@ -567,6 +588,7 @@ nav {
 }
 
 .home-flex-row a {
+        font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
         color: #212529;
         text-decoration: underline;
         text-decoration-color: #558a86;
@@ -855,7 +877,7 @@ nav {
 
 .doc-subtitle-container p {
     font-size: 1.4em !important;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
@@ -969,8 +991,7 @@ nav {
 }
 
 #documentationBody li {
-    font-size: 1.1em;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -1052,7 +1073,7 @@ nav {
     width: 80%;
     margin-left: 10%;
     margin-right: auto;
-    font-size: 0.9em !important;
+    font-size: clamp(0.9rem, .8091rem + 0.4545vw, 1.9rem);
     font-weight: 400;
 }
 
@@ -1066,7 +1087,7 @@ nav {
 #documentationBody a {
     color: #212529;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2rem;
@@ -1084,8 +1105,11 @@ nav {
 }
 
 #documentationBody cite {
-    font-weight: 300;
+    font-size: clamp(0.9rem, .8091rem + 0.4545vw, 1.9rem);
+    font-weight: 300; 
 }
+
+
 
 
 
@@ -1254,7 +1278,7 @@ margin: 0;
 #disclaimerSources a {
     color: #212529;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2em;
@@ -1483,20 +1507,7 @@ margin: 0;
 
 
 
-.docs-list-a li {
-    padding: .5rem 0;
-}
-
-.docs-list-b li {
-    padding: .5rem 0;
-}
-
-
-.tab-content li {
-    padding: .5rem 0;
-}
-
-.tab-content-b li {
+.docs-list-a li, .docs-list-b li, .tab-content li, .tab-content-b li {
     padding: .5rem 0;
 }
 
@@ -1646,8 +1657,8 @@ margin: 0;
 
 
 .article-container p, .article-comparison-container p {
-    width: 90%;
-    margin-left: 10%;
+    width: 95%;
+    margin-left: 5%;
     font-weight: 300;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -1659,7 +1670,7 @@ margin: 0;
 
 .article-container a, .article-comparison-container a {
     color: #212529;
-    font-size: 0.9em;
+    font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2rem;
@@ -1680,12 +1691,14 @@ margin: 0;
 
 
 
-.article-container li {
+.article-container li, .article-comparison-container li {
     margin-bottom: .5rem;
-}
-
-.article-comparison-container li {
-    margin-bottom: .5rem;
+    font-weight: 400;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
 }
 
 
@@ -1974,7 +1987,7 @@ footer div {
 }
 
 footer div p {
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;;
     color:#212529;
     font-size: clamp(0.6rem, 0.5455rem + 0.2727vw, 1.2rem);
