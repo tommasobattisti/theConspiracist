@@ -256,7 +256,7 @@ nav {
     height: 20%;
     border: none;
     display: none;
-    box-shadow: 0px 8px 15px rgba(240, 229, 209, 0.2);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
     border-radius: 50px;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 800;
@@ -735,6 +735,11 @@ nav {
 }
 
 
+#posterIconContainer:active {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+    transition: 100ms;
+}
+
 
 
 /*Documentation------------------------------*/
@@ -746,11 +751,11 @@ nav {
 
 .doc-title-container {
     grid-column: 5/9;
-    grid-row: 8;
+    grid-row: 7/9;
 }
 
 .doc-title-container h1 {
-    font-size: 5em;
+    font-size: 5.5em;
     text-transform: lowercase;
     font-weight: 900;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
@@ -781,7 +786,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1em;
-    transform: scale(1.2) rotate(60deg) translate(-20%, -5%);
+    transform: scale(1.2) rotate(45deg) translate(-30%, -10%);
 
 }
 
@@ -793,7 +798,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: #212529;
-    animation: pulse 3s ease-in-out infinite alternate;
+    animation: pulse-alt 3s ease-in-out infinite alternate;
 }
 
 #swiSpan2 {
@@ -811,7 +816,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: #212529;
-    animation: pulse 4s ease-in-out infinite alternate;
+    animation: pulse-alt 4s ease-in-out infinite alternate;
 }
 
 #swiSpan4 {
@@ -829,7 +834,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: #212529;
-    animation: pulse 5s ease-in-out infinite alternate;
+    animation: pulse-alt 5s ease-in-out infinite alternate;
 }
 
 
@@ -847,16 +852,21 @@ nav {
 
 
 #documentationBody h2 {
-    font-size: 2em;
-    font-weight: 900;
+    font-size: 3em;
+    font-weight: 600;
     text-transform: lowercase;
     margin-bottom: 2%;
 }
 
+.doc-sm-title {
+    font-size: 0.8em;
+    font-weight: 200;
+    font-style: italic;
+    border-bottom: #f54123 solid .15em;
+}
 
 
 .doc-subtitle {
-    font-size: 1.5em !important;
     font-weight: 600;
     text-transform: lowercase;
     margin-bottom: 2%;
@@ -1002,7 +1012,7 @@ nav {
 }
 
 .about-container h1 {
-    font-size: 6em;
+    font-size: 6.5em;
     font-weight: 900;
     text-transform: lowercase;
     margin-bottom: 5%;
@@ -1130,6 +1140,7 @@ margin: 0;
 #disclaimerSources a {
     color: #212529;
     font-weight: 400;
+    font-size: 1.2em;
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2em;
@@ -1138,6 +1149,7 @@ margin: 0;
     -webkit-text-decoration-thickness: .2em;
     transition: 300ms;
 }
+
 
 #disclaimerSources a:hover {
     color: #558a86 !important;
@@ -1166,6 +1178,14 @@ margin: 0;
 
 
 /* ISSUES ------------------------------------ */
+
+.swiss-color-red-a {
+    animation: color-red infinite 4s;
+}
+
+.swiss-color-red-b {
+    animation: color-red-alt infinite 4s;
+}
 
 
 
@@ -2042,8 +2062,8 @@ footer div p {
 
 .circle {
     position: absolute;
-    width: 12vw;
-    height: 12vw;
+    width: 15vmax;
+    height: 15vmax;
     border-radius: 50%;
 }
 
@@ -2162,12 +2182,54 @@ footer div p {
 
 @keyframes pulse {
     0% {
-        transform: scale(0.95);
+        transform: scale(0.96);
     }
     50% {
         transform: scale(1);
     }
     100% {
-        transform: scale(0.95);
+        transform: scale(0.96);
+    }
+}
+
+@keyframes pulse-alt {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.96);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+@keyframes color-red {
+    0% {
+        color: whitesmoke;
+    }
+    50% {
+        color:#f54123;
+    }
+    100% {
+        color: whitesmoke;
+    }
+
+}
+
+
+@keyframes color-red-alt {
+    0% {
+        color:#f54123;
+    }
+    50% {
+        color: whitesmoke;
+    }
+    100% {
+        color: #f54123;
     }
 }
