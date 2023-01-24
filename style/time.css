@@ -1816,9 +1816,10 @@ footer div {
         text-align: left !important;
     }
     .nav-text {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .ddm-nav-text {
+        width: 100%;
         font-size: 1.5rem;
     }
 
@@ -1833,31 +1834,31 @@ footer div {
     
     /* PAGE PRESENTATION */
     .title-container h1 {
-        font-size: 8rem;
+        font-size: 2rem;
         margin-bottom: 5%;
     }
     #homeTp1 {
-        font-size: 3rem
+        font-size: 1.5rem
     }
 
     /* MAIN - HOME */
     #timeTitle h2 {
-        font-size: 5rem;
+        font-size: 2rem;
     }
     #timeTitle {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
     #homeBody {
-        column-count: 2;
+        column-count: 1;
     }
     #homeBody h2 {
-        font-size: 5rem;
+        font-size: 2.5rem;
     }
     .time-title-paragraph {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     #homeBody p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     
     /* MAIN - ISSUE */
@@ -1880,25 +1881,28 @@ footer div {
         font-size: 2.2rem;
         text-align: left;
     }
+    .article-container p, .article-comparison-container p {
+        font-size: 2.2rem;
+    }
 
     /* DOCUMENTATION */
     .doc-title-container h1 {
-        font-size: 8rem;
+        font-size: 3rem;
     }
     #timeTitleDoc h2 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
     #documentationBody {
-        column-count: 2;
+        column-count: 1;
     }
     #documentationBody h2 {
-        font-size: 4rem;
+        font-size: 1.8rem;
     }
     #documentationBody p, #documentationBody li, #documentationBody a {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     #documentationBody p::first-letter {
-        font-size: 2.4rem;
+        font-size: 1.9rem;
     }
     
     /* ABOUT */
@@ -1906,7 +1910,7 @@ footer div {
         margin: 2%;
     }
     .about-container h1 {
-        font-size: 8rem;
+        font-size: 3rem;
         margin-top: 5%;
     }
     .editor-name-img {
@@ -1916,7 +1920,7 @@ footer div {
         width: 60%;
     }
     .editor-name-img h2 {
-        font-size: 4rem;
+        font-size: 1.5rem;
     }
 
     /* DISCLAIMER */
@@ -1930,25 +1934,25 @@ footer div {
         overflow: scroll;
     }
     #disclaimerTitle h1 {
-        font-size: 10rem;
+        font-size: 3rem;
     }
     #disclaimerPurpose {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 5%;
     }
     #disclaimerSources {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #disclaimerPurpose h2 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
     #disclaimerSources h2 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     /* FOOTER */
     footer div {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
