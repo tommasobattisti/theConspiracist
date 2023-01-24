@@ -1827,11 +1827,14 @@ footer div {
     }
 
     /* OVERLAY */
-    .overlay-content h2, h3 {
-        font-size: 2rem;
+    .overlay-content h2 {
+        font-size: 1.8rem;
     } 
+    .overlay-content h3 {
+        font-size: 2rem;
+    }
     .overlay-content p {
-        font-size: 1.6rem;
+        font-size: 1.25rem;
     } 
     
     /* BUTTONS STYLE AND TOP - LANDSCAPE*/
@@ -1842,6 +1845,9 @@ footer div {
     }
     .sub-btn {
         font-size: 1.6rem;
+    }
+    .sub-btn:hover {
+        font-size: 1.65rem;
     }
     
     /* PAGE PRESENTATION */
@@ -1860,6 +1866,12 @@ footer div {
     #timeTitle {
         font-size: 1.5rem;
     }
+    #timeImageDescription {
+        font-size: 1.8rem;
+    }
+    #timeImageDescription1 {
+        font-size: 1.8rem;
+    }
     #homeBody {
         column-count: 1;
     }
@@ -1870,18 +1882,21 @@ footer div {
         font-size: 1.7rem;
     }
     #homeBody p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     /* MAIN - ISSUE */
+    .issue-main {
+        margin: 0;
+    }
     #timeIssueExplore {
         display: none;
     }
     .metadata-container h2 {
         font-size: 2rem;
     }
-    .metadata-container li, .metadata-container a {
-        font-size: 1.7rem;
+    .metadata-container li, .metadata-container a, .metadata-container label {
+        font-size: 1.6rem;
     }
     .issue-main {
         box-shadow: none;
@@ -1900,7 +1915,7 @@ footer div {
         text-align: left;
     }
     .article-container p, .article-comparison-container p {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     /* DOCUMENTATION */
@@ -1917,10 +1932,10 @@ footer div {
         font-size: 1.8rem;
     }
     #documentationBody p, #documentationBody li, #documentationBody a {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     #documentationBody p::first-letter {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
     
     /* ABOUT */
@@ -1928,7 +1943,7 @@ footer div {
         margin: 2%;
     }
     .about-page-presentation p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .about-container h1 {
         font-size: 3rem;
