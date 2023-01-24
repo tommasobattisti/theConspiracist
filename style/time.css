@@ -3,7 +3,6 @@
     #D62503
     white
 */
-
 /*
     font-family: 'Cinzel', serif !important;
     font-family: 'Crimson Text', serif;
@@ -191,332 +190,6 @@ nav {
     background-color: #D62503;
     color: white;
 }
-
-
-/* X-Large devices (large desktops, less than 1400px) */
-@media (min-width: 1919.98px) {
-    /* NAV */
-
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 3em;
-    }
-    .overlay-content h3 {
-        font-size: 2.5em;
-        padding-bottom: 5%;
-    }
-    .overlay-paragraph {
-        font-size: 1.8em;
-    }
-}
-
-/* Standard size of our work */
-@media (max-width: 1399.98px) { 
-    /* NAV */
-    .nav-text {
-        font-size: 1.4em !important;
-    }
-    .navbar-brand {
-        font-size: 1.6em !important;
-    }
-    .dropdown-menu li a {
-        padding: 4%;
-    }
-    /* OVERLAY -> STANDARD */
-}
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-    /* NAV */
-    .nav-text {
-        font-size: 1.1em !important;
-    }
-    .navbar-brand {
-        font-size: 1.2em !important;
-    }
-    .dropdown-menu li a {
-        padding: 3%;
-    }
-
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.6em;
-    }
-
-    .overlay-content h3 {
-        font-size: 1.6em;
-    }
-
-    .overlay-paragraph {
-        font-size: 1em;
-    }
-}
-
-
-/* Medium devices (tablets, less than 992px) */
-
-@media (max-width: 991.98px) and (orientation:landscape) {
-    
-    /* CHANGE OVERLAY IN LANDSCAPE - LANDSCAPE */
-    .overlay-content {
-        width: 80%;
-    }
-    
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
-    .btns-grid-container {
-        display: flex !important;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        z-index: 999;
-        width: 90%;
-        height: auto;
-        bottom: .1vmin !important;
-        right: .1vmin !important;
-
-    }
-    #stylesBtn {
-        scale: 0.4 !important;
-    }
-    .sub-btn {
-        scale: 0.8 !important;
-        font-size: 2.5em !important;
-    }
-    .btns-grid-container * {
-        width: 90%;
-    }
-    .btns-item-5, .btns-item-7, .btns-item-8 {
-        display: none;
-    }
-}
-@media (max-width: 991.98px) and (orientation:portrait) {
-
-    /* NAV */
-    .nav-text {
-        font-size: 1.6em !important;
-        padding: 2%;
-    }
-    .dropdown-menu {
-        padding-bottom: 0 !important;
-    }
-    .navbar-brand {
-        font-size: 1.4em !important;
-        padding: 2%;
-    }
-    .dropdown-menu li a {
-        font-size: 1.2em !important;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 5%;
-    }
-
-    /* OVERLAY */
-    .overlay-content {
-        width: 50%;
-    }
-    .overlay-content h2 {
-        font-size: 1.8em;
-    }
-    .overlay-content h3 {
-        font-size: 1.6em;
-        padding-bottom: 2.5%;
-    }
-    .overlay-paragraph {
-        font-size: 1.2em;
-    }
-
-    /* BUTTONS STYLE AND TOP - PORTRAIT*/
-    .btns-grid-container {
-        display: flex !important;
-        flex-direction: column;
-        justify-items: right;
-        position: fixed;
-        z-index: 999;
-        width: 25%;
-        height: 80%;
-        bottom: .1vmin !important;
-        right: .1vmin !important;
-    }
-    .btns-grid-container * {
-        height: 80%;
-        scale: 0.7 !important;
-        font-size: 2.2em !important;
-    }
-    .btns-item-5, .btns-item-7, .btns-item-8 {
-        display: none;
-    }
-}
-
-
-
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) and (orientation:landscape) {
-    /* NAV */
-    .nav-text {
-        font-size: 1.2em !important;
-        padding: 1%;
-    }
-    .navbar-brand {
-        font-size: 1.6em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a {
-        font-size: 1em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 1.2%;
-    }
-
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.6em;
-        padding-bottom: 5%;
-    }
-    .overlay-content h3, .overlay-paragraph {
-        display: none;
-    }
-    
-    /* CHANGE OVERLAY IN LANDSCAPE - LANDSCAPE */
-    .overlay-content {
-        width: 80%;
-    }
-    
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
-    .btns-grid-container {
-        display: flex !important;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        z-index: 999;
-        width: 100%;
-        height: auto;
-        bottom: .1vmax !important;
-        right: .1vmax !important;
-
-    }
-    #stylesBtn {
-        scale: 0.3 !important;
-    }
-    .sub-btn {
-        scale: 0.6 !important;
-        font-size: 2.5em !important;
-        margin-top: 10%;
-        height: 80% !important;
-    }
-    .btns-grid-container * {
-        width: 90%;
-    }
-    .btns-item-5, .btns-item-7, .btns-item-8 {
-        display: none;
-    }
-}
-
-
-
-
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) and (orientation:landscape) {
-    /* NAV */
-    .nav-text {
-        font-size: 0.7em !important;
-        padding: 2%;
-    }
-    .navbar-brand {
-        font-size: 1.2em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a {
-        font-size: .6em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 2%;
-    }
-
-    /* OVERLAY */
-    .overlay-content {
-        display: none;
-    } 
-    
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
-    .btns-grid-container {
-        display: flex !important;
-        flex-direction: row;
-        justify-items: right;
-        position: fixed;
-        z-index: 999;
-        width: 100%;
-        height: auto;
-        bottom: .1vmax !important;
-        right: .1vmax !important;
-    }
-    #stylesBtn {
-        scale: 0.4 !important;
-    }
-    .sub-btn {
-        scale: 0.5 !important;
-        font-size: 2.5em !important;
-        margin-top: 10%;
-        height: 80% !important;
-    }
-    .btns-grid-container * {
-        width: 90%;
-    }
-    .btns-item-5, .btns-item-7, .btns-item-8 {
-        display: none;
-    }
-}
-@media (max-width: 575.98px) and (orientation:portrait) {
-    /* NAV */
-    .nav-text {
-        font-size: 0.8em !important;
-        padding: 5%;
-    }
-    .navbar-brand {
-        font-size: 1.2em !important;
-        padding: 0;
-    }
-    .dropdown-menu li a {
-        font-size: .7em;
-        font-weight: 500;
-        align-items: center !important;
-        padding: 5%;
-    }
-
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.5em !important;
-    }
-    .overlay-content h3 {
-        font-size: 1.5em !important;
-    }
-    .overlay-content p {
-        display: none;
-    } 
-    
-    /* BUTTONS STYLE AND TOP - PORTRAIT*/
-    .btns-grid-container {
-        display: flex !important;
-        flex-direction: column;
-        justify-items: right;
-        position: fixed;
-        z-index: 999;
-        width: 25%;
-        height: 80%;
-        bottom: .1vmin !important;
-        right: .1vmin !important;
-    }
-    .btns-grid-container * {
-        height: 100%;
-        width: 100%;
-        scale: 0.7 !important;
-        font-size: 1.6em !important;
-    }
-    .btns-item-5, .btns-item-7, .btns-item-8 {
-        display: none;
-    }
-}
-
 
 
 /*BUTTONS SUB-SECTION */
@@ -740,7 +413,7 @@ nav {
     display: flex;
     flex-direction: column; 
     justify-items: space-around;
-    margin: 5%;    /* Dimension to match dimension of the page-presentation*/
+    margin: 5%;
 }
 
 
@@ -813,27 +486,16 @@ nav {
     word-spacing: 0.15em;
 }
 
-
-
 #homeBody {
     width: 90%;
     height: 100%;
     align-self: center;
-    column-count: 3 !important;
+    column-count: 3;
     font-size: 1.1em;
     font-family: 'Crimson Text', serif;
     line-height: 1.4em;
 }
 
-
-
-@media only screen and (max-width: 800px) {
-
-    #homeBody {
-        column-count: 2 !important;
-        column-fill: balance;
-    }
-}
 
 #homeBody h2 {
     font-size: 1.5em;
@@ -842,9 +504,6 @@ nav {
 }
 
 #homeBody h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 0;
     display: none;
 }
 
@@ -959,11 +618,6 @@ nav {
 
 /* ---------- ISSUES -----------*/
 
-/*
-    font-family: 'Cinzel', serif !important;
-    font-family: 'Crimson Text', serif;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-*/
 
 #timeIssueExplore {
     display: flex;
@@ -1115,8 +769,6 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-
-
 
 .metadata-container {
     width: 28%;
@@ -2032,6 +1684,10 @@ nav {
     box-shadow: none;
     margin: none;
     border: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
 
 
@@ -2067,12 +1723,6 @@ nav {
     font-family: 'Crimson Text', serif;
     font-size: 1.2em;
 }
-
-/*
-    font-family: 'Cinzel', serif !important;
-    font-family: 'Crimson Text', serif;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-*/
 
 #disclaimerPurpose h2 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -2142,6 +1792,256 @@ footer div {
     font-family: 'Cinzel', serif !important;
     font-weight: 500;
 }
+
+/* ########################################################################################## */
+/* ########################################################################################## */
+/* ########################################################################################## */
+/* ########################################################################################## */
+
+@media (max-width: 767.98px) and (orientation:landscape) {
+    .home-main, .issue-main, .about-main {
+        margin: 0 !important;
+        margin-bottom: 5% !important;
+    }
+    /* MAIN - HOME */
+    #timeTitle h2 {
+        font-size: 2em !important;
+    }
+    #timeImageDescription1 {
+        font-size: .9em !important;
+    }
+    #timeImageDescription2 {
+        font-size: 1.2em !important;
+        font-style: italic;
+        word-spacing: 0.15em;
+    }
+    .time-first-letter {
+        font-size: 1.2em !important;
+    }
+    .time-first-letter-p {
+        font-size: 1.1em !important;
+    }
+    #homeBody {
+        column-count: 1 !important;
+    }
+    #homeBody h2 {
+        font-size: 2em !important;
+    }
+    .time-title-paragraph {
+        word-spacing: none !important;
+    }
+    
+    /* MAIN - ISSUE */
+    #timeIssueExplore {
+        display: none !important;
+    }
+    .issue-main {
+        box-shadow: none !important;
+    }
+    .meta-text-container {
+        margin: 0% !important;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    .metadata-container {
+        width: 100% !important;
+    }
+    .article-container {
+        margin-top: 5%;
+        width: 100% !important;
+        column-count: 1 !important;
+    }
+    .article-comparison-container {
+        display: none !important;
+    }
+
+    /* DOCUMENTATION */
+    .documentation-page-presentation {
+        box-shadow: none !important;
+    }
+    .doc-title-container h1 {
+        font-size: 2.5em;
+    }
+    #timeTitleDoc h2 {
+        font-size: 2em;
+    }
+    #documentationBody {
+        column-count: 1;
+    }
+    #documentationBody h2 {
+        font-size: 2em;
+    }
+    #documentationBody p::first-letter {
+        font-size: 1.1em;
+    }
+    .time-single-image {
+        display: none;
+    }
+    .doc-images-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around;
+        width: 90% !important;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        margin-left: 5%;
+    }
+    .doc-images-container img {
+        width: 40% !important;
+    }
+    .doc-image-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        margin-left: 5%;
+    }
+    .doc-image-container figure img {
+        margin-left: 30%;
+        width: 40% !important;
+    }
+    .doc-images-container-3 {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        margin-left: 5%;
+    }
+    .doc-images-container-3 img {
+        width: 27.5%;
+        margin-left: 5%;
+    }
+
+    /* ABOUT */
+    .about-page-presentation {
+        margin: 2%;
+    }
+    .about-container h1 {
+        font-size: 2.5em;
+        margin-top: 5%;
+    }
+    .editor-name-img {
+        justify-content: space-around;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-main { 
+        flex-direction: row;
+    }
+    .disclaimer-page-presentation {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #disclaimerTitle h1 {
+        font-size: 2em;
+    }
+    #disclaimerPurpose {
+        font-size: 1em;
+    }
+    #disclaimerSources {
+        font-size: 1em;
+    }
+    #disclaimerPurpose h2 {
+        font-size: 1.5em;
+    }
+    #disclaimerSources h2 {
+        font-size: 1.5em;
+    }
+
+    /* FOOTER */
+    
+    footer div {
+        font-size: .6em !important;
+    }
+    
+    /* PAGE PRESENTATION */
+    .page-presentation {
+        box-shadow: none;
+    }
+    .title-container h1 {
+        font-size: 2.5em !important;
+        margin-bottom: 5%;
+    }
+
+    /* NAV */
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .nav-text, .nav-item {
+        height: 100%;
+        font-size: 0.7em;
+        padding: 2%;
+        flex-basis: 25%;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    .nav-item {
+        font-size: 1em !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        align-self: center !important;
+    }
+    .dropdown-divider {
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 1.2em !important;
+        padding: 0;
+    }
+    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
+        font-size: .6em;
+        font-weight: 500;
+        align-items: center !important;
+        padding: 2%;
+    }
+
+    /* OVERLAY */
+    .overlay-content {
+        display: none;
+    } 
+    
+    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    .btns-grid-container {
+        display: flex !important;
+        flex-direction: row;
+        justify-items: right;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: auto;
+        bottom: .1vmax !important;
+        right: .1vmax !important;
+    }
+    #stylesBtn {
+        scale: 0.4 !important;
+    }
+    .sub-btn {
+        scale: 0.5 !important;
+        font-size: 2.5em !important;
+        margin-top: 10%;
+        height: 80% !important;
+    }
+    .btns-grid-container * {
+        width: 90%;
+    }
+    .btns-item-5, .btns-item-7, .btns-item-8 {
+        display: none;
+    }
+}
+
+
+
+/* ########################################################################################## */
+/* ########################################################################################## */
+/* ########################################################################################## */
+/* ########################################################################################## */
 
 
 
