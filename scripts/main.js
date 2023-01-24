@@ -38,6 +38,8 @@ $(document).ready(function(){
         }
     }
     
+
+
 });
 
 
@@ -63,7 +65,7 @@ function adjustDimestionsAfterRotation(div, rotation) {
 
 
 function changeNavBackground() {
-    let thresholdHeight = $(window).height()/100*92;  
+    let thresholdHeight = $(window).height()/100*96;  
     if (document.body.scrollTop >= thresholdHeight || document.documentElement.scrollTop >= thresholdHeight) {
         if ($(".navbar").hasClass("issue-nav")) {
             $(".navbar-toggler").removeClass("light-nav-toggler");
