@@ -15,6 +15,15 @@ $(document).ready(function(){
         closeOverlay();           
     });
 
+
+
+    $("#posterIconContainer").on('mouseleave', function() {
+        $('.sub-btn').css("display","none")      
+    });
+
+
+
+
     for (const div of $("div")) {
         if(div.style.transform == true) {
             let rotation = div.style.transform
@@ -28,6 +37,7 @@ $(document).ready(function(){
             }
         }
     }
+    
 });
 
 
