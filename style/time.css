@@ -15,7 +15,7 @@
 
 
 body {
-    background-color: white !important;
+    background-color: white;
 }
 
 .navbar-brand:hover {
@@ -115,11 +115,11 @@ nav {
 }
 
 .nav-transparent-background {
-    background-color: rgba(214, 37, 3, 1) !important;
+    background-color: rgba(214, 37, 3, 1);
 }
 
 .nav-colored-background {
-    background-color: rgba(214, 37, 3, 1) !important;
+    background-color: rgba(214, 37, 3, 1);
     border-bottom: #212529 solid 1px;
     transition: 300ms ease-in-out;
 }
@@ -153,7 +153,7 @@ nav {
 }
 
 .navbar-nav a, .ddm-nav-text {
-    width: 100% !important;
+    width: 100%;
     text-decoration: none;
 }
 
@@ -162,11 +162,11 @@ nav {
 }
 
 .active, .active-issue {
-    color: white !important;
+    color: white;
 }
 
 .dropdown-menu li, .dropdown-menu li a {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: left;
 }
@@ -380,7 +380,7 @@ nav {
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
-    font-family: 'Cinzel', serif !important;
+    font-family: 'Cinzel', serif;
 }
 
 
@@ -388,7 +388,7 @@ nav {
     align-self: center;
     font-size: 1.5vw;
     font-weight: 300;
-    font-family: 'Cinzel', serif !important;
+    font-family: 'Cinzel', serif;
     text-align: center;
 
 }
@@ -397,7 +397,7 @@ nav {
     align-self: center;
     font-size: 1.5vw;
     font-weight: 300;
-    font-family: 'Cinzel', serif !important;
+    font-family: 'Cinzel', serif;
     text-align: center;
 }
 
@@ -1799,7 +1799,7 @@ footer div {
 /* ########################################################################################## */
 
 
-@media (max-width: 767.98px) and (orientation:landscape) {
+@media screen and (max-width: 767.98px) and (orientation:landscape) {
     .home-main, .issue-main, .about-main {
         margin: 0 !important;
         margin-bottom: 5% !important;
