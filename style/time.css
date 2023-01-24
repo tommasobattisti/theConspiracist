@@ -1800,6 +1800,144 @@ footer div {
     .page-presentation, .documentation-page-presentation, .issue-main {
         box-shadow: none;
     }
+    .home-main, .issue-main {
+        margin: 5%;
+        padding-bottom: 5%;
+    }
+    .about-main {
+        margin: 0;
+    }
+    /* NAV */
+    .navbar-nav {
+        width: 60%;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+
+    
+    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    .btns-grid-container {
+        display: grid;
+        grid-template-columns: 6vw 6vw 6vw;
+        grid-template-rows: 8vw 8vw 8vw 8vw;
+    }
+    
+    /* PAGE PRESENTATION */
+    .title-container h1 {
+        font-size: 9vh;
+        margin-bottom: 5%;
+    }
+
+    /* MAIN - HOME */
+    #timeTitle h2 {
+        font-size: 5vh;
+    }
+    #timeTitle {
+        font-size: 3vh;
+    }
+    #homeBody {
+        column-count: 2;
+    }
+    #homeBody h2 {
+        font-size: 5vh;
+    }
+    #homeBody p {
+        font-size: 2vh;
+    }
+    
+    /* MAIN - ISSUE */
+    #timeIssueExplore {
+        display: none;
+    }
+    .issue-main {
+        box-shadow: none;
+    }
+    .article-container {
+        column-count: 1;
+    }
+    .article-container h2, .article-comparison-container h2 {
+        font-size: 3vh;
+    }
+    .article-container h3, .article-comparison-container h3 {
+        font-size: 2.8vh;
+    }
+    .article-container h4, .article-comparison-container h4 {
+        font-size: 2.2vh;
+        text-align: left;
+    }
+
+    /* DOCUMENTATION */
+    .doc-title-container h1 {
+        font-size: 8vh;
+    }
+    #timeTitleDoc h2 {
+        font-size: 4vh;
+    }
+    #documentationBody {
+        column-count: 2;
+    }
+    #documentationBody h2 {
+        font-size: 4vh;
+    }
+    #documentationBody p, #documentationBody li, #documentationBody a {
+        font-size: 2.2vh;
+    }
+    #documentationBody p::first-letter {
+        font-size: 3vh;
+    }
+    
+    /* ABOUT */
+    .about-page-presentation {
+        margin: 2%;
+    }
+    .about-container h1 {
+        font-size: 8vh;
+        margin-top: 5%;
+    }
+    .editor-name-img {
+        justify-content: space-around;
+    }
+    .editor-name-img img {
+        width: 60%;
+    }
+    .editor-name-img h2 {
+        font-size: 4vh;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-main { 
+        flex-direction: row;
+    }
+    .disclaimer-page-presentation {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #disclaimerTitle h1 {
+        font-size: 10vh;
+    }
+    #disclaimerPurpose {
+        font-size: 2vh;
+        margin-bottom: 5%;
+    }
+    #disclaimerSources {
+        font-size: 2vh;
+    }
+    #disclaimerPurpose h2 {
+        font-size: 6vh;
+    }
+    #disclaimerSources h2 {
+        font-size: 6vh;
+    }
+
+    /* FOOTER */
+    footer div {
+        font-size: 1.5vh;
+    }
 }
 
 
