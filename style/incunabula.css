@@ -1047,6 +1047,11 @@ nav {
 .card-header {
     padding:0 !important;
 }
+
+.card-header button{
+    width: 100%;
+}
+
   
 .meta-menu-card{
     background-color: white !important;
@@ -1169,11 +1174,11 @@ nav {
 }
 
 
-.article-container h3:not(.references-h3, .notes-h3)::first-letter {
+.article-section ~ p::first-letter {
     float:left;
     padding: 2%;
     margin: 0 2% 0 0;
-    font-size: 3em;
+    font-size: 3.5em !important;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
     background-size: cover;
     object-position: top;
@@ -1197,21 +1202,6 @@ nav {
     text-transform: uppercase;
 }
 
-
-
-
-.article-comparison-container h3:not(.references-h3, .notes-h3)::first-letter {
-    float:left;
-    padding: 2%;
-    margin: 0 2% 0 0;
-    font-size: 3em;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images_styles/incunabula/incunabula_background_letters.jpeg");
-    background-size: cover;
-    object-position: top;
-    border: 2px solid #ed4007;
-    font-weight: 100;
-    color: #ed4007;
-}
 
 
 
@@ -1257,25 +1247,30 @@ nav {
 
 
 
-.article-container li a {
+.article-container li a, .article-comparison-container li a  {
     color: #5A8094 !important;
-    font-size: 1.1em;
+    transition: 300ms;
 }
 
-.article-comparison-container li a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
+.article-container li a:hover, .article-comparison-container li a:hover {
+    color: #3c85ac !important;
+    text-decoration: none;
+    transition: 300ms;
+} 
+
+
+.article-container a, .article-comparison-container a {
+    color: #5A8094;
+    transition: 300ms;
 }
 
-.article-container a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
+.article-container a:hover, .article-comparison-container a:hover {
+    color: #3c85ac !important;
+    text-decoration: none;
+    transition: 300ms;
 }
 
-.article-comparison-container a {
-    color: #5A8094 !important;
-    font-size: 1.1em;
-}
+
 
   
   .info-dl, .info-dl-b{
@@ -1414,7 +1409,9 @@ nav {
 }
   
   .link-to-footnote{
-    color: #5A8094;
+    color: #3c85ac;
+    text-decoration: none;
+    transition: 300ms;
   }
   
   .link-to-footnote:hover{
@@ -1498,7 +1495,7 @@ nav {
 #disclaimerSources a {
         color:#5A8094;
         text-decoration-color: #5A8094;
-        font-size: 600;
+        font-size: 500;
         transition: 300ms;
 }
 
