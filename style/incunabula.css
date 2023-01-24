@@ -598,7 +598,10 @@ nav {
 /*Documentation------------------------------*/
 
 .documentation-page-presentation {
+    background-image:linear-gradient(rgba(240, 229, 209, 0.6), rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.7), rgba(240, 229, 209, 0.7)), url("../images_styles/incunabula/documentation_bkg.jpg");
+    background-size: cover;
     overflow: hidden;
+    text-align: center;
 }
 
 .doc-title-container {
@@ -643,12 +646,6 @@ nav {
     display: flex;
     flex-direction: column;
     font-family: 'Inknut Antiqua', serif !important;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
 }
 
 
@@ -664,10 +661,22 @@ nav {
 
 #documentationBody p {
     font-size: 1.2em;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
 }
 
 #documentationBody li {
     font-size: 1.1em;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
 }
 
 
@@ -750,7 +759,7 @@ nav {
 }
 
 
-#documentationBody blockquote {
+#documentationBody blockquote p {
     width: 80%;
     margin-left: 10%;
     margin-right: auto;
@@ -1135,7 +1144,8 @@ nav {
 .article-container {
     width: 70%;
     min-height: 200px;
-  }
+}
+
 
 .article-container p {
     text-align: justify;
@@ -1233,6 +1243,17 @@ nav {
          hyphens: auto;
 }
 
+.tab-content-b li a, .docs-list-a li a, .docs-list-b li a, .active-tc a, .active-tc-b a {
+    color:#5A8094;
+    text-decoration-color: #5A8094;
+    transition: 300ms;
+}
+
+.tab-content-b li a:hover, .docs-list-a li a:hover, .docs-list-b li a:hover, .active-tc a:hover, .active-tc-b a:hover {
+    color: #3c85ac;
+    text-decoration: none;
+    transition: 300ms;
+}
 
 
 
