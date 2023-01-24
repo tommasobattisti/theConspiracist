@@ -645,27 +645,26 @@ nav {
 .issue-main {
     padding: 2%;
     box-shadow: 
-     0 0 0 5px rgb(0, 0, 0),
-     0 0 0 12.5px white,
-     0 0 0 15px rgb(0, 0, 0),
-     0 0 0 20px white,
-     0 0 0 22.5px rgb(0, 0, 0),
-     0 0 0 27.5px white,
-     0 0 0 30px rgb(0, 0, 0),
-     0 0 0 35px white,
-     0 0 0 37.5px rgb(0, 0, 0),
-     0 0 0 42.5px white,
-     0 0 0 45px rgb(0, 0, 0),
-     0 0 0 50px white,
-     0 0 0 52.5px rgb(0, 0, 0),
-     0 0 0 57.5px white,
-     0 0 0 60px rgb(0, 0, 0),
-     0 0 0 65px white,
-     0 0 0 67.5px rgb(0, 0, 0),
-     0 0 0 72.5px white,
-     0 0 0 75px rgb(0, 0, 0);
+    0 0 0 5px rgb(0, 0, 0),
+    0 0 0 12.5px white,
+    0 0 0 15px rgb(0, 0, 0),
+    0 0 0 20px white,
+    0 0 0 22.5px rgb(0, 0, 0),
+    0 0 0 27.5px white,
+    0 0 0 30px rgb(0, 0, 0),
+    0 0 0 35px white,
+    0 0 0 37.5px rgb(0, 0, 0),
+    0 0 0 42.5px white,
+    0 0 0 45px rgb(0, 0, 0),
+    0 0 0 50px white,
+    0 0 0 52.5px rgb(0, 0, 0),
+    0 0 0 57.5px white,
+    0 0 0 60px rgb(0, 0, 0),
+    0 0 0 65px white,
+    0 0 0 67.5px rgb(0, 0, 0),
+    0 0 0 72.5px white,
+    0 0 0 75px rgb(0, 0, 0);
 }
-
 .mode-selector {
     width: 90%;
     height: fit-content;
@@ -1802,36 +1801,44 @@ footer div {
 
 
 
+
+
+
+
+
+
 /* ########################################################################################## */
 /* ########################################################################################## */
 /* ########################################################################################## */
 /* ########################################################################################## */
 
 
-@media only screen and (max-width: 926.98px) and (orientation:landscape) {
+
+
+@media only screen and (max-width: 927px) and (orientation:landscape) {
     .home-main, .issue-main, .about-main {
-        margin: 0 !important;
-        padding-bottom: 5% !important;
+        margin: 5%;
+        padding-bottom: 5%;
     }
-
     /* NAV */
     .navbar-nav {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: center !important;
+        width: 60%;
+        justify-content: flex-end !important;
         align-items: center !important;
+        margin: 0 !important;
+        text-align: left !important;
     }
     .nav-text, .nav-item {
         height: 100%;
-        font-size: 0.7em;
+        font-size: 1.1em;
         padding: 2%;
-        flex-basis: 25%;
+        flex-basis: 10%;
 	    flex-grow: 0;
 	    flex-shrink: 0;
     }
     .nav-item {
-        font-size: 1em !important;
-        padding: 0 !important;
+        font-size: 1.1em;
+        padding-top: 2% !important;
         margin: 0 !important;
         align-self: center !important;
     }
@@ -1839,7 +1846,7 @@ footer div {
         display: none;
     }
     .navbar-brand {
-        font-size: 1.2em !important;
+        font-size: 1.2em;
         padding: 0;
     }
     .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
@@ -1856,32 +1863,44 @@ footer div {
     
     /* BUTTONS STYLE AND TOP - LANDSCAPE*/
     .btns-grid-container {
-        display: flex !important;
-        flex-direction: row;
-        justify-items: right;
-        position: fixed;
-        z-index: 999;
-        width: 100%;
-        height: auto;
-        bottom: .1vmax !important;
-        right: .1vmax !important;
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw 15vw 10vw 10vw 5vw 5vw;
+        /*60px 60px 60px 60px 60px 60px 60px 60px;*/
+        grid-template-rows: 5vw;
+    } 
+    .btns-item-1 {
+        grid-row: 1;
+        grid-column: 1;
+        margin-left: 2vw;
     }
-    #stylesBtn {
-        scale: 0.4 !important;
+    .btns-item-2 {
+        grid-row: 1;
+        grid-column: 2;
+        margin-left: 2vw;
     }
-    .sub-btn {
-        scale: 0.5 !important;
-        font-size: 2.5em !important;
-        margin-top: 10%;
-        height: 80% !important;
+    .btns-item-3 {
+        grid-row: 1;
+        grid-column: 3;
+        margin-left: 2vw;
+    } 
+    .btns-item-4 {
+        grid-row: 1;
+        grid-column: 4;
+        margin-left: 2vw;
     }
-    .btns-grid-container * {
-        width: 90%;
+    .btns-item-5 {
+        grid-row: 1;
+        grid-column: 5;
     }
-    .btns-item-5, .btns-item-7, .btns-item-8 {
-        display: none;
+    .btns-item-6 {
+        margin-right: 2vw;
+        margin-left: -2vw;
     }
-
+    .btns-item-7 {
+        grid-row: 1;
+        grid-column: 6;
+    }
+    
     /* PAGE PRESENTATION */
     .page-presentation, .issue-page-presentation {
         box-shadow: none;
@@ -1925,6 +1944,7 @@ footer div {
     }
     .issue-main {
         box-shadow: none !important;
+        overflow: hidden;
     }
     .meta-text-container {
         margin: 0% !important;
@@ -2047,7 +2067,752 @@ footer div {
     }
 }
 
-@media (max-width: 575.98px) and (orientation:portrait) {
+@media only screen and (max-width: 1560px) and (orientation:landscape) {
+    .home-main, .issue-main {
+        margin: 5% !important;
+        padding-bottom: 5% !important;
+    }
+    .about-main {
+        margin: 0;
+    }
+    /* NAV */
+    .navbar-nav {
+        width: 60%;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .nav-text {
+        height: 100%;
+        font-size: 1.6em;
+        padding: 2%;
+        flex-basis: 15%;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    .nav-item {
+        font-size: 1.1em !important;
+        padding-top: .5% !important;
+        margin: 0 !important;
+        align-self: center !important;
+        flex-basis: 15%;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    .dropdown-divider {
+        display: block;
+    }
+    .navbar-brand {
+        font-size: 1.8em !important;
+        padding: 0;
+    }
+    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
+        width: 100%;
+        font-size: 1em;
+        font-weight: 500;
+        align-items: center !important;
+        padding: 0 10%;
+    }
+
+    /* OVERLAY */
+    .overlay-content h2 {
+        font-size: 2em !important;
+    }
+    .overlay-content h3 {
+        font-size: 2em !important;
+    }
+    .overlay-content p {
+        font-size: 1em !important;
+    } 
+    .issue-main {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        box-shadow: none;;
+    }
+    
+    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    .btns-grid-container {
+        display: grid;
+        grid-template-columns: 6vh 6vh 6vh;
+        grid-template-rows: 8vh 8vh 8vh 8vh;
+    }
+    .sub-btn {
+        font-size: 2.4em !important;
+    }
+    .sub-btn:hover {
+        scale: 1.1;
+        font-size: 2.6em !important;
+    }
+    
+    /* PAGE PRESENTATION */
+    .title-container h1 {
+        font-size: 8em !important;
+        margin-bottom: 5%;
+    }
+
+    /* MAIN - HOME */
+    #timeTitle h2 {
+        font-size: 2em !important;
+    }
+    #timeImageDescription1 {
+        font-size: 1.6em !important;
+    }
+    #timeImageDescription2 {
+        font-size: 1.6em !important;
+        font-style: italic;
+        word-spacing: 0.15em;
+    }
+    .time-first-letter {
+        font-size: 1.3em !important;
+    }
+    .time-first-letter-p {
+        font-size: 1.2em !important;
+    }
+    #timeTitle {
+        font-size: 3em;
+    }
+    #homeBody {
+        column-count: 3 !important;
+    }
+    #homeBody h2 {
+        font-size: 4em !important;
+    }
+    #homeBody p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .time-title-paragraph {
+        word-spacing: .2em !important;
+    }
+    
+    /* MAIN - ISSUE */
+    #timeIssueExplore {
+        font-size: 1.4em;
+    }
+    .issue-main {
+        box-shadow: none !important;
+        overflow: hidden;
+    }
+    .article-container {
+        column-count: 2 !important;
+    }
+    .article-container h2, .article-comparison-container h2 {
+        font-size: 2em;
+    }
+    .article-container h3, .article-comparison-container h3 {
+        font-size: 1.8em;
+    }
+    .article-container h4, .article-comparison-container h4 {
+        font-size: 1.4em;
+        text-align: left;
+    }
+    .article-container p, .article-comparison-container p {
+        font-size: 1.2em;
+    }
+
+    /* DOCUMENTATION */
+    .doc-title-container h1 {
+        font-size: 10em;
+    }
+    #timeTitleDoc h2 {
+        font-size: 4em;
+    }
+    #documentationBody {
+        column-count: 3;
+    }
+    #documentationBody h2 {
+        font-size: 4em;
+    }
+    #documentationBody p {
+        font-size: 1.8em;
+    }
+    #documentationBody p::first-letter {
+        font-size: 1.5em;
+    }
+    .time-single-image img {
+        width: 80%;
+    }
+    
+
+    /* ABOUT */
+    .about-page-presentation {
+        margin: 2%;
+    }
+    .about-container h1 {
+        font-size: 8em;
+        margin-top: 5%;
+    }
+    .editor-name-img {
+        justify-content: space-around;
+    }
+    .editor-name-img img {
+        width: 60%;
+    }
+    .editor-name-img h2 {
+        font-size: 4em;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-main { 
+        flex-direction: row;
+    }
+    .disclaimer-page-presentation {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #disclaimerTitle h1 {
+        font-size: 10em;
+    }
+    #disclaimerPurpose {
+        font-size: 1.8em;
+        margin-bottom: 5%;
+    }
+    #disclaimerSources {
+        font-size: 1.8em;
+    }
+    #disclaimerPurpose h2 {
+        font-size: 5.5em;
+    }
+    #disclaimerSources h2 {
+        font-size: 5.5em;
+    }
+
+    /* FOOTER */
+    
+    footer div {
+        font-size: 1.5em !important;
+    }
+}
+
+@media only screen and (max-width: 1919.98px) and (orientation:landscape) {
+    .home-main, .issue-main {
+        margin: 5% !important;
+        padding-bottom: 5% !important;
+    }
+    .about-main {
+        margin: 0;
+    }
+    /* NAV */
+    .navbar-nav {
+        width: 60%;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .nav-text {
+        height: 100%;
+        font-size: 1.6em;
+        padding: 2%;
+        flex-basis: 10%;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    .nav-item {
+        font-size: 1.1em !important;
+        padding-top: .5% !important;
+        margin: 0 !important;
+        align-self: center !important;
+        flex-basis: 10%;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    .dropdown-divider {
+        display: block;
+    }
+    .navbar-brand {
+        font-size: 1.8em !important;
+        padding: 0;
+    }
+    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
+        width: 100%;
+        font-size: 1em;
+        font-weight: 500;
+        align-items: center !important;
+        padding: 0 10%;
+    }
+
+    /* OVERLAY */
+    .overlay-content h2 {
+        font-size: 2.5em !important;
+    }
+    .overlay-content h3 {
+        font-size: 2.5em !important;
+    }
+    .overlay-content p {
+        font-size: 1.2em;
+    } 
+    .issue-main {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        box-shadow: none;;
+    }
+    
+    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    .btns-grid-container {
+        display: grid;
+        grid-template-columns: 8vh 8vh 8vh;
+        grid-template-rows: 10vh 10vh 10vh 10vh;
+    }
+    .sub-btn {
+        font-size: 3em;
+    }
+    .sub-btn:hover {
+        scale: 1.1;
+        font-size: 3.2em;
+    }
+    
+    /* PAGE PRESENTATION */
+    .title-container h1 {
+        font-size: 12em !important;
+        margin-bottom: 5%;
+    }
+
+    /* MAIN - HOME */
+    #timeTitle h2 {
+        font-size: 2em !important;
+    }
+    #timeImageDescription1 {
+        font-size: 1.6em !important;
+    }
+    #timeImageDescription2 {
+        font-size: 1.6em !important;
+        font-style: italic;
+        word-spacing: 0.15em;
+    }
+    .time-first-letter {
+        font-size: 1.3em !important;
+    }
+    .time-first-letter-p {
+        font-size: 1.2em !important;
+    }
+    #timeTitle {
+        font-size: 3em;
+    }
+    #homeBody {
+        column-count: 3 !important;
+    }
+    #homeBody h2 {
+        font-size: 4em !important;
+    }
+    #homeBody p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .time-title-paragraph {
+        word-spacing: .2em !important;
+    }
+    
+    /* MAIN - ISSUE */
+    #timeIssueExplore {
+        font-size: 1.4em;
+    }
+    .issue-main {
+        box-shadow: none !important;
+        overflow: hidden;
+    }
+    .article-container {
+        column-count: 2 !important;
+    }
+    .article-container h2, .article-comparison-container h2 {
+        font-size: 2em;
+    }
+    .article-container h3, .article-comparison-container h3 {
+        font-size: 1.8em;
+    }
+    .article-container h4, .article-comparison-container h4 {
+        font-size: 1.4em;
+        text-align: left;
+    }
+    .article-container p, .article-comparison-container p {
+        font-size: 1.2em;
+    }
+
+    /* DOCUMENTATION */
+    .doc-title-container h1 {
+        font-size: 10em;
+    }
+    #timeTitleDoc h2 {
+        font-size: 4em;
+    }
+    #documentationBody {
+        column-count: 3;
+    }
+    #documentationBody h2 {
+        font-size: 4em;
+    }
+    #documentationBody p {
+        font-size: 1.8em;
+    }
+    #documentationBody p::first-letter {
+        font-size: 1.5em;
+    }
+    .time-single-image img {
+        width: 80%;
+    }
+    
+
+    /* ABOUT */
+    .about-page-presentation {
+        margin: 2%;
+    }
+    .about-container h1 {
+        font-size: 8em;
+        margin-top: 5%;
+    }
+    .editor-name-img {
+        justify-content: space-around;
+    }
+    .editor-name-img img {
+        width: 60%;
+    }
+    .editor-name-img h2 {
+        font-size: 4em;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-main { 
+        flex-direction: row;
+    }
+    .disclaimer-page-presentation {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #disclaimerTitle h1 {
+        font-size: 10em;
+    }
+    #disclaimerPurpose {
+        font-size: 1.8em;
+        margin-bottom: 5%;
+    }
+    #disclaimerSources {
+        font-size: 1.8em;
+    }
+    #disclaimerPurpose h2 {
+        font-size: 5.5em;
+    }
+    #disclaimerSources h2 {
+        font-size: 5.5em;
+    }
+
+    /* FOOTER */
+    
+    footer div {
+        font-size: 1.5em !important;
+    }
+}
+
+@media (max-width: 1025px) and (orientation:portrait) {
+    /* PAGE PRESENTATION */
+    .page-presentation {
+        border-top: solid 8vw #D62503;
+        overflow: hidden !important;
+    }
+    .title-container h1 {
+        font-size: 3.5em !important;
+        margin-bottom: 2.5%;
+    }
+    #homeTp1 {
+        font-size: 1.8em;
+        text-justify: distribute;
+        padding: 2.5% 15%;
+    }
+
+    /* NAV */
+    .navbar-nav {
+        width: 60%;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .nav-text, .nav-item {
+        height: 100%;
+        font-size: 1.1em;
+        padding: 2%;
+        flex-basis: 10%;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+    .nav-item {
+        font-size: 1em !important;
+        padding-top: 2% !important;
+        margin: 0 !important;
+        align-self: center !important;
+    }
+    .dropdown-divider {
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 1.4em !important;
+        padding: 0;
+    }
+    .dropdown-menu {
+        margin: 0 !important;
+    }
+    .dropdown-menu li a, .dropdown-menu li, .dropdown-menu a {
+        font-size: 1.1em;
+        font-weight: 500;
+        align-items: center !important;
+        padding: 5%;
+    }
+
+    /* OVERLAY */
+    .overlay-content {
+        top: 15%;
+        width: 50%;
+    }
+    .overlay-content h2 {
+        font-size: 2.5em !important;
+    }
+    .overlay-content h3 {
+        font-size: 2.5em !important;
+    }
+    .overlay-content p {
+        font-size: 1.2em;
+    } 
+    .issue-main {
+        margin: 5% !important; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+        box-shadow: none;;
+    }
+
+    /* BUTTONS STYLE AND TOP - PORTRAIT*/
+    .btns-grid-container {
+        display: grid;
+        grid-template-columns: 5vh 5vh 5vh;
+        grid-template-rows: 6vh 6vh 6vh 6vh;
+    }
+    .sub-btn {
+        font-size: 2.5em;
+    }
+    .sub-btn:hover {
+        scale: 1.1;
+        font-size: 2.6em;
+    }
+    
+    /* GENERAL MAIN */
+    .home-main, .issue-main {
+        margin: 1% !important;
+        padding-bottom: 5%;
+    }
+
+    /* MAIN - HOME */
+    #timeTitle h2 {
+        font-size: 3em !important;
+    }
+    #timeImageDescription1 {
+        font-size: 1.5em !important;
+    }
+    #timeImageDescription2 {
+        font-size: 1.5em !important;
+        font-style: italic;
+        word-spacing: 0.15em;
+    }
+    .time-first-letter {
+        font-size: 1.2em !important;
+    }
+    .time-first-letter-p {
+        font-size: 1.1em !important;
+    }
+    #homeBody {
+        column-count: 2 !important;
+    }
+    #homeBody h2 {
+        font-size: 3em !important;
+    }
+    #homeBody p {
+        margin-top: 2%;
+        font-size: 1.5em;
+    }
+    .time-title-paragraph {
+        word-spacing: none !important;
+    }
+    
+    /* MAIN - ISSUE */
+    #pizzagateTitle {
+        font-size: 3.5em !important;
+    }
+    #issueTp1 {
+        font-size: 1.8em;
+        text-justify: distribute;
+    }
+    #timeIssueExplore {
+        display: none !important;
+    }
+    
+    .meta-text-container {
+        margin: 0% !important;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    .metadata-container {
+        width: 100% !important;
+    }
+    .metadata-container a {
+        font-size: 1.2em;
+    }
+    .metadata-container .nav-i {
+        font-size: 1.5em;
+    }
+    .metadata-container button {
+        padding: 2% 2%;
+        font-size: 1em;
+    }
+    .article-container {
+        margin-top: 5%;
+        width: 100% !important;
+        column-count: 2 !important;
+    }
+    .article-container h2 {
+        font-size: 2.5em;
+    }
+    .article-container h3 {
+        font-size: 2em;
+    }
+    .article-container p {
+        font-size: 1.5em;
+    }
+    .article-comparison-container {
+        display: none !important;
+    }
+
+    /* DOCUMENTATION */
+    .doc-title-container h1 {
+        font-size: 3.5em;
+    }
+    .doc-subtitle-container p {
+        padding: 5%;
+        font-size: 1.8em;
+        margin: 10%;
+    }
+    #timeTitleDoc h2 {
+        font-size: 2.8em;
+    }
+    #documentationBody {
+        column-count: 2;
+    }
+    #documentationBody h2 {
+        font-size: 2em;
+    }
+    .doc-sm-title {
+        font-size: 1.8em;
+    }
+    .doc-subtitle {
+        font-size: 1.3em;
+    }
+    #documentationBody p {
+        font-size: 1.4em;
+    }
+    #documentationBody p::first-letter {
+        font-size: 1.1em;
+    }
+    .time-single-image {
+        display: none;
+    }
+    .doc-images-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around;
+        width: 90% !important;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+    }
+    .doc-images-container img {
+        width: 40% !important;
+    }
+    .doc-image-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+    }
+    .doc-image-container figure img {
+        margin-left: 30%;
+        width: 40% !important;
+    }
+    .doc-images-container-3 {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+    }
+    .doc-images-container-3 img {
+        width: 27.5%;
+        margin-left: 5%;
+    }
+
+    /* ABOUT */
+    .about-page-presentation {
+        margin: 2%;
+    }
+    .about-container h1 {
+        font-size: 3.5em;
+        margin-top: 5%;
+    }
+    .editor-name-img {
+        justify-content: space-between;
+    }
+    .editor-name-img h2 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .about-container p {
+        font-size: 1.8em;
+    }
+    .editor-name-img img {
+        width: 80%;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-main { 
+        flex-direction: row;
+        overflow: auto;
+
+    }
+    .disclaimer-page-presentation {
+        border: none;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #disclaimerTitle h1 {
+        font-size: 5em;
+    }
+    #disclaimerPurpose {
+        font-size: 1.8em;
+    }
+    #disclaimerSources {
+        font-size: 1.8em;
+    }
+    #disclaimerPurpose h2 {
+        font-size: 2.5em;
+    }
+    #disclaimerSources h2 {
+        font-size: 2.5em;
+    }
+
+    /* FOOTER */
+    footer div {
+        font-size: 1.1em !important;
+    } 
+}
+
+
+
+@media (max-width: 577) and (orientation:portrait) {
     /* PAGE PRESENTATION */
     .page-presentation {
         box-shadow: none;
@@ -2110,29 +2875,14 @@ footer div {
 
     /* BUTTONS STYLE AND TOP - PORTRAIT*/
     .btns-grid-container {
-        display: flex !important;
-        flex-direction: column;
-        justify-content: flex-end;
-        position: fixed;
-        z-index: 999;
-        width: 15%;
-        height: 60%;
-        bottom: .1vmin !important;
-        right: .1vmin !important;
+        display: grid;
+        grid-template-columns: 5vh 5vh 5vh;
+        grid-template-rows: 8vh 8vh 8vh 8vh;
     }
-    .btns-grid-container button {
-        scale: 0.8 !important;
-        font-size: 1.6em !important;
-    }
-    .btns-item-10, .btns-item-6 {
-        scale: .8;
-        height: fit-content;
-    }
-    .btns-item-5, .btns-item-7, .btns-item-9 {
-        display: none;
-    }
+    
+    /* GENERAL MAIN */
     .home-main, .issue-main, .about-main {
-        margin: 0 !important;
+        margin: 1% !important;
         padding-bottom: 5%;
     }
 
