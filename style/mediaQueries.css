@@ -5,7 +5,6 @@
 }
 
 
-
 @media only screen and (orientation: portrait) and (max-width: 680px) {
 
     .meta-text-container {
@@ -32,13 +31,19 @@
     .article-container {
         width: 100% !important;
     }
-
+    /* SBAGLIATO SECONDO ME...
     .btns-item-9, .btns-item-10 {
         visibility: visible !important;
         width: 100% !important;
         display: block !important;
     }
+    
+
+    .btns-item-9, .btns-item-10 {
+        display: block;
+        width: 100% !important;
+    }
+    */
 
 }
-
 
