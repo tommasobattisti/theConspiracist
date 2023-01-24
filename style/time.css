@@ -1796,7 +1796,11 @@ footer div {
 
 
 
-
+@media only screen and (orientation: portrait) {
+    .page-presentation, .documentation-page-presentation, .issue-main {
+        box-shadow: none;
+    }
+}
 
 
 
