@@ -1816,14 +1816,23 @@ footer div {
         text-align: left !important;
     }
     .nav-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .ddm-nav-text {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+    }
+    .dropdown-menu {
+        text-align: center;
     }
 
-
+    /* OVERLAY */
+    .overlay-content h2, h3 {
+        font-size: 2rem;
+    } 
+    .overlay-content p {
+        font-size: 1.6rem;
+    } 
     
     /* BUTTONS STYLE AND TOP - LANDSCAPE*/
     .btns-grid-container {
@@ -1831,14 +1840,17 @@ footer div {
         grid-template-columns: 6vh 6vh 6vh;
         grid-template-rows: 8vh 8vh 8vh 8vh;
     }
+    .sub-btn {
+        font-size: 1.6rem;
+    }
     
     /* PAGE PRESENTATION */
     .title-container h1 {
         font-size: 2rem;
         margin-bottom: 5%;
     }
-    #homeTp1 {
-        font-size: 1.5rem
+    #homeTp1, #issueTp1 {
+        font-size: 1.5rem !important;
     }
 
     /* MAIN - HOME */
@@ -1855,7 +1867,7 @@ footer div {
         font-size: 2.5rem;
     }
     .time-title-paragraph {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     #homeBody p {
         font-size: 1.5rem;
@@ -1864,6 +1876,12 @@ footer div {
     /* MAIN - ISSUE */
     #timeIssueExplore {
         display: none;
+    }
+    .metadata-container h2 {
+        font-size: 2rem;
+    }
+    .metadata-container li, .metadata-container a {
+        font-size: 1.7rem;
     }
     .issue-main {
         box-shadow: none;
@@ -1875,22 +1893,22 @@ footer div {
         font-size: 3rem;
     }
     .article-container h3, .article-comparison-container h3 {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
     .article-container h4, .article-comparison-container h4 {
         font-size: 2.2rem;
         text-align: left;
     }
     .article-container p, .article-comparison-container p {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     /* DOCUMENTATION */
     .doc-title-container h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     #timeTitleDoc h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     #documentationBody {
         column-count: 1;
@@ -1899,7 +1917,7 @@ footer div {
         font-size: 1.8rem;
     }
     #documentationBody p, #documentationBody li, #documentationBody a {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     #documentationBody p::first-letter {
         font-size: 1.9rem;
@@ -1908,6 +1926,9 @@ footer div {
     /* ABOUT */
     .about-page-presentation {
         margin: 2%;
+    }
+    .about-page-presentation p {
+        font-size: 1.8rem;
     }
     .about-container h1 {
         font-size: 3rem;
@@ -1920,7 +1941,7 @@ footer div {
         width: 60%;
     }
     .editor-name-img h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     /* DISCLAIMER */
@@ -1937,11 +1958,11 @@ footer div {
         font-size: 3rem;
     }
     #disclaimerPurpose {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-bottom: 5%;
     }
     #disclaimerSources {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     #disclaimerPurpose h2 {
         font-size: 4rem;
@@ -1952,7 +1973,7 @@ footer div {
 
     /* FOOTER */
     footer div {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 }
 
