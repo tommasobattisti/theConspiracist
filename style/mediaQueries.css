@@ -5,7 +5,7 @@
 }
 
 
-@media only screen and (orientation: portrait) and (max-width: 680px) {
+@media only screen and (orientation: portrait) and (max-width: 680px) { 
 
     .meta-text-container {
         flex-direction: column !important;
