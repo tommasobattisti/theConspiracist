@@ -2177,7 +2177,7 @@ footer div p {
 
 
 
-@media only screen and (width <= 1330px) {
+@media only screen and (max-width: 1330px) {
     #swissRotatedPill{
         grid-column: 5/9;
         transform: rotate(-90deg) translateY(5em);
@@ -2204,14 +2204,14 @@ footer div p {
 
 
 
-@media only screen and (width <= 1024px) {
+@media only screen and (max-width: 1024px) {
     .meta-text-container {
         margin: 0 !important;
     }
 
 }
 
-@media only screen and (width <= 860px), (orientation: portrait) and (width <= 1280px) {
+@media only screen and (max-width: 860px), (orientation: portrait) and (max-width: 1280px) {
     #homeBody, #documentationBody {
         margin: 5% !important;
     }
@@ -2391,7 +2391,7 @@ footer div p {
 
 
 
-@media only screen and (width <= 720px), (orientation: portrait) and (width <= 1280px) and (max-aspect-ratio:9/16) {
+@media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
     .index-page-presentation .title-container {
         grid-column: 1/9 !important;
     }
@@ -2425,8 +2425,7 @@ footer div p {
 
 
 
-
-@media only screen and (width <= 420px) {
+@media only screen and (max-width: 420px) {
     .esd-rt-block, .esd-lt-block {
         width: 100% !important;
     }
