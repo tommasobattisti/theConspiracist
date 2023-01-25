@@ -2347,7 +2347,9 @@ footer div p {
 
 
 @media only screen and (orientation: landscape) and (min-aspect-ratio:18/9) {
-
+	.eye-container {
+		display: none;
+	}
 
 
 }

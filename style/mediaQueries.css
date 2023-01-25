@@ -58,3 +58,13 @@
     }
 
 }
+
+@media only screen and (orientation: landscape) and (min-aspect-ratio:18/9) {
+    .btns-grid-container {
+        scale: .6;
+        bottom: 0.1vmin !important;
+        right: 1vmin !important;
+        row-gap: 1.5vmax !important;
+    }
+
+}
