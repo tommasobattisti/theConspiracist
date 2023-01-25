@@ -52,14 +52,14 @@ h1 {
 }
 
 
-.subtitle-div, #issueTp1 {
+.subtitle-div, #issueTp1, .doc-subtitle-container {
 	position: absolute;
 	left: 15%;
 	top: 60%;
 	width: 25%;
 }
   
-.page-presentation p, #issueTp1 {
+.page-presentation p, #issueTp1, .doc-subtitle-container p {
 	  font-size: clamp(0.7rem, 0.6000rem + 0.5000vw, 1.8rem);
 	  padding-left: 0.5rem;
 	  border-left: 2px solid rgba(10, 34, 57, 0.9);
@@ -618,6 +618,12 @@ h1 {
     margin-left: 10%;
     margin-right: auto;
     font-size: 0.85em;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	  -o-hyphens: auto;
+	 -ms-hyphens: auto;
+		 hyphens: auto;
 }
 
 .blockquote-caption {
@@ -2186,6 +2192,12 @@ footer div p {
 		margin-top: 40%;
 	}
 
+	#documentationBody {
+		width: 70%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+
 
 	.article-img-centre {
 		width: 100%;
@@ -2194,11 +2206,17 @@ footer div p {
 	footer {
 		margin-top: 40%;
 	}
+
+	.overlay-paragraph {
+		display: none !important;
+	}
 }
 
 
 
 @media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
+
+
 
 	.eye-container {
 		display: none;
@@ -2208,10 +2226,37 @@ footer div p {
 		padding: 0 0.2rem;
 	}
 
-	.div-2030 {
+	.div-2030, #documentationBody {
 		width: 85%;
 		margin-left: 5%;
 	}
+
+	.doc-figure-container, .doc-figure-caption {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .doc-images-container-3, .doc-images-container {
+		width: 75%;
+        margin-left: 12.5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doc-images-container-3 img, .doc-images-container img {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+	.doc-subsection {
+		margin-bottom: 20%;
+	}
+
+	.doc-section {
+		margin-top: 60%;
+	}
+
+
+
 
 	.footer-container {
 		width: 90%;
@@ -2221,7 +2266,7 @@ footer div p {
 		font-size: 0.8rem !important;
 	}
 
-	.subtitle-div, .title-container {
+	.subtitle-div, .title-container, .doc-title-container, .doc-subtitle-container, #issueTp1 {
 		left: 5%;
 	}
 
@@ -2229,7 +2274,7 @@ footer div p {
 		top: 65%;
 	}
 
-	.subtitle-div {
+	.subtitle-div, .doc-subtitle-container, #issueTp1 {
 		width: 60%;
 	}
 
@@ -2291,6 +2336,10 @@ footer div p {
 
 
 @media only screen and (max-width: 420px) {
+	.doc-title-container h1 {
+		font-size: 2.2rem !important;
+	}
+
     
 }
 
