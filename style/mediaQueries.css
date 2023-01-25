@@ -53,3 +53,9 @@
     scale: .8;
 }
 
+.btns-grid-container {
+    display: grid;
+    grid-template-columns: 6vh 6vh 6vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh;
+}
+
