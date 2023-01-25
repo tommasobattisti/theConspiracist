@@ -14,7 +14,40 @@
 .eye-container, .home-2030, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #about2030Container, #nav2030, .link-time-home, .about-container, .envelope-show-on-small {
     display: none;
 } 
- 
+
+h1 {
+    font-size: clamp(2rem, 0.7273rem + 6.3636vw, 16rem) !important;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 1.0909rem + 2.0455vw, 6rem) !important;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 1.1364rem + 1.8182vw, 5.5rem) !important;
+}
+
+p {
+    font-size: clamp(1rem, 0.8636rem + 0.6818vw, 2.5rem) !important;
+}
+
+.nav-text {
+    font-size: clamp(1rem, 0.7273rem + 1.3636vw, 4rem) !important;
+}
+
+.link-to-other-pages {
+    font-size: clamp(1rem, 0.8182rem + 0.9091vw, 3rem) !important;
+}
+
+#homeTp1, #issueTp1 {
+    margin-top: 5%;
+    font-size: clamp(0.8rem, 0.5091rem + 1.4545vw, 4rem) !important;
+}
+
+footer p {
+    font-size: clamp(0.8rem, 0.6000rem + 1.0000vw, 3rem) !important;
+}
 
 /* The Overlay (background) */
 
@@ -48,7 +81,7 @@
 #generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
     font-size: 3em;
     font-weight: 800;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
     text-align: center;
 }
 
@@ -72,13 +105,13 @@
 #generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
     font-size: 2em;
     font-weight: 100;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
     margin-bottom: 1.2em;
     text-align: center;
 }
 
 #generalOverlay p, #incunabulaOverlay p, #timeOverlay p, #swissOverlay p, #futureOverlay p {
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
     font-size: 1em;
     font-weight: 300;
     text-align: justify;
@@ -135,7 +168,7 @@ nav {
 
 .navbar-toggler:focus{
     box-shadow: none !important;
-  }
+}
   
 .navbar-toggler:hover{
     box-shadow: 0 0 0 0.1rem !important;
@@ -154,11 +187,6 @@ nav {
     color: #ed4007 !important;
 }
 
-
-.navbar-brand:hover {
-    color: #212529 !important;
-}
-
 .nav-transparent-background {
     background-color: transparent !important;
 }
@@ -172,20 +200,20 @@ nav {
 
 .nav-text {
     color: #212529;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: 700;
 }
 
 .ddm-nav-text {
     color: #212529;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: 700;
     padding: 1em;
 }
 
 
 .disabled-nav-text {
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: 600;
     color: #21252966 !important;
 }
@@ -355,9 +383,12 @@ nav {
 .page-presentation {
     overflow:hidden;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: repeat(8, 12.5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);*/
     border-bottom: #212529 1px solid;
 }
 
@@ -366,29 +397,21 @@ nav {
     background-size: cover;
 }
 
-.title-container {
-    grid-row: 4;
-    grid-column: 3/7;
-    z-index: 1;
-}
-
 .title-container h1 {
     font-size: 4em;
     font-weight: 700;
     text-align: center;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 .subtitle-div {
-    grid-row: 6;
-    grid-column: 2/8;
     text-align: center;
 }
 
 #homeTp1 {
     font-size: 2em;
     font-weight: 400;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 #homeTp2, #homeTp3, #homeTp4 {
@@ -404,9 +427,9 @@ nav {
 }
 
 .home-main, .issue-main, .documentation-main {
-    margin-right: 15%;
-    margin-left: 15%;
-    font-family: 'Inknut Antiqua', serif !important;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 
@@ -604,38 +627,21 @@ nav {
     text-align: center;
 }
 
-.doc-title-container {
-    grid-row: 4;
-    grid-column: 3/7;
-}
 
 .doc-title-container h1 {
-    font-size: 4em;
     font-weight: 700;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
 }
 
-
-.doc-subtitle-container {
-    grid-column: 3/7;
-    grid-row: 6;
-}
 
 .doc-subtitle-container p {
     font-size: 2em;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
 }
-
-
-
-
 
 #swissDocIllustration {
     display: none;
 }
-
-
-
 
 
 #documentationBody {
@@ -645,7 +651,7 @@ nav {
     margin-bottom: 24vw;
     display: flex;
     flex-direction: column;
-    font-family: 'Inknut Antiqua', serif !important;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 
@@ -947,9 +953,7 @@ nav {
 #issueTp1 {
     font-size: 2em;
     font-weight: 400;
-    font-family: 'Inknut Antiqua', serif !important;
-    grid-row: 5;
-    grid-column: 3/7;
+    font-family: 'Inknut Antiqua', serif;
     text-align: center;
 }
 
@@ -1404,7 +1408,6 @@ nav {
 
 
 .notes-h3::first-letter, .references-h3::first-letter {
-
     float: none !important;
 }
   
@@ -1562,12 +1565,46 @@ footer div p {
 }
 
 @media all and (orientation:portrait) {
-    
+    h2::first-letter {
+        background-image: none;
+    }
+    .home-main, .issue-main, .documentation-main {
+        margin: 0;
+    }
+    #homeBody {
+        margin-top: 5vw;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-bottom: 8vw;
+    }
+    .navbar {
+        padding: 5%;
+        background-color: #f0e5d1e6 !important;
+    }
+    footer div {
+        width: 100% !important;
+    }
 }
 
 /* 1284 */
 @media only screen and (max-width: 1284px) and (orientation: portrait) {
-    
+    .overlay-paragraph {
+        display: none;
+    }
+    .overlay-paragraph p:nth-child(1)::first-letter,
+    #homeBody h2::first-letter, #homeBody h3::first-letter,
+    .doc-subsection h3::first-letter, .editor-container p::first-letter,
+    .article-section ~ p::first-letter, .incunabula-fp::first-letter {
+        font-size: inherit;
+        float: none;
+        padding: 0;
+        margin: 0;
+        background-image: none;
+        border: none;
+        border-radius: none;
+        font-weight: inherit;
+        color: inherit;
+    }
 }
 
 
