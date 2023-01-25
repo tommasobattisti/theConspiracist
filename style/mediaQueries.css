@@ -52,9 +52,9 @@
 @media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
     .btns-grid-container {
         scale: .8;
-        bottom: 1vmin !important;
-        right: 2vmin !important;
-        row-gap: 3vmax !important;
+        bottom: 1vmin;
+        right: 2vmin;
+        row-gap: 3vmax;
     }
 
 }
@@ -62,9 +62,9 @@
 @media only screen and (orientation: landscape) and (min-aspect-ratio:18/9) {
     .btns-grid-container {
         scale: .6;
-        bottom: 0.1vmin !important;
-        right: 1vmin !important;
-        row-gap: 1.5vmax !important;
+        bottom: 0.1vmin;
+        right: 1vmin;
+        row-gap: 1.5vmax;
     }
 
 }
