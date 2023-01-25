@@ -49,13 +49,23 @@
 
 }
 
-.btns-grid-container button {
-    scale: .8;
-}
 
+<<<<<<< Updated upstream
 .btns-grid-container {
     display: grid;
     grid-template-columns: 6vh 6vh 6vh;
     grid-template-rows: 8vh 8vh 8vh 8vh;
 }
 
+=======
+
+
+@media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
+    .btns-grid-container {
+        scale: .8;
+        bottom: 2vmin !important;
+        right: 2vmin !important;
+    }
+
+}
+>>>>>>> Stashed changes
