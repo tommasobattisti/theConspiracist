@@ -57,7 +57,14 @@
         row-gap: 3vmax;
     }
 
+    .overlay-paragraph {
+		display: none !important;
+	}
 }
+
+
+
+
 
 @media only screen and (orientation: landscape) and (min-aspect-ratio:18/9) {
     .btns-grid-container {
@@ -65,6 +72,10 @@
         bottom: 0.1vmin;
         right: 1vmin;
         row-gap: 1.5vmax;
+    }
+
+    .overlay-paragraph {
+        display: none;
     }
 
 }
