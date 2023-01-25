@@ -39,7 +39,7 @@ body {
 
 .overlay-content {
     position: absolute;
-    top: 25%;
+    top: 15%;
     bottom: 15%; 
     left: 15%;
     width: 40%; /* 100% width */
@@ -50,14 +50,14 @@ body {
 
 
 .overlay-content h2 {
-    font-size: 2.5vw;
+    font-size: clamp(1.5rem, 0.9091rem + 2.9545vw, 8rem) !important;
     font-weight: 700;
     margin-bottom: 0.5em;
     font-family: 'Cinzel', serif;
 }
 
 .overlay-content h3 {
-    font-size: 2vw;
+    font-size: clamp(1.5rem, 1.0909rem + 2.0455vw, 6rem) !important;
     font-weight: 600;
     margin-bottom: 0.5em;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -65,7 +65,7 @@ body {
 }
 
 .overlay-paragraph {
-    font-size: 1.5vw;
+    font-size: clamp(1.25rem, 0.6485rem + 1.1881vw, 3.5rem) !important;
     font-weight: 200;
     margin-bottom: 0.5em;
     font-family: 'Crimson Text', serif;
@@ -126,16 +126,12 @@ nav {
 
 
 .nav-text {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 0.8182rem + 0.9091vw, 3rem) !important;
     color: #212529;
     font-family: 'Cinzel', serif;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     padding: 0 .5em;
-}
-
-.navbar-brand {
-    font-size: 1.5vw;
 }
 
 .navbar-toggler:focus{
@@ -177,7 +173,7 @@ nav {
 }
 
 .ddm-nav-text {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 0.8182rem + 0.9091vw, 3rem) !important;
     width: 100%;
     color: black;
     font-family: 'Cinzel', serif;
@@ -263,7 +259,7 @@ nav {
     border-radius: 10px;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: 500;
-    font-size: 2vw;
+    font-size: clamp(1.4rem, 1.0727rem + 1.6364vw, 5rem) !important;
     transition: all 350ms ease-in-out;
 }
 
@@ -273,7 +269,7 @@ nav {
     box-shadow: 0px 12px 18px rgba(240, 229, 209, 0.1);
     scale: 1.1;
     font-weight: 700;
-    font-size: 2.6vw;
+    font-size: clamp(1.5rem, 1.0727rem + 1.6364vw, 5.2rem) !important;
     transition: 400ms;
     letter-spacing: .1em;
     transition: all 350ms ease-in-out;
@@ -382,7 +378,7 @@ nav {
 }
 
 .title-container h1 {
-    font-size:11vw;
+    font-size: clamp(2.4rem, 0.3455rem + 10.2727vw, 25rem) !important;
     font-weight: 800;
     text-transform: capitalize;
     text-align: center;
@@ -392,7 +388,7 @@ nav {
 
 #homeTp1 {
     align-self: center;
-    font-size: 1.5vw;
+    font-size: clamp(0.8rem, 0.5091rem + 1.4545vw, 4rem) !important;
     font-weight: 300;
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -401,7 +397,7 @@ nav {
 
 #issueTp1 {
     align-self: center;
-    font-size: 1.5vw;
+    font-size: clamp(0.85rem, 0.5636rem + 1.4318vw, 4rem) !important;
     font-weight: 300;
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -433,7 +429,7 @@ nav {
 }
 
 #timeTitle h2 {
-    font-size: 4vw;
+    font-size: clamp(1.8rem, 1.0545rem + 3.7273vw, 10rem) !important;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
@@ -471,8 +467,14 @@ nav {
 
 #timeImageDescription1 {
     text-transform: uppercase;
-    font-size: 1.2vw;
+    font-size: clamp(0.7rem, 0.4909rem + 1.0455vw, 3rem) !important;
     margin-bottom: 0.5%;
+}
+
+#timeImageDescription2 {
+    font-size: clamp(1rem, 0.7727rem + 1.1364vw, 3.5rem) !important;
+    font-style: italic;
+    word-spacing: 0.15em;
 }
 
 .time-first-letter {
@@ -486,12 +488,6 @@ nav {
     text-transform: capitalize;
 }
 
-#timeImageDescription2 {
-    font-size: 1.4vw;
-    font-style: italic;
-    word-spacing: 0.15em;
-}
-
 #homeBody {
     width: 90%;
     height: 100%;
@@ -501,19 +497,24 @@ nav {
     line-height: 1.4em;
 }
 
-
-#homeBody h2 {
-    font-size: 1.5vw;
-    font-weight: 700;
+/* Title "The magazine" */
+#mdTitleCont h2 {
     text-align: center;
+    font-size: clamp(2.25rem, 1.8636rem + 1.9318vw, 6.5rem) !important;
+    font-weight: 500;
+    padding-bottom: 5%;
+    word-spacing: 0.3em;
+    letter-spacing: .05em;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
+
 
 #homeBody h3 {
     display: none;
 }
 
 .time-title-paragraph {
-    font-size: 2vw;
+    font-size: clamp(1.5rem, 1.0000rem + 1.2500vw, 5rem) !important;
     font-weight: bold;
     word-spacing: 0.15em;
     text-transform: capitalize;
@@ -524,7 +525,7 @@ nav {
 
 
 #homeBody p {
-    font-size: 1.5vw;
+    font-size: clamp(1.25rem, 1.0000rem + 1.2500vw, 4rem) !important;
     line-height: 100%;
     word-spacing: 0.15em;
     text-align: justify;
@@ -540,7 +541,7 @@ nav {
 
 
 #homeBody a {
-    font-size: 1.5vw;
+    font-size: clamp(1.25rem, 1.0000rem + 1.2500vw, 4rem) !important;
     word-spacing: 0.15em;
     letter-spacing: .05em;
     text-align: justify;
@@ -549,7 +550,7 @@ nav {
       -o-hyphens: auto;
      -ms-hyphens: auto;
          hyphens: auto;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
 .home-magazine-img-container {
@@ -604,15 +605,7 @@ nav {
     display: none;
 }
 
-/* Title "The magazine" */
-#mdTitleCont h2 {
-    font-size: 2.5vw;
-    font-weight: 400;
-    padding-bottom: 5%;
-    word-spacing: 0.3em;
-    letter-spacing: .05em;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-}
+
 
 
 .text-line-through {
@@ -636,13 +629,13 @@ nav {
     margin-bottom: 2.5%;
     font-family: 'Cinzel', serif;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: clamp(3rem, 1.0435rem + 2.8986vw, 8rem) !important;
 }
 
 #timeIssueExplore p {
     font-family: 'Crimson Text', serif;
     font-weight: 200;
-    font-size: 1.6vw;
+    font-size: clamp(1.5rem, 0.5217rem + 1.4493vw, 4rem) !important;
     font-style: italic;
     margin-bottom: 2.5%;
 }
@@ -703,7 +696,7 @@ nav {
     height: 100%;
     width: 25%;
     font-family: 'Cinzel', serif;
-    font-size: 1.5vw;
+    font-size: clamp(1.25rem, -0.0217rem + 1.8841vw, 4.5rem) !important;
     background-color: transparent;
     border: none;
 }
@@ -822,8 +815,14 @@ nav {
     justify-content: space-around;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
-    font-size: 1.2vw;
     margin-bottom: 2%;
+}
+
+.card-body form div {
+    font-size: clamp(1.25rem, 1.0455rem + 1.0227vw, 3.5rem) !important;
+    margin: .8em 0;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    letter-spacing: .05em;
 }
   
 .modal-entity-creation, .modal-entity-creation-b {
@@ -901,7 +900,8 @@ nav {
     width: 70%;
     margin-left: 15%;
     margin-right: auto;
-    font-size: 1vw;
+    font-size: clamp(1rem, 0.8182rem + 0.9091vw, 3rem) !important;
+    font-style: italic;
 }
 
 
@@ -978,22 +978,17 @@ nav {
 
 
 .card-body li {
-    padding: .3em 0;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    word-spacing: 0.15em;
+    margin-left: .75em;
+    padding: .1em;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    word-spacing: 0.05em;
     letter-spacing: .05em;
-    font-size: 1.2vw;
-}
-
-.card-body form div {
-    margin: .8em 0;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    letter-spacing: .05em;
-    font-size: 1.2vw;
+    font-size: clamp(1.15rem, 0.8909rem + 1.2955vw, 3.5rem) !important;
 }
 
 .card button {
-    font-size: 1.25vw;
+    font-size: clamp(1rem, 0.0217rem + 1.4493vw, 3.5rem) !important;
 }
 
 .entity-creation-form, .entity-creation-form-b {
@@ -1116,7 +1111,7 @@ nav {
     padding: .3em 0;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
-    font-size: 1.2vw;
+    font-size: clamp(0.2rem, -0.1000rem + 1.5000vw, 3.5rem) !important;
 }
   
 
@@ -1164,7 +1159,7 @@ nav {
 }
 
 .article-container h2, .article-comparison-container h2 {
-    font-size: 1.8vw;
+    font-size: clamp(1.5rem, 1.2273rem + 1.3636vw, 4.5rem) !important;
     font-weight: 900;
     padding-bottom: 5%;
     word-spacing: 0.2em;
@@ -1190,7 +1185,7 @@ nav {
 }
 
 .article-container h3, .article-comparison-container h3 {
-    font-size: 1.6vw;
+    font-size: clamp(1.8rem, 1.5091rem + 1.4545vw, 5rem) !important;
     font-weight: 500;
     padding-bottom: 5%;
     word-spacing: 0.2em;
@@ -1201,7 +1196,7 @@ nav {
 }
 
 .article-container h4, .article-comparison-container h4 {
-    font-size: 1.3vw;
+    font-size: clamp(1.4rem, 1.2091rem + 0.9545vw, 3.5rem) !important;
     font-weight: 400;
     padding-bottom: 5%;
     word-spacing: 0.2em;
@@ -1213,7 +1208,7 @@ nav {
 
 .article-container p, .article-comparison-container p {
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem) !important;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
@@ -1224,13 +1219,13 @@ nav {
 }
 
 .article-container p::first-letter, .article-comparison-container p::first-letter {
-    font-size: 1.6vw;
+    font-size: clamp(1.3rem, 0.9636rem + 1.1818vw, 4rem) !important;
 }
 
 
 .article-container li, .article-comparison-container li {
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem) !important;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
@@ -1243,7 +1238,7 @@ nav {
 
 
 .article-container li a, .article-comparison-container li a, .article-container a, .article-comparison-container a {
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem) !important;
 }
 
   
@@ -1338,7 +1333,7 @@ nav {
 }
 
 .doc-title-container h1 {
-    font-size: 8vw;
+    font-size: clamp(1.8rem, 0.1455rem + 8.2727vw, 20rem) !important;
     font-weight: 900;
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -1347,7 +1342,7 @@ nav {
 
 .doc-subtitle-container p {
     align-self: center;
-    font-size: 1.5vw;
+    font-size: clamp(0.8rem, 0.5545rem + 1.2273vw, 3.5rem) !important;
     font-weight: 300;
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -1378,7 +1373,7 @@ nav {
 
 /* It is the only "Inspiration and features title */
 #timeTitleDoc h2 {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 0.9091rem + 2.9545vw, 8rem) !important;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
@@ -1388,10 +1383,6 @@ nav {
 
 
 #documentationBody {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: space-around;*/
     font-family: 'Crimson Text', serif;
     column-count: 3;
 }
@@ -1423,7 +1414,7 @@ nav {
 #documentationBody h2 {
     width: 100%;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 2.5vw;
+    font-size: clamp(1.5rem, 1.2273rem + 1.3636vw, 5rem) !important;
     font-weight: 900;
     margin-bottom: 2%;
     padding: 2% 0;
@@ -1444,7 +1435,7 @@ nav {
 
 
 #documentationBody p {
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem) !important;
     word-spacing: 0.15em;
     text-align: justify;
     -webkit-hyphens: auto;
@@ -1459,12 +1450,12 @@ nav {
 }
 
 #documentationBody p::first-letter {
-    font-size: 1.6vw;
+    font-size: clamp(1.3rem, 0.9636rem + 1.1818vw, 4rem) !important;
     font-weight: 400;
 }
 
 #documentationBody li {
-    font-size: 1.5em;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem) !important;
     word-spacing: 0.15em;
     text-align: justify;
     -webkit-hyphens: auto;
@@ -1537,7 +1528,7 @@ nav {
     width: 90%;
     margin-left: 10%;
     margin-right: auto;
-    font-size: 0.95vw;
+    font-size: clamp(1rem, 0.9636rem + 1.1818vw, 3.2rem) !important;
     font-style: italic;
 }
 
@@ -1575,7 +1566,7 @@ nav {
 }
 
 .about-container h1 {
-    font-size: 8vw;
+    font-size: clamp(3rem, 1.4545rem + 7.7273vw, 20rem) !important;
     text-align: center;
     font-weight: 900;
     text-transform: lowercase;
@@ -1608,7 +1599,7 @@ nav {
 }
 
 .editor-container p {
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem) !important;
     font-weight: 300;
     font-family: 'Crimson Text', serif;
 }
@@ -1646,7 +1637,7 @@ nav {
 
 .fa-envelope {
     color: #212529;
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 0.9636rem + 1.1818vw, 5rem) !important;
     transition: all 400ms ease-in;
 }
 
@@ -1662,7 +1653,6 @@ nav {
 /*--------Disclaimer--------- */
 
 .disclaimer-main {
-    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1696,7 +1686,7 @@ nav {
 
 #disclaimerTitle h1 {
     margin-top: 20%;
-    font-size: 8vw;
+    font-size: clamp(2.5rem, 0.9091rem + 7.9545vw, 20rem) !important;
     font-weight: 900;
     text-transform: capitalize;
     text-align: center;
@@ -1710,52 +1700,41 @@ nav {
 #disclaimerPurpose {
     align-self: center;
     text-align: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 1.5vw;
 }
 
 #disclaimerSources {
     align-self: center;
     text-align: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 1.5vw;
 }
 
 #disclaimerPurpose h2 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 3.5vw;
+    font-size: clamp(2.5rem, 1.8182rem + 3.4091vw, 10rem);
     letter-spacing: .05em;
 }
 
 #disclaimerSources h2 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    font-size: 3.5vw;
+    font-size: clamp(2.5rem, 1.8182rem + 3.4091vw, 10rem);
     letter-spacing: .05em;
 }
 
 
-#disclaimerPurpose p {
+#disclaimerPurpose p, #disclaimerSources p {
     text-align: center;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
      -ms-hyphens: auto;
          hyphens: auto;
-}
-
-#disclaimerSources p {
-    text-align: center;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-      -o-hyphens: auto;
-     -ms-hyphens: auto;
-         hyphens: auto;
+    font-family: 'Crimson Text', serif;
+    font-size: clamp(1.2rem, 0.9636rem + 1.1818vw, 3.8rem);
 }
 
 
 
 .fa-github {
-    font-size: 1.4vw;
+    font-size: clamp(1.5rem, 0.9636rem + 1.1818vw, 4rem);
     color: #212529;
     transition: 400ms;
 }
@@ -1800,7 +1779,7 @@ footer div {
 
 
 /* 1036 */
-@media only screen and (max-width: 1036px) {
+@media only screen and (max-width: 0) {
     .home-main, .issue-main {
         margin: 5%;
         padding-bottom: 5%;
@@ -1942,7 +1921,7 @@ footer div {
 }
 
 /* 820 */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 0) {
     .home-main, .issue-main {
         margin: 0%;
         padding-bottom: 2%;
@@ -2040,7 +2019,8 @@ footer div {
     }
 }
 
-@media only screen and (max-width: 1284px) and (orientation: portrait) {
+/* 1284 */
+@media only screen and (max-width: 1284px) { /*and (orientation: portrait) {*/
     .page-presentation, .documentation-page-presentation, .issue-main {
         box-shadow: none;
     }
@@ -2061,24 +2041,14 @@ footer div {
         margin: 0;
         text-align: center;
     }
-    .nav-text {
-        font-size: 1.4rem;
-    }
     .ddm-nav-text {
         width: 100%;
-        font-size: 1.25rem;
     }
     .dropdown-menu {
         text-align: center;
     }
 
     /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.8rem;
-    } 
-    .overlay-content h3 {
-        font-size: 2rem;
-    }
     .overlay-content p {
         display: none;
     } 
@@ -2089,58 +2059,15 @@ footer div {
         grid-template-columns: 6vh 6vh 6vh;
         grid-template-rows: 8vh 8vh 8vh 8vh;
     }
-    .sub-btn {
-        font-size: 1.6rem;
-    }
-    .sub-btn:hover {
-        font-size: 1.65rem;
-    }
     
     /* PAGE PRESENTATION */
     .title-container h1 {
-        font-size: 2rem;
         margin-bottom: 5%;
-    }
-    #homeTp1, #issueTp1 {
-        font-size: 1.5rem !important;
     }
 
     /* MAIN - HOME */
-    #timeTitle h2 {
-        font-size: 2rem;
-    }
-    #timeTitle {
-        font-size: 1.5rem;
-    }
-    #timeImageDescription1 {
-        font-size: 1.1rem;
-    }
-    #timeImageDescription2 {
-        font-size: 1.35rem;
-    }
     #homeBody {
         column-count: 1;
-    }
-    #homeBody h2 {
-        font-size: 2.5rem;
-    }
-    .time-title-paragraph {
-        font-size: 1.7rem;
-    }
-    #homeBody p {
-        font-size: 1.6rem;
-    }
-    #homeBody li {
-        font-size: 1.6rem;
-    }
-    .time-only a {
-        font-size: 1.6rem !important;
-    }
-    #editorsAndSourcesDescription a {
-        font-size: 1.6rem !important;
-    }
-    .link-time a {
-        font-size: 1.6rem !important;
     }
     
     /* MAIN - ISSUE */
@@ -2154,75 +2081,26 @@ footer div {
     #timeIssueExplore {
         display: none;
     }
-    .metadata-container h2, .metadata-container h2 button {
-        font-size: 2rem;
-    }
-    .metadata-container li, .metadata-container a, .entity-selector label {
-        font-size: 1.6rem !important;
-    }
-    .tab-content {
-        font-size: 1.6rem !important;
-    }
     .issue-main {
         box-shadow: none;
     }
     .article-container {
         column-count: 1;
     }
-    .article-container h2, .article-comparison-container h2 {
-        font-size: 3rem;
-    }
-    .article-container h3, .article-comparison-container h3 {
-        font-size: 2.4rem;
-    }
     .article-container h4, .article-comparison-container h4 {
-        font-size: 2.2rem;
         text-align: left;
-    }
-    .article-container p, .article-comparison-container p,
-    .article-container li, .article-p a,
-    .article-container li a {
-        font-size: 1.6rem;
-    }
-    .article-container p::first-letter, .article-comparison-container p::first-letter {
-        font-size: 1.7rem;
-    }
-    .info-dl {
-        font-size: 1.6rem !important;
     }
 
     /* DOCUMENTATION */
-    .doc-title-container h1 {
-        font-size: 2.5rem;
-    }
-    #timeTitleDoc h2 {
-        font-size: 2.2rem;
-    }
     #documentationBody {
         column-count: 1;
-    }
-    #documentationBody h2 {
-        font-size: 1.8rem;
-    }
-    #documentationBody p, #documentationBody li, #documentationBody a {
-        font-size: 1.6rem;
-    }
-    #documentationBody p::first-letter {
-        font-size: 1.8rem;
-    }
-    .doc-subtitle-container p {
-        font-size: 1.6rem !important;
     }
     
     /* ABOUT */
     .about-page-presentation {
         margin: 2%;
     }
-    .about-page-presentation p {
-        font-size: 1.6rem;
-    }
     .about-container h1 {
-        font-size: 3rem;
         margin-top: 5%;
     }
     .editor-name-img {
@@ -2230,9 +2108,6 @@ footer div {
     }
     .editor-name-img img {
         width: 60%;
-    }
-    .editor-name-img h2 {
-        font-size: 1.4rem;
     }
 
     /* DISCLAIMER */
@@ -2245,26 +2120,8 @@ footer div {
         flex-direction: column;
         overflow: scroll;
     }
-    #disclaimerTitle h1 {
-        font-size: 3rem;
-    }
     #disclaimerPurpose {
-        font-size: 1.6rem;
         margin-bottom: 5%;
-    }
-    #disclaimerSources {
-        font-size: 1.6rem;
-    }
-    #disclaimerPurpose h2 {
-        font-size: 4rem;
-    }
-    #disclaimerSources h2 {
-        font-size: 4rem;
-    }
-
-    /* FOOTER */
-    footer div {
-        font-size: 1.15rem;
     }
 }
 
