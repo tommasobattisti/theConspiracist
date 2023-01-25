@@ -73,9 +73,15 @@
         right: 1vmin;
         row-gap: 1.5vmax;
     }
-
     .overlay-paragraph {
         display: none;
     }
-
 }
+
+/*
+@media only screen and (max-width: 360) {
+    .overlay-content {
+        display: none;
+    }
+}
+*/

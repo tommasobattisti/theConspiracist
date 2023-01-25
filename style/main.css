@@ -2336,18 +2336,16 @@ footer div p {
 @media only screen and (max-width: 420px) {
 	.doc-title-container h1 {
 		font-size: 2.2rem !important;
-	}
-
-    
+	}  
 }
-
-
-
 
 @media only screen and (orientation: landscape) and (min-aspect-ratio:18/9) {
 	.eye-container {
 		display: none;
 	}
-
-
+}
+@media only screen and (orientation: landscape) and (max-width: 1023.98px) {
+	.eye-container {
+		display: none;
+	}
 }
