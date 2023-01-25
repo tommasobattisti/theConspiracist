@@ -261,14 +261,14 @@ h1 {
 
 
 
-.overlay-content {
-  position: absolute;
-  top: 25%; 
-  left: 15%;
-  width: 40%; /* 100% width */
-  text-align: left;
-  z-index: 3;
-  color: #edeef3;
+ .overlay-content {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 60%;
+    text-align: left;
+    z-index: 3;
+    color: whitesmoke;
 }
 
 #generalOverlay {
@@ -277,7 +277,7 @@ h1 {
 
 
 #generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
-	font-size: clamp(1.5rem, 1.0455rem + 2.2727vw, 6.5rem);
+	font-size: clamp(1.5rem, 0.9091rem + 2.9545vw, 8rem) !important;
 	font-weight: 800;
 	font-family: 'Orbitron', sans-serif;
 	margin-bottom: 0.5em;
@@ -288,7 +288,7 @@ h1 {
 
 #generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
 	color: #8691b3;
-	font-size: clamp(1.4rem, 1.1818rem + 1.0909vw, 3.8rem);
+	font-size: clamp(1.5rem, 1.0909rem + 2.0455vw, 6rem) !important;
 	font-weight: 900;
 	font-family: 'Exo', sans-serif;
 	margin-bottom: 2%;
@@ -297,7 +297,8 @@ h1 {
 
 #generalOverlay p, #incunabulaOverlay p, #timeOverlay p, #swissOverlay p, #futureOverlay p {
     font-family: 'Exo', sans-serif;
-	font-size: 1.2em;
+	font-weight: 200;
+	font-size: clamp(1.25rem, 1.0909rem + 0.7955vw, 3rem) !important;
 }
 
 
@@ -660,7 +661,7 @@ h1 {
 
 /*About --------------------- */
 
-.about-nav-2030 {
+.always-bottom-nav-2030 {
     position: fixed;
     bottom: -1px;
     border-bottom: none;
@@ -778,7 +779,7 @@ transition: 600ms;
 }
 
 .disclaimer-main {
-	height: calc(90vh - 1px);
+	min-height: calc(90vh - 1px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -2207,9 +2208,6 @@ footer div p {
 		margin-top: 40%;
 	}
 
-	.overlay-paragraph {
-		display: none !important;
-	}
 }
 
 

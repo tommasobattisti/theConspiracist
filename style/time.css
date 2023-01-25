@@ -37,15 +37,15 @@ body {
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
    }
 
+
 .overlay-content {
     position: absolute;
     top: 15%;
-    bottom: 15%; 
-    left: 15%;
-    width: 40%; /* 100% width */
+    left: 10%;
+    width: 60%;
     text-align: left;
-    z-index: 99;
-    color: white;
+    z-index: 3;
+    color: whitesmoke;
 }
 
 
@@ -2009,10 +2009,8 @@ footer div {
         box-shadow: none;
     }
 
-    /* OVERLAY */
-    .overlay-content p {
-        display: none;
-    } 
+
+
     .sub-btn {
         font-size: 3vw;
     }
@@ -2131,10 +2129,6 @@ footer div {
         text-align: center !important;
     }
 
-    /* OVERLAY */
-    .overlay-content p {
-        display: none;
-    } 
     
     /* BUTTONS STYLE AND TOP 
 
@@ -2205,6 +2199,7 @@ footer div {
         margin-bottom: 5%;
     }
 }
+
 
 
 /* ########################################################################################## */
