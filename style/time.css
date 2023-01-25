@@ -1799,8 +1799,8 @@ footer div {
 
 
 
-
-@media only screen and (width <= 1036px) {
+/* 1036 */
+@media only screen and (width <= 0) {
     .home-main, .issue-main {
         margin: 5%;
         padding-bottom: 5%;
@@ -1941,8 +1941,8 @@ footer div {
     }
 }
 
-
-@media only screen and (width <= 820px) {
+/* 820 */
+@media only screen and (width <= 0) {
     .home-main, .issue-main {
         margin: 0%;
         padding-bottom: 2%;
@@ -2110,11 +2110,11 @@ footer div {
     #timeTitle {
         font-size: 1.5rem;
     }
-    #timeImageDescription {
-        font-size: 1.8rem;
-    }
     #timeImageDescription1 {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
+    }
+    #timeImageDescription2 {
+        font-size: 1.5rem;
     }
     #homeBody {
         column-count: 1;
@@ -2131,8 +2131,8 @@ footer div {
     #homeBody li {
         font-size: 1.6rem;
     }
-    #homeBody a {
-        font-size: 1.6rem;
+    .time-only a {
+        font-size: 1.6rem !important;
     }
     
     /* MAIN - ISSUE */
@@ -2191,7 +2191,7 @@ footer div {
         font-size: 1.8rem;
     }
     .doc-subtitle-container p {
-        font-size: 1.6rem;
+        font-size: 1.6rem !important;
     }
     
     /* ABOUT */
