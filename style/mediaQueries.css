@@ -40,5 +40,12 @@
         display: block !important;
     }
 
+    .right-modal-entity-s, .left-modal-entity-s {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
 }
 

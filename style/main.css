@@ -15,6 +15,18 @@
   display: none !important;
 }
 
+.issue-main li a {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+      -o-hyphens: auto;
+     -ms-hyphens: auto;
+         hyphens: auto;
+}
+
+
+p, li {
+	font-size: clamp(1.2rem, 1.1091rem + 0.4545vw, 2.2rem);
+}
 
 body {
   background: linear-gradient(90deg, #8691b3, #edeef3);
@@ -40,32 +52,34 @@ h1 {
 }
 
 
-.subtitle-div {
+.subtitle-div, #issueTp1 {
 	position: absolute;
 	left: 15%;
 	top: 60%;
 	width: 25%;
 }
   
-.page-presentation p {
+.page-presentation p, #issueTp1 {
 	  font-size: clamp(0.7rem, 0.6000rem + 0.5000vw, 1.8rem);
 	  padding-left: 0.5rem;
 	  border-left: 2px solid rgba(10, 34, 57, 0.9);
 }
 
-#issueTp1 {
-	width: 20%;
-	padding-left: 0.5rem;
-	border-left: 2px solid rgba(10, 34, 57, 0.9);
-	font-size: 0.9em;
-}
 
-.home-2030 h2, #documentationBody h2, #about2030Container h2 {
+
+.home-2030 h2, #documentationBody h2 {
   color: rgba(76, 59, 77, 0.8);
   font-size: clamp(1.8rem, 1.2364rem + 2.8182vw, 8rem);
   font-weight: 800;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 5%;
+}
+
+#about2030Container h2 {
+	color: rgba(76, 59, 77, 0.8);
+	font-size: clamp(1.8rem, 1.2364rem + 2.8182vw, 8rem);
+	font-weight: 800;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .home-2030 h3, #documentationBody h3 {
@@ -95,12 +109,15 @@ h1 {
 	height: calc(10vh + 1px);
 	width: 100%;
 	color:  rgba(10, 34, 57, 0.9);;
-	font-size: clamp(0.9rem, 0.8545rem + 0.2273vw, 1.4rem);
 	background: linear-gradient(90deg, #8691b3, #edeef3);
 	z-index: 1 !important;
 	border-bottom: solid 1px rgba(10, 34, 57, 0.9);
 }
 
+
+.nav-text {
+	font-size: clamp(0.9rem, 0.8545rem + 0.2273vw, 1.4rem);
+}
 
 
 #centerNav2030 {
@@ -653,7 +670,10 @@ h1 {
 
 #about2030Container {
 	width: 70%;
-	height: 80%;
+	height: 82.5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 
@@ -690,9 +710,13 @@ scale: 1.02;
 transition: 600ms;
 }
 
+
+.editor-image-container {
+	width: 40%;
+}
+
 .editor-container img {
-	width: 50%;
-	aspect-ratio: 4/5;
+	width: 100%;
 	object-fit: cover;
 	border-radius: 5px;
 	box-shadow: 8px 8px 12px rgba(57, 152, 142, 0.5);
@@ -747,6 +771,11 @@ transition: 600ms;
 	align-items: center;
 	align-content: center;
 }
+
+.disclaimer-main p {
+	border: none !important;
+}
+
 
 .disclaimer-page-presentation {
 	width: 70%;
@@ -1006,6 +1035,9 @@ transition: 600ms;
 }
 
 
+
+
+
 .article-container {
   width: 70%;
   min-height: 70vh;
@@ -1014,7 +1046,6 @@ transition: 600ms;
 .article-container p, .article-comparison-container p, .article-container ul, .article-comparison-container ul, .article-container ol, .article-comparison-container ol {
 	font-family: 'Exo', sans-serif;
 	color: rgba(10, 34, 57, 0.7);
-	font-size: 1em;
 	transition: 600ms;
 }
   
@@ -1034,7 +1065,6 @@ transition: 600ms;
 
 .article-container a:hover, .article-comparison-container a:hover, .double-doc-selector a:hover  {
 		color: #028090;
-
 		transition: 400ms;
 		text-decoration: none;
 }
@@ -1044,7 +1074,7 @@ transition: 600ms;
 	padding-bottom: .5em;
 }
 
-.tab-content li {
+.tab-content li, .tab-content-b li  {
 	font-size: 0.8em !important;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -1088,19 +1118,22 @@ transition: 600ms;
 }
 
 
-.article-container h2, .article-comparison-container h2, .double-doc-selector h2  {
+.article-title, .double-doc-selector h2  {
 	font-family: 'Orbitron', sans-serif;
 	color: rgba(76, 59, 77, 0.8);
-	font-size: 2em;
 	font-weight: 800;
 	margin-bottom: 2.5%;
+	font-size: clamp(1.6rem, 1.2000rem + 2.0000vw, 6rem);
 }
+
+
+
 
 
 .article-container h3, .article-comparison-container h3  {
 	font-family: 'Orbitron', sans-serif;
 	color: rgba(76, 59, 77, 0.8);
-	font-size: 1.5em;
+	font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
 	font-weight: 900;
 	margin-top: 12.5%;
 	margin-bottom: 2.5%;
@@ -1197,7 +1230,7 @@ transition: 600ms;
 }
 
 
-.active-tc {
+.active-tc, .active-tc-b {
   display: block !important;
   width: 100% !important;
   height: 200px !important;
@@ -1214,6 +1247,21 @@ transition: 600ms;
 .docs-list-a, .docs-list-b {
   margin: 0;
   padding-left: 1rem;
+}
+
+
+.tab-content li a, .tab-content-b li a, .docs-list-a li a, .docs-list-b li a, .active-tc a, .active-tc-b a {
+		font-family: 'Exo', sans-serif;
+		color: rgba(10, 34, 57, 0.8);
+		font-weight: 500;
+		transition: 400ms;
+		font-size: clamp(0.9rem, 0.8182rem + 0.4091vw, 1.8rem);
+}
+
+.tab-content li a:hover, .tab-content-b li a:hover, .docs-list-a li a:hover, .docs-list-b li a:hover, .active-tc a:hover, .active-tc-b a:hover{
+		color: #028090 !important;
+		transition: 400ms;
+		text-decoration: none;
 }
 
 
@@ -2130,6 +2178,11 @@ footer div p {
 		margin-top: 40%;
 	}
 
+
+	.article-img-centre {
+		width: 100%;
+	}
+
 	footer {
 		margin-top: 40%;
 	}
@@ -2177,6 +2230,26 @@ footer div p {
 		top: -1px;
 	}
 
+	.page-presentation {
+		border-bottom: 1px solid rgba(10, 34, 57, 0.9);
+		height: 100vh;
+	}
+
+	.disclaimer-page-presentation {
+		margin-top: 15vh !important;
+		border-bottom: none !important;
+		height: 110vh !important;
+		width: 90%;
+	}
+
+	.disclaimer-main {
+		height: auto;
+	}
+
+
+	.article-container, .article-container {
+		overflow: hidden;
+	}
 }
 
 
