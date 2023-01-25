@@ -2176,6 +2176,9 @@ footer div {
     .article-container p, .article-comparison-container p {
         font-size: 1.6rem;
     }
+    .article-container p::first-letter, .article-comparison-container p::first-letter {
+        font-size: 1.6rem;
+    }
     .info-dl {
         font-size: 1.6rem !important;
     }
