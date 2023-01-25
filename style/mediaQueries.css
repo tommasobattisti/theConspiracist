@@ -49,12 +49,6 @@
 
 }
 
-
-
-
-
-
-
 @media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
     .btns-grid-container {
         scale: .8;
