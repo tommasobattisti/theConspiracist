@@ -397,8 +397,8 @@ h1 {
   grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px 50px 50px;
   position: fixed;
-  bottom: 3.5vmin !important;
-  right: 3.5vmin !important;
+  bottom: 3.5vmin;
+  right: 3.5vmin;
   row-gap: 2vmax;
   z-index: 999;
 }
