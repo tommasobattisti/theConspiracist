@@ -2113,10 +2113,10 @@ footer div {
         font-size: 1.5rem;
     }
     #timeImageDescription1 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
     #timeImageDescription2 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
     #homeBody {
         column-count: 1;
@@ -2176,7 +2176,7 @@ footer div {
         text-align: left;
     }
     .article-container p, .article-comparison-container p,
-    .article-container li, .article-comparison-container a,
+    .article-container li, .article-comparison-container p a,
     .article-container li a {
         font-size: 1.6rem;
     }
