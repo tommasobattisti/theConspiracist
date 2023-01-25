@@ -1800,7 +1800,7 @@ footer div {
 
 
 /* 1036 */
-@media only screen and (width <= 1036px) {
+@media only screen and (max-width: 1036px) {
     .home-main, .issue-main {
         margin: 5%;
         padding-bottom: 5%;
@@ -1942,7 +1942,7 @@ footer div {
 }
 
 /* 820 */
-@media only screen and (width <= 820px) {
+@media only screen and (max-width: 820px) {
     .home-main, .issue-main {
         margin: 0%;
         padding-bottom: 2%;
