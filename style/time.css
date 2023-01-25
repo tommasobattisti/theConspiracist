@@ -1796,207 +1796,7 @@ footer div {
 
 
 
-@media only screen and (max-width: 1284px) and (orientation: portrait) {
-    .page-presentation, .documentation-page-presentation, .issue-main {
-        box-shadow: none;
-    }
-    .home-main, .issue-main {
-        margin: 5%;
-        padding-bottom: 5%;
-    }
-    .about-main {
-        margin: 0;
-    }
-    /* NAV */
-    .navbar-nav {
-        width: 60%;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        margin: 0 !important;
-        text-align: left !important;
-    }
-    .nav-text {
-        font-size: 1.5rem;
-    }
-    .ddm-nav-text {
-        width: 100%;
-        font-size: 1.25rem;
-    }
-    .dropdown-menu {
-        text-align: center;
-    }
 
-    /* OVERLAY */
-    .overlay-content h2 {
-        font-size: 1.8rem;
-    } 
-    .overlay-content h3 {
-        font-size: 2rem;
-    }
-    .overlay-content p {
-        font-size: 1.25rem;
-    } 
-    
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 6vh 6vh 6vh;
-        grid-template-rows: 8vh 8vh 8vh 8vh;
-    }
-    .sub-btn {
-        font-size: 1.6rem;
-    }
-    .sub-btn:hover {
-        font-size: 1.65rem;
-    }
-    
-    /* PAGE PRESENTATION */
-    .title-container h1 {
-        font-size: 2rem;
-        margin-bottom: 5%;
-    }
-    #homeTp1, #issueTp1 {
-        font-size: 1.5rem !important;
-    }
-
-    /* MAIN - HOME */
-    #timeTitle h2 {
-        font-size: 2rem;
-    }
-    #timeTitle {
-        font-size: 1.5rem;
-    }
-    #timeImageDescription {
-        font-size: 1.8rem;
-    }
-    #timeImageDescription1 {
-        font-size: 1.8rem;
-    }
-    #homeBody {
-        column-count: 1;
-    }
-    #homeBody h2 {
-        font-size: 2.5rem;
-    }
-    .time-title-paragraph {
-        font-size: 1.7rem;
-    }
-    #homeBody p {
-        font-size: 1.6rem;
-    }
-    
-    /* MAIN - ISSUE */
-    .issue-main {
-        margin: 0;
-    }
-    #timeIssueExplore {
-        display: none;
-    }
-    .metadata-container h2 {
-        font-size: 2rem;
-    }
-    .metadata-container li, .metadata-container a, .entity-selector label {
-        font-size: 1.6rem;
-    }
-    .tab-content li a {
-        font-size: 1.6rem;
-    }
-    .issue-main {
-        box-shadow: none;
-    }
-    .article-container {
-        column-count: 1;
-    }
-    .article-container h2, .article-comparison-container h2 {
-        font-size: 3rem;
-    }
-    .article-container h3, .article-comparison-container h3 {
-        font-size: 2.4rem;
-    }
-    .article-container h4, .article-comparison-container h4 {
-        font-size: 2.2rem;
-        text-align: left;
-    }
-    .article-container p, .article-comparison-container p {
-        font-size: 1.6rem;
-    }
-
-    /* DOCUMENTATION */
-    .doc-title-container h1 {
-        font-size: 2.5rem;
-    }
-    #timeTitleDoc h2 {
-        font-size: 2.2rem;
-    }
-    #documentationBody {
-        column-count: 1;
-    }
-    #documentationBody h2 {
-        font-size: 1.8rem;
-    }
-    #documentationBody p, #documentationBody li, #documentationBody a {
-        font-size: 1.6rem;
-    }
-    #documentationBody p::first-letter {
-        font-size: 1.8rem;
-    }
-    .doc-subtitle-container p {
-        font-size: 1.6rem;
-    }
-    
-    /* ABOUT */
-    .about-page-presentation {
-        margin: 2%;
-    }
-    .about-page-presentation p {
-        font-size: 1.6rem;
-    }
-    .about-container h1 {
-        font-size: 3rem;
-        margin-top: 5%;
-    }
-    .editor-name-img {
-        justify-content: space-around;
-    }
-    .editor-name-img img {
-        width: 60%;
-    }
-    .editor-name-img h2 {
-        font-size: 1.4rem;
-    }
-
-    /* DISCLAIMER */
-    .disclaimer-main { 
-        flex-direction: row;
-    }
-    .disclaimer-page-presentation {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-    }
-    #disclaimerTitle h1 {
-        font-size: 3rem;
-    }
-    #disclaimerPurpose {
-        font-size: 1.6rem;
-        margin-bottom: 5%;
-    }
-    #disclaimerSources {
-        font-size: 1.6rem;
-    }
-    #disclaimerPurpose h2 {
-        font-size: 4rem;
-    }
-    #disclaimerSources h2 {
-        font-size: 4rem;
-    }
-
-    /* FOOTER */
-    footer div {
-        font-size: 1.15rem;
-    }
-}
 
 
 
@@ -2237,6 +2037,214 @@ footer div {
     .doc-images-container-3 img {
         width: 27.5%;
         margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 1284px) and (orientation: portrait) {
+    .page-presentation, .documentation-page-presentation, .issue-main {
+        box-shadow: none;
+    }
+    .home-main, .issue-main {
+        margin: 5%;
+        padding-bottom: 5%;
+    }
+    .about-main {
+        margin: 0;
+    }
+    /* NAV */
+    .navbar-nav {
+        width: 60%;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .nav-text {
+        font-size: 1.5rem;
+    }
+    .ddm-nav-text {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    /* OVERLAY */
+    .overlay-content h2 {
+        font-size: 1.8rem;
+    } 
+    .overlay-content h3 {
+        font-size: 2rem;
+    }
+    .overlay-content p {
+        font-size: 1.25rem;
+    } 
+    
+    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    .btns-grid-container {
+        display: grid;
+        grid-template-columns: 6vh 6vh 6vh;
+        grid-template-rows: 8vh 8vh 8vh 8vh;
+    }
+    .sub-btn {
+        font-size: 1.6rem;
+    }
+    .sub-btn:hover {
+        font-size: 1.65rem;
+    }
+    
+    /* PAGE PRESENTATION */
+    .title-container h1 {
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+    #homeTp1, #issueTp1 {
+        font-size: 1.5rem !important;
+    }
+
+    /* MAIN - HOME */
+    #timeTitle h2 {
+        font-size: 2rem;
+    }
+    #timeTitle {
+        font-size: 1.5rem;
+    }
+    #timeImageDescription {
+        font-size: 1.8rem;
+    }
+    #timeImageDescription1 {
+        font-size: 1.8rem;
+    }
+    #homeBody {
+        column-count: 1;
+    }
+    #homeBody h2 {
+        font-size: 2.5rem;
+    }
+    .time-title-paragraph {
+        font-size: 1.7rem;
+    }
+    #homeBody p {
+        font-size: 1.6rem;
+    }
+    #homeBody li {
+        font-size: 1.6rem;
+    }
+    #homeBody a {
+        font-size: 1.6rem;
+    }
+    
+    /* MAIN - ISSUE */
+    .issue-main {
+        margin: 0;
+    }
+    #timeIssueExplore {
+        display: none;
+    }
+    .metadata-container h2, .metadata-container h2 button {
+        font-size: 2rem;
+    }
+    .metadata-container li, .metadata-container a, .entity-selector label {
+        font-size: 1.6rem !important;
+    }
+    .tab-content {
+        font-size: 1.6rem !important;
+    }
+    .issue-main {
+        box-shadow: none;
+    }
+    .article-container {
+        column-count: 1;
+    }
+    .article-container h2, .article-comparison-container h2 {
+        font-size: 3rem;
+    }
+    .article-container h3, .article-comparison-container h3 {
+        font-size: 2.4rem;
+    }
+    .article-container h4, .article-comparison-container h4 {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    .article-container p, .article-comparison-container p {
+        font-size: 1.6rem;
+    }
+
+    /* DOCUMENTATION */
+    .doc-title-container h1 {
+        font-size: 2.5rem;
+    }
+    #timeTitleDoc h2 {
+        font-size: 2.2rem;
+    }
+    #documentationBody {
+        column-count: 1;
+    }
+    #documentationBody h2 {
+        font-size: 1.8rem;
+    }
+    #documentationBody p, #documentationBody li, #documentationBody a {
+        font-size: 1.6rem;
+    }
+    #documentationBody p::first-letter {
+        font-size: 1.8rem;
+    }
+    .doc-subtitle-container p {
+        font-size: 1.6rem;
+    }
+    
+    /* ABOUT */
+    .about-page-presentation {
+        margin: 2%;
+    }
+    .about-page-presentation p {
+        font-size: 1.6rem;
+    }
+    .about-container h1 {
+        font-size: 3rem;
+        margin-top: 5%;
+    }
+    .editor-name-img {
+        justify-content: space-around;
+    }
+    .editor-name-img img {
+        width: 60%;
+    }
+    .editor-name-img h2 {
+        font-size: 1.4rem;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-main { 
+        flex-direction: row;
+    }
+    .disclaimer-page-presentation {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    #disclaimerTitle h1 {
+        font-size: 3rem;
+    }
+    #disclaimerPurpose {
+        font-size: 1.6rem;
+        margin-bottom: 5%;
+    }
+    #disclaimerSources {
+        font-size: 1.6rem;
+    }
+    #disclaimerPurpose h2 {
+        font-size: 4rem;
+    }
+    #disclaimerSources h2 {
+        font-size: 4rem;
+    }
+
+    /* FOOTER */
+    footer div {
+        font-size: 1.15rem;
     }
 }
 
