@@ -1665,11 +1665,6 @@ footer div p {
         font-weight: inherit;
         color: inherit;
     }
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 6vh 6vh 6vh;
-        grid-template-rows: 8vh 8vh 8vh 8vh;
-    }
     .overlay-content {
         left: 5%;
         top: 20%;
