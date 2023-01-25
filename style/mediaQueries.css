@@ -49,3 +49,7 @@
 
 }
 
+.btns-grid-container button {
+    scale: .8;
+}
+
