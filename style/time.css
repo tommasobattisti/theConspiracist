@@ -1882,7 +1882,7 @@ footer div {
         text-align: left !important;
     }
 
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    /* BUTTONS STYLE AND TOP */
     .btns-grid-container {
         display: grid;
         grid-template-columns: 6vh 6vh 6vh;
@@ -2142,13 +2142,13 @@ footer div {
         display: none;
     } 
     
-    /* BUTTONS STYLE AND TOP - LANDSCAPE*/
+    /* BUTTONS STYLE AND TOP */
     .btns-grid-container {
         display: grid;
         grid-template-columns: 6vh 6vh 6vh;
         grid-template-rows: 8vh 8vh 8vh 8vh;
     }
-    
+
     /* PAGE PRESENTATION */
     .title-container h1 {
         margin-bottom: 5%;
