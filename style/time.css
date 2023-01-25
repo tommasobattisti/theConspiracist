@@ -759,6 +759,7 @@ nav {
 .document-selection-container {
     width: 47.5%;
     text-align: center;
+    font-size: clamp(1rem, 0.4375rem + 0.8333vw, 1.5rem) !important;
 }
 
 .meta-text-container {
@@ -864,10 +865,14 @@ nav {
   
 
   /*Multiple modal*/
- /*
+
 .modal-content {
-   font-family: 'Cinzel', serif;
-}*/
+   width: 60%;
+   border-radius: 5px;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
 
   
 #mainModalContainer {
@@ -984,15 +989,16 @@ nav {
     font-weight: 400;
     word-spacing: 0.05em;
     letter-spacing: .05em;
-    font-size: clamp(1.15rem, 0.9364rem + 1.0682vw, 3.5rem) !important;
+    font-size: clamp(1.15rem, 1.0291rem + 0.6047vw, 1.8rem) !important;
 }
 
 .card button {
     font-size: clamp(1rem, 0.0217rem + 1.4493vw, 3.5rem) !important;
 }
 
-.entity-creation-form, .entity-creation-form-b {
-    font-size: clamp(1.15rem, 0.9364rem + 1.0682vw, 3.5rem) !important;
+.entity-creation-form, .entity-creation-form-b,
+.entity-creation-form input, .entity-creation-form-b input {
+    /*font-size: clamp(1.15rem, 0.9364rem + 1.0682vw, 3.5rem) !important;*/
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -1073,6 +1079,7 @@ nav {
     width: 100%;
     font-family: 'Crimson Text', serif;
     justify-content: center;
+    font-size: clamp(1rem, -0.1250rem + 1.6667vw, 1.25rem);
 }
   
 .nav-i, .nav-i-b {
@@ -1112,7 +1119,7 @@ nav {
     padding: .3em 0;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     letter-spacing: .05em;
-    font-size: clamp(0.2rem, -0.1000rem + 1.5000vw, 3.5rem) !important;
+    font-size: clamp(0.8rem, -0.1000rem + 1.5000vw, 3.5rem) !important;
 }
   
 
@@ -1624,6 +1631,7 @@ nav {
     letter-spacing: 0.1em;
     word-spacing: .2em;
     transition: all 600ms ease-in-out;
+    font-size: clamp(1.5rem, 1.0370rem + 2.3148vw, 4rem) !important;
 }
 
 .editor-name-img h2:hover {
@@ -1776,6 +1784,35 @@ footer div {
 /* ########################################################################################## */
 /* ########################################################################################## */
 /* ########################################################################################## */
+@media only screen and (orientation: landscape) and (min-width: 1079.98px) {
+    label {
+        font-size: clamp(1rem, 0.9720rem + 0.4141vw, 1.5rem);
+    }
+
+}
+
+
+@media only screen and (orientation: landscape) and (max-width: 1919.98px) {
+    .issue-main {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1919.98px) {
+    #homeBody {
+        column-count: 2;
+    }
+    #documentationBody {
+        column-count: 2;
+    }
+    .article-container, .article-comparison-container {
+        column-count: 1;
+    }
+    .issue-main {
+        box-shadow: none;
+    }
+}
 
 
 @media only screen and (orientation: landscape) and (min-width: 1080px) {
@@ -1786,10 +1823,49 @@ footer div {
     .overlay-content {
         width: 60%;
     }
+    .time-single-image {
+        display: none;
+    }
+    .doc-images-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around;
+        width: 90% !important;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+    }
+    .doc-images-container img {
+        width: 40% !important;
+    }
+    .doc-image-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+    }
+    .doc-image-container figure img {
+        margin-left: 30%;
+        width: 40% !important;
+    }
+    .doc-images-container-3 {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-top: 3.5%;
+        margin-bottom: 3.5%;
+        margin-left: 5%;
+    }
+    .doc-images-container-3 img {
+        width: 27.5%;
+        margin-left: 5%;
+    }
 }
 
 /* 1036 */
-@media only screen and (max-width: 1080px) and (orientation: landscape) {
+@media only screen and (max-width: 1079.98px) and (orientation: landscape) {
     .home-main, .issue-main {
         margin: 5%;
         padding-bottom: 5%;
@@ -2021,6 +2097,14 @@ footer div {
     .issue-main {
         overflow: hidden;
     }
+    .page-presentation, .documentation-page-presentation, .issue-main {
+        box-shadow: none;
+    }
+    .modal-content {
+        border-radius: 5px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* 1284 */
@@ -2112,6 +2196,10 @@ footer div {
     }
     .editor-name-img img {
         width: 60%;
+        margin-left: 20%;
+    }
+    .editor-name-container {
+        text-align: center;
     }
 
     /* DISCLAIMER */
