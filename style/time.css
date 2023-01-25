@@ -2176,7 +2176,7 @@ footer div {
         text-align: left;
     }
     .article-container p, .article-comparison-container p,
-    .article-container li, .article-comparison-container p a,
+    .article-container li, .article-p a,
     .article-container li a {
         font-size: 1.6rem;
     }
