@@ -278,8 +278,10 @@ nav {
 
 .btns-grid-container {
     display: grid;
-    grid-template-columns: 4vw 4vw 4vw;
-    grid-template-rows: 4vw 4vw 4vw 4vw;
+    /*grid-template-columns: 4vw 4vw 4vw;
+    grid-template-rows: 4vw 4vw 4vw 4vw;*/
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
     position: fixed;
     bottom: 3.5vmin;
     right: 3.5vmin;
@@ -1882,12 +1884,12 @@ footer div {
         text-align: left !important;
     }
 
-    /* BUTTONS STYLE AND TOP */
+    /* BUTTONS STYLE AND TOP 
     .btns-grid-container {
         display: grid;
         grid-template-columns: 6vh 6vh 6vh;
         grid-template-rows: 8vh 8vh 8vh 8vh;
-    }
+    }*/
     
     /* PAGE PRESENTATION */
     .title-container h1 {
@@ -2142,12 +2144,12 @@ footer div {
         display: none;
     } 
     
-    /* BUTTONS STYLE AND TOP */
+    /* BUTTONS STYLE AND TOP 
     .btns-grid-container {
         display: grid;
         grid-template-columns: 6vh 6vh 6vh;
         grid-template-rows: 8vh 8vh 8vh 8vh;
-    }
+    }*/
 
     /* PAGE PRESENTATION */
     .title-container h1 {
