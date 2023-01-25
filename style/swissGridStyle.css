@@ -355,6 +355,7 @@ nav {
 
 .page-presentation {
     height: 100vh;
+    overflow: hidden;
     display: grid;
     place-content: center;
     place-items: start center;
@@ -550,7 +551,7 @@ nav {
 }
 
 .esd-lt-block {
-    margin-bottom: 30%;
+    margin-bottom: 55%;
 }
 
 
@@ -2445,33 +2446,31 @@ footer div p {
 
 @media only screen and (max-width: 420px) {
     .esd-rt-block, .esd-lt-block {
-        width: 100% !important;
+        width: 100%;
     }
 
     .home-flex-row {
-        margin-top: 35% !important;
+        margin-top: 55%;
     }
 
     .poster-container{
-        margin-top: 15% !important;
+        margin-top: 15%;
     }
 
-    #editorsAndSourcesDescription .esd-rt-block {
-        margin-top: 35% !important;
-    }
+
 
     .doc-section {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     p, li {
-        font-weight: 400 !important;
+        font-weight: 400;
     }
 
     .article-title {
-        border-left: .3rem solid #f54123 !important;
-        padding-left: .3rem !important;
+        border-left: .3rem solid #f54123;
+        padding-left: .3rem;
     }
 
     #homeTp2 {
@@ -2516,8 +2515,8 @@ footer div p {
     }
 
     #disclaimerTitle {
-        padding: 0 !important;
-        margin-bottom: 10% !important;
+        padding: 0 ;
+        margin-bottom: 10% ;
     }
 
     .disclaimer-page-presentation {
