@@ -2213,6 +2213,12 @@ footer div p {
 }
 
 @media only screen and (max-width: 860px), (orientation: portrait) and (max-width: 1280px) {
+
+    .overlay-paragraph {
+		display: none !important;
+	}
+
+    
     #homeBody, #documentationBody {
         margin: 5% !important;
     }
