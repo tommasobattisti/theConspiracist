@@ -1895,7 +1895,10 @@ footer div {
     .metadata-container h2 {
         font-size: 2rem;
     }
-    .metadata-container li, .metadata-container a, .metadata-container label {
+    .metadata-container li, .metadata-container a, .entity-selector label {
+        font-size: 1.6rem;
+    }
+    .tab-content li a {
         font-size: 1.6rem;
     }
     .issue-main {
@@ -1936,6 +1939,9 @@ footer div {
     }
     #documentationBody p::first-letter {
         font-size: 1.8rem;
+    }
+    .doc-subtitle-container p {
+        font-size: 1.6rem;
     }
     
     /* ABOUT */
