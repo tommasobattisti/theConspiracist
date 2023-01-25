@@ -2280,6 +2280,12 @@ footer div p {
 	.editor-container {
 		width: 100%;
 	}
+
+	.fa-envelope {
+		margin-left: 50%;
+	}
+
+
 }
 
 
