@@ -259,7 +259,7 @@ nav {
     border-radius: 10px;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-weight: 500;
-    font-size: clamp(1.4rem, 1.0727rem + 1.6364vw, 5rem) !important;
+    font-size: clamp(1.5rem, 1.4074rem + 0.4630vw, 2rem) !important;
     transition: all 350ms ease-in-out;
 }
 
@@ -269,7 +269,6 @@ nav {
     box-shadow: 0px 12px 18px rgba(240, 229, 209, 0.1);
     scale: 1.1;
     font-weight: 700;
-    font-size: clamp(1.5rem, 1.0727rem + 1.6364vw, 5.2rem) !important;
     transition: 400ms;
     letter-spacing: .1em;
     transition: all 350ms ease-in-out;
@@ -278,8 +277,6 @@ nav {
 
 .btns-grid-container {
     display: grid;
-    /*grid-template-columns: 4vw 4vw 4vw;
-    grid-template-rows: 4vw 4vw 4vw 4vw;*/
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: 50px 50px 50px 50px;
     position: fixed;
@@ -1885,11 +1882,6 @@ footer div {
     }
 
     /* BUTTONS STYLE AND TOP 
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 6vh 6vh 6vh;
-        grid-template-rows: 8vh 8vh 8vh 8vh;
-    }*/
     
     /* PAGE PRESENTATION */
     .title-container h1 {
@@ -2145,11 +2137,6 @@ footer div {
     } 
     
     /* BUTTONS STYLE AND TOP 
-    .btns-grid-container {
-        display: grid;
-        grid-template-columns: 6vh 6vh 6vh;
-        grid-template-rows: 8vh 8vh 8vh 8vh;
-    }*/
 
     /* PAGE PRESENTATION */
     .title-container h1 {
