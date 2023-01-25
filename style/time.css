@@ -2051,16 +2051,18 @@ footer div {
     .about-main {
         margin: 0;
     }
+
     /* NAV */
     .navbar-nav {
-        width: 60%;
-        justify-content: flex-end !important;
-        align-items: center !important;
-        margin: 0 !important;
-        text-align: left !important;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
     }
     .nav-text {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .ddm-nav-text {
         width: 100%;
@@ -2143,7 +2145,7 @@ footer div {
     
     /* MAIN - ISSUE */
     .issue-main {
-        margin: 0;
+        margin: 0 !important;
     }
     #timeIssueExplore {
         display: none;
@@ -2173,11 +2175,13 @@ footer div {
         font-size: 2.2rem;
         text-align: left;
     }
-    .article-container p, .article-comparison-container p {
+    .article-container p, .article-comparison-container p,
+    .article-container li, .article-comparison-container a,
+    .article-container li a {
         font-size: 1.6rem;
     }
     .article-container p::first-letter, .article-comparison-container p::first-letter {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     .info-dl {
         font-size: 1.6rem !important;
