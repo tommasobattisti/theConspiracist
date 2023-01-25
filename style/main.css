@@ -654,13 +654,22 @@ h1 {
 
 /*About --------------------- */
 
+.about-nav-2030 {
+    position: fixed;
+    bottom: -1px;
+    border-bottom: none;
+}
+
+
 .about-page-presentation {
 	display: none ;
+	border-bottom: none !important;
 }
 
 
 .about-main {
-	height: calc(90vh - 1px);
+	min-height: calc(90vh - 1px);
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -670,7 +679,6 @@ h1 {
 
 #about2030Container {
 	width: 70%;
-	height: 82.5vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -2225,9 +2233,9 @@ footer div p {
 		width: 60%;
 	}
 
-	#nav2030 {
-		position: fixed;
-		top: -1px;
+	#nav2030, .about-nav-2030 {
+		position: fixed !important;
+		top: -1px !important;
 	}
 
 	.page-presentation {
@@ -2235,7 +2243,7 @@ footer div p {
 		height: 100vh;
 	}
 
-	.disclaimer-page-presentation {
+	.disclaimer-page-presentation, .about-page-presentation  {
 		margin-top: 15vh !important;
 		border-bottom: none !important;
 		height: 110vh !important;
@@ -2250,6 +2258,34 @@ footer div p {
 	.article-container, .article-container {
 		overflow: hidden;
 	}
+
+
+	#about2030Container {
+		width: 85%;
+		margin-top: 12.5vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	#about2030Container h2 {
+		font-size: 3rem;
+	}
+
+
+	#editorsContainer {
+		flex-direction: column;
+	}
+
+	.editor-container {
+		width: 100%;
+	}
+
+	.fa-envelope {
+		margin-left: 50%;
+	}
+
+
 }
 
 
@@ -2261,6 +2297,8 @@ footer div p {
 
 
 
-@media only screen and (orientation: landscape) and (min-aspect-ratio:16/9) {
+@media only screen and (orientation: landscape) and (min-aspect-ratio:18/9) {
+
+
 
 }
