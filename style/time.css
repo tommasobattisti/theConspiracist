@@ -2145,7 +2145,11 @@ footer div {
     
     /* MAIN - ISSUE */
     .issue-main {
+        overflow: hidden;
         margin: 0 !important;
+    }
+    .meta-text-container {
+        margin: 1% !important;
     }
     #timeIssueExplore {
         display: none;
