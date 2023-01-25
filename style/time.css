@@ -65,7 +65,7 @@ body {
 }
 
 .overlay-paragraph {
-    font-size: clamp(1.25rem, 0.6485rem + 1.1881vw, 3.5rem) !important;
+    font-size: clamp(1.25rem, 1.0909rem + 0.7955vw, 3rem) !important;
     font-weight: 200;
     margin-bottom: 0.5em;
     font-family: 'Crimson Text', serif;
@@ -1783,6 +1783,9 @@ footer div {
         width: 15rem;
         text-align: left !important;
     }
+    .overlay-content {
+        width: 60%;
+    }
 }
 
 /* 1036 */
@@ -2014,6 +2017,9 @@ footer div {
 @media all and (orientation:portrait) {
     #timeIssueExplore {
         display: none;
+    }
+    .issue-main {
+        overflow: hidden;
     }
 }
 
