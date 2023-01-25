@@ -28,6 +28,8 @@
     }
 }
 
+
+
 @media only screen and (width <= 1024px) {
     .meta-text-container {
         margin: 0 !important;
@@ -93,6 +95,78 @@
     .footer-container {
         width: 80% !important;
     }
+
+    .doc-section {
+        margin-top: 35% !important;
+    }
+
+    .doc-subsection {
+        margin-bottom: 15% !important;
+    }
+
+
+    .doc-figure-container, .doc-figure-caption {
+        width: 85% !important;
+        margin-left: 7.5% !important;
+    }
+    .doc-images-container-3, .doc-images-container {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .doc-images-container-3 img, .doc-images-container img {
+        width: 85% !important;
+        margin-bottom: 10% !important;
+    }
+
+    #aboutDoubleContainer {
+        flex-direction: column !important;
+    }
+
+    .editor-container {
+        width: 100% !important;
+    }
+
+    .editor-image-container {
+        width: 40% !important;
+    }
+
+    .editor-name-container {
+        width: 55% !important;
+        transform: rotate(0deg) !important;
+        -moz-transform: rotate(0deg) !important;
+        -webkit-transform: rotate(0deg) !important;
+        -o-transform: rotate(0deg) !important;
+        -ms-transform: rotate(0deg) !important;
+    }
+
+    .envelope-show-on-small {
+        display: block !important;
+    }
+
+    .envelope-show-on-wide {
+        display: none !important;
+    }
+
+    .editor-name-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .about-page-presentation {
+        width: 91% !important;
+        margin-left: 3% !important;
+    }
+
+    .editor-container p {
+        width: 80%;
+    }
+
+    #editor1container {
+        margin-bottom: 5%;
+    }
+
+
 
 }
 
@@ -1098,7 +1172,6 @@ nav {
 #documentationBody a {
     color: #212529;
     font-weight: 400;
-    font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2rem;
@@ -1145,8 +1218,9 @@ nav {
     justify-content: center;
 }
 
-.about-page-presentation {
-    padding: 0 14vw 0 7vw;
+.about-page-presentation {  /*The width complememnts the right proportions in the horizontal marging 0 14% 0 7%*/
+    width: 79%;
+    margin-left: 7%;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
@@ -1191,7 +1265,7 @@ nav {
     margin-bottom: 5%;
 }
 
-.editor-name-img div {
+.editor-name-container {
     transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -1210,7 +1284,7 @@ nav {
     font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
 }
 
-.editor-name-img a {
+.envelope-show-on-wide {
     margin-left:  -20%;
     margin-right: 5%;
 }
@@ -1226,6 +1300,18 @@ nav {
     transition: 400ms;
 }
 
+.editor-image-container {
+    width: 90%;
+}
+
+.editor-image-container img {
+    width: 100%;
+}
+
+
+.envelope-show-on-small {
+    display: none;
+}
 
 
 /*Disclaimer -------------------------------- */
