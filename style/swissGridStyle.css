@@ -17,202 +17,6 @@
 
 
 
-@media only screen and (width <= 1330px) {
-    #swissRotatedPill{
-        grid-column: 6/8;
-    }
-
-    .doc-title-container {
-        grid-column: 4/9 !important;
-        align-items: center !important;
-    }
-}
-
-
-
-@media only screen and (width <= 1024px) {
-    .meta-text-container {
-        margin: 0 !important;
-    }
-
-}
-
-@media only screen and (width <= 860px), (orientation: portrait) and (width <= 1280px) {
-    #homeBody, #documentationBody {
-        margin: 5% !important;
-    }
-
-    .doc-subsection {
-        margin: 0 !important;
-    }
-
-    #magazineDescription {
-        flex-direction: column !important;
-    }
-
-    #mdTitleCont {
-        transform: rotate(0deg) !important;
-        -moz-transform: rotate(0deg) !important;
-        -webkit-transform: rotate(0deg) !important;
-        -o-transform: rotate(0deg) !important;
-        -ms-transform: rotate(0deg) !important;
-    }
-
-    #mdParCont p {
-        margin-bottom: 1rem !important;
-    }
-
-    #mdTitleCont h2 {
-        text-align: left !important;
-    }
-
-    #mdParCont, #mdTitleCont {
-        width: 100% !important;
-    }
-
-    .home-flex-row {
-        flex-direction: column !important;
-    }
-
-    #styleChangeDescription .row-lt-block {
-        width: 100% !important;
-        margin-bottom: 5%;
-    }
-
-    #styleChangeDescription .row-rt-block {
-        width: 50% !important;
-    }
-
-    #issuesFeaturesDescription .row-rt-block {
-        width: 100% !important;
-        margin-bottom: 5%;
-    }
-
-    #issuesFeaturesDescription .row-lt-block {
-        width: 100% !important;
-    }
-
-    .footer-container {
-        width: 80% !important;
-    }
-
-    .doc-section {
-        margin-top: 35% !important;
-    }
-
-    .doc-subsection {
-        margin-bottom: 15% !important;
-    }
-
-
-    .doc-figure-container, .doc-figure-caption {
-        width: 85% !important;
-        margin-left: 7.5% !important;
-    }
-    .doc-images-container-3, .doc-images-container {
-        flex-direction: column !important;
-        align-items: center;
-    }
-
-    .doc-images-container-3 img, .doc-images-container img {
-        width: 85% !important;
-        margin-bottom: 10% !important;
-    }
-
-    #aboutDoubleContainer {
-        flex-direction: column !important;
-    }
-
-    .editor-container {
-        width: 100% !important;
-    }
-
-    .editor-image-container {
-        width: 40% !important;
-    }
-
-    .editor-name-container {
-        width: 55% !important;
-        transform: rotate(0deg) !important;
-        -moz-transform: rotate(0deg) !important;
-        -webkit-transform: rotate(0deg) !important;
-        -o-transform: rotate(0deg) !important;
-        -ms-transform: rotate(0deg) !important;
-    }
-
-    .envelope-show-on-small {
-        display: block !important;
-    }
-
-    .envelope-show-on-wide {
-        display: none !important;
-    }
-
-    .editor-name-container {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    .about-page-presentation {
-        width: 91% !important;
-        margin-left: 3% !important;
-    }
-
-    .editor-container p {
-        width: 80%;
-    }
-
-    #editor1container {
-        margin-bottom: 5%;
-    }
-
-
-
-}
-
-
-
-@media only screen and (width <= 768px) {
-    
-
-}
-
-
-@media only screen and (width <= 420px) {
-    .esd-rt-block, .esd-lt-block {
-        width: 100% !important;
-    }
-
-    .home-flex-row {
-        margin-top: 35% !important;
-    }
-
-    .poster-container{
-        margin-top: 15% !important;
-    }
-
-    #editorsAndSourcesDescription .esd-rt-block {
-        margin-top: 35% !important;
-    }
-
-    .doc-section {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    p, li {
-        font-size: 0.9em !important;
-        font-weight: 400 !important;
-    }
-
-}
-
-
-
-
-
-
-
 
 
 
@@ -229,6 +33,9 @@ li, li a {
          hyphens: auto;
 }
 
+* {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+}
 
 
 
@@ -250,50 +57,43 @@ li, li a {
   
   
   
-  .overlay-content {
-    position: absolute;
-    top: 25%; 
-    left: 15%;
-    width: 40%; /* 100% width */
-    text-align: left;
-    z-index: 3;
-    color: #f1f2f0;
-  }
-  
-  #generalOverlay {
-    display: block;
-  }
-  
-  
-  #generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
-    font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
-      font-weight: 600;
-      font-family: 'Helvetica Neue', Helvetica, sans-serif;
-      margin-bottom: 0.5em;
-  }
-  
-  
-  
-  
-  #generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
-      border-bottom: solid .15em #f54123;
-      font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
-      font-weight: 100;
-      font-family: 'Helvetica Neue', Helvetica, sans-serif;
-      margin-bottom: 2%;
-      font-style: italic;
-      padding-bottom: 1px;
-  }
-  
-  #generalOverlay p, #incunabulaOverlay p, #timeOverlay p, #swissOverlay p, #futureOverlay p {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: 300;
+.overlay-content {
+  position: absolute;
+  top: 25%; 
+  left: 15%;
+  width: 40%; /* 100% width */
+  text-align: left;
+  z-index: 3;
+  color: #f1f2f0;
+}
 
-  }
+#generalOverlay {
+  display: block;
+}
+
+
+#generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
+  font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
 
 
 
-  
+
+#generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
+    border-bottom: solid .15em #f54123;
+    font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
+    font-weight: 100;
+    margin-bottom: 2%;
+    font-style: italic;
+    padding-bottom: 1px;
+}
+
+#generalOverlay p, #incunabulaOverlay p, #timeOverlay p, #swissOverlay p, #futureOverlay p {
+  font-weight: 300;
+}
+
 
 #incunabulaOverlay, #timeOverlay, #swissOverlay, #futureOverlay,  #nav2030, #timeTitle, .eye-container, .home-2030, .home-magazine-img-container, #incunabulaPoster, .hidden, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, .link-time-home, #incunabulaAboutContainer {
     display: none;
@@ -358,7 +158,6 @@ nav {
 
 .nav-text {
     color: #212529 !important;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     padding: 0 .5em;
     text-decoration: none;
     -webkit-text-decoration: none;
@@ -401,7 +200,6 @@ nav {
 .ddm-nav-text {
     width: 100%;
     color: #212529;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 500 !important;
     margin: 1em;
     text-decoration: none;
@@ -491,7 +289,6 @@ nav {
     display: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
     border-radius: 50px;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 800;
     font-size: 1.4em;
     transition: 600ms;
@@ -568,9 +365,6 @@ nav {
     border-bottom: #212529 1px solid;
 }
 
-.page-presentation p {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-}
 
 .title-container{
     grid-row: 2/6;
@@ -580,10 +374,9 @@ nav {
 
 
 .title-container h1 {
-    font-size: clamp(2.5rem, 1.4545rem + 5.2273vw, 14rem);   /*Considering the min viewport width of 320px and the maximum of 3840px this is the best clamp for a perfect scale. View "https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/" for the reason*/
+    font-size: clamp(3rem, 1.6364rem + 6.8182vw, 18rem);   /*Considering the min viewport width of 320px and the maximum of 3840px this is the best clamp for a perfect scale. View "https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/" for the reason*/
     text-transform: lowercase;
     font-weight: 900;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
 #swissRotatedPill{
@@ -601,7 +394,7 @@ nav {
 
 #homeTp1 {
     font-size: clamp(1rem, 0.8000rem + 1.0000vw, 3.2rem);
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-weight: 400;
 }
 
@@ -642,7 +435,6 @@ nav {
 
 .home-main, .issue-main, .documentation-main {
     margin: 10.5vw 14vw 21vw 7vw;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
 
@@ -654,13 +446,12 @@ nav {
 
 
 #homeBody h3 {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-size: clamp(1.5rem, 1.4091rem + 0.4545vw, 2.5rem);
     font-weight: 600;
 }
 
 #homeBody p {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-weight: 300;
 }
 
@@ -673,7 +464,6 @@ nav {
 }
 
 .home-flex-row a {
-        font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
         color: #212529;
         text-decoration: underline;
         text-decoration-color: #558a86;
@@ -733,7 +523,7 @@ nav {
 #mdTitleCont h2 {
     font-size: clamp(2.2rem, 2.0818rem + 0.5909vw, 3.5rem);
     font-weight: 600;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    
     text-transform: lowercase;
     text-align: center;
 }
@@ -858,7 +648,7 @@ nav {
     margin: 0;
     padding: 0;
     font-weight: 900 !important;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-size: 2.2em !important;
     text-transform: lowercase;
 }
@@ -875,7 +665,7 @@ nav {
 
 #bottomPosterPs p {
     font-weight: 600;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     margin: 0;
     padding: 0;
     font-size: 0.7em !important;
@@ -943,15 +733,15 @@ nav {
 }
 
 .doc-title-container {
-    grid-column: 5/9;
+    grid-column: 5/8;
     grid-row: 7/9;
 }
 
 .doc-title-container h1 {
-    font-size: clamp(2.5rem, 1.4545rem + 5.2273vw, 14rem);
+    font-size: clamp(3rem, 1.6364rem + 6.8182vw, 18rem);
     text-transform: lowercase;
     font-weight: 900;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
 }
 
 
@@ -961,9 +751,7 @@ nav {
 }
 
 .doc-subtitle-container p {
-    font-size: 1.4em !important;
     font-weight: 400;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
 
@@ -972,19 +760,19 @@ nav {
 
 #swissDocIllustration {
     position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 40%;
+    left: 20%; 
+    top: -20%; 
+    width: 40%; 
     aspect-ratio: 1/1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1em;
-    transform: scale(1.2) rotate(45deg) translate(-30%, -10%);
-    -moz-transform: scale(1.2) rotate(45deg) translate(-30%, -10%);
-    -webkit-transform: scale(1.2) rotate(45deg) translate(-30%, -10%);
-    -o-transform: scale(1.2) rotate(45deg) translate(-30%, -10%);
-    -ms-transform: scale(1.2) rotate(45deg) translate(-30%, -10%);
+    gap: .8rem; 
+    transform: scale(1.2) rotate(45deg);
+    -moz-transform: scale(1.2) rotate(45deg);
+    -webkit-transform: scale(1.2) rotate(45deg);
+    -o-transform: scale(1.2) rotate(45deg);
+    -ms-transform: scale(1.2) rotate(45deg);
 
 }
 
@@ -995,7 +783,7 @@ nav {
     grid-row: 1;
     width: 100%;
     height: 100%;
-    background-color: #212529;
+    background-color: rgba(33, 37, 41, 0.85);
     animation: pulse-alt 3s ease-in-out infinite alternate;
 }
 
@@ -1004,7 +792,7 @@ nav {
     grid-row: 1/3;
     width: 100%;
     height: 100%;
-    background-color: #212529;
+    background-color: rgba(33, 37, 41, 0.85);
     animation: pulse 3.5s ease-in-out infinite alternate;
 }
 
@@ -1013,7 +801,7 @@ nav {
     grid-row: 2/4;
     width: 100%;
     height: 100%;
-    background-color: #212529;
+    background-color: rgba(33, 37, 41, 0.85);
     animation: pulse-alt 4s ease-in-out infinite alternate;
 }
 
@@ -1022,7 +810,7 @@ nav {
     grid-row: 2;
     width: 100%;
     height: 100%;
-    background-color: #212529;
+    background-color: rgba(33, 37, 41, 0.85);
     animation: pulse 4.5s ease-in-out infinite alternate;
 }
 
@@ -1031,7 +819,7 @@ nav {
     grid-row: 3;
     width: 100%;
     height: 100%;
-    background-color: #212529;
+    background-color: rgba(33, 37, 41, 0.85);
     animation: pulse-alt 5s ease-in-out infinite alternate;
 }
 
@@ -1043,7 +831,7 @@ nav {
     margin: 10%;
     display: flex;
     flex-direction: column;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
 }
 
 
@@ -1222,7 +1010,7 @@ nav {
     width: 79%;
     margin-left: 7%;
     height: 100%;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    padding-top: 15%;
 }
 
 .about-container {
@@ -1231,7 +1019,7 @@ nav {
 }
 
 .about-container h1 {
-    font-size: clamp(2.5rem, 1.4545rem + 5.2273vw, 14rem);
+    font-size: clamp(3rem, 1.6364rem + 6.8182vw, 18rem);
     font-weight: 900;
     text-transform: lowercase;
     margin-bottom: 5%;
@@ -1375,7 +1163,6 @@ margin: 0;
 #disclaimerSources a {
     color: #212529;
     font-weight: 400;
-    font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2em;
@@ -1431,26 +1218,25 @@ margin: 0;
 }
 
 .issue-page-presentation .title-container {
-    grid-column: 7;
+    grid-column: 8;
     grid-row: 4;
+    transform: rotate(-90deg) translateY(1.2rem) translateX(2rem);
+    -moz-transform: rotate(-90deg) translateY(1.2rem) translateX(2rem);
+    -webkit-transform: rotate(-90deg) translateY(1.2rem) translateX(2rem);
+    -o-transform: rotate(-90deg) translateY(1.2rem) translateX(2rem);
+    -ms-transform: rotate(-90deg) translateY(1.2rem) translateX(2rem);
 }
 
 #pizzagateTitle {
     color: whitesmoke;
-    font-size: clamp(3.5rem, -0.3930rem + 10.9661vw, 14rem);
+    font-size: clamp(7.5rem, 6.7273rem + 3.8636vw, 16rem);
     font-weight: 900;
-    transform: rotate(-90deg) translateY(85px) translateX(50px);
-    -moz-transform: rotate(-90deg) translateY(85px) translateX(50px);
-    -webkit-transform: rotate(-90deg) translateY(85px) translateX(50px);
-    -o-transform: rotate(-90deg) translateY(85px) translateX(50px);
-    -ms-transform: rotate(-90deg) translateY(85px) translateX(50px);
 }
 
 #issueTp1 {
     grid-column: 2/5;
     grid-row: 3/6;
     color: whitesmoke;
-    font-size: 2em;
     font-weight: 400;
 }
 
@@ -1482,7 +1268,7 @@ margin: 0;
 
   
 .mode-selctor-btns-div button {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-weight: 600;
     text-transform: lowercase;
     margin: .5rem 0;
@@ -1584,16 +1370,12 @@ margin: 0;
     text-align: left;
     font-size: 1.1rem;
     font-weight: 500;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     text-transform: lowercase;
 }
   
 .meta-menu-card{
     background-color: #f1f2f0 !important;
-}
-
-.card-body {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
 .card-body .checkbox-div label {
@@ -1617,7 +1399,7 @@ margin: 0;
 
 
 .entity-creation-form, .entity-creation-form-b {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     text-transform: lowercase;
     font-weight: 500;
     box-sizing: border-box;
@@ -1646,7 +1428,7 @@ margin: 0;
 .entity-string, .entity-string-b {
     border: solid 1px #212529;
     margin: .5rem 0;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     text-transform: lowercase;
     font-weight: 500;
 }
@@ -1675,7 +1457,7 @@ margin: 0;
     border: none;
     padding: 3% 5%;
     color: #212529;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-weight: 400;
     text-transform: lowercase;
     font-size: clamp(0.9rem, 0.8364rem + 0.3182vw, 1.6rem) !important;
@@ -1711,7 +1493,7 @@ margin: 0;
 .active-tc li {
     font-size: clamp(0.9rem, 0.8364rem + 0.3182vw, 1.6rem) !important;
     padding-right: 1em;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    
     font-weight: 400;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -1746,7 +1528,7 @@ margin: 0;
 /*Artice container*/
 .article-container {
     color: #212529;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    
     width: 70%;
     min-height: 200px;
 }
@@ -1771,7 +1553,6 @@ margin: 0;
 
 .article-container a, .article-comparison-container a {
     color: #212529;
-    font-size: clamp(0.8rem, 0.7000rem + 0.5000vw, 1.9rem);
     text-decoration: underline;
     text-decoration-color: #558a86;
     text-decoration-thickness: .2rem;
@@ -1832,7 +1613,7 @@ margin: 0;
 .article-title {
     margin-bottom: 1.5em;
     font-weight: 800;
-    font-size: 2.5em;
+    font-size: clamp(1.6rem, 0.9727rem + 3.1364vw, 8.5rem);
     border-left: .5rem solid #f54123;
     padding-left: .5rem;
     text-transform: lowercase;
@@ -1967,7 +1748,7 @@ margin: 0;
   .entity-creation-btn, .entity-creation-btn-b {
     width: min(fit-content, 30%);
     padding: .2rem .5rem;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-weight: 600;
     text-transform: lowercase;
     border-radius: 2px;
@@ -2008,7 +1789,7 @@ margin: 0;
 
 .metadata-modal-btn {
     padding: 0.4rem 0.8rem !important;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    
     font-weight: 600;
     text-transform: lowercase;
     margin: .5rem 0;
@@ -2089,7 +1870,7 @@ footer div {
 
 footer div p {
     font-weight: 400;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;;
+    ;
     color:#212529;
     font-size: clamp(0.6rem, 0.5455rem + 0.2727vw, 1.2rem);
 }
@@ -2378,5 +2159,328 @@ footer div p {
     }
     100% {
         color: #f54123;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (width <= 1330px) {
+    #swissRotatedPill{
+        grid-column: 5/9;
+        transform: rotate(-90deg) translateY(5em);
+    }
+
+    .doc-title-container {
+        grid-column: 4/9;
+        align-items: center;
+    }
+
+    #homeTp2 {
+        grid-column: 1/4;
+    }
+
+    #homeTp3 {
+        grid-column: 1/6;
+    }
+
+    #homeTp4 {
+        grid-column: 1/8;
+    }
+
+}
+
+
+
+@media only screen and (width <= 1024px) {
+    .meta-text-container {
+        margin: 0 !important;
+    }
+
+}
+
+@media only screen and (width <= 860px), (orientation: portrait) and (width <= 1280px) {
+    #homeBody, #documentationBody {
+        margin: 5% !important;
+    }
+
+
+    .page-presentation {
+        padding: 7.5vh 6vh 9vh 3vh;
+    }
+
+    .doc-subsection {
+        margin: 0 !important;
+    }
+
+
+    .issue-page-presentation .title-container {
+        grid-column: 6/8;
+        grid-row: 5;
+    }
+
+
+
+    #magazineDescription {
+        flex-direction: column !important;
+    }
+
+    #mdTitleCont {
+        transform: rotate(0deg) !important;
+        -moz-transform: rotate(0deg) !important;
+        -webkit-transform: rotate(0deg) !important;
+        -o-transform: rotate(0deg) !important;
+        -ms-transform: rotate(0deg) !important;
+    }
+
+    #mdParCont p {
+        margin-bottom: 1rem !important;
+    }
+
+    #mdTitleCont h2 {
+        text-align: left !important;
+    }
+
+    #mdParCont, #mdTitleCont {
+        width: 100% !important;
+    }
+
+    .home-flex-row {
+        flex-direction: column !important;
+    }
+
+    #styleChangeDescription .row-lt-block {
+        width: 100% !important;
+        margin-bottom: 5%;
+    }
+
+    #styleChangeDescription .row-rt-block {
+        width: 50% !important;
+    }
+
+    #issuesFeaturesDescription .row-rt-block {
+        width: 100% !important;
+        margin-bottom: 5%;
+    }
+
+    #issuesFeaturesDescription .row-lt-block {
+        width: 100% !important;
+    }
+
+    .footer-container {
+        width: 80% !important;
+    }
+
+
+
+    #swissDocIllustration {
+        left: -35%;
+        top: 25%;
+        width: 70%;
+        gap: 0.5rem;
+    }
+
+    .doc-title-container {
+        grid-column: 3/8;
+        grid-row: 8;
+    }
+
+    .doc-subtitle-container {
+        grid-column: 5/8;
+        grid-row: 2/4;
+    }
+
+    .doc-section {
+        margin-top: 35% !important;
+    }
+
+    .doc-subsection {
+        margin-bottom: 15% !important;
+    }
+
+
+    .doc-figure-container, .doc-figure-caption {
+        width: 85% !important;
+        margin-left: 7.5% !important;
+    }
+    .doc-images-container-3, .doc-images-container {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .doc-images-container-3 img, .doc-images-container img {
+        width: 85% !important;
+        margin-bottom: 10% !important;
+    }
+
+    #aboutDoubleContainer {
+        flex-direction: column !important;
+    }
+
+    .editor-container {
+        width: 100% !important;
+    }
+
+    .editor-image-container {
+        width: 20%;
+    }
+
+    .editor-name-container {
+        width: 55% !important;
+        transform: rotate(0deg) !important;
+        -moz-transform: rotate(0deg) !important;
+        -webkit-transform: rotate(0deg) !important;
+        -o-transform: rotate(0deg) !important;
+        -ms-transform: rotate(0deg) !important;
+    }
+
+    .envelope-show-on-small {
+        display: block !important;
+    }
+
+    .envelope-show-on-wide {
+        display: none !important;
+    }
+
+    .editor-name-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .about-page-presentation {
+        width: auto;
+        min-height: 100vh;
+    }
+
+    .editor-container p {
+        width: 80%;
+    }
+
+    #editor1container {
+        margin-bottom: 5%;
+    }
+
+
+    .disclaimer-page-presentation {
+        min-height: 100vh !important;
+        height: fit-content !important;
+        display: flex !important;
+        flex-direction: column;
+        padding: 7.5vh 6vh 9vh 3vh !important;
+    }
+
+    #disclaimerTitle {
+        padding: 0 !important;
+        margin-bottom: 10% !important;
+    }
+
+
+}
+
+
+
+@media only screen and (width <= 720px), (orientation: portrait) and (width <= 1280px) and (max-aspect-ratio:9/16) {
+    .index-page-presentation .title-container {
+        grid-column: 1/9 !important;
+    }
+
+
+    #swissRotatedPill {
+        transform: rotate(0);
+        grid-column: 4/9;
+        grid-row: 4;
+    }
+
+
+    #swissDocIllustration {
+        width: 90%;
+        left: -45%;
+    }
+
+
+    .doc-title-container {
+        transform: rotate(-45deg);
+        grid-column: 3/8;
+        grid-row: 7;
+    }
+
+    .doc-subtitle-container {
+        grid-column: 5/9;
+        grid-row: 2;
+    }
+
+}
+
+
+@media only screen and (width <= 420px) {
+    .esd-rt-block, .esd-lt-block {
+        width: 100% !important;
+    }
+
+    .home-flex-row {
+        margin-top: 35% !important;
+    }
+
+    .poster-container{
+        margin-top: 15% !important;
+    }
+
+    #editorsAndSourcesDescription .esd-rt-block {
+        margin-top: 35% !important;
+    }
+
+    .doc-section {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    p, li {
+        font-weight: 400 !important;
+    }
+
+    .article-title {
+        border-left: .3rem solid #f54123 !important;
+        padding-left: .3rem !important;
+    }
+
+    #homeTp2 {
+        grid-row: 8;
+        grid-column: 1/9;
+    }
+
+    #homeTp3 {
+        grid-row: 7;
+        grid-column: 1/7;
+    }
+
+    #homeTp4 {
+        grid-row: 6;
+        grid-column: 1/5;
+    }
+
+    #pizzagateTitle {
+        font-size: 6.5rem;
+    }
+
+    #swissDocIllustration {
+        width: 80%;
+        left: -45%;
+        top: 35%;
+    }
+
+    .editor-image-container {
+        width: 30%;
     }
 }
