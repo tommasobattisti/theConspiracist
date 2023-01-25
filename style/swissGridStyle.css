@@ -1010,7 +1010,6 @@ nav {
     width: 79%;
     margin-left: 7%;
     height: 100%;
-    padding-top: 15%;
 }
 
 .about-container {
@@ -1031,6 +1030,8 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
+
 
 .editor-container {
     width: 45%;
@@ -1064,6 +1065,7 @@ nav {
 .editor-name-img h2 {
     text-transform: lowercase;
     text-decoration: underline;
+    text-align: center;
     text-decoration-color: #f54123;
     text-decoration-thickness: .1em;
     -webkit-text-decoration: underline;
@@ -1073,7 +1075,6 @@ nav {
 }
 
 .envelope-show-on-wide {
-    margin-left:  -20%;
     margin-right: 5%;
 }
 
@@ -1107,19 +1108,23 @@ nav {
 
 .disclaimer-page-presentation {
     background-color: #f0ca75 !important;
+    padding: 7.5vh 6vh 9vh 3vh;
 }
 
+.disclaimer-page-presentation p, .disclaimer-page-presentation li  {
+    font-size: clamp(0.9rem, 0.8000rem + 0.5000vw, 2rem) !important;
+}
 
 
 #disclaimerTitle {
     grid-column: 1 / 6;
-    grid-row: 3 / 5;
+    grid-row: 2 / 5;
     color: #212529;
     font-weight: 900;
     text-transform: lowercase;
     display: flex;
     align-items: flex-end;
-    padding-left: 5%;
+    padding-left: 5vw;
 }
 
 
@@ -1137,7 +1142,7 @@ nav {
 
 #disclaimerPurpose {
     grid-column: 6 / 9;
-    grid-row: 3 / 5;
+    grid-row: 2;
     color: #212529;
     font-weight: 300;
 }
@@ -1145,8 +1150,8 @@ nav {
 
 #disclaimerSources {
     padding-top: 5%;
-    grid-column: 2 / 6;
-    grid-row: 5 / 8;
+    grid-column: 2 / 8;
+    grid-row: 5;
     color: #212529;
     font-weight: 300;
 }
@@ -2327,6 +2332,8 @@ footer div p {
 
     #aboutDoubleContainer {
         flex-direction: column !important;
+        width: 60%;
+        margin-left: 20%;
     }
 
     .editor-container {
@@ -2359,13 +2366,14 @@ footer div p {
         flex-direction: column !important;
     }
 
+    .editor-name-container h2 {
+        text-align: left;
+    }
+
     .about-page-presentation {
         width: auto;
         min-height: 100vh;
-    }
-
-    .editor-container p {
-        width: 80%;
+        margin-top: 10vh;
     }
 
     #editor1container {
@@ -2374,11 +2382,10 @@ footer div p {
 
 
     .disclaimer-page-presentation {
-        min-height: 100vh !important;
-        height: fit-content !important;
-        display: flex !important;
+        min-height: 100vh;
+        height: fit-content ;
+        display: flex ;
         flex-direction: column;
-        padding: 7.5vh 6vh 9vh 3vh !important;
     }
 
     #disclaimerTitle {
@@ -2419,6 +2426,11 @@ footer div p {
     .doc-subtitle-container {
         grid-column: 5/9;
         grid-row: 2;
+    }
+
+    #aboutDoubleContainer {
+        width: 95%;
+        margin-left: 0;
     }
 
 }
@@ -2483,5 +2495,26 @@ footer div p {
 
     .editor-image-container {
         width: 30%;
+    }
+}
+
+
+
+
+@media only screen and (orientation: landscape) and (min-aspect-ratio:16/9) {
+    .disclaimer-page-presentation {
+        min-height: 100vh;
+        height: fit-content ;
+        display: flex ;
+        flex-direction: column;
+    }
+
+    #disclaimerTitle {
+        padding: 0 !important;
+        margin-bottom: 10% !important;
+    }
+
+    .disclaimer-page-presentation {
+        padding: 10% 20%;
     }
 }
