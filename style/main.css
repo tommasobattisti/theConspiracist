@@ -26,41 +26,50 @@ body {
 }
 
 
+h1 {
+	color: rgba(76, 59, 77, 0.8);
+	font-weight: 800 !important;
+	font-size: clamp(2rem, 1.0909rem + 4.5455vw, 12rem) !important;
+	font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+
 
 .title-container {
-  position: absolute;
-  left: 15%;
-  top: 40%;
+
+}
+
+.subtitle-div {
+	width: 20%;
+}
+  
+.page-presentation p {
+	  font-size: clamp(0.7rem, 0.6000rem + 0.5000vw, 1.8rem);
+	  padding-left: 0.5rem;
+	  border-left: 2px solid rgba(10, 34, 57, 0.9);
 }
 
 #issueTp1 {
-	position: absolute;
-	left: 15%;
-	top: 60%;
 	width: 20%;
 	padding-left: 0.5rem;
 	border-left: 2px solid rgba(10, 34, 57, 0.9);
 	font-size: 0.9em;
 }
 
-.title-container h1 {
+.home-2030 h2, #documentationBody h2, #about2030Container h2 {
   color: rgba(76, 59, 77, 0.8);
-  font-size: 6em;
-  font-weight: 800;
-  font-family: 'Orbitron', sans-serif;
-}
-
-.home-2030 h2 {
-  color: rgba(76, 59, 77, 0.8);
-  font-size: 3.5em;
+  font-size: clamp(1.8rem, 1.2364rem + 2.8182vw, 8rem);
   font-weight: 800;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 5%;
 }
 
-.home-2030 h3 {
+.home-2030 h3, #documentationBody h3 {
   color: rgba(76, 59, 77, 0.8);
-  font-size: 2em;
+  font-size: clamp(1.4rem, 1.1818rem + 1.0909vw, 3.8rem);
   font-weight: 900;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 5%;
@@ -69,23 +78,9 @@ body {
 
 
 
-.subtitle-div {
-  position: absolute;
-  left: 15%;
-  top: 60%;
-  width: 20%;
-  padding-left: 0.5rem;
-  border-left: 2px solid rgba(10, 34, 57, 0.9);
-}
 
-.subtitle-div p {
-  margin: 0;
-  padding: 0;
-  color: rgba(10, 34, 57, 0.9);
-  font-weight: 500;
-  font-size: 0.9em;
-  font-family: 'Exo', sans-serif;
-}
+
+
 
 
 
@@ -99,7 +94,7 @@ body {
 	height: calc(10vh + 1px);
 	width: 100%;
 	color:  rgba(10, 34, 57, 0.9);;
-	font-size: 1.2em;
+	font-size: clamp(0.9rem, 0.8545rem + 0.2273vw, 1.4rem);
 	background: linear-gradient(90deg, #8691b3, #edeef3);
 	z-index: 1 !important;
 	border-bottom: solid 1px rgba(10, 34, 57, 0.9);
@@ -126,7 +121,6 @@ body {
   color: rgba(10, 34, 57, 0.9);
   text-decoration: none;
   margin: 0;
-  font-size: 1,2em;
   padding: 0 .5rem;
   transition: 400ms;
 }
@@ -141,6 +135,7 @@ body {
   color: #4C3B4D;
   font-weight: 600;
   transition: 400ms;
+  font-size: clamp(0.9rem, 0.8545rem + 0.2273vw, 1.4rem);
 }
 
 
@@ -264,7 +259,7 @@ body {
 
 
 #generalOverlay h2, #incunabulaOverlay h2, #timeOverlay h2, #swissOverlay h2, #futureOverlay h2 {
-	font-size: 3em;
+	font-size: clamp(1.5rem, 1.0455rem + 2.2727vw, 6.5rem);
 	font-weight: 800;
 	font-family: 'Orbitron', sans-serif;
 	margin-bottom: 0.5em;
@@ -275,7 +270,7 @@ body {
 
 #generalOverlay h3, #incunabulaOverlay h3, #timeOverlay h3, #swissOverlay h3, #futureOverlay h3 {
 	color: #8691b3;
-	font-size: 2em;
+	font-size: clamp(1.4rem, 1.1818rem + 1.0909vw, 3.8rem);
 	font-weight: 900;
 	font-family: 'Exo', sans-serif;
 	margin-bottom: 2%;
@@ -455,23 +450,10 @@ body {
 	top: 40%;
 }
 
-.doc-title-container h1 {
-	color: rgba(76, 59, 77, 0.8);
-	font-size: 6em;
-	font-weight: 800;
-	font-family: 'Orbitron', sans-serif;
-}
 
 
-.doc-subtitle-container p {
-	position: absolute;
-	left: 15%;
-	top: 60%;
-	width: 20%;
-	padding-left: 0.5rem;
-	border-left: 2px solid rgba(10, 34, 57, 0.9);
-	font-size: 0.9em;
-}
+
+
 
 
 
@@ -503,12 +485,7 @@ body {
 }
 
 
-#documentationBody h2 {
-	color: rgba(76, 59, 77, 0.8);
-	font-size: 3.5em;
-	font-weight: 800;
-	font-family: 'Orbitron', sans-serif;
-}
+
 
 .doc-subtitle {
 	color: rgba(76, 59, 77, 0.8);
@@ -519,13 +496,7 @@ body {
 }
 
 
-#documentationBody h3 {
-	color: rgba(76, 59, 77, 0.8);
-	font-size: 2em;
-	font-weight: 900;
-	font-family: 'Orbitron', sans-serif;
-	margin-bottom: 2%;
-}
+
 
 
 
@@ -685,13 +656,6 @@ body {
 }
 
 
-#about2030Container h2 {
-	color: rgba(76, 59, 77, 0.8);
-	font-size: 5em;
-	font-weight: 800;
-	font-family: 'Orbitron', sans-serif;
-	margin-bottom: 0.5em;
-}
 
 
 #editorsContainer {
@@ -788,17 +752,11 @@ transition: 600ms;
 	height: 80%;
 }
 
-#disclaimerTitle h1 {
-	color: rgba(76, 59, 77, 0.8);
-	font-size: 6em;
-	font-weight: 800;
-	font-family: 'Orbitron', sans-serif;
-}
 
 #disclaimerPurpose h2, #disclaimerSources h2 {
 	font-family: 'Orbitron', sans-serif;
 	color: #4C3B4D;
-	font-size: 2.5em;
+	font-size: clamp(1.8rem, 1.2364rem + 2.8182vw, 8rem);
 	font-weight: 800;
 	margin-top: 2.5%;
 	margin-bottom: 1%;
@@ -1143,7 +1101,6 @@ transition: 600ms;
 	color: rgba(76, 59, 77, 0.8);
 	font-size: 1.5em;
 	font-weight: 900;
-	font-family: 'Orbitron', sans-serif;
 	margin-top: 12.5%;
 	margin-bottom: 2.5%;
 }
@@ -1449,6 +1406,9 @@ footer div p {
 
 /* ---- Code adapted from https://codepen.io/miocene/pen/rNOVWor ---- */
 
+.eye-container {
+	display: none;
+}
 
 .eye-container *, .eye-container *:before, .eye-container *:after {
 		content: '';
@@ -2130,3 +2090,49 @@ footer div p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1330px) {
+    
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 860px), (orientation: portrait) and (max-width: 1280px) {
+
+}
+
+
+
+@media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
+	.nav-text {
+		padding: 0 0.2rem;
+	}
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    
+}
+
+
+
+
+@media only screen and (orientation: landscape) and (min-aspect-ratio:16/9) {
+
+}
