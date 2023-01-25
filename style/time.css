@@ -14,6 +14,7 @@
 }
 
 
+
 body {
     background-color: white;
 }
@@ -1240,6 +1241,10 @@ nav {
     hyphens: auto;
     font-family: 'Crimson Text', serif;
     line-height: 100%;
+}
+
+.article-container ol li, .article-comparison-container ol li {
+    list-style: none;
 }
 
 

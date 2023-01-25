@@ -10,6 +10,9 @@
   font-family: 'Orbitron', sans-serif;
 */
 
+.article-container ol li, .article-comparison-container ol li {
+    list-style: none;
+}
 
 .navbar, .home-main, #homeTp2, #homeTp3, #homeTp4, #swissDocIllustration, .time-only, .time-title-paragraph, #timeImage, #timeImageDescription, #incunabulaAboutContainer {
   display: none !important;
