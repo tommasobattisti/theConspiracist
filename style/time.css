@@ -1219,7 +1219,7 @@ nav {
 }
 
 .article-container p::first-letter, .article-comparison-container p::first-letter {
-    font-size: clamp(1.3rem, 0.9636rem + 1.1818vw, 4rem) !important;
+    font-size: clamp(1.4rem, 1.1636rem + 1.1818vw, 4rem) !important;
 }
 
 
@@ -1450,8 +1450,8 @@ nav {
 }
 
 #documentationBody p::first-letter {
-    font-size: clamp(1.3rem, 0.9636rem + 1.1818vw, 4rem) !important;
-    font-weight: 400;
+    font-size: clamp(1.4rem, 1.1636rem + 1.1818vw, 4rem) !important;
+    font-weight: 600;
 }
 
 #documentationBody li {
