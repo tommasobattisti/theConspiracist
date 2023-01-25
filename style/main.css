@@ -29,7 +29,7 @@ body {
 h1 {
 	color: rgba(76, 59, 77, 0.8);
 	font-weight: 800 !important;
-	font-size: clamp(2rem, 1.0909rem + 4.5455vw, 12rem) !important;
+	font-size: clamp(2.5rem, 1.6364rem + 4.3182vw, 12rem) !important;
 	font-family: 'Orbitron', sans-serif;
 }
 
@@ -1277,7 +1277,7 @@ footer div {
 footer div p {
 	font-family: 'Exo', sans-serif;
 	color: rgba(10, 34, 57, 0.8);
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 
@@ -2112,14 +2112,71 @@ footer div p {
 
 @media only screen and (max-width: 860px), (orientation: portrait) and (max-width: 1280px) {
 
+	.subtitle-div {
+		width: 35%;
+	}
+
+	.title-container {
+		top: 45%;
+	}
+
+	.subtitle-div, .title-container {
+		left: 10%;
+	}
+
+	.div-2030 {
+		width: 70%;
+		margin-left: 10%;
+		margin-top: 40%;
+	}
+
+	footer {
+		margin-top: 40%;
+	}
 }
 
 
 
 @media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
+
+	.eye-container {
+		display: none;
+	}
+
 	.nav-text {
 		padding: 0 0.2rem;
 	}
+
+	.div-2030 {
+		width: 85%;
+		margin-left: 5%;
+	}
+
+	.footer-container {
+		width: 90%;
+	}
+
+	.footer-container p {
+		font-size: 0.8rem !important;
+	}
+
+	.subtitle-div, .title-container {
+		left: 5%;
+	}
+
+	.subtitle-div {
+		top: 65%;
+	}
+
+	.subtitle-div {
+		width: 60%;
+	}
+
+	#nav2030 {
+		position: fixed;
+		top: -1px;
+	}
+
 }
 
 
