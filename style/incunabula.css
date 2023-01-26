@@ -1069,6 +1069,11 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
     padding-bottom: 2%;
     margin: 0;
 }
+
+.entity-type-selection, .entity-type-selection-b,
+.entity-type-selection:visited, .entity-type-selection-b:visited {
+    color: black;
+}
   
   .entity-creation-form input {
     width: 100%;
@@ -1347,14 +1352,9 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
   
 .metadata-modal-btn,
 .metadata-modal-btn:visited {
-    color: #F08B48;
+    color: white !important;
     background-color: #5A8094 !important;
     border-color: #5A8094 !important;
-}
-
-.metadata-modal-btn, .entity-creation-btn, .entity-creation-btn-b,
-.metadata-modal-btn:visited, .entity-creation-btn:visited, .entity-creation-btn-b:visited {
-  	color: black;
 }
 
 .metadata-modal-btn:hover {
@@ -1362,7 +1362,15 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
     border-color: #3c85ac  !important;
 }
   
-  
+.metadata-modal-btn, .entity-creation-btn, .entity-creation-btn-b,
+.metadata-modal-btn:visited, .entity-creation-btn:visited, .entity-creation-btn-b:visited {
+    background-color: #5A8094 !important;
+  	color: white;
+}
+
+.metadata-modal-btn:hover, .entity-creation-btn:hover, .entity-creation-btn-b:hover {
+    background-color: #3c85ac !important;
+}
   
   /*Multiple modal*/
 
