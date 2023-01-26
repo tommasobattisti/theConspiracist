@@ -35,3 +35,9 @@ _______________
 
 >## Disclaimer</br>
 > The project's purpose is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali. The documents contained in the web site have been selected for their length and complexity and their publication here is not intended to be an alternative or replace their original locations:</br> - [Panic, pizza and mainstreaming the alt-right](https://journals.sagepub.com/doi/full/10.1177/00113921211034896)</br> - [From Pizzagate to the Great Replacement](https://link.springer.com/chapter/10.1007/978-3-030-43005-4_3?utm_source=share&utm_medium=ios_app)</br> - [The QAnon Conspiracy Theory: A Security Threat in the Making?](https://ctc.westpoint.edu/the-qanon-conspiracy-theory-a-security-threat-in-the-making/).</br>All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2022 © The Conspiracist.
+
+_____________
+
+Authors:
+- [Tommaso Battisti](https://github.com/tommasobattisti)
+- [Lorenzo Paolini](https://github.com/Postitisnt)
