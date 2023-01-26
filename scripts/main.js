@@ -17,8 +17,11 @@ $(document).ready(function(){
 
 
 
-    $("#posterIconContainer").on('mouseleave', function() {
-        $('.sub-btn').css("display","none")      
+
+
+
+    $(".styles-btn").on('click', function() {
+        showBtnsOverlay();
     });
 
 
@@ -107,16 +110,18 @@ function toggleTopButton() {
 
 
     
-function changeBtnsVisibility() 
-{
-    if ($('.sub-btn').css("display") ==  "none")
-        {
+function showBtnsOverlay() {
+    if ($('.sub-btn').css("display") ==  "none") {
             $('.sub-btn').css("display","block")
-        }
-    else
-        {
+    } else {
             $('.sub-btn').css("display","none")
-        }
+    }
+
+    if ($(".overlay-style-page").css("display") == "none"){
+        openOverlay();
+    } else {
+        closeOverlay();
+    }
 }
 
 
@@ -173,13 +178,6 @@ function maintainStyleOnLoad()
 
 //°°°°°°°°°°°°°°°°°°
 /* Open when someone clicks on the span element */
-function displayOverlay() {
-    if ($(".overlay-style-page").css("display") == "none"){
-        openOverlay();
-    } else {
-        closeOverlay();
-    }
-}
 
 
 function closeOverlay() {
