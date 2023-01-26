@@ -252,10 +252,14 @@ nav {
 
 
 
-.btns-grid-item button svg, #timeMachineImg{
+#timeMachineImg{
     height: 85%;
 }
 
+.btns-grid-item button svg {
+    height: 70%;
+    width: 70%;
+}
   
 #stylesBtn, #modalBtn, #toTopBtn  {
     background-color: whitesmoke;

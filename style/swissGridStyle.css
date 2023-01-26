@@ -233,8 +233,13 @@ nav {
 
 /*BUTTONS SUB-SECTION */
 
-.btns-grid-item button svg, #timeMachineImg{
+#timeMachineImg{
     height: 85%;
+}
+
+.btns-grid-item button svg {
+    height: 70%;
+    width: 70%;
 }
 
 
