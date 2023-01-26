@@ -1776,15 +1776,12 @@ footer div {
 
 }
 
-
 @media only screen and (orientation: landscape) and (max-width: 1919.98px) {
     .issue-main {
-        margin: 2.5%;
-        padding: 5%;
+        margin: 1.5%;
+        padding: 1.5%;
+        box-shadow: none;
     }
-}
-
-@media only screen and (orientation: landscape) and (max-width: 1919.98px) {
     #homeBody {
         column-count: 2;
     }
@@ -1793,9 +1790,6 @@ footer div {
     }
     .article-container, .article-comparison-container {
         column-count: 1;
-    }
-    .issue-main {
-        box-shadow: none;
     }
 }
 
@@ -1987,27 +1981,27 @@ footer div {
     }
     .nav-text {
         padding: 2%;
-        font-size: 2.5vw;
+        /*font-size: 2.5vw;*/
     }
 
     /* PAGE PRESENTATION */
     .page-presentation {
         box-shadow: none;
     }
-
-
-
+    /*
     .sub-btn {
         font-size: 3vw;
     }
-
+    */
     /* MAIN - HOME */
     #homeBody {
         column-count: 1;
     }
+    /*
     #homeBody p {
         font-size: 3vw;
     }
+    */
     
     /* MAIN - ISSUE */
     .meta-text-container {
