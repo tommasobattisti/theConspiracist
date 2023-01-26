@@ -647,6 +647,10 @@ nav {
     border-top: solid .2em black;
     align-self: center;
 }
+
+.mode-selector button, .mode-selector button:visited {
+    color: black !important;
+}
   
 
 .mode-selctor-btns-div {
@@ -1017,7 +1021,7 @@ nav {
     font-family: 'Crimson Text', serif;
     text-transform: lowercase;
     background-color: #d62603;
-    color: white;
+    color: white !important;
     border: 1px solid black;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0);
     outline: 1px solid;
@@ -1062,7 +1066,7 @@ nav {
   
 .nav-i, .nav-i-b,
 .nav-i:visited, .nav-i-b:visited {
-    color: black;
+    color: black !important;
     background-color: transparent;
     border: none;
     padding: 3% 5%;
