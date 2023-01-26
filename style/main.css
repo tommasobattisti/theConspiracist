@@ -127,7 +127,7 @@ h1 {
 
 
 #centerNav2030 {
-  border-top: solid 1px  rgba(10, 34, 57, 0.9);;
+  border-top: solid 1px  rgba(10, 34, 57, 0.9);
   width: 30% !important;
   margin-left: 35%;
   display: flex;
@@ -1189,13 +1189,17 @@ transition: 600ms;
   width: 100%;
 }
 
-.nav-i, .nav-i-b {
-  background-color: transparent;
-  border: none;
-  padding: 3% 5%;
+.nav-i, .nav-i-b,
+.nav-i:visited, .nav-i-b:visited {
+	color: rgba(10, 34, 57, 0.9);
+	background-color: transparent;
+	border: none;
+	padding: 3% 5%;
 }
 
-.active-nav-i {
+.active-nav-i,
+.active-nav-i:visited {
+	color: rgba(10, 34, 57, 0.9);
 	background: inherit !important;
 	box-shadow: inset 0 2000px rgba(255, 255, 255, 0.5);
 	border: none;
