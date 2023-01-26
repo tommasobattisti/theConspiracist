@@ -48,10 +48,7 @@
     }
 
 
-    .btns-grid-item button svg {
-        height: 75%;
-        width: 75%;
-    }
+
 
 }
 
@@ -66,6 +63,11 @@
     .overlay-paragraph {
 		display: none !important;
 	}
+
+    .btns-grid-item button svg {
+        height: 80%;
+        width: 80%;
+    }
 }
 
 
