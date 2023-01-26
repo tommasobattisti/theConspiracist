@@ -251,11 +251,11 @@ nav {
 /*BUTTONS SUB-SECTION */
 
 .btns-grid-item button svg {
-    width: 70%;
-    height: 70%;
-  }
+    width: 100%;
+    height: 100%;
+}
 
-  #timeMachineImg, #toTopContainer, #stylesBtnContainer {
+#timeMachineImg, #toTopContainer, #stylesBtnContainer {
     height: 85%;
 }
 
