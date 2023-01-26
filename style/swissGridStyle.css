@@ -269,7 +269,8 @@ nav {
 
   
 
-.sub-btn {
+.sub-btn, .sub-btn:visited {
+    color: #212529;
     background-color: whitesmoke;
     width: 100%;
     height: 20%;
@@ -1247,8 +1248,9 @@ margin: 0;
   
 
   
-.mode-selctor-btns-div button {
-    
+.mode-selctor-btns-div button,
+.mode-selctor-btns-div button:visited {
+    color: #212529;
     font-weight: 600;
     text-transform: lowercase;
     margin: .5rem 0;
@@ -1721,16 +1723,17 @@ margin: 0;
     margin: 5% 0;
   }
   
-  .entity-creation-btn, .entity-creation-btn-b {
+.entity-creation-btn, .entity-creation-btn-b,
+.entity-creation-btn:visited, .entity-creation-btn-b:visited {
     width: min(fit-content, 30%);
     padding: .2rem .5rem;
-    
+    color: #212529;
     font-weight: 600;
     text-transform: lowercase;
     border-radius: 2px;
     border: solid 1px #212529;
     background-color: #f1f2f0;
-  }
+}
 
 .entity-creation-btn:hover {
     color: #f54123;
@@ -1756,16 +1759,18 @@ margin: 0;
   
 /*Multiple modal*/
 
-.entity-type-selection, .entity-type-selection-b {
+.entity-type-selection, .entity-type-selection-b,
+.entity-type-selection:visited, .entity-type-selection-b:visited {
     background-color: #f1f2f0;
     border-radius: 5px;
     border: #212529 1px solid;
+    color: #212529 !important;
 }
 
 
-.metadata-modal-btn {
+.metadata-modal-btn, .metadata-modal-btn:visited {
     padding: 0.4rem 0.8rem !important;
-    
+    color: #212529;
     font-weight: 600;
     text-transform: lowercase;
     margin: .5rem 0;
