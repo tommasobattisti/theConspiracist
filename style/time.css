@@ -633,8 +633,8 @@ nav {
     0 0 0 72.5px white,
     0 0 0 75px rgb(0, 0, 0);
 }
-.mode-selector {
-    color: black;
+.mode-selector, .mode-selector:visited {
+    color: black !important;
     width: 100%;
     height: fit-content;
     margin: 0;
@@ -646,9 +646,6 @@ nav {
     border-bottom: solid .2em black;
     border-top: solid .2em black;
     align-self: center;
-}
-.mode-selector:visited {
-    color: black;
 }
   
 
@@ -1038,7 +1035,9 @@ nav {
 }
 
 .entity-type-selection,
-.entity-type-selection:visited {
+.entity-type-selection:visited,
+.entity-type-selection-b,
+.entity-type-selection-b:visited {
     color: black !important;
 }
 
