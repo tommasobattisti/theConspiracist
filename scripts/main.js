@@ -16,7 +16,9 @@ $(document).ready(function(){
     });
 
 
-
+    $("#toTopBtn").on('click', function() {
+        scrollToTop();
+    });
 
 
 
