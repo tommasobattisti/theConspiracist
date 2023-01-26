@@ -440,7 +440,7 @@ function loadInB(file, label){                  //we do the same thing if you wa
 
 //Show entities in the text
 function showEntities(r){ //r is the suffix that we use to distinguish between the forms that manage the entities in the article
-    if ((r == "-a") || (r == "-x")){
+    if ((r == "-a") || (r == "-x")){ //single mode
         var toCheck = "-ax";
         var cont = ".article-container";
     } else {
