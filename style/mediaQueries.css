@@ -48,8 +48,8 @@
     }
     
     .btns-grid-item button svg {
-        height: 80%;
-        width: 80%;
+        height: 90% !important;
+        width: 90% !important;
     }
 
 }
