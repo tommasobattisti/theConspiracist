@@ -66,7 +66,7 @@ footer p {
     z-index: 99; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgb(0, 0, 0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
 }
 
@@ -317,7 +317,9 @@ nav {
     z-index: 999;
 }
   
-.btns-grid-container div button {
+.btns-grid-container div button,
+.btns-grid-container div button:visited {
+    color: black;
     height: 100%;
 }
   
@@ -962,7 +964,9 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
 
 
   
-.mode-selctor-btns-div button {
+.mode-selctor-btns-div button,
+.mode-selctor-btns-div button:visited {
+    color: black;
     padding: 1.5% 0;
     height: 100%;
     width: 25%;
@@ -1050,7 +1054,9 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
 }
 
 
-.entity-creation-form, .entity-creation-form-b {
+.entity-creation-form, .entity-creation-form-b,
+.entity-creation-form:visited, .entity-creation-form-b:visited {
+    color: black;
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -1062,6 +1068,11 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
     padding-top: 2%;
     padding-bottom: 2%;
     margin: 0;
+}
+
+.entity-type-selection, .entity-type-selection-b,
+.entity-type-selection:visited, .entity-type-selection-b:visited {
+    color: black;
 }
   
   .entity-creation-form input {
@@ -1096,13 +1107,17 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
     width: 100%;
 }
   
-.nav-i, .nav-i-b {
+.nav-i, .nav-i-b,
+.nav-i:visited, .nav-i-b:visited {
+    color: black;
     background-color: transparent;
     border: none;
     padding: 3% 5%;
 }
   
-.active-nav-i {
+.active-nav-i,
+.active-nav-i:visited {
+    color: black;
     background-color: #F6BF77;
     border: 1px solid;
 }
@@ -1335,7 +1350,9 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
     margin: 5% 0;
   }
   
-.metadata-modal-btn {
+.metadata-modal-btn,
+.metadata-modal-btn:visited {
+    color: white !important;
     background-color: #5A8094 !important;
     border-color: #5A8094 !important;
 }
@@ -1345,7 +1362,15 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
     border-color: #3c85ac  !important;
 }
   
-  
+.metadata-modal-btn, .entity-creation-btn, .entity-creation-btn-b,
+.metadata-modal-btn:visited, .entity-creation-btn:visited, .entity-creation-btn-b:visited {
+    background-color: #5A8094 !important;
+  	color: white;
+}
+
+.metadata-modal-btn:hover, .entity-creation-btn:hover, .entity-creation-btn-b:hover {
+    background-color: #3c85ac !important;
+}
   
   /*Multiple modal*/
 
