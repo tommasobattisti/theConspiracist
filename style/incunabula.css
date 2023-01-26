@@ -497,7 +497,8 @@ nav {
 }
 
 
-#homeBody a {
+#homeBody a,
+#homeBody a:visited {
     color:#5A8094;
     text-decoration-color: #5A8094;
     transition: 300ms;
@@ -785,7 +786,8 @@ nav {
 
 
 
-#documentationBody a {
+#documentationBody a,
+#documentationBody a:visited {
     color:#5A8094;
     text-decoration-color: #5A8094;
     transition: 300ms;
@@ -1250,7 +1252,9 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
          hyphens: auto;
 }
 
-.tab-content-b li a, .docs-list-a li a, .docs-list-b li a, .active-tc a, .active-tc-b a {
+.tab-content-b li a, .docs-list-a li a, .docs-list-b li a, .active-tc a, .active-tc-b a,
+.tab-content-b li a:visited, .docs-list-a li a:visited, 
+.docs-list-b li a:visited, .active-tc a:visited, .active-tc-b a:visited {
     color:#5A8094;
     text-decoration-color: #5A8094;
     transition: 300ms;
@@ -1276,7 +1280,8 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
 } 
 
 
-.article-container a, .article-comparison-container a {
+.article-container a, .article-comparison-container a,
+.article-container a:visited, .article-comparison-container a:visited {
     color: #5A8094;
     transition: 300ms;
 }
@@ -1510,7 +1515,8 @@ TOLTO PERCHE NON MI SEMBRAVA UTILE
 }
 
 
-#disclaimerSources a {
+#disclaimerSources a,
+#disclaimerSources a:visited {
         color:#5A8094;
         text-decoration-color: #5A8094;
         font-size: 500;
