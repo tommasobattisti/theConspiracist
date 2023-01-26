@@ -233,7 +233,8 @@ nav {
   
 
   
-.sub-btn {
+.sub-btn, .sub-btn:visited {
+    color: black;
     background-color: white;
     width: 100%;
     height: 20%;
@@ -1036,8 +1037,9 @@ nav {
     outline-offset: 15px;
 }
 
+.entity-type-selection,
 .entity-type-selection:visited {
-    color: black;
+    color: black !important;
 }
 
 .entities-content-table {
