@@ -36,7 +36,7 @@ $(document).ready(function(){
             $(".info-tc").addClass("active-tc");            //add the active class to the info tab content div
             $(".nav-i").removeClass("active-nav-i");        //remove the active class from all nav items
             $(".info-nav-i").addClass("active-nav-i");      //add the active class to the info nav item 
-        }                                             //the active class is used to show the tab content div and highlight the nav item (all assigned in css)
+        }                                                   //the active class is used to show the tab content div and highlight the nav item (all assigned in css)
     });
 
     $(".info-nav-i-b").click(function(){
@@ -193,19 +193,19 @@ $(document).ready(function(){
     //Entity creation with local storage 
     $(".entity-creation-form").submit(function(e){ 
         e.preventDefault();    //prevent the form from submitting and refreshing the page
-        createEntity("ax");
+        createEntity("ax");     //pass the form id to the function to create the entity in the correct place
     });
 
     $(".entity-creation-form-b").submit(function(e){ 
         e.preventDefault();    //prevent the form from submitting and refreshing the page
-        createEntity("b");
+        createEntity("b");   //pass the form id to the function to create the entity in the correct place
     });
        
 
 });
 
 
-function goToFootnote(target){
+function goToFootnote(target){          //scroll to footnote to display them in the middle of the screen
     let footnote = $("#note"+target)
     $('html, body').animate({ scrollTop: footnote.offset().top - (window.innerHeight / 2) + footnote.height() / 2 }, 200);
 }
@@ -216,60 +216,59 @@ function goToFootnote(target){
 
 
 
-function createEntity(form){
-    if (form == "ax"){          
-        var container = ".article-container"
+function createEntity(form){          //create the entity in the correct place and save it to local storage
+    if (form == "ax"){                 //check if the form is for the first article or the second
+        var container = ".article-container" 
         var inputs = $(".entity-string")
         var selections = $(".entity-type-selection option:selected")
-    } else {
+    } else {                 
         var container = ".article-comparison-container"
         var input = $(".entity-string-b")
         var selection = $(".entity-type-selection-b option:selected")
     }
 
-    if (inputs) {
-        if (inputs[0].value == ""){               //check if the entity name is empty
-            var inputEntityName = inputs[1].value
+    if (inputs) {                                   //check if the form is for the first article or the second (note that the variable in this case is in plural form because it is an array)
+        if (inputs[0].value == ""){                 //check if the entity name is empty
+            var inputEntityName = inputs[1].value   //if it is empty, take the value of the second input
         } else {
             var inputEntityName = inputs[0].value
         }
-        if (selections[0].value == ""){
-            var inputSelection = selections[1].value
+        if (selections[0].value == ""){               //check if the entity type is empty
+            var inputSelection = selections[1].value  //if it is empty, take the value of the second selection
         } else {
             var inputSelection = selections[0].value
         }
     } else {
-        var inputEntityName = input.val()
-        var inputSelection = selection.val()
+        var inputEntityName = input.val()          //if the form is for the second article, take the value of the input
+        var inputSelection = selection.val()      //if the form is for the second article, take the value of the selection
     }
 
 
-    if (inputEntityName == ""){               //check if the entity name is empty
+    if (inputEntityName == ""){                         //check if the entity name is empty
         alert("Please insert a name for the entity")    //if it is empty, alert the user to insert a name
         
-    } else if (inputSelection == "") {   //check if the entity type is empty
+    } else if (inputSelection == "") {                  //check if the entity type is empty
         alert("Please select a type for the entity")    //if it is empty, alert the user to select a type
     
-    } else if ($(""+container+" .article-p:contains('"+inputEntityName+"')").length == 0) {   //check if the entity is present in the article
-        console.log(inputEntityName)
-        alert("The entity name you inserted is not present in the article")
+    } else if ($(container+" .article-p:contains('"+inputEntityName+"')").length == 0) {    //check if the entity is present in the article
+        alert("The entity name you inserted is not present in the article")                  //if it is not present, alert the user to insert a name that is present in the article
     
     } else {
-        var key = String($(""+container+" .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
+        var key = String($(container+" .article-title").attr("data-label").toLowerCase());    //get the data-label of the article title and convert it to lowercase
         
         if (localStorage.getItem(key) === null) {                           //check if the key for that article is already present in the local storage
-            let entitiesArr = [];
+            let entitiesArr = [];                                          //if it is not present, create a new key with an empty array as value
             localStorage.setItem(key, JSON.stringify(entitiesArr));       //if it is not present, create a new key with an empty array as value
         }
         
         let entitiesArray = JSON.parse(localStorage.getItem(key));          //get the value of the key and parse it to an array
-        let entityName = inputEntityName;                      //get the entity name from the input field
-        let entityType = inputSelection;
-                       //get the entity type from the input field
+        let entityName = inputEntityName;                                   //get the entity name from the input field
+        let entityType = inputSelection;                                    //get the entity type from the selection field
+                       
         
                                        
         const entity = entitiesArray.find((en) => {                             //check if the entity already exists in the array
-            if ((en.name === entityName) && (en.type === entityType)) {
+            if ((en.name === entityName) && (en.type === entityType)) {        //en is the entity object in the array and we are checking if the name and the type of the entity are the same as the ones inserted by the user in the form
                 return true;
             } else {
                 return false;
@@ -280,53 +279,53 @@ function createEntity(form){
             alert("This entity already exists")
         } else {                                      //if the entity does not exist, create a new entity object and push it to the array
             let count = 0;
-            // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
+            // Use a regular expression to find all occurrences of the word "xyz" within the article paragraph, ignoring the ones inside other <span> elements
             const regex = new RegExp('(?!<span[^>]*>)\\b('+entityName+')[(ing)(s)(n)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') //(IN THIS WAY WE CANNOT ASSIGN A NEW TYPE TO AN ALREADY CLASSIFIED ENTITY)
-            for (const par of $(""+container+" .article-p")){
-                if (par.innerHTML.match(regex) !== null){
-                  count += par.innerHTML.match(regex).length
+            for (const par of $(container+" .article-p")){      //we count the number of matches in the article
+                if (par.innerHTML.match(regex) !== null){      
+                  count += par.innerHTML.match(regex).length   //if there is a match, increase the count by the number of matches in that paragraph
                 }
             }
                 
             if (count == 0){             // If there are no matches, return an alert 
                 alert("The entity name you inserted has been already marked as a different entity type")
             
-            } else {
+            } else {                                 //if there are matches, create the entity object and push it to the array
                 if (entitiesArray.length === 0) {
-                    var id = 1;
+                    var id = 1;                    //if the array is empty, the id of the entity will be 1 
                 } else {
-                    var id = entitiesArray[entitiesArray.length - 1]['end-id'] + 1;
+                    var id = entitiesArray[entitiesArray.length - 1]['end-id'] + 1; //if the array is not empty, the id of the entity will be the id of the last entity in the array + 1
                 }
-                const entityObj = {                                            //create the entity object
-                    "name": entityName,
+                const entityObj = {                                       //create the entity object
+                    "name": entityName,  
                     "type": entityType,
-                    "start-id": id,
-                    "end-id": id + count - 1
+                    "start-id": id, 
+                    "end-id": id + count - 1                             //the end id will be the start id + the number of matches - 1
                 }
 
-                var id = entityObj["start-id"] -1;
+                var id = entityObj["start-id"] -1;                      //we need to start from the start id - 1 because the for loop will increase the id by 1 at the beginning of each iteration
 
-                for (const par of $(""+container+" .article-p")) {
+                for (const par of $(container+" .article-p")) {     //we replace each match with a span element
                     let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
                     if (!matches) continue; // If there are no matches, return
                     // Replace each match with a <span> element
-                    par.innerHTML = par.innerHTML.replace(regex, function(match) {
+                    par.innerHTML = par.innerHTML.replace(regex, function(match) {  // Replace each match with a <span> element
                         id++;
-                        return '<span id="my-entity-'+form+'-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
+                        return '<span id="my-entity-'+form+'-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>'; //we add the id of the span element as a class to the span element so that we can easily find it later
                     });
                 }
-                entitiesArray.push(entityObj);
-                localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array
+                entitiesArray.push(entityObj);  
+                localStorage.setItem(key, JSON.stringify(entitiesArray));    //push the entity object to the array and save the array in the local storage
 
-                if ($(".article-container .article-title").attr("data-label") == $(".article-comparison-container .article-title").attr("data-label")){
-                    addEntitiesFromLocalStorage("b", String($(".article-container .article-title").attr("data-label").toLowerCase()));
-                    addEntitiesFromLocalStorage("ax", String($(".article-container .article-title").attr("data-label").toLowerCase()));
+                if ($(".article-container .article-title").attr("data-label") == $(".article-comparison-container .article-title").attr("data-label")){  //if the article and the comparison article are the same, we need to add the entities to both the article and the comparison article 
+                    addEntitiesFromLocalStorage("b", String($(".article-container .article-title").attr("data-label").toLowerCase())); //add the entities to the comparison article 
+                    addEntitiesFromLocalStorage("ax", String($(".article-container .article-title").attr("data-label").toLowerCase())); //add the entities to the article 
                     addMetadata("-x");
                     showEntities("-x");
                     addMetadata("-b");
                     showEntities("-b");
-                } else {
-                    if (form == "ax"){
+                } else {   //if the article and the comparison article are different, we need to add the entities to the article and to the comparison article separately
+                    if (form == "ax"){    
                         addMetadata("-x");
                         showEntities("-x");
                         $(".entity-string").val("");    //empty the input field
@@ -349,32 +348,32 @@ function createEntity(form){
 
 
 
-function loadDocumentsList(){
-    $.ajax({
+function loadDocumentsList(){               //load the list of documents from the json file and append it to the list of documents
+    $.ajax({                              
         cache: false,
         method: "GET",
         url: "https://raw.githubusercontent.com/tommasobattisti/thePPPPconspiracy/main/fileList.json",
-        success: function(listObj){
-            let parsedJson = JSON.parse(listObj)
-            if (parsedJson.length == 0){
+        success: function(listObj){                             //listObj is the json file containing the list of documents 
+            let parsedJson = JSON.parse(listObj)              
+            if (parsedJson.length == 0){                       //if the json file is empty, return an alert
                 alert("No document to show")
             } else {
-                parsedJson.forEach(obj => {
-                    $(".docs-list-a").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \''+obj.label+'\', \'a\'); return false">'+obj.label+'</a></li>'); // or: '<li class="doc-list-item" onclick="loadDoc('+obj.url+')">'+obj.label+'</li>'
+                parsedJson.forEach(obj => {                   //for each object in the json file, append a link to the list of documents 
+                    $(".docs-list-a").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \''+obj.label+'\', \'a\'); return false">'+obj.label+'</a></li>'); // The 'return false' is needed to prevent the default action of the link (which is to go to the url) and to prevent the page from reloading when the link is clicked (which is the default action of the link) 
                     $(".docs-list-b").append('<li><a href="#" onclick="loadDoc(\''+obj.url+'\', \''+obj.label+'\', \'b\'); return false">'+obj.label+'</a></li>')
                     // The 'return false' is needed to prevent the default action of the link (which is to go to the url) and to prevent the page from reloading when the link is clicked (which is the default action of the link)
                 });
             }
         },
         error: function(){
-            alert("No document to show")
+            alert("No document to show") //if the json file is empty, return an alert 
         }
     });
 }
 
 
 
-function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
+function loadDoc(file, label, div) {  //load the document from the file and append it to the article container 
     if(div == "a"){
         loadInA(file, label)
         
@@ -385,36 +384,36 @@ function loadDoc(file, label, div) { //RIVEDERE!!!!!!!
 
 
 
-function loadInA(file, label){
-    $(".entity-string").val(""); //reset the input field
+function loadInA(file, label){ 
+    $(".entity-string").val(""); //reset the input field 
 
-    if (label.toLowerCase() == String($(".article-container .article-title").attr("data-label")).toLowerCase()) {
+    if (label.toLowerCase() == String($(".article-container .article-title").attr("data-label")).toLowerCase()) { //if the article is already loaded, return 
         console.log("Already loaded")
     } else {
         $.ajax({
             method: 'GET',
             url: file,
-            success: function(d) {
-                let article = $('.article-container').html(d)
-                $('.article-container').replaceWith(article)
-                createIds("ax");
-                addInfo("ax");
-                addMetadata("ax");
-                addEntitiesFromLocalStorage("ax", label);
-                addMetadata("ax");
+            success: function(d) { 
+                let article = $('.article-container').html(d) //load the article from the file and append it to the article container
+                $('.article-container').replaceWith(article) //replace the article container with the article that we just loaded 
+                createIds("ax"); //create the ids for the entities that are already in the article 
+                addInfo("ax"); //add the info to the entities that are already in the article
+                addMetadata("ax"); //add the metadata to the entities that are already in the article
+                addEntitiesFromLocalStorage("ax", label); //add the entities that are already in the local storage to the article
+                addMetadata("ax"); //we need to add them two times to avoid the creation of erros after we have loaded from the local storage
                 
             },
             error: function() {
-                alert('Could not load file '+ file)
+                alert('Could not load file '+ file) //if the file cannot be loaded, return an alert
             }
         });
-        $(".show-x").prop( "checked", false );
-        $(".show-a").prop( "checked", false );
+        $(".show-x").prop( "checked", false ); //uncheck the checkbox that shows the entities in the article in both the forms that manage the 
+        $(".show-a").prop( "checked", false ); 
           
     }; 
 }
 
-function loadInB(file, label){
+function loadInB(file, label){                  //we do the same thing if you want to load the comparison article
     if (label.toLowerCase() == String($(".article-comparison-container .article-title").attr("data-label")).toLowerCase()) {
         console.log("Already loaded")
     } else {
@@ -440,61 +439,62 @@ function loadInB(file, label){
 
 
 //Show entities in the text
-function showEntities(r){
+function showEntities(r){ //r is the suffix that we use to distinguish between the forms that manage the entities in the article
     if ((r == "-a") || (r == "-x")){
         var toCheck = "-ax";
         var cont = ".article-container";
     } else {
         var toCheck = "-b";
-        var cont = ".article-comparison-container";
+        var cont = ".article-comparison-container"; 
     }
 
-    if ($(".show-people"+r+"").is(':checked')) {
-        $(".show-people"+toCheck+"").prop("checked", true) //set the checkbox to checked so that also the checkbox in the modal will be checked
-        $(""+cont+" .person").addClass("person-bkg");
+    //in the case of -x and -a we need to check the checkboxboth modals to avoid errors since they refer to the same article container
+    if ($(".show-people"+r).is(':checked')) {
+        $(".show-people"+toCheck).prop("checked", true) //set the checkbox to checked so that also the checkbox in the modal will be checked
+        $(cont+" .person").addClass("person-bkg");
     } else {
-        $(".show-people"+toCheck+"").prop( "checked", false) //set the checkbox to unchecked so that also the checkbox in the modal will be unchecked
-        $(""+cont+" .person").removeClass("person-bkg");
+        $(".show-people"+toCheck).prop( "checked", false) //set the checkbox to unchecked so that also the checkbox in the modal will be unchecked
+        $(cont+" .person").removeClass("person-bkg");
     };
 
-    if ($(".show-places"+r+"").is(':checked')) {
-        $(".show-places"+toCheck+"").prop("checked", true)
-        $(""+cont+" .place").addClass("places-bkg");
+    if ($(".show-places"+r).is(':checked')) {
+        $(".show-places"+toCheck).prop("checked", true)
+        $(cont+" .place").addClass("places-bkg");
     } else {
-        $(".show-places"+toCheck+"").prop("checked", false)
-        $(""+cont+" .place").removeClass("places-bkg");
+        $(".show-places"+toCheck).prop("checked", false)
+        $(cont+" .place").removeClass("places-bkg");
     };
 
-    if ($(".show-organizations"+r+"").is(':checked')) {
-        $(".show-organizations"+toCheck+"").prop("checked", true)
-        $(""+cont+" .organization").addClass("organizations-bkg");
+    if ($(".show-organizations"+r).is(':checked')) {
+        $(".show-organizations"+toCheck).prop("checked", true)
+        $(cont+" .organization").addClass("organizations-bkg");
     } else {
-        $(".show-organizations"+toCheck+"").prop("checked", false)
-        $(""+cont+" .organization").removeClass("organizations-bkg");
+        $(".show-organizations"+toCheck).prop("checked", false)
+        $(cont+" .organization").removeClass("organizations-bkg");
     };
 
-    if ($(".show-events"+r+"").is(':checked')) {
-        $(".show-events"+toCheck+"").prop("checked", true)
-        $(""+cont+" .event").addClass("events-bkg");
+    if ($(".show-events"+r).is(':checked')) {
+        $(".show-events"+toCheck).prop("checked", true)
+        $(cont+" .event").addClass("events-bkg");
     } else {
-        $(".show-events"+toCheck+"").prop("checked", false)
-        $(""+cont+" .event").removeClass("events-bkg");
+        $(".show-events"+toCheck).prop("checked", false)
+        $(cont+" .event").removeClass("events-bkg");
     };
 
-    if ($(".show-concepts"+r+"").is(':checked')) {
-        $(".show-concepts"+toCheck+"").prop("checked", true)
-        $(""+cont+" .concept").addClass("concepts-bkg");
+    if ($(".show-concepts"+r).is(':checked')) {
+        $(".show-concepts"+toCheck).prop("checked", true)
+        $(cont+" .concept").addClass("concepts-bkg");
     } else {
-        $(".show-concepts"+toCheck+"").prop("checked", false)
-        $(""+cont+" .concept").removeClass("concepts-bkg");
+        $(".show-concepts"+toCheck).prop("checked", false)
+        $(cont+" .concept").removeClass("concepts-bkg");
     };
 
-    if ($(".show-keywords"+r+"").is(':checked')) {
-        $(".show-keywords"+toCheck+"").prop("checked", true)
-        $(""+cont+" .keyword").addClass("keywords-bkg");
+    if ($(".show-keywords"+r).is(':checked')) {
+        $(".show-keywords"+toCheck).prop("checked", true)
+        $(cont+" .keyword").addClass("keywords-bkg");
     } else {
-        $(".show-keywords"+toCheck+"").prop("checked", false)
-        $(""+cont+" .keyword").removeClass("keywords-bkg");
+        $(".show-keywords"+toCheck).prop("checked", false)
+        $(cont+" .keyword").removeClass("keywords-bkg");
     };
 
 }
@@ -505,20 +505,20 @@ function showEntities(r){
 
 
 
-function addEntitiesFromLocalStorage(modal, key){
-    if (modal == "ax"){
-        var paragraphs = $(".article-container .article-p");
+function addEntitiesFromLocalStorage(modal, key){  //add the entities that are already in the local storage to the article 
+    if (modal == "ax"){ 
+        var paragraphs = $(".article-container .article-p"); 
     } else {
         var paragraphs = $(".article-comparison-container .article-p");
     }
-    for (entityObj of JSON.parse(localStorage.getItem(key.toLowerCase()))){
-        var id = entityObj["start-id"]
-        for (par of paragraphs) {
-            let regex = new RegExp('(?!<span[^>]*>)\\b('+entityObj.name+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi')
+    for (entityObj of JSON.parse(localStorage.getItem(key.toLowerCase()))){ //for each entity in the local storage of the article with the label key we add it to the article
+        var id = entityObj["start-id"] //we start from the id that we have stored in the local storage of the article
+        for (par of paragraphs) { //for each paragraph of the article we add the entity to the text 
+            let regex = new RegExp('(?!<span[^>]*>)\\b('+entityObj.name+')[(ing)(s)(ed)(d)]?\\b(?![^<]*<\/span>)', 'gi') 
             let matches = par.innerHTML.match(regex); // Use a regular expression to find all occurrences of the word "beautiful" within the article paragraph, ignoring the ones inside other <span> elements
             if (!matches) continue; // If there are no matches, return
             // Replace each match with a <span> element
-            par.innerHTML = par.innerHTML.replace(regex, function(match) {
+            par.innerHTML = par.innerHTML.replace(regex, function(match) { //we replace the entity in the text with a span element that has the class of the entity type and the id of the entity in the article
                 id++;
                 return '<span id="my-entity-'+modal+'-'+String(id)+'" class="mention '+entityObj.type+'">'+match+'</span>';
             });
