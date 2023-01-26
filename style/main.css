@@ -10,6 +10,12 @@
   font-family: 'Orbitron', sans-serif;
 */
 
+a:visited {
+	color: rgba(10, 34, 57, 0.8);
+}
+
+
+
 .article-container ol li, .article-comparison-container ol li {
     list-style: none;
 }
@@ -2150,32 +2156,6 @@ footer div p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1330px) {
-    
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-
-}
-
 @media only screen and (max-width: 860px), (orientation: portrait) and (max-width: 1280px) {
 
 	.subtitle-div {
@@ -2216,9 +2196,6 @@ footer div p {
 
 
 @media only screen and (max-width:720px), (orientation: portrait) and (max-width: 1280px) and (max-aspect-ratio:9/16) {
-
-
-
 	.eye-container {
 		display: none;
 	}
