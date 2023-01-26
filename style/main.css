@@ -21,7 +21,7 @@
   display: none !important;
 }
 
-.issue-main li a, .issue-main li a:visited {
+.issue-main li a {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
       -o-hyphens: auto;
@@ -183,7 +183,7 @@ h1 {
   transition: 600ms;
 }
 
-.div-2030 a, .div-2030 a:visited {
+.div-2030 a {
   font-family: 'Exo', sans-serif;
   color: rgba(10, 34, 57, 0.8);
   font-weight: 500;
@@ -640,7 +640,7 @@ h1 {
 
 
 
-#documentationBody a, #documentationBody a:visited {
+#documentationBody a {
 	color: rgba(10, 34, 57, 0.8);
 	font-weight: 500;
 	text-decoration: underline;
@@ -848,9 +848,7 @@ transition: 600ms;
 
 
 
-#disclaimerPurpose a, #disclaimerSources a,
-#disclaimerPurpose a:visited, 
-#disclaimerSources a:visited {
+#disclaimerPurpose a, #disclaimerSources a {
 	color: rgba(10, 34, 57, 0.8);
 	font-weight: 500;
 	transition: 400ms;
@@ -1001,7 +999,7 @@ transition: 600ms;
 
 
 
-.card-body li a, .card-body li a:visited {
+.card-body li a {
 	color: rgba(10, 34, 57, 0.8);
 	font-weight: 500;
 	font-size: 1.2em;
@@ -1079,10 +1077,7 @@ transition: 600ms;
 }
 
 
-.article-container a, .article-comparison-container a, .double-doc-selector a,
-.article-container a:visited, 
-.article-comparison-container a:visited, 
-.double-doc-selector a:visited {
+.article-container a, .article-comparison-container a, .double-doc-selector a {
 	font-family: 'Exo', sans-serif;
 	color: rgba(10, 34, 57, 0.8);
 	font-weight: 500;
@@ -1210,7 +1205,8 @@ transition: 600ms;
   margin: 1%;
 }
 
-.metadata-modal-btn, .entity-creation-btn, .entity-creation-btn-b {
+.metadata-modal-btn, .entity-creation-btn, .entity-creation-btn-b,
+.metadata-modal-btn:visited, .entity-creation-btn:visited, .entity-creation-btn-b:visited {
 	background: rgba(255, 255, 255, 0.6);
   	color: rgba(10, 34, 57, 0.9);
   	margin: 1%;
@@ -1276,10 +1272,7 @@ transition: 600ms;
 }
 
 
-.tab-content li a, .tab-content-b li a, .docs-list-a li a, .docs-list-b li a, .active-tc a, .active-tc-b a,
-.tab-content li a:visited, .tab-content-b li a:visited, 
-.docs-list-a li a:visited, .docs-list-b li a:visited, 
-.active-tc a:visited, .active-tc-b a:visited {
+.tab-content li a, .tab-content-b li a, .docs-list-a li a, .docs-list-b li a, .active-tc a, .active-tc-b a {
 		font-family: 'Exo', sans-serif;
 		color: rgba(10, 34, 57, 0.8);
 		font-weight: 500;
