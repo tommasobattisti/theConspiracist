@@ -652,6 +652,12 @@ nav {
     color: black !important;
 }
   
+.editor-image-container {
+    width: 60%;
+}
+.editor-image-container img {
+    width: 100%;
+}
 
 .mode-selctor-btns-div {
     width: 80%;
